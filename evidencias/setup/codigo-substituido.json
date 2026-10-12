@@ -1,0 +1,11 @@
+{
+  "removed": [
+    "scripts/validacao-oxigenio/simular_fracoes_e_retorno.py",
+    "scripts/validacao-oxigenio/simular_oxigenio.py",
+    "scripts/validacao-oxigenio/verificar_bonus_fracionarios.py",
+    "scripts/validacao-oxigenio/__pycache__/simular_fracoes_e_retorno.cpython-313.pyc",
+    "scripts/validacao-oxigenio/__pycache__/verificar_bonus_fracionarios.cpython-313.pyc",
+    "scripts/validacao-oxigenio/__pycache__/simular_oxigenio.cpython-313.pyc"
+  ],
+  "reason": "auxiliary scripts with fixed four-human/illustrative-distance setup superseded by generalized engine tests; historical JSON/CSV results retained"
+}

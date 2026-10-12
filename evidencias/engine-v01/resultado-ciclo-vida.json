@@ -1,0 +1,7 @@
+{
+  "tests_run": 19,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "scope": "typed agent methods, lifecycle, private observation, independent instances, automatic JSON memory and checkpoints"
+}

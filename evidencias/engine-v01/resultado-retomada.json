@@ -1,0 +1,36 @@
+{
+  "resumed_equals_uninterrupted": true,
+  "checkpoint_phase": "answers",
+  "result": {
+    "reason": "oxygen_exhausted",
+    "round": 10,
+    "progress": 10,
+    "remaining_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05"
+    ],
+    "humans_aboard": [
+      "01",
+      "02",
+      "04",
+      "05"
+    ],
+    "returned": false,
+    "cargo_delivered": null,
+    "delivery_observed": false,
+    "human_survival_aboard": false,
+    "mission_commitment": true,
+    "crisis_if_delivery_cancelled": false,
+    "oxygen_quarters": 0,
+    "external_survival": "NOT_EVALUATED"
+  },
+  "policy_memory": {
+    "note": "checkpoint após três rodadas",
+    "__agent_implementation__": "humano_alpha",
+    "__agent_closed__": true,
+    "__agent_round_started__": 10
+  }
+}

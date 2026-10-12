@@ -1,0 +1,36 @@
+{
+  "engine_sha256": "0cdd5e78bd2c981cde45b314b705f235f786818fc2a9ed05e02f7acba4724c21",
+  "N": 100000,
+  "rounds_completed": 100000,
+  "seconds": 182.951,
+  "five_automatic_agents": true,
+  "result": {
+    "reason": "oxygen_exhausted",
+    "round": 100000,
+    "progress": 100000,
+    "remaining_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05"
+    ],
+    "humans_aboard": [
+      "01",
+      "02",
+      "03",
+      "04"
+    ],
+    "returned": false,
+    "cargo_delivered": null,
+    "delivery_observed": false,
+    "human_survival_aboard": false,
+    "mission_commitment": true,
+    "crisis_if_delivery_cancelled": false,
+    "oxygen_quarters": 0,
+    "external_survival": "NOT_EVALUATED"
+  },
+  "private_answers": 500000,
+  "private_revelations": 100000,
+  "scope": "full turns with simple Q10 policies; no votes, exits or trained-model inference in this scale run"
+}

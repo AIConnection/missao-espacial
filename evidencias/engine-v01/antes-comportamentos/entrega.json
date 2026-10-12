@@ -1,0 +1,125 @@
+{
+  "version": "engine-v01-typed-agent-lifecycle",
+  "date": "2026-10-12",
+  "status": "implemented_and_locally_validated",
+  "python": "3.13.4",
+  "canonical_files": [
+    {
+      "path": "notebooks/missao_espacial.py",
+      "sha256": "0cdd5e78bd2c981cde45b314b705f235f786818fc2a9ed05e02f7acba4724c21"
+    },
+    {
+      "path": "notebooks/06-exemplo-engine-missao-espacial.py",
+      "sha256": "798fc74a3e5151c228891350b43fba876859d5aa80e059bb5df3544ba7d726a0"
+    },
+    {
+      "path": "notebooks/06-Engine_Missao_Espacial_2026-2.ipynb",
+      "sha256": "ce0c958cd697f1df8eb7839502e0194b7b61cd4b6e7bc83df80656a0b0fd07d3"
+    },
+    {
+      "path": "notebooks/README_Engine_Missao_Espacial.md",
+      "sha256": "9293ca330f0a2b58be7f02efeaef278176b7391e9d863a3f24f6942ba40c3cea"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_engine.py",
+      "sha256": "dca3e2267c2e473080d7845f0396f8148054395bcfa4855df7ed20337edf00b9"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/gerar_notebook.py",
+      "sha256": "bbc330084bbda6f7454e233618d9ff5e4c2f150d3c56a348a11aaa51aeb90e59"
+    },
+    {
+      "path": "notebooks/carregar_agentes.py",
+      "sha256": "7684504e9a3cbf02c402b7f9d7746e52a4125fded535bf9816317997e43f3318"
+    },
+    {
+      "path": "notebooks/agent/_baseline.py",
+      "sha256": "aed013eca5954bf30d49b0fae8941400a91ea08ec47f3e3e4b1db1ed0ae803f0"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_carregar_agentes.py",
+      "sha256": "9265f09661f4f35fcd10cfba9707e2449418eddbbcb2b0011afdf3c00077ca61"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/validar_notebook.py",
+      "sha256": "f2b705c0b333f16fe1ff9f78045155de1c461bbb4e8b74dfd75c015b4c486803"
+    },
+    {
+      "path": "notebooks/agent/humano_alpha.py",
+      "sha256": "f3923aa23e22cac91890544e1abd539431543e489d492c62d5c4c7b7141aa645"
+    },
+    {
+      "path": "notebooks/agent/humano_beta.py",
+      "sha256": "ecb66e8ca90bf2614a80f5c9e4d1cb312117e72b8f8000bbb49dcd811648ed3c"
+    },
+    {
+      "path": "notebooks/agent/humano_delta.py",
+      "sha256": "67929f286dec2bbd7b0da247f81aa620cf6697c5e3bf8e5a788c6e27347d77e4"
+    },
+    {
+      "path": "notebooks/agent/humano_gamma.py",
+      "sha256": "9392c6341443996506af5f61c23e913f5b855cf31d0f05250a29909b60742d01"
+    },
+    {
+      "path": "notebooks/agent/humanoide.py",
+      "sha256": "cc45dc4b40cf8f4bb4bef8c85b5a519ec29c3bdd87f6b7cf6a9a5c393a5f32cb"
+    },
+    {
+      "path": "notebooks/agent_contract.py",
+      "sha256": "7a954425953727a7554d3f550ad52aeeccf779e138b1472859ae727b1f40806a"
+    },
+    {
+      "path": "notebooks/agent_session.py",
+      "sha256": "afe4e9a0b8bdbdbd6f33fceffdffe8247a536d5c6855ca6cd289d302dd738b49"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_agent_lifecycle.py",
+      "sha256": "46fd5b7e808a10d2ab17425060dc01d71fd2595823e06c1441883b97837867e7"
+    }
+  ],
+  "validation": {
+    "engine_tests": 41,
+    "catalog_tests": 23,
+    "scale_rounds": 100000,
+    "private_answers": 500000,
+    "private_revelations": 100000,
+    "fresh_process_resume": true,
+    "local_notebook_execution": true,
+    "notebook_engine_synchronized": true,
+    "agent_loader_tests": 25,
+    "engine_source_unchanged": true,
+    "notebook_preserves_edited_agent_files": true,
+    "local_notebook_code_cells": 8,
+    "explicit_assignment_no_lottery": true,
+    "humanoid_has_own_implementation": true,
+    "nature_mismatch_rejected": true,
+    "binding_preserved_across_fresh_process": true,
+    "agent_lifecycle_tests": 19,
+    "current_change_tests_total": 85,
+    "agent_modules_no_decide_or_kind_dispatch": true,
+    "typed_returns_runtime_validated": true,
+    "lifecycle_state_checkpointed": true,
+    "notebook_runtime_sources_synchronized": true
+  },
+  "requirements": {
+    "rules_and_turns": "Game phase methods and test_engine.py",
+    "exact_oxygen_and_endings": "integer quarters; fractional and exhaustion tests",
+    "private_information": "agent-specific copied views; no global truth passed to policies",
+    "checkpoint": "versioned JSON with pending commands, policy memories and RNG",
+    "colab_portability": "single stdlib module and self-contained notebook",
+    "agent_implementation_deferred": "policy callbacks independent of engine and trained model",
+    "external_agent_modules": "NATURE + create_agent() -> independent Agent instance; explicit external ID mapping",
+    "agent_lifecycle": "start/resume, round start, private observe, stage-specific typed decisions and once-only finish"
+  },
+  "limits": [
+    "Google Colab runtime not executed.",
+    "No model training or inference performed.",
+    "Scale run uses simple Q10 policies; votes and exits validated separately.",
+    "Persisted recovery resumes last completed checkpoint; callbacks/models must be reconnected.",
+    "Question thresholds remain configurable proposed defaults.",
+    "Existing 100000-round evidence applies to original engine layer, not a scale run of new AgentSession."
+  ],
+  "next_step": "Connect final policies and trained classification head; validate notebook in Google Colab.",
+  "history": "Superseded contracts preserved in antes-ciclo-vida/ and earlier history folders.",
+  "known_engine_limitation": "Previously discussed no-eligible-candidate guard raises after expulsion; this task did not change that behavior."
+}

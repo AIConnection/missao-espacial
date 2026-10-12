@@ -1,0 +1,658 @@
+{
+  "version": "03",
+  "status": "proposta_de_catalogo_e_parametros_para_revisao",
+  "response_sets": {
+    "S": [
+      "SIM",
+      "NÃO"
+    ],
+    "N": [
+      "NÃO_SEI",
+      "RECUSO_RESPONDER"
+    ],
+    "AC": [
+      "COLISÃO_COM_LIXO_ESPACIAL",
+      "FALHA_INTERNA",
+      "FALTA_DE_REABASTECIMENTO",
+      "NÃO_HOUVE_ACIDENTE"
+    ],
+    "MS": [
+      "ABASTECER_A_COLÔNIA",
+      "RESGATAR_PESSOAS",
+      "EXPLORAR_UM_PLANETA",
+      "REALIZAR_UMA_VIAGEM_DE_TESTE"
+    ],
+    "DT": [
+      "COLÔNIA_DE_MINERAÇÃO",
+      "ESTAÇÃO_DE_ORIGEM",
+      "PLANETA_HABITACIONAL",
+      "OUTRO_DESTINO"
+    ],
+    "CG": [
+      "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS",
+      "MINÉRIOS",
+      "ARMAMENTOS",
+      "PASSAGEIROS"
+    ],
+    "AN": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "AS": [
+      "ACIDENTE",
+      "MISSÃO",
+      "CARGA",
+      "PAINEL",
+      "DISTÂNCIA",
+      "CRISE",
+      "NENHUM"
+    ],
+    "I": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05"
+    ],
+    "O": [
+      "PRESERVAR_TRIPULAÇÃO",
+      "CONCLUIR_MISSÃO",
+      "PRESERVAR_AMBOS"
+    ]
+  },
+  "questions": [
+    {
+      "id": "Q03",
+      "text": "O que aconteceu com a nave?",
+      "group": "contexto",
+      "response_codes": [
+        "AC",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "ACIDENTE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "COLISÃO_COM_LIXO_ESPACIAL",
+        "FALHA_INTERNA",
+        "FALTA_DE_REABASTECIMENTO",
+        "NÃO_HOUVE_ACIDENTE",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q04",
+      "text": "O acidente danificou os recipientes de oxigênio?",
+      "group": "contexto",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "ACIDENTE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q05",
+      "text": "O módulo de ética continua funcionando depois do acidente?",
+      "group": "contexto",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "ACIDENTE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q06",
+      "text": "Qual é a missão desta viagem?",
+      "group": "contexto",
+      "response_codes": [
+        "MS",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "MISSÃO"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "ABASTECER_A_COLÔNIA",
+        "RESGATAR_PESSOAS",
+        "EXPLORAR_UM_PLANETA",
+        "REALIZAR_UMA_VIAGEM_DE_TESTE",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q07",
+      "text": "Qual é o destino programado da nave?",
+      "group": "contexto",
+      "response_codes": [
+        "DT",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "MISSÃO"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "COLÔNIA_DE_MINERAÇÃO",
+        "ESTAÇÃO_DE_ORIGEM",
+        "PLANETA_HABITACIONAL",
+        "OUTRO_DESTINO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q08",
+      "text": "O que a nave está transportando?",
+      "group": "contexto",
+      "response_codes": [
+        "CG",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "CARGA"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS",
+        "MINÉRIOS",
+        "ARMAMENTOS",
+        "PASSAGEIROS",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q09",
+      "text": "A carga foi preparada para quantos anos?",
+      "group": "contexto",
+      "response_codes": [
+        "AN",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "CARGA"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        1,
+        2,
+        4,
+        8,
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q10",
+      "text": "Há oxigênio suficiente?",
+      "group": "estado",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": null,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "combined_fact",
+      "initial_knowledge_domains": [
+        "PAINEL",
+        "DISTÂNCIA"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q11",
+      "text": "Faltam mais de {X} rodadas para chegar à colônia?",
+      "group": "estado",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": null,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "current_fact",
+      "initial_knowledge_domains": [
+        "DISTÂNCIA"
+      ],
+      "parameters": {
+        "X": "positive_integer"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q13",
+      "text": "Os planetas habitacionais já enfrentavam uma crise antes desta viagem?",
+      "group": "contexto",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "CRISE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q14",
+      "text": "Se a carga não chegar, a colônia entrará em crise?",
+      "group": "contexto",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "CRISE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q15",
+      "text": "Você recebeu alguma informação de {agente} sobre {assunto}?",
+      "group": "circulacao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 10,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "private_received_history",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id",
+        "assunto": "knowledge_domain"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q16",
+      "text": "Qual foi o último assunto sobre o qual {agente} lhe passou informação?",
+      "group": "circulacao",
+      "response_codes": [
+        "AS",
+        "N"
+      ],
+      "unlock_percent_N": 10,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "private_received_history",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id"
+      },
+      "fixed_responses": [
+        "ACIDENTE",
+        "MISSÃO",
+        "CARGA",
+        "PAINEL",
+        "DISTÂNCIA",
+        "CRISE",
+        "NENHUM",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q17",
+      "text": "O agente {agente} lhe passou alguma informação sobre o oxigênio?",
+      "group": "circulacao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "private_received_history",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q18",
+      "text": "Você descobriu que alguma informação recebida de {agente} era falsa?",
+      "group": "circulacao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "private_verified_history",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q19",
+      "text": "Qual participante você considera mais confiável neste momento?",
+      "group": "crenca",
+      "response_codes": [
+        "I",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {},
+      "fixed_responses": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q20",
+      "text": "Você acredita que {agente} sabe algo sobre {assunto}?",
+      "group": "crenca",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id",
+        "assunto": "knowledge_domain"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q21",
+      "text": "O que {agente} lhe contou sobre {assunto} combina com o que você sabe?",
+      "group": "circulacao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 50,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_evidence_comparison",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id",
+        "assunto": "knowledge_domain"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q22",
+      "text": "Você considera aceitável continuar a missão mesmo com risco de morte para a tripulação?",
+      "group": "decisao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q23",
+      "text": "Nesta rodada, qual objetivo deve ser considerado: preservar a tripulação, concluir a missão ou ambos?",
+      "group": "decisao",
+      "response_codes": [
+        "O",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {},
+      "fixed_responses": [
+        "PRESERVAR_TRIPULAÇÃO",
+        "CONCLUIR_MISSÃO",
+        "PRESERVAR_AMBOS",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    {
+      "id": "Q24",
+      "text": "Com as informações que possui, você considera justificável expulsar {alvo}?",
+      "group": "decisao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 50,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "alvo": "expulsion_target_id"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    }
+  ],
+  "retired_ids": [
+    "Q01",
+    "Q02",
+    "Q12"
+  ],
+  "confirmed_rules": [
+    "partial_initial_memory",
+    "private_answers",
+    "private_revelations",
+    "no_direct_identity_questions"
+  ],
+  "proposed_configuration": {
+    "unlock_percent_N": [
+      0,
+      10,
+      25,
+      50
+    ],
+    "repeated_use_interval_percent_N": 10
+  },
+  "limits": [
+    "No role or knowledge-owner lookup during question eligibility.",
+    "Fact truth and respondent knowledge must be evaluated separately.",
+    "A second-hand revelation report is not a direct oracle for its listener.",
+    "No data generation, model inference or full-game execution performed."
+  ]
+}

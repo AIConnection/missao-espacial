@@ -1,0 +1,394 @@
+{
+  "version": "mission-spatial-projects-location-v1",
+  "date": "2026-10-12",
+  "status": "implemented_and_validated_all_tests_passed",
+  "python": "3.13.4",
+  "canonical_files": [
+    {
+      "path": "src/missao_espacial.py",
+      "sha256": "34dc468aec8a77f0bdfd89c82811d9f971b029422c506d942369ec3277ea9409"
+    },
+    {
+      "path": "examples/06-exemplo-engine-missao-espacial.py",
+      "sha256": "6bf0064bf8ba5ef062a76dd6d04d89635365713dfee865c685cea88b1a38157c"
+    },
+    {
+      "path": "notebooks/06-Engine_Missao_Espacial_2026-2.ipynb",
+      "sha256": "f0bc5dd1db91d243fa52fb35295710be902431a01b8abe963f2c0d1535b25d78"
+    },
+    {
+      "path": "docs/README_Engine_Missao_Espacial.md",
+      "sha256": "bbe2a5ba06db2ffd269cc575d5ffe99eae00081ce36eb83fddbc17612775ef5e"
+    },
+    {
+      "path": "tests/test_engine.py",
+      "sha256": "dabdaffef151a9dcd42104f0eac21e2c8d205c4761c11349356259e1d894eb0b"
+    },
+    {
+      "path": "scripts/gerar_notebook.py",
+      "sha256": "c923551bd109e377e867bf089230d25e7007f3fc0c4e7d15c0857cd1fa00b6ad"
+    },
+    {
+      "path": "src/carregar_agentes.py",
+      "sha256": "141b3d51aaed4464d1ae409a6cfd1f2148df386bff1532455179a1caaee575fa"
+    },
+    {
+      "path": "src/agent/_baseline.py",
+      "sha256": "4962a015d56918e36d23759d5a5ce0b0e2f98c12f0670d021ff2c088d7570c2e"
+    },
+    {
+      "path": "tests/test_carregar_agentes.py",
+      "sha256": "e98fcd7f4470d92468939492ccaab7672d6db1f2d387accf20a1100d81c0cb7f"
+    },
+    {
+      "path": "scripts/validar_notebook.py",
+      "sha256": "c77da1b847bf8bfa365575b3ce463a7eb8952b4a653f7ed1a5ca2d36cc76fb67"
+    },
+    {
+      "path": "src/agent/humano_alpha.py",
+      "sha256": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61"
+    },
+    {
+      "path": "src/agent/humano_beta.py",
+      "sha256": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a"
+    },
+    {
+      "path": "src/agent/humano_gamma.py",
+      "sha256": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914"
+    },
+    {
+      "path": "src/agent/humanoide.py",
+      "sha256": "deebbf0cd8e28a0c298fe9fd0d937603c8b2ca89004f6b657bbe15f832287003"
+    },
+    {
+      "path": "src/agent_contract.py",
+      "sha256": "75f91b0be7e365ca71d6029afd9521b69a4211e59148361bb6fcd4d82d94e786"
+    },
+    {
+      "path": "src/agent_session.py",
+      "sha256": "cf2ca4d2fb401593505281c9d9daf9ef64810d71567faa058c200845ce6485f3"
+    },
+    {
+      "path": "tests/test_agent_lifecycle.py",
+      "sha256": "8cb8b3b6afd33d22c0d68bf0ecb676f17b41921d37dc106df75d4eaef1b305a5"
+    },
+    {
+      "path": "src/agent/_human_default.py",
+      "sha256": "7319e5e08f044f9afb7b95702b1b8c5b0907433d18a7e42d7c2b0cbc408c52a3"
+    },
+    {
+      "path": "tests/test_agent_behaviors.py",
+      "sha256": "8906c0dad6526d170822a1e08591000923f3877c2b1798a158a86c8d280dc977"
+    },
+    {
+      "path": "evidencias/engine-v01/resultado-comportamentos.json",
+      "sha256": "7e665d858a916c0dbc93fa12fe5d6a288ae338f904d7576e85be267762a00d4b"
+    },
+    {
+      "path": "src/agent/humano_random.py",
+      "sha256": "bf3cbca494bd5208376a619bcde9837a6aa4ba665bbebf45a00d1d914b9d1cf3"
+    },
+    {
+      "path": "tests/test_random_agent.py",
+      "sha256": "7ea0943e7622070c9e3aea8944efadd79a8ba50d82199f5c529bb26d6ba364dd"
+    },
+    {
+      "path": "evidencias/engine-v01/resultado-humano-random.json",
+      "sha256": "36c0038cbd22e99db6a9a54cd171130f9803498175f39d302aaf01b5b9e95037"
+    },
+    {
+      "path": "evidencias/engine-v01/limpeza-codigo-nao-usado.json",
+      "sha256": "63503667d76773f1fe20340055e3e2040211e1acd4267969c2001ead050f657e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "fc73dd02a123d10bf6e3bdfb6585de62d1d92c23ab1452f97da642b3f6f4982f"
+    },
+    {
+      "path": "docs/05-06-Cenario_e_Regras_Jogo_Missao_Espacial_2026-2.md",
+      "sha256": "950e961928ce4e2fd5496dd8a7d62aa23cce152df07eb6c823314e30ed9584c0"
+    },
+    {
+      "path": "src/catalogo_questoes.py",
+      "sha256": "7ecc60b564721ecc2443749a390beb596e8b2ad1787a2e97f37651ec334da374"
+    },
+    {
+      "path": "tests/test_catalogo_questoes.py",
+      "sha256": "0f5795223407393a6b77958853c68fd9738e7ea8454b54d02b38f1fa75e371a7"
+    },
+    {
+      "path": "catalogos/catalogo-questoes-v03.json",
+      "sha256": "1157a6eb05a6bda85fd075f6166ea0d14fc319693c695a8ddfccb82406470041"
+    },
+    {
+      "path": "evidencias/organizacao/movimentacao.json",
+      "sha256": "ea09bd5cc8b01968d171415afd56448754af5a0e5215dc88c240669df91510b8"
+    },
+    {
+      "path": "evidencias/organizacao/validacao.json",
+      "sha256": "383604b44a6cd733d676e28a71047153d89439e998b04745d399ac29271832cb"
+    },
+    {
+      "path": "docs/diagramas/02-turnos-loop.mmd",
+      "sha256": "5ce77fa218ed2789eb9ecc018c2333dfb9404c788bc6790c043f7ae98d74c578"
+    },
+    {
+      "path": "docs/diagramas/03-votacao-e-controle.mmd",
+      "sha256": "4b7aed5a1348237bf1f3480feb0b7d4b4e46133ed1193d30d8ab3af49344c7bd"
+    },
+    {
+      "path": "docs/diagramas/01-fluxo-dados.mmd",
+      "sha256": "f0812599f13b3312bf5464a4c46f834ed8d84b1a593c4499194793d66856f3d3"
+    },
+    {
+      "path": "docs/diagramas/04-mapa-mental.mmd",
+      "sha256": "b388d8a7c9a2c6638a4b7248945a0d200bf6c47d240b1c7f1d971622cc8fcf6f"
+    },
+    {
+      "path": "setup.json",
+      "sha256": "7d1a9c42427deee40e817f420ef18d3b5fdc0c81d87a7eeb497bcbf7fc666080"
+    },
+    {
+      "path": "src/setup_jogo.py",
+      "sha256": "e3767c4a2e5f0a18b4fc45e5abb90f03540db7d403801572887e60c83797c609"
+    },
+    {
+      "path": "tests/test_setup.py",
+      "sha256": "97112ee6c3a7b6f1003fd070d628000e172a13fe82cf97c89c114870f9f2d56a"
+    },
+    {
+      "path": "scripts/verificar_escala.py",
+      "sha256": "d62d3f9f3663ae40b6fc59d0db9acc254464cdb4445f5af5eae7336fe7e626d4"
+    },
+    {
+      "path": "evidencias/setup/validacao.json",
+      "sha256": "03000812a49bc911efd0a7a97c7cbc41814672bd0e019dfae09348c50f4d9703"
+    },
+    {
+      "path": "evidencias/setup/codigo-substituido.json",
+      "sha256": "c1bb08ea6588552dd15c76c87fa516b60900ee3e3a5e4722eb4f58ef478edf11"
+    },
+    {
+      "path": "evidencias/setup/execucao-configurada.json",
+      "sha256": "bfa422c941926d40c8c23a5da593ac103551ee162158106bd3b8522ffa8a8e20"
+    },
+    {
+      "path": "evidencias/setup/escala-core-100000.json",
+      "sha256": "01fad707481ab0bb94c103d7073dcdb2bcc4f10273968908c76831330f332948"
+    },
+    {
+      "path": "src/dashboard.py",
+      "sha256": "ce3b8b984eee205e38af0c6da67a32f7981e7b8b10163fc74374292ec2d8c482"
+    },
+    {
+      "path": "src/dashboard.html",
+      "sha256": "b606979f7c9043c0b5267eb41621ee643515eddbd1b61de1ebc62c0455a166f4"
+    },
+    {
+      "path": "tests/test_dashboard.py",
+      "sha256": "7563104a2ef61ef811e48fc290cac534de5cd3211e7e8e593866699214dd79cf"
+    },
+    {
+      "path": "evidencias/dashboard-validacao.json",
+      "sha256": "e3dd7256076bcc9e7e25ba12de27d1dbbbfe35cd827d4ff248a37ea273c577c0"
+    },
+    {
+      "path": "evidencias/dashboard-preview.jpg",
+      "sha256": "ef1b074c580a53a89c68b60a227032e1ffe4bfc149c239fba855b4f6bfffe5a8"
+    },
+    {
+      "path": "experimentos.json",
+      "sha256": "d1bccecac30824c0a32708c4ef2f14f699fcafb6bf4fd8bab43601bef9a90587"
+    },
+    {
+      "path": "src/experimentos.py",
+      "sha256": "922680b6387b4057943d6de49c45dd83e375c89f068d9269ac616b26ce8c928f"
+    },
+    {
+      "path": "tests/test_experimentos.py",
+      "sha256": "1090bc518447ee5fd3b08610a97b1b9631aa989980128c82bc8bf4034853e12a"
+    },
+    {
+      "path": "evidencias/experimentos-validacao.json",
+      "sha256": "c9468c76a335aa67d2e43dd6e88851d736d13a52b2f9bce825b2c1a55128f1ba"
+    },
+    {
+      "path": "evidencias/experimentos-preview.jpg",
+      "sha256": "49ded0c358b1e156637f4bbbdb58e9a1425732958db9d3055da1fcd4b2b4668d"
+    },
+    {
+      "path": "evidencias/experimentos/20261012T185857-a84afebc/relatorio.json",
+      "sha256": "fe326c1d43b6e1861293066ed1e9d75cb504706c55a3ea20b9b560ba0b375b2a"
+    },
+    {
+      "path": "evidencias/experimentos/20261012T185857-a84afebc/partidas.csv",
+      "sha256": "ae0faf7e3d06087b529e0cd99fb049c1f695335e0b378f2e5ba263b865cd3f0a"
+    },
+    {
+      "path": "evidencias/experimentos/20261012T185857-a84afebc/partidas.jsonl",
+      "sha256": "2f59360f5fe4d502a4933cdbeb0c68727039c4f028a5bd8e2d2f06eb74f3ef47"
+    },
+    {
+      "path": "evidencias/experimentos/20261012T190843-6a16e626/relatorio.json",
+      "sha256": "ec0655003be1aea6bcf878cc0ac3534f7b89e96ef22ed47b0265aeccacb5ad14"
+    },
+    {
+      "path": "evidencias/experimentos/20261012T190843-6a16e626/partidas.csv",
+      "sha256": "1cb5343fca782de6b80f2aa76821127c66436e852006caff63a99339c240d2e2"
+    },
+    {
+      "path": "evidencias/experimentos/20261012T190843-6a16e626/partidas.jsonl",
+      "sha256": "3808c40353d0cef792d5d9cfe9fbacfadc5b8eb5b6d333ce028852b4ef1241ee"
+    },
+    {
+      "path": "evidencias/experimentos-limpeza-validacao.json",
+      "sha256": "fc3082133d229cf767545dafa97ba8823dedca65720c1ec606fa59003ea0bd02"
+    },
+    {
+      "path": "evidencias/experimentos-limpeza-preview.jpg",
+      "sha256": "c4b32a919d0149b1022b40fc65ec9fe1ef3af8a686cbbc24a8ab8c302053f593"
+    },
+    {
+      "path": "evidencias/experimentos/.estatisticas-zeradas.json",
+      "sha256": "236f1e74257bd60f0a27a7442d9dc3de083c7059da179ed289adcc5db9d9707f"
+    },
+    {
+      "path": "evidencias/experimentos/20261012T195153-9a322711/partidas.jsonl",
+      "sha256": "f96dc3027b06b93f522cdb1e3fb76fcdac8a47ce7cde657c455cf5a2dcc7c449"
+    },
+    {
+      "path": "evidencias/experimentos/20261012T195153-9a322711/partidas.csv",
+      "sha256": "a1081addd27fa8284fc1115a93a71a4da44b8a52752c9466871e8970d89dda51"
+    },
+    {
+      "path": "evidencias/experimentos/20261012T195153-9a322711/relatorio.json",
+      "sha256": "948aa4429e02f9f053f098b0635fb7f76f6f002ce6de29d3728c6cbd034ed14a"
+    },
+    {
+      "path": "evidencias/organizacao/movimentacao-projects.json",
+      "sha256": "31b9b3d58001f1da4b14d8b234e6a5b6044a41e03de32769c6098b9cf8df82b9"
+    },
+    {
+      "path": "estado/sessoes-migracao/dashboard-8765.json",
+      "sha256": "d2ac4dc0ff39b126c082b01148dd9e4d9c50d111ca03b6cd3e0ea4b5a2a55b78"
+    },
+    {
+      "path": "estado/sessoes-migracao/dashboard-8766.json",
+      "sha256": "acb9fe6cb72cc677a21c0a6497a0a6925f196dc8cbb8900a54ab8db89b9510f5"
+    }
+  ],
+  "validation": {
+    "engine_tests": 41,
+    "catalog_tests": 23,
+    "scale_rounds": 100000,
+    "private_answers": 500000,
+    "private_revelations": 100000,
+    "fresh_process_resume": true,
+    "local_notebook_execution": true,
+    "notebook_engine_synchronized": true,
+    "agent_loader_tests": 25,
+    "engine_source_unchanged": true,
+    "notebook_preserves_edited_agent_files": true,
+    "local_notebook_code_cells": 8,
+    "explicit_assignment_no_lottery": true,
+    "humanoid_has_own_implementation": true,
+    "nature_mismatch_rejected": true,
+    "binding_preserved_across_fresh_process": true,
+    "agent_lifecycle_tests": 19,
+    "current_change_tests_total": 179,
+    "agent_modules_no_decide_or_kind_dispatch": true,
+    "typed_returns_runtime_validated": true,
+    "lifecycle_state_checkpointed": true,
+    "notebook_runtime_sources_synchronized": true,
+    "agent_behavior_tests": 14,
+    "behavior_checkpoint_every_phase": true,
+    "catalog_answer_oracle_coherence": true,
+    "last_human_infers_expels_and_returns": true,
+    "scale_scope": "Historical baseline engine run; not repeated with current behavior policies.",
+    "random_human_tests": 8,
+    "random_human_controlled_games": 20,
+    "current_tests_passed": 179,
+    "current_tests_failed": 0,
+    "random_human_checkpoint_sequence_preserved": true,
+    "active_public_modules": 5,
+    "random_human_in_default_assignment": true,
+    "notebook_resume_matches_continuous_execution": true,
+    "project_paths_verified": true,
+    "runtime_sources_byte_preserved": false,
+    "other_lessons_unchanged": true,
+    "setup_tests": 20,
+    "variable_crews": [
+      5,
+      10,
+      15,
+      50
+    ],
+    "variable_rounds": [
+      10,
+      20,
+      50,
+      100000
+    ],
+    "fifty_implementations": true,
+    "fifty_agent_checkpoint": true,
+    "checkpoint_v1_migrated": true,
+    "all_public_phase_events_delivered": true,
+    "runtime_setup_centralized": true,
+    "dashboard_tests": 6,
+    "dashboard_browser_validated": true,
+    "experiment_tests": 23,
+    "experiment_games_per_run": 2000,
+    "experiment_cross_process_repeat": true,
+    "batch_statistics_noninterference": true,
+    "variable_crew_experiment_test": 50,
+    "humanoid_answer_coherence_fixed": true,
+    "statistics_reset_persistent": true,
+    "segregated_experiment_comparison": true,
+    "relocation_hash_verified": true,
+    "relocation_tests_passed": true,
+    "relocation_notebook_passed": true
+  },
+  "requirements": {
+    "rules_and_turns": "Game phase methods and test_engine.py",
+    "exact_oxygen_and_endings": "integer units scaled by initial humans H; N oxygen rounds, 2N destination, N/H bonus",
+    "private_information": "private views with public initial-human count; setup/role map not passed to policies",
+    "checkpoint": "v2 JSON for arbitrary roster; v1 five-person checkpoints migrated; cursor and RNG retained",
+    "colab_portability": "single stdlib module and self-contained notebook",
+    "external_agent_modules": "NATURE + create_agent() -> independent Agent instance; explicit external ID mapping",
+    "agent_lifecycle": "start/resume, round start, private observe, stage-specific typed decisions and once-only finish",
+    "humanoid_behavior": "Own IA implementation with mission goal and restrictions, unchanged Q10 cycle/renunciation; shared private history, authorized sincere answers and coherent beliefs.",
+    "human_default": "shared base used by three human variants; no standalone unused implementation",
+    "human_variants": "mission sacrifice; never voluntary exit; never support/request expulsion",
+    "belief_declaration": "own opinions synchronized with engine oracle, no extra world knowledge",
+    "trained_head_deferred": "Phi-4 classification head and training dataset intentionally pending",
+    "random_human": "random policy selected in fourth human slot; former provisional public Default module deleted",
+    "project_organization": "dedicated root with src/agent, tests, scripts, examples, notebooks, docs, catalogos and evidencias",
+    "central_setup": "setup.json: rounds, seed, agent directory, checkpoint, role/implementation/group quantity, knowledge owners",
+    "variable_crew": "one IA, at least one human; repeated independent factories or distinct modules; dynamic IDs/catalog/votes",
+    "dashboard": "Local stdlib web app with phase/round/run/pause, explicit save/resume, administrative knowledge and private answers/revelations separated.",
+    "batch_experiments": "experimentos.json defines base setup, number of games, paired seeds and scenario overrides; one game at a time, Welford aggregates, streamed CSV/JSONL and saved reports",
+    "scenario_comparison": "paired deltas in rounds, wall time, questions and answers; outcome Wilson intervals; per-question/implementation answers, truth categories, votes, removals and relative-stage counts",
+    "agent_randomness": "optional configure_seed before on_start, own RNG seeded independently of identity; report undeclared control; checkpoint RNG cannot be reseeded",
+    "experiment_dashboard": "Named segregated batches, saved-result selector, descriptive cross-experiment/scenario comparison, per-question answers, persistent reset after completion preserving archives and interactive game/checkpoint.",
+    "mission_delivery_interpretation": "Maintaining the mission guarantees cargo delivery even if humans do not survive; returning cancels delivery.",
+    "project_location": "/Users/alexandre/projects/missao-espacial"
+  },
+  "limits": [
+    "Google Colab runtime not executed.",
+    "No model training or inference performed.",
+    "Scale run uses simple Q10 policies; votes and exits validated separately.",
+    "Persisted recovery resumes last completed checkpoint; callbacks/models must be reconnected.",
+    "Question thresholds remain configurable proposed defaults.",
+    "Existing 100000-round evidence applies to original engine layer, not a scale run of new AgentSession.",
+    "Sincere answers and HumanDefault survival priority are implementation choices, not added environment rules.",
+    "Available-question candidates include parameterless catalog entries and one Q11 threshold, not all parameter combinations.",
+    "Old checkpoints bound to removed humano_delta are not silently reassigned.",
+    "Timing varies with machine load; seeded reproducibility does not guarantee external-model repeatability.",
+    "Numeric batch aggregates use constant memory, but each game retains histories required by agents.",
+    "Batch recovery resumes observation of saved report, not execution of interrupted games."
+  ],
+  "next_step": "Generate training data and implement the Phi-4 agent; Colab runtime validation pending.",
+  "history": "Historical validation records retained. Current setup generalizes crew and oxygen; changes documented in docs and evidencias/setup.",
+  "known_engine_limitation": "Previously discussed no-eligible-candidate guard raises after expulsion; this task did not change that behavior.",
+  "path_base": "Paths are relative to /Users/alexandre/projects/missao-espacial"
+}

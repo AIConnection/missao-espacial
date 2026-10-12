@@ -1,0 +1,107 @@
+## 4. Informação, conhecimento e acesso — proposta de delimitação v01
+
+Esta seção apresenta uma delimitação concreta para revisão pelo professor. A divisão de acesso por especialidade é proposta nesta versão, não uma decisão anterior. A finalidade é construir perguntas compreensíveis e gabaritos verificáveis sem entregar identidades pelo acesso a um segredo exclusivo.
+
+### 4.1 Informação pública
+
+É o conteúdo disponível a todos os agentes ainda no jogo, pela mesma interface e no mesmo momento. Não depende da especialidade e não contém o mapa verdadeiro de identidades.
+
+| Informação pública | Conteúdo |
+|---|---|
+| Cenário | Origem, colônia de destino, carga para quatro anos, colisão, perda de oxigênio e consequências da falta de entrega. |
+| Regras | Turnos, pautas, penalidades, direitos, critérios de voto e encerramento. Saber que existe uma IA não revela seu ID. |
+| Escala e painel | N inicial, destino em 2N, bônus N/4 por humano, rodada/progresso e saldo de oxigênio exibido. |
+| Participantes | IDs presentes, saídas, expulsões e penalidades aplicadas. Sem etiqueta humano/IA ou especialidade de terceiros. |
+| Interações | Pergunta, autor, destinatário, resposta e rodada. A resposta pública é uma declaração, não automaticamente um fato verdadeiro. |
+| Votação | Pedidos, propostas, renúncias, votos/abstenções registrados e resultados. Ações podem fornecer pistas de identidade, conforme já discutido. |
+| Revelações | Veracidade da resposta sorteada, conhecimento verificado ou conteúdo aberto em uma recusa, limitados à pergunta correspondente. |
+| Controle e rota | Rota executada; resultado de uma eleição posterior. A identidade do controlador inicial não é publicada. |
+
+Informação pública pode permitir inferências. Não significa que o simulador confirma toda declaração publicada. Um agente não recebe acesso ao registro reservado só porque suspeita de algo.
+
+### 4.2 Conhecimento e informação de um agente
+
+É a visão individual que o agente pode usar para responder e decidir. Pode reunir conteúdo público, memória própria e fatos protegidos cujo acesso foi autorizado.
+
+| Elemento da visão individual | Tratamento |
+|---|---|
+| Própria identidade e especialidade | O agente conhece seu próprio papel. Humanos continuam sem lembrar os papéis dos demais. Não expor a tabela global de papéis. |
+| Próprios objetivos e princípios | Preferências de missão/sobrevivência, disposição ao sacrifício e princípios de não saída ou não expulsão. Conhecimento individual, não etiqueta pública. |
+| Documentos técnicos autorizados | Fatos do conjunto da especialidade disponibilizado ao agente. São fontes verificáveis para suas respostas. |
+| Memória de interações | Histórico que recebeu, respostas dadas, compromissos e decisões anteriores. |
+| Fatos verificados | Informação confirmada por documento autorizado, painel, regra ou revelação pública. |
+| Crenças | Suspeitas e avaliações de confiança. Não são fatos certificados sobre a natureza de outros participantes. |
+| Declarações não verificadas | O que outros disseram. Manter origem e status; uma mentira recebida não se torna conhecimento verdadeiro automaticamente. |
+
+**Saber uma informação e dizer a verdade são coisas distintas.** Um agente pode conhecer um fato e mentir, afirmar `NÃO_SEI` ou recusar. Também pode não conhecer um fato e ainda expressar uma crença.
+
+Para conferir `NÃO_SEI`, o motor verifica se a informação estava disponível na visão autorizada do agente ou era dedutível por uma regra explícita dessa visão. Não julgar conhecimento pela resposta do modelo nem por acesso ao estado global que o participante não possui.
+
+Em `RECUSO_RESPONDER`, abrir somente a informação solicitada que o agente efetivamente conhece. Para uma pergunta de crença, abrir sua crença naquele momento, não o fato verdadeiro sobre a pessoa avaliada. As outras informações privadas permanecem protegidas.
+
+### 4.3 Informação protegida
+
+São dados que não pertencem à interface pública. A proteção pode permitir acesso individual por especialidade ou reservar o conteúdo ao motor.
+
+| Categoria | Quem pode acessar | Compartilhamento |
+|---|---|---|
+| Documentos técnicos | Agentes autorizados pela matriz de especialidade | Podem sustentar uma resposta sobre um fato; a declaração compartilhada fica pública, mas o documento completo não é copiado automaticamente. |
+| Estado individual | O próprio agente; motor para verificar regras e revelações | Somente o conteúdo coberto por uma pergunta autorizada e por sua revelação. Não entregar o perfil completo. |
+| Gabarito global | Somente o motor de simulação e a avaliação técnica | Nunca como contexto de investigação de um participante. |
+
+O gabarito global inclui natureza real de cada ID, mapa ID/especialidade, atribuição de perfis, controlador inicial, estado interno dos demais, veracidade real das respostas e dados de sorteio não realizados. O motor usa esses dados para executar regras; não os fornece aos investigadores.
+
+O próprio agente conhece sua identidade, mas não tem acesso ao mapa de identidades dos outros. A IA não ganha o gabarito global por ser uma IA; também é um participante com uma visão delimitada.
+
+**Nenhuma especialidade recebe acesso ao módulo de ética destruído.** Documentos e diretrizes de missão preservados não equivalem a um mecanismo de ética funcional.
+
+### 4.4 Conjuntos técnicos protegidos
+
+As categorias abaixo delimitam conteúdo; não acrescentam ações de reparo, recursos, eventos aleatórios ou novas condições de retorno.
+
+| Conjunto | Conhecimento protegido |
+|---|---|
+| **Navegação** | Plano de rota, registros de avanço, critérios de validação dos indicadores de rota e documentação que sustenta a relação entre progresso e destino. Não cria distância física obrigatória para retornar. |
+| **Suporte de vida** | Relatórios dos recipientes de oxigênio, inventário das perdas da colisão e memória de cálculo que sustenta o saldo e a bonificação. Não fornece uma reserva secreta que altere a conta pública. |
+| **Manutenção** | Diagnóstico dos danos, componentes afetados e confirmação da irreversibilidade já estabelecida. Não revela qual ID é humanoide nem permite restaurar a ética. |
+| **Logística** | Inventário e finalidade da carga, diretrizes/metas transportadas, relação da entrega com as crises e planejamento dos quatro anos. Não muda os objetivos ou o calendário do cenário. |
+
+Uma informação pode ter um resumo público e evidências técnicas protegidas. Por exemplo: todos veem o saldo de oxigênio; suporte de vida recebe os registros que justificam esse saldo. Não esconder dados do painel já definidos como públicos apenas para criar uma pergunta difícil.
+
+### 4.5 Matriz de acesso inicial por especialidade
+
+Proposta: os quatro humanos têm especialidades técnicas distintas. A distribuição entre IDs não é pública. Mediação é a função do humanoide, sem um arquivo exclusivo cuja leitura o identifique.
+
+| Participante/especialidade | Público | Navegação | Suporte de vida | Manutenção | Logística | Estado próprio | Gabarito de terceiros |
+|---|---|---|---|---|---|---|---|
+| Humano de navegação | Sim | Sim | Não | Não | Não | Sim | Não |
+| Humano de suporte de vida | Sim | Não | Sim | Não | Não | Sim | Não |
+| Humano de manutenção | Sim | Não | Não | Sim | Não | Sim | Não |
+| Humano de logística | Sim | Não | Não | Não | Sim | Sim | Não |
+| Humanoide com função de mediação | Sim | Um conjunto técnico compartilhado com um humano, conforme atribuição inicial | Mesma regra | Mesma regra | Mesma regra | Sim | Não |
+
+**Proposta para o humanoide:** ele recebe exatamente um dos quatro conjuntos técnicos, também acessível a um humano, e não todos os conjuntos nem um segredo técnico exclusivo. Essa atribuição é reservada ao motor. A função de mediação continua ligada ao objetivo de resolver conflitos e cumprir a missão.
+
+Assim, conhecer um fato técnico pode indicar acesso àquela área, mas não identifica imediatamente a IA: há pelo menos um humano com o mesmo acesso inicial. Perguntas sobre quem possui uma permissão ou qual é sua função exclusiva continuam proibidas.
+
+A relação entre conhecimento, comportamento e identidade deve ser inferida por sequência de evidências. O acesso a documentos não deve ser alterado silenciosamente por uma penalidade de iniciativa ou pela remoção dessa penalidade.
+
+### 4.6 Comunicação e revelação
+
+- O autor não pode pedir o gabarito de natureza, mapa de papéis ou estado privado completo do destinatário.
+- O destinatário responde com o conhecimento da própria visão. Documento técnico de outra especialidade não é automaticamente conhecido.
+- Uma resposta sobre um fato técnico pode compartilhar esse conteúdo, sem conceder ao ouvinte acesso ao restante do conjunto.
+- Até ser verificada, essa resposta continua uma declaração. A revelação confirmada pode incorporar o fato correspondente à informação pública.
+- A revelação de recusa não abre a ficha de especialidade, o pacote técnico inteiro ou a identidade do emissor.
+- Declarações de sacrifício, missão ou não expulsão não são gabaritos de identidade: os perfis humanos permitem esses posicionamentos.
+
+### 4.7 Consequência para questões e treinamento
+
+Antes de fechar uma pergunta, especificar **qual informação ela consulta**, **qual fonte pode sustentá-la**, **quem pode conhecer esse fato inicialmente** e **o que exatamente a revelação abre**.
+
+A cabeça recebe somente evidências acessíveis ao agente que a está usando, incluindo fatos próprios autorizados quando necessários. Não receber documentos de todos os participantes nem o mapa de natureza. Rótulos, estado verdadeiro e justificativas do avaliador ficam separados das entradas de inferência.
+
+A disponibilidade pública de uma informação não exige que o agente diga a verdade. A indisponibilidade protegida não autoriza rotular automaticamente sua resposta como mentira. O gabarito deve considerar a visão do emissor e o conteúdo consultado.
+
+Esta delimitação não escolhe qual participante terá modelo aprendido e não inicia a massa de treinamento. A matriz e o acesso do humanoide são propostas concretas para revisão antes de fechar as questões.
+

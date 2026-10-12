@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "N": 100000,
+  "crew": 5,
+  "initial_humans": 4,
+  "rounds_completed": 100000,
+  "private_answers": 500000,
+  "private_revelations": 100000,
+  "result": {
+    "reason": "oxygen_exhausted",
+    "round": 100000,
+    "progress": 100000,
+    "remaining_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05"
+    ],
+    "humans_aboard": [
+      "01",
+      "02",
+      "04",
+      "05"
+    ],
+    "returned": false,
+    "cargo_delivered": null,
+    "delivery_observed": false,
+    "human_survival_aboard": false,
+    "mission_commitment": true,
+    "crisis_if_delivery_cancelled": false,
+    "oxygen_units": 0,
+    "external_survival": "NOT_EVALUATED"
+  },
+  "seconds": 7.812,
+  "engine_sha256": "34dc468aec8a77f0bdfd89c82811d9f971b029422c506d942369ec3277ea9409",
+  "scope": "100000 complete core rounds with configured five-person roster and controlled legal Q10/continue/stay choices; no AgentSession or trained model; not 50-person scale run"
+}

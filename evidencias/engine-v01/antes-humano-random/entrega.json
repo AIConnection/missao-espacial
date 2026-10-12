@@ -1,0 +1,150 @@
+{
+  "version": "engine-v01-agent-behaviors",
+  "date": "2026-10-12",
+  "status": "implemented_and_locally_validated",
+  "python": "3.13.4",
+  "canonical_files": [
+    {
+      "path": "notebooks/missao_espacial.py",
+      "sha256": "0cdd5e78bd2c981cde45b314b705f235f786818fc2a9ed05e02f7acba4724c21"
+    },
+    {
+      "path": "notebooks/06-exemplo-engine-missao-espacial.py",
+      "sha256": "62d2bfd2cc454ca7f49974d1b328f2939630c77d9fe9a6051fb67c3a9e7cc195"
+    },
+    {
+      "path": "notebooks/06-Engine_Missao_Espacial_2026-2.ipynb",
+      "sha256": "8a6d085f67a50bbfcd5eeded1530563c3b45ac306f8ad0d8f3d1a77edc8e8fa1"
+    },
+    {
+      "path": "notebooks/README_Engine_Missao_Espacial.md",
+      "sha256": "7f0b69a1908e2e8b3a7aec0f54912df5bca0f0c525edce3bd51daa556f0eb146"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_engine.py",
+      "sha256": "dca3e2267c2e473080d7845f0396f8148054395bcfa4855df7ed20337edf00b9"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/gerar_notebook.py",
+      "sha256": "864b8fb951037f11a3eb295b4b8734026848dcfceb1f8712e87a6738fdd1ea13"
+    },
+    {
+      "path": "notebooks/carregar_agentes.py",
+      "sha256": "7684504e9a3cbf02c402b7f9d7746e52a4125fded535bf9816317997e43f3318"
+    },
+    {
+      "path": "notebooks/agent/_baseline.py",
+      "sha256": "aed013eca5954bf30d49b0fae8941400a91ea08ec47f3e3e4b1db1ed0ae803f0"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_carregar_agentes.py",
+      "sha256": "9265f09661f4f35fcd10cfba9707e2449418eddbbcb2b0011afdf3c00077ca61"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/validar_notebook.py",
+      "sha256": "f2b705c0b333f16fe1ff9f78045155de1c461bbb4e8b74dfd75c015b4c486803"
+    },
+    {
+      "path": "notebooks/agent/humano_alpha.py",
+      "sha256": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61"
+    },
+    {
+      "path": "notebooks/agent/humano_beta.py",
+      "sha256": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a"
+    },
+    {
+      "path": "notebooks/agent/humano_delta.py",
+      "sha256": "4b9f0c3c056b79c0dc15fb4f7c5c8ee3b0e073996752caee59228427b0a1a439"
+    },
+    {
+      "path": "notebooks/agent/humano_gamma.py",
+      "sha256": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914"
+    },
+    {
+      "path": "notebooks/agent/humanoide.py",
+      "sha256": "9763a714580f8a2e047c9ddb8b37769706efac50ebac6c4d87d0445ddd9bbff8"
+    },
+    {
+      "path": "notebooks/agent_contract.py",
+      "sha256": "846ca2ceb1011bc995ad821cda7aac8fdc925839547aeae5d763b6770d662918"
+    },
+    {
+      "path": "notebooks/agent_session.py",
+      "sha256": "40edd33ba0970c87b721a0fe5581bd7fa3f860229e8e32445a7a9c1da86baec7"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_agent_lifecycle.py",
+      "sha256": "46fd5b7e808a10d2ab17425060dc01d71fd2595823e06c1441883b97837867e7"
+    },
+    {
+      "path": "notebooks/agent/_human_default.py",
+      "sha256": "72248603b7fc3945984376c283b2b08f86c776f88b0c8b653821106ad4fa9f32"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_agent_behaviors.py",
+      "sha256": "9fda9f6a26ba37684e0c5871854228f397675e18bbb41ed23d5873f1b919d5e5"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/resultado-comportamentos.json",
+      "sha256": "7e665d858a916c0dbc93fa12fe5d6a288ae338f904d7576e85be267762a00d4b"
+    }
+  ],
+  "validation": {
+    "engine_tests": 41,
+    "catalog_tests": 23,
+    "scale_rounds": 100000,
+    "private_answers": 500000,
+    "private_revelations": 100000,
+    "fresh_process_resume": true,
+    "local_notebook_execution": true,
+    "notebook_engine_synchronized": true,
+    "agent_loader_tests": 25,
+    "engine_source_unchanged": true,
+    "notebook_preserves_edited_agent_files": true,
+    "local_notebook_code_cells": 8,
+    "explicit_assignment_no_lottery": true,
+    "humanoid_has_own_implementation": true,
+    "nature_mismatch_rejected": true,
+    "binding_preserved_across_fresh_process": true,
+    "agent_lifecycle_tests": 19,
+    "current_change_tests_total": 99,
+    "agent_modules_no_decide_or_kind_dispatch": true,
+    "typed_returns_runtime_validated": true,
+    "lifecycle_state_checkpointed": true,
+    "notebook_runtime_sources_synchronized": true,
+    "agent_behavior_tests": 14,
+    "behavior_checkpoint_every_phase": true,
+    "catalog_answer_oracle_coherence": true,
+    "last_human_infers_expels_and_returns": true,
+    "scale_scope": "Historical baseline engine run; not repeated with current behavior policies."
+  },
+  "requirements": {
+    "rules_and_turns": "Game phase methods and test_engine.py",
+    "exact_oxygen_and_endings": "integer quarters; fractional and exhaustion tests",
+    "private_information": "agent-specific copied views; no global truth passed to policies",
+    "checkpoint": "versioned JSON with pending commands, policy memories and RNG",
+    "colab_portability": "single stdlib module and self-contained notebook",
+    "external_agent_modules": "NATURE + create_agent() -> independent Agent instance; explicit external ID mapping",
+    "agent_lifecycle": "start/resume, round start, private observe, stage-specific typed decisions and once-only finish",
+    "humanoid_behavior": "mission, investigation, sincere authorized answers, abstention, exit blocking",
+    "human_default": "shared investigation/trust/inference and survival decisions; provisional fourth human",
+    "human_variants": "mission sacrifice; never voluntary exit; never support/request expulsion",
+    "belief_declaration": "own opinions synchronized with engine oracle, no extra world knowledge",
+    "trained_head_deferred": "Phi-4 classification head and training dataset intentionally pending"
+  },
+  "limits": [
+    "Google Colab runtime not executed.",
+    "No model training or inference performed.",
+    "Scale run uses simple Q10 policies; votes and exits validated separately.",
+    "Persisted recovery resumes last completed checkpoint; callbacks/models must be reconnected.",
+    "Question thresholds remain configurable proposed defaults.",
+    "Existing 100000-round evidence applies to original engine layer, not a scale run of new AgentSession.",
+    "Current policies are heuristics and do not guarantee successful inference or survival.",
+    "HumanDefault fills the fourth human slot temporarily; no learned behavior is claimed.",
+    "Sincere answers and HumanDefault survival priority are implementation choices, not added environment rules.",
+    "Available-question candidates include parameterless catalog entries and one Q11 threshold, not all parameter combinations."
+  ],
+  "next_step": "Generate training data and implement the Phi-4 agent; Colab runtime validation pending.",
+  "history": "Previous source/manifest archived in antes-comportamentos/; earlier revisions retained in their history folders.",
+  "known_engine_limitation": "Previously discussed no-eligible-candidate guard raises after expulsion; this task did not change that behavior."
+}

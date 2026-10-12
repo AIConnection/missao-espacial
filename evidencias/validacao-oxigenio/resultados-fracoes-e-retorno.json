@@ -1,0 +1,1136 @@
+{
+  "scope": "round_reserve_fractional_bonus_and_return",
+  "return_rule": "Allowed while a full oxygen round is available; chosen return ends immediately.",
+  "fraction_rule_exercised": "Accumulate exact fractions; a full round costs one unit; never round individual bonuses.",
+  "cases": [
+    {
+      "id": "01",
+      "descricao": "Sem remoção; esgotar as dez rodadas",
+      "N": 10,
+      "D_ilustrativo": 13,
+      "bonus_por_humano": "3/4",
+      "bonus_total": "0",
+      "rodadas_iniciadas": 10,
+      "avancos_executados": 10,
+      "humanos_restantes": 4,
+      "saldo_final": "0",
+      "resultado": "rodadas_esgotadas",
+      "retorno_executado": false,
+      "saida_controlador_bloqueada_por_restricao": false,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "9",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "8",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "8",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "7",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 4,
+          "saldo_inicio": "7",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "6",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 5,
+          "saldo_inicio": "6",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "5",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 6,
+          "saldo_inicio": "5",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "4",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 7,
+          "saldo_inicio": "4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "3",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 8,
+          "saldo_inicio": "3",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "2",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 9,
+          "saldo_inicio": "2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "1",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 10,
+          "saldo_inicio": "1",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "0"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "descricao": "Expulsar IA na 2 e retornar na 3",
+      "N": 10,
+      "D_ilustrativo": 13,
+      "bonus_por_humano": "3/4",
+      "bonus_total": "0",
+      "rodadas_iniciadas": 3,
+      "avancos_executados": 2,
+      "humanos_restantes": 4,
+      "saldo_final": "8",
+      "resultado": "retorno",
+      "retorno_executado": true,
+      "saida_controlador_bloqueada_por_restricao": false,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "9",
+          "eventos": [
+            "IA expulsa; eleição imediata concluída com resultado controlado: 01",
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "8",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "8",
+          "eventos": [
+            "controlador escolheu retorno; jogo encerrado"
+          ],
+          "saldo_fim": "8"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "descricao": "Retornar na última rodada disponível",
+      "N": 10,
+      "D_ilustrativo": 13,
+      "bonus_por_humano": "3/4",
+      "bonus_total": "0",
+      "rodadas_iniciadas": 10,
+      "avancos_executados": 9,
+      "humanos_restantes": 4,
+      "saldo_final": "1",
+      "resultado": "retorno",
+      "retorno_executado": true,
+      "saida_controlador_bloqueada_por_restricao": false,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "9",
+          "eventos": [
+            "IA expulsa; eleição imediata concluída com resultado controlado: 01",
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "8",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "8",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "7",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 4,
+          "saldo_inicio": "7",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "6",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 5,
+          "saldo_inicio": "6",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "5",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 6,
+          "saldo_inicio": "5",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "4",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 7,
+          "saldo_inicio": "4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "3",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 8,
+          "saldo_inicio": "3",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "2",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 9,
+          "saldo_inicio": "2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "1",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 10,
+          "saldo_inicio": "1",
+          "eventos": [
+            "controlador escolheu retorno; jogo encerrado"
+          ],
+          "saldo_fim": "1"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "descricao": "Tentar retornar na 11 sem bônus",
+      "N": 10,
+      "D_ilustrativo": 13,
+      "bonus_por_humano": "3/4",
+      "bonus_total": "0",
+      "rodadas_iniciadas": 10,
+      "avancos_executados": 10,
+      "humanos_restantes": 4,
+      "saldo_final": "0",
+      "resultado": "rodadas_esgotadas",
+      "retorno_executado": false,
+      "saida_controlador_bloqueada_por_restricao": false,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "9",
+          "eventos": [
+            "IA expulsa; eleição imediata concluída com resultado controlado: 01",
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "8",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "8",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "7",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 4,
+          "saldo_inicio": "7",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "6",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 5,
+          "saldo_inicio": "6",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "5",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 6,
+          "saldo_inicio": "5",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "4",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 7,
+          "saldo_inicio": "4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "3",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 8,
+          "saldo_inicio": "3",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "2",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 9,
+          "saldo_inicio": "2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "1",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 10,
+          "saldo_inicio": "1",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "0"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "descricao": "Um humano retirado: bônus 0,75; retornar na 10",
+      "N": 10,
+      "D_ilustrativo": 13,
+      "bonus_por_humano": "3/4",
+      "bonus_total": "3/4",
+      "rodadas_iniciadas": 10,
+      "avancos_executados": 9,
+      "humanos_restantes": 3,
+      "saldo_final": "7/4",
+      "resultado": "retorno",
+      "retorno_executado": true,
+      "saida_controlador_bloqueada_por_restricao": false,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "9",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 04 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "35/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "35/4",
+          "eventos": [
+            "IA expulsa; eleição imediata concluída com resultado controlado: 01",
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "31/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 4,
+          "saldo_inicio": "31/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "27/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 5,
+          "saldo_inicio": "27/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "23/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 6,
+          "saldo_inicio": "23/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "19/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 7,
+          "saldo_inicio": "19/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "15/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 8,
+          "saldo_inicio": "15/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "11/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 9,
+          "saldo_inicio": "11/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "7/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 10,
+          "saldo_inicio": "7/4",
+          "eventos": [
+            "controlador escolheu retorno; jogo encerrado"
+          ],
+          "saldo_fim": "7/4"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "descricao": "Dois retirados: bônus total 1,5; retornar na 11",
+      "N": 10,
+      "D_ilustrativo": 13,
+      "bonus_por_humano": "3/4",
+      "bonus_total": "3/2",
+      "rodadas_iniciadas": 11,
+      "avancos_executados": 10,
+      "humanos_restantes": 2,
+      "saldo_final": "3/2",
+      "resultado": "retorno",
+      "retorno_executado": true,
+      "saida_controlador_bloqueada_por_restricao": false,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "9",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 04 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "35/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "35/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "31/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 4,
+          "saldo_inicio": "31/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 03 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "15/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 5,
+          "saldo_inicio": "15/2",
+          "eventos": [
+            "IA expulsa; eleição imediata concluída com resultado controlado: 01",
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "13/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 6,
+          "saldo_inicio": "13/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "11/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 7,
+          "saldo_inicio": "11/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 8,
+          "saldo_inicio": "9/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "7/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 9,
+          "saldo_inicio": "7/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "5/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 10,
+          "saldo_inicio": "5/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "3/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 11,
+          "saldo_inicio": "3/2",
+          "eventos": [
+            "controlador escolheu retorno; jogo encerrado"
+          ],
+          "saldo_fim": "3/2"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "descricao": "Três retirados: bônus total 2,25; retornar na 12",
+      "N": 10,
+      "D_ilustrativo": 13,
+      "bonus_por_humano": "3/4",
+      "bonus_total": "9/4",
+      "rodadas_iniciadas": 12,
+      "avancos_executados": 11,
+      "humanos_restantes": 1,
+      "saldo_final": "5/4",
+      "resultado": "retorno",
+      "retorno_executado": true,
+      "saida_controlador_bloqueada_por_restricao": false,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 04 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "39/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "39/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 03 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "19/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "19/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 02 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "37/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 4,
+          "saldo_inicio": "37/4",
+          "eventos": [
+            "IA expulsa; eleição imediata concluída com resultado controlado: 01",
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "33/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 5,
+          "saldo_inicio": "33/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "29/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 6,
+          "saldo_inicio": "29/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "25/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 7,
+          "saldo_inicio": "25/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "21/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 8,
+          "saldo_inicio": "21/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "17/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 9,
+          "saldo_inicio": "17/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "13/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 10,
+          "saldo_inicio": "13/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 11,
+          "saldo_inicio": "9/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "5/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 12,
+          "saldo_inicio": "5/4",
+          "eventos": [
+            "controlador escolheu retorno; jogo encerrado"
+          ],
+          "saldo_fim": "5/4"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "descricao": "Três retirados; tentar retorno na 13, após limite",
+      "N": 10,
+      "D_ilustrativo": 13,
+      "bonus_por_humano": "3/4",
+      "bonus_total": "9/4",
+      "rodadas_iniciadas": 12,
+      "avancos_executados": 12,
+      "humanos_restantes": 1,
+      "saldo_final": "1/4",
+      "resultado": "rodadas_esgotadas",
+      "retorno_executado": false,
+      "saida_controlador_bloqueada_por_restricao": false,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 04 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "39/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "39/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 03 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "19/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "19/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 02 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "37/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 4,
+          "saldo_inicio": "37/4",
+          "eventos": [
+            "IA expulsa; eleição imediata concluída com resultado controlado: 01",
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "33/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 5,
+          "saldo_inicio": "33/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "29/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 6,
+          "saldo_inicio": "29/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "25/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 7,
+          "saldo_inicio": "25/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "21/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 8,
+          "saldo_inicio": "21/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "17/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 9,
+          "saldo_inicio": "17/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "13/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 10,
+          "saldo_inicio": "13/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 11,
+          "saldo_inicio": "9/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "5/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 12,
+          "saldo_inicio": "5/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "1/4",
+          "humanos_restantes": 1
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "descricao": "Quatro retirados: somar quatro créditos de 0,75",
+      "N": 10,
+      "D_ilustrativo": 13,
+      "bonus_por_humano": "3/4",
+      "bonus_total": "3",
+      "rodadas_iniciadas": 8,
+      "avancos_executados": 8,
+      "humanos_restantes": 0,
+      "saldo_final": "5",
+      "resultado": "somente_ia",
+      "retorno_executado": false,
+      "saida_controlador_bloqueada_por_restricao": false,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "9",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 04 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "35/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "35/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "31/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 4,
+          "saldo_inicio": "31/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 03 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "15/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 5,
+          "saldo_inicio": "15/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "13/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 6,
+          "saldo_inicio": "13/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 02 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "25/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 7,
+          "saldo_inicio": "25/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "21/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 8,
+          "saldo_inicio": "21/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 01 saiu; crédito +3/4"
+          ],
+          "saldo_fim": "5",
+          "humanos_restantes": 0
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "descricao": "Três retirados; controlador continua e tenta sair",
+      "N": 10,
+      "D_ilustrativo": 21,
+      "bonus_por_humano": "11/4",
+      "bonus_total": "33/4",
+      "rodadas_iniciadas": 18,
+      "avancos_executados": 18,
+      "humanos_restantes": 1,
+      "saldo_final": "1/4",
+      "resultado": "rodadas_esgotadas",
+      "retorno_executado": false,
+      "saida_controlador_bloqueada_por_restricao": true,
+      "trace": [
+        {
+          "rodada": 1,
+          "saldo_inicio": "10",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9",
+          "humanos_restantes": 4
+        },
+        {
+          "rodada": 2,
+          "saldo_inicio": "9",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 04 saiu; crédito +11/4"
+          ],
+          "saldo_fim": "43/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 3,
+          "saldo_inicio": "43/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "39/4",
+          "humanos_restantes": 3
+        },
+        {
+          "rodada": 4,
+          "saldo_inicio": "39/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 03 saiu; crédito +11/4"
+          ],
+          "saldo_fim": "23/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 5,
+          "saldo_inicio": "23/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "21/2",
+          "humanos_restantes": 2
+        },
+        {
+          "rodada": 6,
+          "saldo_inicio": "21/2",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "humano 02 saiu; crédito +11/4"
+          ],
+          "saldo_fim": "49/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 7,
+          "saldo_inicio": "49/4",
+          "eventos": [
+            "IA expulsa; eleição imediata concluída com resultado controlado: 01",
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "45/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 8,
+          "saldo_inicio": "45/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida",
+            "saída do controlador negada: escolheu continuar"
+          ],
+          "saldo_fim": "41/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 9,
+          "saldo_inicio": "41/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "37/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 10,
+          "saldo_inicio": "37/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "33/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 11,
+          "saldo_inicio": "33/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "29/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 12,
+          "saldo_inicio": "29/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "25/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 13,
+          "saldo_inicio": "25/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "21/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 14,
+          "saldo_inicio": "21/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "17/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 15,
+          "saldo_inicio": "17/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "13/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 16,
+          "saldo_inicio": "13/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "9/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 17,
+          "saldo_inicio": "9/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "5/4",
+          "humanos_restantes": 1
+        },
+        {
+          "rodada": 18,
+          "saldo_inicio": "5/4",
+          "eventos": [
+            "continuação para a colônia; uma unidade consumida"
+          ],
+          "saldo_fim": "1/4",
+          "humanos_restantes": 1
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Destinations 13 and 21 are illustrative inputs.",
+    "Voting, election result, voluntary departures and absence of blocks are controlled fixtures.",
+    "No classifier or agent strategies exercised."
+  ]
+}

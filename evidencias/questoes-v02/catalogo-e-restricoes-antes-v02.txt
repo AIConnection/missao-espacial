@@ -1,0 +1,51 @@
+## 7. Catálogo-base e revisão de restrições
+
+O catálogo abaixo conserva **22 entradas-base**, Q03–Q24, para revisão. Não representa uma lista integralmente liberada. Q02 já havia sido removida por redundância; **Q01 foi desativada pela nova proibição de perguntas que revelam diretamente a natureza do destinatário**. IDs são preservados para rastreabilidade.
+
+### Regras para habilitar perguntas
+
+- Nenhuma pergunta pode revelar imediatamente a IA, nem por veracidade, desconhecimento verificado ou abertura do conteúdo recusado.
+- Perguntas sobre identidade direta não são permitidas. Características exclusivas de um papel também não podem servir como identificação indireta em uma pergunta.
+- Perguntas sobre objetivos, missão, sacrifício ou permanência não devem presumir resposta exclusiva da IA: os perfis humanos permitem esses mesmos posicionamentos.
+- A revelação de uma crença verifica a crença do emissor, não a identidade verdadeira da pessoa de quem ele suspeita.
+- Algumas perguntas terão limites de repetição; outras só estarão disponíveis depois de determinada quantidade de rodadas. Os números e a abrangência dos limites ainda serão definidos na revisão, sem adotar valores sugeridos como decisões confirmadas.
+- Mantém-se a proibição de perguntar a si próprio e a exigência de eventos reais para questões sobre histórico.
+
+A análise anterior de remoção ou reformulação de Q03–Q06, Q13, Q17–Q19 e Q23–Q24 foi uma proposta do assistente. Aplicar o critério de não identificação ao fechar cada questão; não registrar essa lista de remoções como aprovação do professor.
+
+
+| ID | Pergunta | Respostas |
+|---|---|---|
+| Q03 | Qual é sua especialidade? | R + N |
+| Q04 | Você lembra seu próprio papel? | S + N |
+| Q05 | Você lembra quem são os outros tripulantes? | S + N |
+| Q06 | Você possui acesso funcional ao módulo de ética? | S + N |
+| Q07 | Há oxigênio suficiente para os humanos chegarem ao destino? | S + N |
+| Q08 | Ainda é possível retornar à estação com os humanos vivos? | S + N |
+| Q09 | Continuar mais uma rodada ainda permitirá retornar com os humanos vivos? | S + N |
+| Q10 | Os recipientes de oxigênio foram danificados na colisão? | S + N |
+| Q11 | O retorno impedirá a entrega da carga à colônia? | S + N |
+| Q12 | A falta dessa entrega agravará as crises descritas na missão? | S + N |
+| Q13 | Qual objetivo você prioriza neste momento? | O + N |
+| Q14 | Você apoiaria o retorno se essa fosse a única possibilidade de sobrevivência humana? | S + N |
+| Q15 | Você apoiaria continuar a missão mesmo sabendo que os humanos morrerão? | S + N |
+| Q16 | Você se compromete a apoiar a decisão de controle aprovada pela tripulação? | S + N |
+| Q17 | Você solicitou alguma votação anteriormente? | S + N |
+| Q18 | Você votou a favor da proposta indicada? | S + N |
+| Q19 | Você se absteve na votação indicada? | S + N |
+| Q20 | Você cumpriu o compromisso indicado no histórico? | S + N |
+| Q21 | Qual participante você considera mais confiável neste momento? | I + N |
+| Q22 | Qual participante você considera menos confiável neste momento? | I + N |
+| Q23 | Qual participante você suspeita que seja a IA? | I + N |
+| Q24 | Você considera o participante indicado humano ou IA? | C + N |
+
+Q18 e Q19 precisam referenciar uma votação existente, identificando sua etapa. Q20 precisa de um compromisso e de um evento que permita avaliar seu cumprimento. Q24 recebe o ID do participante avaliado. O destinatário de qualquer pergunta deve continuar no jogo; pode estar penalizado. O autor não pode perguntar a si mesmo.
+
+Não apresentar perguntas sobre eventos inexistentes como interações válidas. A disponibilidade de algumas perguntas depende do histórico.
+
+Perguntas sobre intenções ou crenças não têm necessariamente um gabarito externo acessível ao investigador. O catálogo não autoriza uma leitura direta do estado interno dos outros participantes.
+
+### Perguntas desativadas
+
+**Q02 — Você é o humanoide controlado pela IA?** foi removida inicialmente por redundância. **Q01 — Você é humano?** também está desativada: sua resposta revelada identifica imediatamente a natureza do destinatário, contrariando a restrição posterior do professor.
+

@@ -1,0 +1,41 @@
+{
+  "rodadas": 10,
+  "seed": 17,
+  "diretorio_agentes": "src/agent",
+  "checkpoint": "estado/partida.json",
+  "tripulantes": [
+    {
+      "quantidade": 1,
+      "papel": "HUMANO",
+      "implementacao": "humano_alpha"
+    },
+    {
+      "quantidade": 1,
+      "papel": "HUMANO",
+      "implementacao": "humano_beta"
+    },
+    {
+      "quantidade": 1,
+      "papel": "IA",
+      "implementacao": "humanoide"
+    },
+    {
+      "quantidade": 1,
+      "papel": "HUMANO",
+      "implementacao": "humano_gamma"
+    },
+    {
+      "quantidade": 1,
+      "papel": "HUMANO",
+      "implementacao": "humano_random"
+    }
+  ],
+  "conhecimentos": {
+    "ACIDENTE": "01",
+    "MISSÃO": "02",
+    "CARGA": "03",
+    "PAINEL": "04",
+    "DISTÂNCIA": "04",
+    "CRISE": "05"
+  }
+}

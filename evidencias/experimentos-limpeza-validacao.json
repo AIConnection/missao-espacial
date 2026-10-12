@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-12",
+  "tests_total": 179,
+  "tests_passed": 179,
+  "tests_failed": 0,
+  "experiment_tests": 23,
+  "new_tests": 7,
+  "humanoid_previous_failures_fixed": [
+    "Q15 historical answers",
+    "Q23 mission objective"
+  ],
+  "all_catalog_answers_match_authorized_oracle": true,
+  "initiative_and_restrictions_preserved": true,
+  "notebook_local_execution_passed": true,
+  "clear_blocked_while_running": true,
+  "clear_persists_across_reload": true,
+  "historical_reports_preserved_and_comparable": true,
+  "interactive_session_and_checkpoint_unchanged_by_clear": true,
+  "named_validation_batch": "20261012T195153-9a322711",
+  "validation_games": 40,
+  "browser_checks": [
+    "completed_batch_clear",
+    "persistent_zero_after_reload",
+    "archived_history_selection",
+    "comparison_old_vs_corrected_humanoid",
+    "named_batch_40_games"
+  ],
+  "limits": [
+    "Historical comparison is descriptive, without assuming independent samples.",
+    "Colab service not executed.",
+    "Old reports retain their original implementation versions and measurements."
+  ]
+}

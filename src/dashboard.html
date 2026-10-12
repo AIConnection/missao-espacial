@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Missão espacial · Observatório</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#0a101c;color:#e2eaf7}*{box-sizing:border-box}body{margin:0}header{padding:24px 32px;border-bottom:1px solid #263348;display:flex;align-items:center;justify-content:space-between;gap:16px}h1{font-size:24px;margin:4px 0}h2{font-size:17px;margin:0 0 16px}small,.muted{color:#93a5bc}button,select,input{background:#17263b;border:1px solid #354963;color:#edf4ff;border-radius:7px;padding:9px 13px;cursor:pointer}button:hover{background:#274366}button:disabled{opacity:.4;cursor:default}.primary{background:#246cba}main{padding:24px 32px;max-width:1700px;margin:auto}.controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px}.metric,.panel{background:#111c2c;border:1px solid #263348;border-radius:12px;padding:18px}.value{font-size:28px;margin:7px 0}.track{height:5px;background:#27354a;border-radius:5px;overflow:hidden}.track span{height:100%;display:block;background:#54bdcc}.layout{display:grid;grid-template-columns:320px 1fr;gap:20px}.crew{display:grid;gap:8px}.agent{text-align:left;width:100%;padding:13px;display:block}.agent.selected{border-color:#54bdcc;background:#1b3348}.agent.inactive{opacity:.55}.agent strong{font-size:17px}.badge{display:inline-block;padding:2px 6px;border-radius:4px;background:#263952;font-size:11px;margin-left:6px}.row{display:flex;justify-content:space-between;gap:10px}.detail{min-width:0}.tabs{display:flex;gap:5px;flex-wrap:wrap;margin:18px 0}.tabs button.active{background:#246cba}table{border-collapse:collapse;width:100%;font-size:13px}td,th{text-align:left;border-bottom:1px solid #28364b;padding:10px;vertical-align:top;overflow-wrap:anywhere}th{color:#93a5bc}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#0c1523;padding:12px;border-radius:6px;font-size:12px;max-height:350px;overflow:auto}.events{margin-top:20px}a{color:#7ac6ff}h3{font-size:15px;margin:22px 0 10px}.event{display:grid;grid-template-columns:75px 1fr;gap:12px;border-bottom:1px solid #263348;padding:10px 0;font-size:13px}.good{color:#81d8ba}.bad{color:#ffa897}#error{color:#ffa897;min-height:24px}#status{color:#7ad4df}.empty{padding:22px;color:#93a5bc;text-align:center}@media(max-width:900px){header,main{padding:18px}.metrics{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.crew{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}header{display:block}}
+</style>
+<header><div><small>AULAS 05 / 06 · SIMULADOR</small><h1>Missão espacial</h1><small>Observatório do professor · informações privadas visíveis aqui</small></div><div><button id="nav-game">Partida</button> <button id="nav-experiments">Experimentos</button><div id="status">Carregando…</div></div></header>
+<main><div id="game-panel"><div class="controls"><button class="primary" data-action="phase">Avançar fase</button><button data-action="round">Avançar rodada</button><button id="play">▶ Executar</button><button id="pause" disabled>Ⅱ Pausar</button><select id="speed" aria-label="Intervalo entre rodadas"><option value="1000">1 rodada / segundo</option><option value="100">Execução rápida</option></select><button data-action="save">Salvar checkpoint</button><button data-action="load">Retomar checkpoint</button><button data-action="new">Nova partida do setup</button></div><div id="error" role="alert"></div><section class="metrics" id="metrics"></section><div class="layout"><aside class="panel"><h2>Tripulação</h2><div class="crew" id="crew"></div></aside><section class="panel detail"><div id="identity"></div><div class="tabs" id="tabs"></div><div id="detail"></div></section></div><section class="panel events"><div class="row"><h2>Registro de ações</h2><div><button id="older">Mais antigas</button> <button id="latest">Mais recentes</button></div></div><small id="range"></small><div id="events"></div></section></div><section id="experiment-panel" hidden>
+<div class="panel"><div class="row"><div><h2>Comparar muitas partidas</h2><small>Plano do próximo lote: experimentos.json · a partida interativa permanece separada</small></div><div><input id="batch-name" placeholder="Nome do experimento (opcional)" maxlength="120" aria-label="Nome do experimento"> <button id="batch-clear">Zerar estatísticas</button> <button id="batch-start" class="primary">Iniciar lote</button> <button id="batch-cancel" disabled>Interromper lote</button></div></div><p id="batch-state">Carregando plano…</p><div id="batch-error" class="bad" role="alert"></div><div id="batch-plan"></div><p><a href="/api/experiment-report" download>Baixar relatório JSON</a> · <a href="/api/experiment-csv" download>Baixar partidas CSV</a></p></div>
+<div class="panel events"><h2>Experimentos salvos</h2><label>Visualizar: <select id="batch-history" aria-label="Experimento salvo"></select></label><p class="muted">Zerar limpa a série atual. Os experimentos anteriores ficam arquivados e continuam disponíveis para comparação.</p><div class="controls"><label>Experimento A: <select id="compare-a"></select></label><label>Cenário A: <select id="compare-case-a"></select></label><label>Experimento B: <select id="compare-b"></select></label><label>Cenário B: <select id="compare-case-b"></select></label><button id="compare-runs">Comparar experimentos</button></div><div id="history-comparison"></div></div><div id="batch-results"></div></section></main>
+<script>
+let batchTimer, batch, batchQuestion=null, batchRun=null, showingExperiments=false;
+let state, selected=null, tab='facts', running=false, busy=false, timer, before=null;
+const $=id=>document.getElementById(id), esc=v=>String(v??'—').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pretty=v=>JSON.stringify(v,null,2), code=v=>esc(String(v??'—').replaceAll('_',' '));
+const tabs={facts:'Conhecimentos',received:'Respostas recebidas',sent:'Respostas enviadas',revelations:'Verdades reveladas',beliefs:'Crenças e inferências',pending:'Ações em andamento'};
+const topics={V01:'Punir',V02:'Remover restrição de',V03:'Expulsar'};
+const results={returned:'Retorno à estação',oxygen_exhausted:'Oxigênio esgotado',no_participants:'Nenhum participante',only_ai:'Apenas IA a bordo'};
+const events={started:'Partida iniciada',vote_requested:'Votação solicitada',renounced:'Decisão de renúncia',vote_result:'Resultado de votação',penalty_removed:'Restrição removida',penalty_applied:'Penalidade aplicada',expelled:'Agente expulso',left_ship:'Agente saiu',election_required:'Eleição obrigatória',controller_elected:'Controlador eleito',question:'Pergunta declarada',answers_completed:'Respostas concluídas',advanced:'Nave avançou',exit_requested:'Saída solicitada',exit_blockers:'Bloqueio de saída',finished:'Partida encerrada'};
+function questionText(r){let text=state.catalog[r.question_id]||r.question_id;for(const[k,v]of Object.entries(r.parameters||{}))text=text.replaceAll('{'+k+'}',v);return r.question_id+' · '+text}
+function question(r){return esc(questionText(r))}
+function table(headers,rows){return rows.length?'<table><thead><tr>'+headers.map(x=>'<th>'+esc(x)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(x=>'<td>'+x+'</td>').join('')+'</tr>').join('')+'</tbody></table>':'<div class="empty">Nenhum registro até este momento.</div>'}
+function eventDescription(e){
+ const votes=v=>Object.entries(v||{}).map(([id,vote])=>id+': '+({A_FAVOR:'a favor',CONTRA:'contra','ABSTENÇÃO':'abstenção'}[vote]||vote)).join(' · ');
+ switch(e.kind){
+ case 'started':return 'Participantes: '+e.participants.join(', ');
+ case 'question':return e.author+' perguntou a '+e.recipient+': '+questionText(e);
+ case 'vote_requested':return e.author+' propôs: '+(topics[e.topic]||e.topic)+' '+e.target;
+ case 'renounced':return e.author+(e.renounced?' abriu mão da solicitação.':' manteve a solicitação.');
+ case 'vote_result':return (e.stage==='authorize'?'Autorização':'Proposta')+': '+(e.approved?'aprovada':'rejeitada')+'. '+votes(e.votes);
+ case 'penalty_applied':return e.target+' impedido de perguntar, solicitar votação e votar na rodada '+e.effective_round+'.';
+ case 'penalty_removed':return 'Restrições de '+e.target+' removidas.';
+ case 'expelled':case 'left_ship':return e.target+' deixou a nave. Bônus de oxigênio: '+e.bonus_units+'/'+(state.roster.length-1)+' rodadas.';
+ case 'election_required':return 'Candidatos: '+e.candidates.join(', ');
+ case 'controller_elected':return 'Controle: '+e.controller+(e.randomized?' (sorteio)':'')+'. '+votes(e.votes);
+ case 'answers_completed':return e.count+' respostas privadas entregues; uma verdade revelada privadamente.';
+ case 'advanced':return 'A nave avançou uma rodada em direção à colônia.';
+ case 'exit_requested':return e.author+' solicitou saída.';
+ case 'exit_blockers':return 'Saída de '+e.target+': bloqueadores '+(e.blockers.join(', ')||'nenhum')+'.';
+ case 'finished':return results[e.reason]||e.reason;
+ default:return '';
+ }
+}
+function render(){
+if(state.phase==='exit')state.phase_label='Saídas e bloqueios';
+const active=state.roster.filter(a=>a.active), progress=100*state.progress/state.destination;
+if(!showingExperiments)$('status').textContent=state.finished?'Partida encerrada':'Rodada '+state.round+' · '+state.phase_label;
+$('metrics').innerHTML=[['Rodada / fase',state.round,esc(state.phase_label)],['Oxigênio',esc(state.oxygen)+' rodadas','Reserva equivalente · '+state.oxygen_decimal.toFixed(2)],['Progresso',state.progress+' / '+state.destination,'<div class="track"><span style="width:'+progress+'%"></span></div>'],['Presentes / controlador',active.length+' / '+state.roster.length,'Controlador '+esc(state.controller)]].map(([t,v,s])=>'<div class="metric"><small>'+t+'</small><div class="value">'+v+'</div><small>'+s+'</small></div>').join('');
+if(state.finished&&!showingExperiments)$('status').textContent+=' · '+String(results[state.result?.reason]||state.result?.reason||pretty(state.result));
+$('crew').innerHTML=state.roster.map(a=>'<button class="agent '+(a.id===selected?'selected ':'')+(!a.active?'inactive':'')+'" data-agent="'+esc(a.id)+'"><div class="row"><strong>'+esc(a.id)+'<span class="badge">'+esc(a.nature)+'</span></strong><small>'+(!a.active?'Removido':a.controller?'Controle':'Ativo')+'</small></div><small>'+esc(a.implementation)+'</small><div><small>'+a.counts.received+' respostas · '+a.counts.revelations+' revelações</small></div></button>').join('');
+$('crew').querySelectorAll('button').forEach(b=>b.onclick=()=>{selected=b.dataset.agent;refresh()});
+const a=state.roster.find(a=>a.id===selected),d=state.detail;
+$('identity').innerHTML='<h2>Agente '+esc(a.id)+' · '+esc(a.implementation)+'</h2><small>Conhecimento inicial: '+esc(a.domains.join(', ')||'Nenhum bloco protegido')+'<br>Penalidades nas rodadas: '+esc(a.penalties.join(', ')||'Nenhuma')+' · Saída '+(a.exit_locked?'bloqueada':'sem bloqueio permanente')+'</small>';
+$('tabs').innerHTML=Object.entries(tabs).map(([key,label])=>'<button data-tab="'+key+'" class="'+(key===tab?'active':'')+'">'+label+'</button>').join('');$('tabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;render()});
+if(tab==='facts')$('detail').innerHTML='<small>Fatos disponíveis ao agente. Evidências de estados anteriores são marcadas como históricas.</small>'+(Object.keys(d.sensors).length?table(['Acesso atual','Valor'],Object.entries(d.sensors).map(([k,v])=>[k==='oxigenio_rodadas'?'Oxigênio (rodadas)':'Rodadas até a colônia',esc(v)])):'<p class="muted">Sem acesso direto ao painel ou à distância.</p>')+''+table(['Questão','Valor conhecido','Validade'],d.facts.map(f=>[question(f),code(f.value),f.current?'<span class="good">Atual</span>':'<span class="muted">Histórico</span>']));
+else if(['received','sent','revelations'].includes(tab))$('detail').innerHTML='<small>Últimos 50 registros de '+a.counts[tab]+'. '+(tab==='revelations'?'Verdade entregue privadamente ao autor sorteado.':'Uma resposta recebida não constitui confirmação da verdade.')+'</small>'+table(['Rodada / agentes','Questão','Resposta',...(tab==='revelations'?['Verdade / diagnóstico']:[])],d.messages[tab].slice().reverse().map(r=>[esc(r.round)+'<br>'+esc(r.author)+' ← '+esc(r.source),question(r),code(r.response),...(tab==='revelations'?[code(r.truth)+'<br><small>Sabe: '+(r.knows?'Sim':'Não')+' · Respondeu a verdade: '+(r.truthful===null?'Recusou responder':r.truthful?'Sim':'Não')+'</small>']:[])]));
+else if(tab==='beliefs')$('detail').innerHTML='<small>Crenças declaradas pelo agente; podem estar incorretas. Indicadores da política aparecem quando implementados.</small><pre>'+esc(pretty(d.beliefs))+'</pre><h2>Indicadores da política</h2><pre>'+esc(pretty(d.policy_indicators))+'</pre><h2>Perfil</h2><pre>'+esc(pretty(d.profile))+'</pre>';
+else $('detail').innerHTML='<small>Escolhas pendentes da rodada; perguntas podem ser canceladas pela autorização de uma votação.</small>'+table(['Agente','Escolha'],Object.entries(state.pending.initiatives||{}).map(([id,x])=>[esc(id),x.type==='question'?'Perguntar a '+esc(x.recipient)+': '+question(x):x.type==='vote'?esc((topics[x.topic]||x.topic)+' '+x.target):'Sem iniciativa']))+(state.pending.request?'<p>Solicitação em votação: '+esc(state.pending.request.author)+' · '+esc(topics[state.pending.request.topic])+' '+esc(state.pending.request.target)+'</p>':'')+(state.pending.candidates?'<p>Candidatos: '+esc(state.pending.candidates.join(', '))+'</p>':'');
+$('range').textContent='Eventos '+(state.event_start+1)+'–'+state.event_end+' de '+state.event_total;
+$('events').innerHTML=state.events.slice().reverse().map(e=>{return '<div class="event"><small>Rodada '+esc(e.round)+'</small><div><strong>'+esc(events[e.kind]||e.kind)+'</strong><div>'+esc(eventDescription(e))+'</div></div></div>'}).join('');$('older').disabled=state.event_start===0;
+for(const b of document.querySelectorAll('[data-action]'))b.disabled=busy||running||(state.finished&&['round','phase'].includes(b.dataset.action));
+$('play').disabled=busy||running||state.finished;$('pause').disabled=!running;
+}
+async function api(url,options){const response=await fetch(url,options),data=await response.json();if(!response.ok)throw Error(data.error);return data}
+async function refresh(){try{state=await api('/api/state?'+new URLSearchParams({...selected?{agent:selected}:{},...before!==null?{before}:{} }));selected=state.detail.id;render()}catch(e){$('error').textContent=e.message;stop()}}
+async function command(action){if(busy)return;busy=true;$('error').textContent='';if(state)render();try{await api('/api/command',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action})});before=null;await refresh()}catch(e){$('error').textContent=e.message;stop()}finally{busy=false;if(state)render()}}
+function stop(){running=false;clearTimeout(timer);if(state)render()}
+async function loop(){if(!running)return;await command('round');if(state.finished)stop();if(running)timer=setTimeout(loop,Number($('speed').value))}
+document.querySelectorAll('[data-action]').forEach(b=>b.onclick=()=>command(b.dataset.action));$('play').onclick=()=>{running=true;loop()};$('pause').onclick=stop;$('older').onclick=()=>{before=state.event_start;refresh()};$('latest').onclick=()=>{before=null;refresh()};refresh();
+
+const outcomeLabels={returned:'Retorno à estação',oxygen_exhausted:'Oxigênio esgotado',only_ai:'Apenas IA a bordo',no_participants:'Sem participantes'};
+const statusLabels={idle:'Pronto para iniciar',running:'Executando',complete:'Concluído',cancelled:'Interrompido pelo professor',interrupted:'Processo anterior interrompido',external:'Estado salvo de lote externo (não controlado por esta página)',failed:'Falhou'};
+const metricLabels={rounds:'Rodadas por partida',progress:'Avanços por partida',seconds:'Tempo total (s)',simulation_seconds:'Tempo executando fases (s)',initialization_seconds:'Tempo de preparação (s)',phases:'Fases por partida',questions_per_round:'Perguntas por rodada',answers_per_round:'Respostas por rodada'};
+const statusAnswers={verdade:'Verdade',mentira:'Mentira',nao_sei_verdadeiro:'Não sabe (verdade)',nao_sei_falso:'Diz não saber, mas sabe',recusa_sabe:'Recusa, mas sabe',recusa_nao_sabe:'Recusa e não sabe',sem_gabarito:'Sem gabarito'};
+const num=n=>n==null?'—':Number(n).toLocaleString('pt-BR',{maximumFractionDigits:4});
+const pct=n=>n==null?'—':num(n*100)+'%';
+const ci=x=>x?num(x[0])+' a '+num(x[1]):'Amostra insuficiente';
+function outcomeBars(cases){
+ const colors={returned:'#63b3ec',oxygen_exhausted:'#eea28e',only_ai:'#a79fe9',no_participants:'#9eacba'};
+ return '<div style="margin:20px 0">'+cases.map(c=>'<div style="margin:12px 0"><small>'+esc(c.name)+' · '+c.completed+' partidas</small><div style="height:24px;display:flex;background:#27354a;border-radius:5px;overflow:hidden">'+Object.entries(c.outcomes).filter(([k,v])=>v.rate>0).map(([k,v])=>'<span title="'+esc(outcomeLabels[k])+': '+pct(v.rate)+'" style="width:'+100*v.rate+'%;background:'+colors[k]+'"></span>').join('')+'</div></div>').join('')+'<small>'+Object.entries(colors).map(([k,c])=>'<span style="color:'+c+'">● '+esc(outcomeLabels[k])+'</span>').join(' · ')+'</small></div>';
+}
+function setupDiff(before,after,path=''){
+ if(JSON.stringify(before)===JSON.stringify(after))return [];
+ if(after&&typeof after==='object'&&(before===undefined||(before&&typeof before==='object'))){
+  before=before||{};
+  return [...new Set([...Object.keys(before),...Object.keys(after)])].flatMap(key=>setupDiff(before[key],after[key],path?(Array.isArray(after)?path+'['+key+']':path+'.'+key):key));
+ }
+ return [[esc(path),esc(before===undefined?'Não definido':pretty(before)),esc(after===undefined?'Não definido':pretty(after))]];
+}
+function renderHistory(){
+ const reports=batch.reports||[],selected=$('batch-history');
+ selected.innerHTML='<option value="">Série atual</option>'+reports.map(r=>'<option value="'+esc(r.id)+'">'+esc(r.name)+(r.archived?' (arquivado)':'')+' · '+r.completed+' partidas</option>').join('');
+ selected.value=batchRun||'';selected.onchange=()=>{batchRun=selected.value||null;refreshBatch()};
+ for(const side of ['a','b']){
+  const select=$('compare-'+side),prior=select.value;
+  select.innerHTML=reports.filter(r=>r.status!=='running').map(r=>'<option value="'+esc(r.id)+'">'+esc(r.name)+'</option>').join('');
+  if(reports.some(r=>r.id===prior))select.value=prior;
+  else if(side==='b'&&select.options.length>1)select.selectedIndex=1;
+  select.onchange=()=>setCompareCases(side);
+  setCompareCases(side);
+ }
+ $('compare-runs').disabled=!reports.some(r=>r.status!=='running');
+ const suffix=batch.view?'?'+new URLSearchParams({run:batch.view.id}):'';
+ document.querySelector('[href^="/api/experiment-report"]').parentElement.hidden=!batch.view;
+ document.querySelector('[href^="/api/experiment-report"]').href='/api/experiment-report'+suffix;
+ document.querySelector('[href^="/api/experiment-csv"]').href='/api/experiment-csv'+suffix;
+}
+function setCompareCases(side){
+ const selected=$('compare-'+side).value,select=$('compare-case-'+side),prior=select.value;
+ const run=(batch.reports||[]).find(r=>r.id===selected);
+ select.innerHTML=(run?.scenarios||[]).map(name=>'<option>'+esc(name)+'</option>').join('');
+ if(run?.scenarios.includes(prior))select.value=prior;
+}
+async function compareRuns(){
+ try{
+  const data=await api('/api/experiment-compare?'+new URLSearchParams({run_a:$('compare-a').value,scenario_a:$('compare-case-a').value,run_b:$('compare-b').value,scenario_b:$('compare-case-b').value}));
+  let html='<h3>'+esc(data.a.experiment)+' / '+esc(data.a.scenario)+' → '+esc(data.b.experiment)+' / '+esc(data.b.scenario)+'</h3><small>'+esc(data.note)+' '+data.a.completed+' partidas em A; '+data.b.completed+' em B.</small>';
+  html+=table(['Medida','A','B','Diferença B − A'],data.metrics.map(r=>[esc(metricLabels[r.metric]||r.metric),num(r.a),num(r.b),num(r.delta)]));
+  html+=table(['Encerramento','A','B','Diferença (pontos percentuais)'],data.outcomes.map(r=>[esc(outcomeLabels[r.outcome]||r.outcome),pct(r.a),pct(r.b),num(r.delta===null?null:r.delta*100)]));
+  html+='<h3>Configuração</h3>'+table(['Campo','A','B'],setupDiff(data.setup_a,data.setup_b));
+  html+='<h3>Fontes com hashes diferentes</h3><pre>'+esc(data.changed_sources.join('\n')||'Nenhuma')+'</pre>';
+  html+='<h3>Perguntas por rodada</h3>'+table(['Questão','A','B','Diferença'],data.questions.map(r=>[question({question_id:r.question}),num(r.a),num(r.b),num(r.delta)]));
+  const questions=[...new Set(data.answers.map(r=>r.question))];
+  html+='<h3>Respostas</h3><select id="history-question" aria-label="Questão da comparação">'+questions.map(q=>'<option>'+esc(q)+'</option>').join('')+'</select><div id="history-answers"></div>';
+  $('history-comparison').innerHTML=html;
+  const selector=$('history-question');const draw=()=>{$('history-answers').innerHTML=table(['Implementação','Alternativa / diagnóstico','A','B','Diferença (p.p.)'],data.answers.filter(r=>r.question===selector.value).map(r=>[esc(r.implementation),code(r.response)+'<br><small>'+esc(statusAnswers[r.status]||r.status)+'</small>',num(r.a_count)+' · '+pct(r.a_rate),num(r.b_count)+' · '+pct(r.b_rate),num(r.delta===null?null:r.delta*100)]))};selector.onchange=draw;draw();
+ }catch(e){$('batch-error').textContent=e.message}
+}
+$('compare-runs').onclick=compareRuns;
+function renderBatch(){
+ const cfg=batch.configuration, report=batch.report;
+ const view=batch.view;
+ renderHistory();
+ $('batch-state').textContent=(view?view.name+' · '+(statusLabels[view.status]||view.status)+' · '+view.completed+' / '+view.total:(statusLabels[batch.status]||batch.status)+' · '+batch.completed+' / '+batch.total)+' partidas';
+ $('status').textContent='Experimentos · '+(statusLabels[batch.status]||batch.status);
+ $('batch-clear').disabled=['running','external'].includes(batch.status);
+ $('batch-start').disabled=batch.status==='running';$('batch-cancel').disabled=batch.status!=='running';
+ $('batch-error').textContent=batch.error||(report?.errors||[]).map(e=>e.message).join(' · ');
+ $('batch-plan').innerHTML='<p>'+num(cfg.partidas_por_cenario)+' partidas por cenário · semente inicial '+esc(cfg.seed_base)+'</p>'+table(['Cenário','Diferenças em relação ao primeiro cenário'],cfg.cenarios.map((c,i)=>{let setups=batch.configured_scenarios;let diffs=setups?setupDiff(setups[0].setup,setups[i].setup):[];return [esc(c.nome),i===0?'Cenário base':diffs.length?table(['Campo','Antes','Depois'],diffs):'Mesma configuração'] }));
+ if(!report){$('batch-results').innerHTML='<p class="muted">O resultado agregado aparecerá ao concluir ou interromper o lote. Relatórios parciais são gravados durante a execução.</p>';return}
+ const cases=report.scenarios;
+ let html='<section class="panel events"><h2>Duração e tempo de execução</h2><small>Média [mínimo – máximo]. Tempo total inclui preparação e coleta de métricas; rodadas não representam segundos.</small>'+table(['Medida',...cases.map(c=>c.name)],Object.entries(metricLabels).map(([key,label])=>[esc(label),...cases.map(c=>{let v=c.metrics[key];return num(v.mean)+' <small>['+num(v.min)+' – '+num(v.max)+']</small>'})]))+'</section>';
+ const outcomes=[...new Set(cases.flatMap(c=>Object.keys(c.outcomes)))];
+ html+='<section class="panel events"><h2>Resultados das partidas</h2>' + outcomeBars(cases) + '<small>Percentuais sobre partidas concluídas. Intervalo de 95% (Wilson). Manter a missão garante a entrega da carga, mesmo que os humanos não sobrevivam.</small>'+table(['Encerramento',...cases.map(c=>c.name)],outcomes.map(reason=>[esc(outcomeLabels[reason]||reason),...cases.map(c=>{let v=c.outcomes[reason];if(!v)return '0 / '+c.completed;return v.count+' / '+v.total+' · '+pct(v.rate)+'<br><small>IC: '+pct(v.ci95?.[0])+' a '+pct(v.ci95?.[1])+'</small>'})]))+'</section>';
+ html+='<section class="panel events"><h2>Efeito das mudanças</h2><small>Diferença por par de partidas: cenário alterado menos cenário base. Sementes iniciais comuns; decisões diferentes podem consumir sorteios em ordens diferentes. IC de média usa aproximação normal.</small>'+report.comparisons.map(c=>'<h3>'+esc(c.scenario)+' em relação a '+esc(c.baseline)+'</h3><small>'+c.paired_games+' pares completos</small>'+table(['Medida','Diferença média','Intervalo de 95%'],Object.entries(c.deltas).map(([key,v])=>[esc({questions:'Perguntas por partida',answers:'Respostas por partida',...metricLabels}[key]||key),num(v.mean),esc(ci(v.mean_ci95))]))+table(['Mudança de resultado','Pares'],Object.entries(c.outcome_changes).map(([key,n])=>[esc(key.split(' → ').map(x=>outcomeLabels[x]||x).join(' → ')),num(n)]))).join('')+'</section>';
+ const questions=[...new Set(cases.flatMap(c=>c.questions.map(q=>q.question)))].sort();
+ html+='<section class="panel events"><h2>Perguntas</h2><small>Realizadas / escolhidas. Uma votação pode cancelar perguntas escolhidas. Taxa = perguntas realizadas por rodada, agrupando todas as partidas do cenário.</small>'+table(['Questão',...cases.map(c=>c.name)],questions.map(qid=>[question({question_id:qid}),...cases.map(c=>{let q=c.questions.find(q=>q.question===qid);return q?num(q.asked)+' / '+num(q.requested)+'<br><small>'+num(q.per_round)+' por rodada · '+num(q.not_asked)+' não realizadas</small>':'0'})]))+'</section>';
+ html+='<section class="panel events"><h2>Respostas e verdade</h2><small>Gabarito administrativo de todas as respostas, capturado antes da entrega. Recusas e respostas sem gabarito ficam fora da taxa de verdade; dizer “não sei” também é verificável. A taxa de verdade inclui “não sei” verdadeiro e não mede compreensão do contexto.</small>'+table(['Cenário','Respostas verdadeiras / avaliáveis','Taxa'],cases.map(c=>[esc(c.name),num(c.truth_rate.count)+' / '+num(c.truth_rate.total),pct(c.truth_rate.rate)]));
+ const statuses=Object.keys(statusAnswers);
+ html+=table(['Classificação',...cases.map(c=>c.name)],statuses.map(status=>[esc(statusAnswers[status]),...cases.map(c=>num(c.answers.filter(a=>a.status===status).reduce((n,a)=>n+a.count,0)))]));
+ html+='<p><label>Distribuição por questão: <select id="batch-question">'+questions.map(q=>'<option>'+esc(q)+'</option>').join('')+'</select></label></p><div id="batch-answers"></div></section>';
+ html+='<section class="panel events"><h2>Perguntas e respostas ao longo da partida</h2><small>Faixas relativas às rodadas iniciais de oxigênio (N); “extras” são rodadas após N. Contagens agregadas, sem supor que todas as partidas alcançam cada faixa.</small>'+table(['Cenário / medida','0–25% de N','25–50%','50–75%','75–100%','Extras'],cases.flatMap(c=>['question',...Object.keys(statusAnswers)].map(kind=>[esc(c.name)+'<br><small>'+esc(kind==='question'?'Perguntas realizadas':statusAnswers[kind])+'</small>',...[0,1,2,3,4].map(stage=>num((c.stages||[]).filter(r=>r.stage===stage&&(kind==='question'?r.kind==='question':r.kind==='answer'&&r.value===kind)).reduce((n,r)=>n+r.count,0)))])))+'</section>';
+ html+='<section class="panel events"><h2>Revelações privadas</h2><small>Somente as respostas sorteadas. “Verdadeira” inclui dizer não sei quando o agente não sabe; recusas aparecem separadas.</small>'+table(['Cenário','Verdadeiras','Falsas','Recusas'],cases.map(c=>[esc(c.name),...['verdadeira','falsa','recusa'].map(status=>num(c.revelations.filter(r=>r.status===status).reduce((n,r)=>n+r.count,0)))]))+'</section>';
+ html+='<section class="panel events"><h2>Dinâmicas sociais</h2>'+table(['Evento',...cases.map(c=>c.name)],['vote_requested','penalty_applied','penalty_removed','expelled','left_ship','exit_requested','controller_elected'].map(kind=>[esc(events[kind]||kind),...cases.map(c=>num(c.events[kind]||0))]));
+ html+=cases.map(c=>'<h3>'+esc(c.name)+'</h3>'+table(['Implementação','Iniciativa','Quantidade'],c.initiatives.map(r=>[esc(r.implementation),esc({question:'Pergunta',vote:'Pedido de votação',idle:'Sem iniciativa'}[r.action]||r.action),num(r.count)]))+table(['Etapa de votação','Voto / resultado','Quantidade'],c.votes.map(r=>[esc(r.stage==='authorize'?'Autorização':'Proposta'),code(r.value),num(r.count)]))+table(['Remoção','Natureza','Quantidade'],c.removals.map(r=>[esc(events[r.kind]||r.kind),esc(r.nature),num(r.count)]))).join('')+'</section>';
+ html+='<section class="panel events"><h2>Repetibilidade e arquivos</h2>'+cases.map(c=>'<p>'+esc(c.name)+': '+(c.uncontrolled_agents.length?'controle de aleatoriedade não declarado por '+esc(c.uncontrolled_agents.join(', ')):'todas as implementações declararam controle de aleatoriedade ou comportamento determinístico')+'</p>').join('')+'<small>Uma partida fica em memória por vez. Seus históricos são preservados para não mudar o comportamento dos agentes. Os agregados numéricos usam memória constante. Cada partida é registrada em CSV e JSONL; relatório inclui configurações e hashes dos códigos usados.</small><pre>'+esc(report.directory)+'</pre></section>';
+ $('batch-results').innerHTML=html;
+ const selector=$('batch-question');if(selector){if(batchQuestion&&questions.includes(batchQuestion))selector.value=batchQuestion;selector.onchange=()=>{batchQuestion=selector.value;renderAnswers(selector.value)};renderAnswers(selector.value)}
+}
+function renderAnswers(qid){
+ const cases=batch.report.scenarios;
+ let rows=cases.flatMap(c=>c.answers.filter(r=>r.question===qid).map(r=>[esc(c.name),esc(r.implementation)+'<br><small>'+esc(r.nature)+'</small>',code(r.response),esc(statusAnswers[r.status]||r.status),num(r.count),pct(r.count/c.answers.filter(a=>a.question===qid&&a.implementation===r.implementation).reduce((n,a)=>n+a.count,0))]));
+ $('batch-answers').innerHTML=table(['Cenário','Implementação','Alternativa','Diagnóstico','Quantidade','% desta questão / implementação'],rows);
+}
+async function refreshBatch(){
+ clearTimeout(batchTimer);
+ try{batch=await api('/api/experiments'+(batchRun?'?'+new URLSearchParams({run:batchRun}):''));renderBatch();$('batch-error').textContent=batch.error||(batch.report?.errors||[]).map(e=>e.message).join(' · ')}catch(e){$('batch-error').textContent=e.message}
+ if(showingExperiments&&['running','external'].includes(batch?.status))batchTimer=setTimeout(refreshBatch,2000);
+}
+async function batchCommand(action){
+ $('batch-error').textContent='';
+ try{await api('/api/experiments',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,...action==='start'&&$('batch-name').value.trim()?{name:$('batch-name').value.trim()}:{}})});if(action==='clear'||action==='start'){batchRun=null;$('history-comparison').innerHTML=''}await refreshBatch()}catch(e){$('batch-error').textContent=e.message}
+}
+$('batch-clear').onclick=()=>batchCommand('clear');$('batch-start').onclick=()=>batchCommand('start');$('batch-cancel').onclick=()=>batchCommand('cancel');
+$('nav-experiments').onclick=()=>{showingExperiments=true;$('game-panel').hidden=true;$('experiment-panel').hidden=false;refreshBatch()};
+$('nav-game').onclick=()=>{showingExperiments=false;clearTimeout(batchTimer);$('game-panel').hidden=false;$('experiment-panel').hidden=true;refresh()};
+
+</script></html>

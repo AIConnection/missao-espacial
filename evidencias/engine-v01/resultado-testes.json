@@ -1,0 +1,7 @@
+{
+  "tests_run": 41,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "scope": "engine rules, private views, phase checkpoints and deterministic RNG; no trained model or Colab execution"
+}

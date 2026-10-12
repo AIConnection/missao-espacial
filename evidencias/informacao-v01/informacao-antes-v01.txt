@@ -1,0 +1,16 @@
+## 4. Informação, verdade e inferência
+
+O simulador deve distinguir:
+
+| Camada | Conteúdo |
+|---|---|
+| Estado verdadeiro | Natureza e papel dos participantes, recursos, localização/progresso, restrições e efeitos reais das ações. |
+| Conhecimento do participante | Seu próprio papel, informações disponíveis e histórico acessível. |
+| Crenças do participante | Inferências sobre veracidade, identidades, intenções, confiança e apoio. |
+
+O registro reservado do simulador não deve vazar para a entrada dos agentes ou para a cabeça de classificação. Sua finalidade é aplicar regras e avaliar o comportamento observado.
+
+Cada agente pode escolher respostas verdadeiras ou mentiras. Os demais investigam as respostas e, a partir de uma sequência de perguntas, procuram concluir quem é humano e quem é IA.
+
+Para perguntas factuais, separar a veracidade real da inferência feita pelo agente. Uma resposta contradita pela evidência não demonstra, sozinha, mentira deliberada. O simulador mantém o conhecimento e as crenças do emissor para conferir a revelação, sem disponibilizá-los previamente aos investigadores. `NÃO_SEI` é verdadeiro se o emissor não sabe a resposta e falso se sabe. Em `RECUSO_RESPONDER`, se sabe, o conteúdo conhecido é revelado.
+

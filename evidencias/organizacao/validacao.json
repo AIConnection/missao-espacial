@@ -1,0 +1,25 @@
+{
+  "organization_passed": true,
+  "project_root": "projetos/missao-espacial",
+  "tests_total": 130,
+  "tests_passed": 128,
+  "preexisting_tests_failed": 2,
+  "preexisting_failures": [
+    "test_catalog_answers_match_authorized_truth_through_game (humanoide Q15)",
+    "test_session_opinions_match_engine_truth (humanoide Q23)"
+  ],
+  "notebook_locally_executed": true,
+  "checkpoint_matches_continuous_execution": true,
+  "example_executed_from_lesson_root": true,
+  "auxiliary_scripts_compile": true,
+  "engine_contract_and_agents_byte_preserved": true,
+  "historical_docx_pdf_byte_preserved": true,
+  "no_old_active_paths": true,
+  "no_missing_move_targets": true,
+  "other_lesson_materials_not_moved": true,
+  "not_run": [
+    "Google Colab runtime",
+    "100000-round scale rerun",
+    "Phi-4 training/inference"
+  ]
+}

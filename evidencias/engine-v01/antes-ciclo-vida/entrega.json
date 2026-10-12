@@ -1,0 +1,105 @@
+{
+  "version": "engine-v01-explicit-nature-binding",
+  "date": "2026-10-12",
+  "status": "implemented_and_locally_validated",
+  "python": "3.13.4",
+  "canonical_files": [
+    {
+      "path": "notebooks/missao_espacial.py",
+      "sha256": "0cdd5e78bd2c981cde45b314b705f235f786818fc2a9ed05e02f7acba4724c21"
+    },
+    {
+      "path": "notebooks/06-exemplo-engine-missao-espacial.py",
+      "sha256": "859a3a97c4e76129549e33f5f4bec92d41cff7813e2a4dc73e7a04eae3052de9"
+    },
+    {
+      "path": "notebooks/06-Engine_Missao_Espacial_2026-2.ipynb",
+      "sha256": "a8535dbe95cbf2d0a25d118bffbf0028d6a96920cac715347e8e99159271b862"
+    },
+    {
+      "path": "notebooks/README_Engine_Missao_Espacial.md",
+      "sha256": "19bd3fe5b32f22a77345f45494b877c79f4a9fa8145de3f04be3a487b933102e"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_engine.py",
+      "sha256": "dca3e2267c2e473080d7845f0396f8148054395bcfa4855df7ed20337edf00b9"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/gerar_notebook.py",
+      "sha256": "a45f0933ccc102ecc02f7aa41ee49d852cb6ed537285ca4df94613175100bf9b"
+    },
+    {
+      "path": "notebooks/carregar_agentes.py",
+      "sha256": "65153691459c43319501fdc1307c8c737509459a18163c986abc266051806138"
+    },
+    {
+      "path": "notebooks/agent/_baseline.py",
+      "sha256": "83e62f0693a713dfd37daca5075b8d8ff453e80a6eaa515f444f35033c477722"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_carregar_agentes.py",
+      "sha256": "eb30c307d42362b10ab387daeddbc9359de22ecad44f139cd73166305af2d96a"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/validar_notebook.py",
+      "sha256": "3d5a87a2e41441b9033f31ff67ee7cb6b94c78344fbc8a9c245fb3fed8f2689a"
+    },
+    {
+      "path": "notebooks/agent/humano_alpha.py",
+      "sha256": "1aa2f17b5d3a5fa033e83288e887747fe232898e93a9177d6ad992ac9d6dc1d3"
+    },
+    {
+      "path": "notebooks/agent/humano_beta.py",
+      "sha256": "24b61ba6ffd7cfa0ab2f42b01ebdf532085a08ecffc9297a3b87e43f5da43ae4"
+    },
+    {
+      "path": "notebooks/agent/humano_delta.py",
+      "sha256": "4252eb43538d5c84e6d22b3bf57628291e493c1c661ec194d03cb0f4301ad25d"
+    },
+    {
+      "path": "notebooks/agent/humano_gamma.py",
+      "sha256": "7b4d2c1f186350ceb861cc226f6b48708f9d2b869cea10cd6286b27dbf19bf41"
+    },
+    {
+      "path": "notebooks/agent/humanoide.py",
+      "sha256": "4303f230e0957733dfcaffeb80224b4140553fca8860403fadf6e15a44fa9472"
+    }
+  ],
+  "validation": {
+    "engine_tests": 41,
+    "catalog_tests": 23,
+    "scale_rounds": 100000,
+    "private_answers": 500000,
+    "private_revelations": 100000,
+    "fresh_process_resume": true,
+    "local_notebook_execution": true,
+    "notebook_engine_synchronized": true,
+    "agent_loader_tests": 25,
+    "engine_source_unchanged": true,
+    "notebook_preserves_edited_agent_files": true,
+    "local_notebook_code_cells": 7,
+    "explicit_assignment_no_lottery": true,
+    "humanoid_has_own_implementation": true,
+    "nature_mismatch_rejected": true,
+    "binding_preserved_across_fresh_process": true
+  },
+  "requirements": {
+    "rules_and_turns": "Game phase methods and test_engine.py",
+    "exact_oxygen_and_endings": "integer quarters; fractional and exhaustion tests",
+    "private_information": "agent-specific copied views; no global truth passed to policies",
+    "checkpoint": "versioned JSON with pending commands, policy memories and RNG",
+    "colab_portability": "single stdlib module and self-contained notebook",
+    "agent_implementation_deferred": "policy callbacks independent of engine and trained model",
+    "external_agent_modules": "NATURE + decide(view, request), no AGENT_ID; explicit external mapping; IA implementation is defined, not drawn"
+  },
+  "limits": [
+    "Google Colab runtime not executed.",
+    "No model training or inference performed.",
+    "Scale run uses simple Q10 policies; votes and exits validated separately.",
+    "Persisted recovery resumes last completed checkpoint; callbacks/models must be reconnected.",
+    "Question thresholds remain configurable proposed defaults."
+  ],
+  "next_step": "Connect final policies and trained classification head; validate notebook in Google Colab.",
+  "history": "antes-agentes/, antes-desacoplar-ids/ and antes-vinculo-explicito/ preserve superseded contracts and rejected lottery attempt",
+  "known_engine_limitation": "Previously discussed no-eligible-candidate guard raises after expulsion; this task did not change that behavior."
+}

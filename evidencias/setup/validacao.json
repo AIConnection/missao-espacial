@@ -1,0 +1,41 @@
+{
+  "feature_passed": true,
+  "new_setup_tests": 20,
+  "tests_total": 150,
+  "tests_passed": 148,
+  "preexisting_failures": 2,
+  "preexisting_failure_names": [
+    "test_catalog_answers_match_authorized_truth_through_game: humanoide Q15",
+    "test_session_opinions_match_engine_truth: humanoide Q23"
+  ],
+  "tested_crews": [
+    5,
+    10,
+    15,
+    50
+  ],
+  "tested_initial_rounds": [
+    10,
+    20,
+    50,
+    100000
+  ],
+  "distinct_implementations_tested": 50,
+  "one_humanoid_required": true,
+  "exit_blockers_minimum": 2,
+  "roles": "HUMANO or IA; knowledge configured separately",
+  "oxygen": "N initial rounds; colony 2N; each removed human grants N/H with initial H fixed and exact arithmetic",
+  "votes": "absolute majority of valid FOR/AGAINST votes; abstentions/AI/penalties excluded; controller election plurality",
+  "checkpoint_fifty_agents": true,
+  "v1_checkpoint_migration": true,
+  "all_new_public_events_delivered": true,
+  "configured_runner_executed": true,
+  "notebook_locally_executed": true,
+  "notebook_engine_and_setup_synchronized": true,
+  "single_new_game_setup_file": "setup.json",
+  "scope_limits": [
+    "50-agent full 100000-round session not benchmarked",
+    "Google Colab runtime not executed",
+    "No Phi-4 training/inference"
+  ]
+}

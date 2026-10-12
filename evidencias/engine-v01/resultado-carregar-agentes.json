@@ -1,0 +1,7 @@
+{
+  "tests_run": 25,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "scope": "declared nature, ID-free implementations, explicit binding, independent humanoid and checkpoint resume"
+}

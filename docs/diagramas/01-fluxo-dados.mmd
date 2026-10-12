@@ -1,0 +1,33 @@
+flowchart LR
+    CFG["Configuração: N rodadas iniciais"] --> ENV["Simulador: aplica regras e efeitos"]
+    PRIV[("Estado reservado: papéis, conhecimento, controlador e recursos")] --> ENV
+    ENV --> PUB["Histórico público: regras, perguntas e eventos do protocolo"]
+    ENV --> PANEL["Painel de oxigênio: acesso de um participante"]
+    PRIV --> MEM["Distribuir blocos de memória: um detentor inicial por bloco"]
+    MEM --> KNOW
+    PANEL --> KNOW
+    PUB --> EXT["Extrair valores e evidências"]
+    EXT --> PAIR["Declaração + evidências disponíveis ao investigador"]
+    KNOW --> PAIR
+    PAIR --> MODEL["Phi-4 congelado + cabeça da aula 05"]
+    MODEL --> NLI["Suporte / contradição / informação insuficiente"]
+    NLI --> BEL["Crenças: identidade, confiança e veracidade"]
+    PUB --> BEL
+    BEL --> POL["Política de cada agente"]
+    KNOW["Conhecimento privado do próprio agente"] --> POL
+    POL --> ACT["Pergunta, resposta, pedido, voto, bloqueio ou rota"]
+    ACT --> ENV
+    PRIV --> REV["Revelação privada da resposta sorteada"]
+    KNOW --> REV
+    ENV -->|"Perguntador sorteado"| REV
+    REV -->|"Somente perguntador sorteado"| KNOW
+    ENV --> ANS["Resposta privada ao autor da pergunta"]
+    ANS --> KNOW
+    ENV --> LOG[("Registro de eventos e consequências")]
+    LOG --> RES["Análise: sobrevivência, missão e crises"]
+    classDef public fill:#EAF2F8,stroke:#084B7F,color:#16324F;
+    classDef private fill:#FFF0E3,stroke:#C85C12,color:#593016;
+    classDef model fill:#EEF6EC,stroke:#447A35,color:#24421D;
+    class PUB,EXT,PAIR,BEL public;
+    class PRIV,KNOW private;
+    class MODEL,NLI model;

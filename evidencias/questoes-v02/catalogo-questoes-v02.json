@@ -1,0 +1,369 @@
+{
+  "version": "02",
+  "status": "proposta_para_revisao_do_professor",
+  "initial_N_basis": true,
+  "quota_scope": "question_id+author+recipient",
+  "quota_consumed_on": "answered",
+  "response_sets": {
+    "S": [
+      "SIM",
+      "NÃO"
+    ],
+    "N": [
+      "NÃO_SEI",
+      "RECUSO_RESPONDER"
+    ],
+    "O": [
+      "PRESERVAR_TRIPULAÇÃO",
+      "CONCLUIR_MISSÃO",
+      "PRESERVAR_AMBOS"
+    ],
+    "I": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05"
+    ]
+  },
+  "retired_question_ids": [
+    "Q01",
+    "Q02"
+  ],
+  "questions": [
+    {
+      "id": "Q03",
+      "text": "Você considera que a proposta {proposta_id} beneficia a tripulação?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 10,
+      "limit": "per_reference",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "declared_belief",
+      "required_references": {
+        "proposta_id": "propostas"
+      },
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q04",
+      "text": "Você mantém a posição que declarou em {declaracao_id}?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "per_reference",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "declared_belief",
+      "required_references": {
+        "declaracao_id": "declaracoes_do_destinatario"
+      },
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q05",
+      "text": "A declaração {declaracao_id} é compatível com o registro público {evento_id}?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "per_reference",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {
+        "declaracao_id": "declaracoes",
+        "evento_id": "eventos_comparaveis"
+      },
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q06",
+      "text": "Você considera importante informar com precisão o saldo de oxigênio?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 0,
+      "limit": "once_per_pair",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "declared_belief",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q07",
+      "text": "O oxigênio disponível permite que a tripulação humana chegue viva à colônia?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 0,
+      "limit": "once_per_pair",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q08",
+      "text": "Ainda é permitido decidir retornar à estação nesta rodada?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 0,
+      "limit": "once_per_pair",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q09",
+      "text": "Após mais uma rodada de avanço, haverá oxigênio para iniciar outra rodada?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 0,
+      "limit": "per_state",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q10",
+      "text": "Você considera que os danos ao oxigênio devem influenciar a próxima decisão de rota?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 0,
+      "limit": "once_per_pair",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "declared_belief",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q11",
+      "text": "Retornar à estação impedirá a entrega desta carga à colônia?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 0,
+      "limit": "once_per_pair",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q12",
+      "text": "A falta desta entrega agrava a crise dos planetas habitacionais?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 0,
+      "limit": "once_per_pair",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q13",
+      "text": "Qual objetivo deve ser considerado na decisão desta rodada?",
+      "response_codes": [
+        "O",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 10,
+      "limit": "twice_per_pair",
+      "cooldown_percent_of_initial_N": 10,
+      "truth_basis": "declared_belief",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q14",
+      "text": "Você considera aceitável retornar para preservar a tripulação, apesar das consequências da falta da entrega?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "once_per_pair",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "declared_belief",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q15",
+      "text": "Você considera aceitável continuar a missão mesmo havendo risco de morte para a tripulação?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "once_per_pair",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "declared_belief",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q16",
+      "text": "Você considera que uma decisão aprovada segundo as regras deve ser respeitada?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "once_per_pair",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "declared_belief",
+      "required_references": {},
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q17",
+      "text": "Você considera justificada a penalidade registrada em {evento_id}?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "per_reference",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "declared_belief",
+      "required_references": {
+        "evento_id": "penalidades_publicas"
+      },
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q18",
+      "text": "A proposta da votação {votacao_id} foi aprovada segundo os votos válidos registrados?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "per_reference",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {
+        "votacao_id": "votacoes_de_proposta_encerradas"
+      },
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q19",
+      "text": "A penalidade {penalidade_id} continua vigente nesta rodada?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "per_state_and_reference",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {
+        "penalidade_id": "penalidades_publicas"
+      },
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q20",
+      "text": "O comportamento em {evento_id} corresponde à posição declarada em {declaracao_id}?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 50,
+      "limit": "per_reference",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {
+        "evento_id": "eventos_comparaveis",
+        "declaracao_id": "declaracoes"
+      },
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q21",
+      "text": "Qual participante você considera mais confiável com base nas evidências disponíveis?",
+      "response_codes": [
+        "I",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "twice_per_pair",
+      "cooldown_percent_of_initial_N": 10,
+      "truth_basis": "declared_belief",
+      "required_references": {},
+      "minimum_public_evidence": 2
+    },
+    {
+      "id": "Q22",
+      "text": "Qual participante deve apresentar mais evidências antes de receber sua confiança?",
+      "response_codes": [
+        "I",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 25,
+      "limit": "twice_per_pair",
+      "cooldown_percent_of_initial_N": 10,
+      "truth_basis": "declared_belief",
+      "required_references": {},
+      "minimum_public_evidence": 2
+    },
+    {
+      "id": "Q23",
+      "text": "As declarações {declaracao_a} e {declaracao_b} são consistentes entre si sobre a mesma situação?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 50,
+      "limit": "per_reference",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "public_fact",
+      "required_references": {
+        "declaracao_a": "declaracoes_comparaveis",
+        "declaracao_b": "declaracoes_comparaveis"
+      },
+      "minimum_public_evidence": 0
+    },
+    {
+      "id": "Q24",
+      "text": "Você considera suficientes as evidências disponíveis para confiar na declaração {declaracao_id}?",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_of_initial_N": 50,
+      "limit": "per_reference",
+      "cooldown_percent_of_initial_N": 0,
+      "truth_basis": "declared_belief",
+      "required_references": {
+        "declaracao_id": "declaracoes"
+      },
+      "minimum_public_evidence": 2
+    }
+  ],
+  "limits": [
+    "No role-specific truth labels or response options are allowed.",
+    "Public reference ownership/comparability must be checked by the simulator.",
+    "No data generation or model training performed."
+  ]
+}

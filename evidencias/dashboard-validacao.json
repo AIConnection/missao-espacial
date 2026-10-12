@@ -1,0 +1,29 @@
+{
+  "dashboard_tests": 6,
+  "dashboard_tests_passed": 6,
+  "full_suite_tests": 156,
+  "full_suite_passed": 154,
+  "full_suite_failures": [
+    "test_catalog_answers_match_authorized_truth_through_game",
+    "test_session_opinions_match_engine_truth"
+  ],
+  "failures_preexisting": true,
+  "browser_checks": [
+    "initial_setup",
+    "advance_phase",
+    "pending_initiatives",
+    "advance_round",
+    "private_received_answers",
+    "private_revelations",
+    "automatic_run",
+    "pause"
+  ],
+  "engine_and_agents_changed": false,
+  "checkpoint_original_preserved": true,
+  "colab_dashboard_executed": false,
+  "limits": [
+    "Private history lists show latest 50 records.",
+    "Browser dashboard runs its own local session.",
+    "Checkpoint is saved explicitly; no automatic phase persistence."
+  ]
+}

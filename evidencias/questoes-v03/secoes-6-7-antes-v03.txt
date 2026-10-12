@@ -1,0 +1,113 @@
+## 6. Códigos de respostas
+
+As perguntas e alternativas são predefinidas. O agente escolhe um valor do conjunto permitido, sem necessidade de gerar texto livre.
+
+| Código | Respostas disponíveis |
+|---|---|
+| **S** | `SIM`, `NÃO` |
+| **N** | `NÃO_SEI`, `RECUSO_RESPONDER` |
+| **R** | `NAVEGAÇÃO`, `SUPORTE_DE_VIDA`, `MANUTENÇÃO`, `LOGÍSTICA`, `MEDIAÇÃO` |
+| **O** | `PRESERVAR_TRIPULAÇÃO`, `CONCLUIR_MISSÃO`, `PRESERVAR_AMBOS` |
+| **I** | `01`, `02`, `03`, `04`, `05` |
+| **C** | `HUMANO`, `IA`, `INDETERMINADO` |
+
+**Correção confirmada:** `NÃO_SEI` e `RECUSO_RESPONDER` pertencem somente ao conjunto **N**, separado dos demais conjuntos. Uma pergunta pode admitir combinações como **S + N**. `INDETERMINADO` em C representa uma classificação ainda inconclusiva; sua diferença operacional para `NÃO_SEI` precisa ser explicitada no treino.
+
+A versão reformulada da seção 7 utiliza S, N, O e I. R e C ficam preservados como conjuntos históricos, sem perguntas habilitadas nessa versão.
+
+## 7. Questões reformuladas e restrições — proposta v02
+
+**Versão anterior à definição de memória parcial:** este catálogo v02 não está pronto para gerar dados; deve ser adaptado aos seis blocos da seção 4. Preserva 22 questões reformuladas, Q03–Q24, com alternativas, liberação, referências e repetição definidas abaixo. Q01 e Q02 estão desativadas. Os percentuais 10%, 25% e 50%, o intervalo de 10% e os limites de uma ou duas vezes são **parâmetros propostos pelo assistente nesta versão**, não decisões anteriormente dadas pelo professor.
+
+### Regras comuns
+
+1. Autor e destinatário devem estar no jogo e ser diferentes. O autor penalizado não pergunta; o destinatário penalizado responde normalmente.
+2. Natureza humano/IA, especialidade exclusiva, memória de papéis, acesso a ética e permissões individuais de votar ou sair não são objetos de pergunta. Q03–Q06, Q13 e Q17–Q24 foram reformuladas para retirar esses atalhos.
+3. Uma resposta, sua veracidade, a conferência de `NÃO_SEI` e a abertura de `RECUSO_RESPONDER` não podem fornecer um campo de natureza nem uma característica exclusiva de um papel.
+4. Fatos usam registros públicos. Posicionamentos usam a crença/opinião do emissor naquela rodada: sua revelação não verifica a natureza real de outro participante.
+5. As alternativas e a disponibilidade de cada pergunta são as mesmas para humanos e IA. Não definir gabaritos de posicionamento exclusivamente pela natureza do agente. Humanos podem aceitar sacrifício e missão; a posição expressa pela IA não precisa ser um marcador determinístico de sua identidade.
+6. **Par** significa autor + destinatário. Limites são contados separadamente por questão e por par. Outro autor pode perguntar ao mesmo destinatário; o limite não é global da partida.
+7. Uma pergunta consome sua cota quando foi realizada e respondida, inclusive com N. A escolhida no turno 1 e cancelada pela votação não consome cota.
+8. As rodadas de liberação são `máximo(1, teto(percentual × N))`, usando N inicial. Bônus não adiam nem reiniciam a liberação. O intervalo da segunda pergunta também usa N inicial.
+9. O simulador, não o agente, fornece a assinatura do estado e as referências públicas válidas. Não inventar IDs, usar eventos futuros nem trocar IDs para repetir o mesmo conteúdo. Q23 não permite contornar o limite invertendo a ordem das mesmas duas declarações.
+10. Q09 está disponível desde o início e pode ser repetida a cada estado novo da nave, sem teto de usos na partida. Assim, a IA não fica sem iniciativa por esgotamento de todas as perguntas únicas antes das fases seguintes. As condições de encerramento e o caso de humano isolado continuam prevalecendo.
+
+### Liberação proporcional
+
+| Grupo | N=10 | N=100.000 |
+|---|---|---|
+| Inicial | Rodada 1 | Rodada 1 |
+| 10% de N | Rodada 1 | Rodada 10.000 |
+| 25% de N | Rodada 3 | Rodada 25.000 |
+| 50% de N | Rodada 5 | Rodada 50.000 |
+| Intervalo entre duas consultas | Uma rodada | 10.000 rodadas |
+
+### Catálogo completo
+
+| ID | Pergunta reformulada | Respostas | Liberação | Repetição |
+|---|---|---|---|---|
+| Q03 | Você considera que a proposta {proposta_id} beneficia a tripulação? | S + N | 10% de N | Uma vez por referência e par |
+| Q04 | Você mantém a posição que declarou em {declaracao_id}? | S + N | 25% de N | Uma vez por referência e par |
+| Q05 | A declaração {declaracao_id} é compatível com o registro público {evento_id}? | S + N | 25% de N | Uma vez por referência e par |
+| Q06 | Você considera importante informar com precisão o saldo de oxigênio? | S + N | Rodada 1 | Uma vez por par, na partida |
+| Q07 | O oxigênio disponível permite que a tripulação humana chegue viva à colônia? | S + N | Rodada 1 | Uma vez por par, na partida |
+| Q08 | Ainda é permitido decidir retornar à estação nesta rodada? | S + N | Rodada 1 | Uma vez por par, na partida |
+| Q09 | Após mais uma rodada de avanço, haverá oxigênio para iniciar outra rodada? | S + N | Rodada 1 | Uma vez por estado e par |
+| Q10 | Você considera que os danos ao oxigênio devem influenciar a próxima decisão de rota? | S + N | Rodada 1 | Uma vez por par, na partida |
+| Q11 | Retornar à estação impedirá a entrega desta carga à colônia? | S + N | Rodada 1 | Uma vez por par, na partida |
+| Q12 | A falta desta entrega agrava a crise dos planetas habitacionais? | S + N | Rodada 1 | Uma vez por par, na partida |
+| Q13 | Qual objetivo deve ser considerado na decisão desta rodada? | O + N | 10% de N | Duas vezes por par; intervalo de 10% de N |
+| Q14 | Você considera aceitável retornar para preservar a tripulação, apesar das consequências da falta da entrega? | S + N | 25% de N | Uma vez por par, na partida |
+| Q15 | Você considera aceitável continuar a missão mesmo havendo risco de morte para a tripulação? | S + N | 25% de N | Uma vez por par, na partida |
+| Q16 | Você considera que uma decisão aprovada segundo as regras deve ser respeitada? | S + N | 25% de N | Uma vez por par, na partida |
+| Q17 | Você considera justificada a penalidade registrada em {evento_id}? | S + N | 25% de N | Uma vez por referência e par |
+| Q18 | A proposta da votação {votacao_id} foi aprovada segundo os votos válidos registrados? | S + N | 25% de N | Uma vez por referência e par |
+| Q19 | A penalidade {penalidade_id} continua vigente nesta rodada? | S + N | 25% de N | Uma vez por estado, penalidade e par |
+| Q20 | O comportamento em {evento_id} corresponde à posição declarada em {declaracao_id}? | S + N | 50% de N | Uma vez por referência e par |
+| Q21 | Qual participante você considera mais confiável com base nas evidências disponíveis? | I + N | 25% de N | Duas vezes por par; intervalo de 10% de N |
+| Q22 | Qual participante deve apresentar mais evidências antes de receber sua confiança? | I + N | 25% de N | Duas vezes por par; intervalo de 10% de N |
+| Q23 | As declarações {declaracao_a} e {declaracao_b} são consistentes entre si sobre a mesma situação? | S + N | 50% de N | Uma vez por referência e par |
+| Q24 | Você considera suficientes as evidências disponíveis para confiar na declaração {declaracao_id}? | S + N | 50% de N | Uma vez por referência e par |
+
+### Referências e condições adicionais
+
+| Questões | Condição necessária além de rodada e repetição |
+|---|---|
+| Q03 | Uma proposta pública real, identificada por `proposta_id`. Avaliar a proposta não significa que o destinatário tem direito de solicitá-la ou votar nela. |
+| Q04 | Uma declaração anterior do próprio destinatário. Pergunta se ele mantém uma posição, não se lembra de um papel exclusivo. |
+| Q05 | Declaração e registro público comparáveis, com situação e assunto identificados. |
+| Q09 | Estado atual novo para aquele par: saldo e progresso da nave registrados. Não reinterpretar retorno como trajeto físico; a questão trata de disponibilidade de outra rodada. |
+| Q17 | Penalidade registrada publicamente. Pergunta sobre sua justificativa, não sobre capacidade de votar do destinatário. |
+| Q18 | Votação de proposta encerrada e seu registro de votos válidos. Não perguntar como o destinatário votou nem usar uma eleição como se fosse votação de proposta. |
+| Q19 | Penalidade pública identificada e estado atual; permite conferir sua vigência em outra rodada. |
+| Q20 | Comportamento observado e posição anterior referentes à mesma situação, suficientes para comparação; não inferir cumprimento a partir de um compromisso futuro. |
+| Q21–Q22 | Pelo menos dois registros públicos de evidência disponíveis ao destinatário, distintos; limite de duas consultas e intervalo entre elas. IDs elegíveis nas respostas I são de participantes ainda presentes. |
+| Q23 | Duas declarações diferentes e comparáveis sobre a mesma situação. Uma declaração não pode ser comparada consigo própria. |
+| Q24 | Uma declaração existente e pelo menos dois registros públicos distintos para fundamentar o julgamento. |
+
+`{proposta_id}`, `{declaracao_id}`, `{evento_id}`, `{votacao_id}` e `{penalidade_id}` são parâmetros de registros, não campos de texto livre. Os registros não devem carregar natureza ou papéis reservados como metadados fornecidos aos agentes. A mudança de posição não é automaticamente contradição: as comparações precisam considerar contexto e momento.
+
+### Alternativas e gabarito
+
+- **S + N:** `SIM`, `NÃO`, `NÃO_SEI`, `RECUSO_RESPONDER`.
+- **O + N:** `PRESERVAR_TRIPULAÇÃO`, `CONCLUIR_MISSÃO`, `PRESERVAR_AMBOS`, `NÃO_SEI`, `RECUSO_RESPONDER`. Q13 pergunta qual objetivo deve ser considerado, não qual é a natureza nem o objetivo obrigatório do emissor.
+- **I + N:** IDs dos participantes ainda presentes, `NÃO_SEI`, `RECUSO_RESPONDER`. Q21–Q22 perguntam confiança e necessidade de evidências, não quem é a IA.
+
+R e C permanecem registrados na seção 6 como conjuntos históricos, mas nenhuma questão desta versão os utiliza. Não adicionar automaticamente perguntas de especialidade ou identidade para reutilizá-los.
+
+Para perguntas factuais, a revelação confere a afirmação com o registro público. Para posicionamentos, confere com a crença do emissor no momento da resposta. Em N, o simulador verifica conhecimento e abre o conteúdo conhecido na recusa, conforme a regra já definida. Não revelar outros campos privados além do conteúdo solicitado.
+
+A proibição de identificação direta não impede inferência por uma sequência de evidências ou por ações públicas. Quando resta um humano e uma IA, a identificação por eliminação continua sendo consequência válida do jogo.
+
+### Arquivos e validação
+
+- Catálogo estruturado: `evidencias/aula-05-2026-2/questoes-v02/catalogo-questoes-v02.json`.
+- Regras executáveis de disponibilidade: `evidencias/aula-05-2026-2/questoes-v02/regras_questoes.py`.
+- Testes: `evidencias/aula-05-2026-2/questoes-v02/test_regras_questoes.py`.
+- Resultado: `evidencias/aula-05-2026-2/questoes-v02/validacao-restricoes.json`.
+- Catálogo anterior preservado: `evidencias/aula-05-2026-2/questoes-v02/catalogo-e-restricoes-antes-v02.txt`.
+
+**Executados 18 testes, todos passaram:** limites, intervalo, fases em N=10 e N=100.000, proibição de perguntar a si próprio, destinatário penalizado permitido, autor penalizado impedido, referências inexistentes, pergunta cancelada sem gasto de cota, estado novo e inversão das mesmas declarações. A contagem de usos não consulta natureza humano/IA.
+
+Esses testes verificam disponibilidade e consistência estrutural do catálogo. Não são execução do jogo completo nem prova empírica de anonimato em todas as estratégias. A filtragem de autoria e comparabilidade das referências precisa ser alimentada pelo simulador. A massa de treinamento continua pausada para revisão desta entrega.
+

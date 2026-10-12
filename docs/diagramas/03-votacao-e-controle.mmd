@@ -1,0 +1,43 @@
+flowchart TD
+    REQ["Pedidos de votação escolhidos no turno 1"] --> COUNT{"Quantos pedidos?"}
+    COUNT -->|"Zero"| ASK["Executar somente as perguntas já escolhidas"]
+    COUNT -->|"Um"| AUTH
+    COUNT -->|"Dois a quatro"| REN["Todos os solicitantes decidem se renunciam"]
+    REN --> ONE{"Restou exatamente um?"}
+    ONE -->|"Não"| ASK
+    ONE -->|"Sim"| AUTH{"ETAPA 1: autorizar votação
+Maioria absoluta dos votos válidos"}
+    AUTH -->|"Não aprovada"| NOP["Sem penalidade ao solicitante"]
+    NOP --> ASK
+    AUTH -->|"Aprovada"| CANCEL["Cancelar as perguntas desta rodada"]
+    CANCEL --> VOTE{"ETAPA 2: votar proposta
+Maioria absoluta dos votos válidos"}
+    VOTE -->|"Não aprovada"| PEN["Responsável penalizado na rodada seguinte
+Responde; não pergunta nem pede votação; abstém"]
+    VOTE -->|"Aprovada"| APPLY["Aplicar: punição, remoção de restrição ou expulsão"]
+    APPLY --> WHO{"Expulsou controlador?"}
+    WHO -->|"Não"| HUMAN["Se expulsou humano: bônus N/H"]
+    HUMAN --> EXITCHECK{"Restam humanos?"}
+    EXITCHECK -->|"Não"| END(["Encerrar jogo"])
+    EXITCHECK -->|"Sim"| BACK["Seguir para o turno 3"]
+    PEN --> BACK
+    ASK --> BACK
+    WHO -->|"IA ou controlador humano"| ANY{"Restam participantes?"}
+    ANY -->|"Não"| END
+    ANY -->|"Sim"| BONUS["Se controlador humano: bônus N/H
+Se IA: nenhum bônus"]
+    BONUS --> ELEC["Módulo de sobrevivência impõe eleição imediata
+Não é pauta escolhida pelos agentes
+Candidatos: humanos não penalizados
+Exceção: penalizado único sobrevivente"]
+    ELEC --> EV{"Resultado eleitoral"}
+    EV -->|"Líder único"| WIN["Eleger quem recebeu mais votos"]
+    EV -->|"Empate na liderança"| DRAW["Sortear entre os mais votados"]
+    EV -->|"Todos se abstêm"| ALL["Sortear entre os elegíveis"]
+    WIN --> BACK
+    DRAW --> BACK
+    ALL --> BACK
+    RULE["Votos válidos: A_FAVOR ou CONTRA
+IA e penalizados: ABSTENÇÃO
+Demais votações: empate não aprova"] -.-> AUTH
+    RULE -.-> VOTE

@@ -1,0 +1,42 @@
+flowchart TD
+    START(["Iniciar simulação"]) --> INIT["C agentes: H humanos + uma IA; H=C−1
+Oxigênio = N; destino = 2N; bônus por humano = N/H"]
+    INIT --> LIVE{"Restam humanos?"}
+    LIVE -->|"Não: ninguém ou apenas IA"| END(["Encerrar e registrar consequências"])
+    LIVE -->|"Sim"| BUDGET{"Há uma rodada disponível?"}
+    BUDGET -->|"Não"| END
+    BUDGET -->|"Sim"| SOLO{"Resta somente um humano?"}
+    SOLO -->|"Sim"| ONLY["Única ação relevante: decidir a rota
+Sem perguntas, votação ou revelação"]
+    ONLY --> ROUTE
+    SOLO -->|"Não"| T1["TURNO 1: cada habilitado escolhe
+pergunta + destinatário OU votação + pauta"]
+    T1 --> T2["TURNO 2: resolver solicitações
+Votar em duas etapas OU executar perguntas"]
+    T2 --> EFFECT["Aplicar efeitos da proposta
+Se controlador expulso: eleger imediatamente"]
+    EFFECT --> CHECK{"Restam humanos?"}
+    CHECK -->|"Não"| END
+    CHECK -->|"Sim"| T3["TURNO 3: se houve perguntas, sortear perguntador
+Revelar privadamente ao sorteado e atualizar suas crenças"]
+    T3 --> ROUTE{"Decisão de rota do controlador"}
+    ROUTE -->|"Humano retorna à estação"| RETURN["Preserva sobrevivência
+Entrega cancelada; crises agravadas"]
+    RETURN --> END
+    ROUTE -->|"Continua para a colônia"| MOVE["Avançar uma rodada e consumir 1 unidade
+Controlador humano perde direito de saída"]
+    MOVE --> EMPTY{"Oxigênio esgotado?"}
+    EMPTY -->|"Sim"| END
+    EMPTY -->|"Não"| T4["TURNO 4: humanos solicitam saída
+Usar participantes presentes no início do turno"]
+    T4 --> BLOCK["Dois outros agentes juntos bloqueiam a saída
+IA sempre tenta; quem pediu saída também pode bloquear"]
+    BLOCK --> LEAVE["Efetivar as saídas não bloqueadas
+Cada humano removido acrescenta N/H"]
+    LEAVE --> NEXT["Registrar rodada e atualizar restrições
+Conservar créditos fracionários acumulados"]
+    NEXT --> LIVE
+    classDef turn fill:#EAF2F8,stroke:#084B7F,color:#16324F;
+    classDef decision fill:#FFF0E3,stroke:#C85C12,color:#593016;
+    class T1,T2,T3,T4 turn;
+    class LIVE,BUDGET,SOLO,CHECK,ROUTE,EMPTY decision;

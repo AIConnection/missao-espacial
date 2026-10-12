@@ -1,0 +1,17 @@
+{
+  "random_agent_passed": true,
+  "random_agent_tests": 8,
+  "controlled_games": 20,
+  "checkpoint_compared_after_each_phase": true,
+  "regression_tests_run": 107,
+  "regression_passed": 105,
+  "regression_failed": 2,
+  "regression_failures": [
+    "test_catalog_answers_match_authorized_truth_through_game: humanoide Q15 returns NÃO_SEI instead of NÃO",
+    "test_session_opinions_match_engine_truth: humanoide Q23 returns NÃO_SEI instead of CONCLUIR_MISSÃO"
+  ],
+  "preexisting_difference": "humanoide.py currently inherits BaselineAgent, differing from prior manifest; preserved unchanged",
+  "notebook": "generated with module and locally executed; default assignment unchanged; Google Colab not executed",
+  "random_question_scope": "session-provided legal candidates, not every possible parameter combination",
+  "default_seed": "automatic and independent from engine seed; own RNG state persisted"
+}

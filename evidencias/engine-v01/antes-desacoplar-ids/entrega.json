@@ -1,0 +1,101 @@
+{
+  "version": "engine-v01-agents",
+  "date": "2026-10-12",
+  "status": "implemented_and_locally_validated",
+  "python": "3.13.4",
+  "canonical_files": [
+    {
+      "path": "notebooks/missao_espacial.py",
+      "sha256": "0cdd5e78bd2c981cde45b314b705f235f786818fc2a9ed05e02f7acba4724c21"
+    },
+    {
+      "path": "notebooks/06-exemplo-engine-missao-espacial.py",
+      "sha256": "6f863dc99f625d64c0f1a2f72243a480f824ee0e801371f04e34d3e8976e8ff6"
+    },
+    {
+      "path": "notebooks/06-Engine_Missao_Espacial_2026-2.ipynb",
+      "sha256": "d4c4b4557fc50e9aeffa4d0b1e4f6f69f864c3ee2c7d80b5fb170b2556726786"
+    },
+    {
+      "path": "notebooks/README_Engine_Missao_Espacial.md",
+      "sha256": "176075e20cf95b8d60389c0846f2998386f609596a2b77614b98d80516719504"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_engine.py",
+      "sha256": "dca3e2267c2e473080d7845f0396f8148054395bcfa4855df7ed20337edf00b9"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/gerar_notebook.py",
+      "sha256": "19d3fdfe275a590011d40fe35f726ebf332b746892987cbd2cbe719d3605fe43"
+    },
+    {
+      "path": "notebooks/carregar_agentes.py",
+      "sha256": "c369ffe1195605b8bea45bf33bb9537468828202a19578b08e9c944a2ed08f95"
+    },
+    {
+      "path": "notebooks/agent/_baseline.py",
+      "sha256": "83e62f0693a713dfd37daca5075b8d8ff453e80a6eaa515f444f35033c477722"
+    },
+    {
+      "path": "notebooks/agent/agente_01.py",
+      "sha256": "5d40d96f560b3ca93e0f4da0fd423c456f492cefbfd2f0c6be99d93e9899c678"
+    },
+    {
+      "path": "notebooks/agent/agente_02.py",
+      "sha256": "b5f864187ced8e500aecad465a1f334e9553c907f31cbe91c902d7398d3a58bc"
+    },
+    {
+      "path": "notebooks/agent/agente_03.py",
+      "sha256": "28f9284c97400536a001ea0bc00fe48e69bc3c2651f02c2f150497f484c33327"
+    },
+    {
+      "path": "notebooks/agent/agente_04.py",
+      "sha256": "be58ae335741b66a317f780cb32c4e26f991eb97096a1946bf2dfe676d2fa7a0"
+    },
+    {
+      "path": "notebooks/agent/agente_05.py",
+      "sha256": "f146ad6afed909fce2b17db9097a20e49485964266e497b87f15c37b16f82428"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_carregar_agentes.py",
+      "sha256": "d7019ef4037d64334d07666eab085544148e32b0d11b42d78df5b475d73b4692"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/validar_notebook.py",
+      "sha256": "32e32d5ad64956f45fc95ad7b5fb7bd87de5609c36016f524bb3951d345fe968"
+    }
+  ],
+  "validation": {
+    "engine_tests": 41,
+    "catalog_tests": 23,
+    "scale_rounds": 100000,
+    "private_answers": 500000,
+    "private_revelations": 100000,
+    "fresh_process_resume": true,
+    "local_notebook_execution": true,
+    "notebook_engine_synchronized": true,
+    "agent_loader_tests": 14,
+    "engine_source_unchanged": true,
+    "notebook_preserves_edited_agent_files": true,
+    "local_notebook_code_cells": 7
+  },
+  "requirements": {
+    "rules_and_turns": "Game phase methods and test_engine.py",
+    "exact_oxygen_and_endings": "integer quarters; fractional and exhaustion tests",
+    "private_information": "agent-specific copied views; no global truth passed to policies",
+    "checkpoint": "versioned JSON with pending commands, policy memories and RNG",
+    "colab_portability": "single stdlib module and self-contained notebook",
+    "agent_implementation_deferred": "policy callbacks independent of engine and trained model",
+    "external_agent_modules": "agent/*.py discovered by carregar_agentes.load_agents; AGENT_ID and synchronous decide(view, request)"
+  },
+  "limits": [
+    "Google Colab runtime not executed.",
+    "No model training or inference performed.",
+    "Scale run uses simple Q10 policies; votes and exits validated separately.",
+    "Persisted recovery resumes last completed checkpoint; callbacks/models must be reconnected.",
+    "Question thresholds remain configurable proposed defaults."
+  ],
+  "next_step": "Connect final policies and trained classification head; validate notebook in Google Colab.",
+  "history": "antes-agentes/entrega.json and previous notebook/generator/README preserved",
+  "known_engine_limitation": "Previously discussed no-eligible-candidate guard raises after expulsion; this task did not change that behavior."
+}

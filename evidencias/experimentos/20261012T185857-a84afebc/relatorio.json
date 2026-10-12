@@ -1,0 +1,4079 @@
+{
+  "version": 1,
+  "status": "complete",
+  "directory": "/Users/alexandre/projects/missao-espacial/evidencias/experimentos/20261012T185857-a84afebc",
+  "plan": {
+    "setup_base": "setup.json",
+    "partidas_por_cenario": 1000,
+    "seed_base": 17,
+    "diretorio_resultados": "evidencias/experimentos",
+    "cenarios": [
+      {
+        "nome": "Base",
+        "alteracoes": {}
+      },
+      {
+        "nome": "Aleatório sem saída voluntária",
+        "alteracoes": {
+          "tripulantes": [
+            {
+              "quantidade": 1,
+              "papel": "HUMANO",
+              "implementacao": "humano_alpha"
+            },
+            {
+              "quantidade": 1,
+              "papel": "HUMANO",
+              "implementacao": "humano_beta"
+            },
+            {
+              "quantidade": 1,
+              "papel": "IA",
+              "implementacao": "humanoide"
+            },
+            {
+              "quantidade": 1,
+              "papel": "HUMANO",
+              "implementacao": "humano_gamma"
+            },
+            {
+              "quantidade": 1,
+              "papel": "HUMANO",
+              "implementacao": "humano_random",
+              "perfil": {
+                "never_exit": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "effective_setups": {
+    "Base": {
+      "rodadas": 10,
+      "seed": 17,
+      "diretorio_agentes": "src/agent",
+      "checkpoint": "estado/partida.json",
+      "tripulantes": [
+        {
+          "quantidade": 1,
+          "papel": "HUMANO",
+          "implementacao": "humano_alpha"
+        },
+        {
+          "quantidade": 1,
+          "papel": "HUMANO",
+          "implementacao": "humano_beta"
+        },
+        {
+          "quantidade": 1,
+          "papel": "IA",
+          "implementacao": "humanoide"
+        },
+        {
+          "quantidade": 1,
+          "papel": "HUMANO",
+          "implementacao": "humano_gamma"
+        },
+        {
+          "quantidade": 1,
+          "papel": "HUMANO",
+          "implementacao": "humano_random"
+        }
+      ],
+      "conhecimentos": {
+        "ACIDENTE": "01",
+        "MISSÃO": "02",
+        "CARGA": "03",
+        "PAINEL": "04",
+        "DISTÂNCIA": "04",
+        "CRISE": "05"
+      }
+    },
+    "Aleatório sem saída voluntária": {
+      "rodadas": 10,
+      "seed": 17,
+      "diretorio_agentes": "src/agent",
+      "checkpoint": "estado/partida.json",
+      "tripulantes": [
+        {
+          "quantidade": 1,
+          "papel": "HUMANO",
+          "implementacao": "humano_alpha"
+        },
+        {
+          "quantidade": 1,
+          "papel": "HUMANO",
+          "implementacao": "humano_beta"
+        },
+        {
+          "quantidade": 1,
+          "papel": "IA",
+          "implementacao": "humanoide"
+        },
+        {
+          "quantidade": 1,
+          "papel": "HUMANO",
+          "implementacao": "humano_gamma"
+        },
+        {
+          "quantidade": 1,
+          "papel": "HUMANO",
+          "implementacao": "humano_random",
+          "perfil": {
+            "never_exit": true
+          }
+        }
+      ],
+      "conhecimentos": {
+        "ACIDENTE": "01",
+        "MISSÃO": "02",
+        "CARGA": "03",
+        "PAINEL": "04",
+        "DISTÂNCIA": "04",
+        "CRISE": "05"
+      }
+    }
+  },
+  "source_hashes": {
+    "/Users/alexandre/projects/missao-espacial/src/agent/_baseline.py": "4962a015d56918e36d23759d5a5ce0b0e2f98c12f0670d021ff2c088d7570c2e",
+    "/Users/alexandre/projects/missao-espacial/src/agent/_human_default.py": "7319e5e08f044f9afb7b95702b1b8c5b0907433d18a7e42d7c2b0cbc408c52a3",
+    "/Users/alexandre/projects/missao-espacial/src/agent/humano_alpha.py": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61",
+    "/Users/alexandre/projects/missao-espacial/src/agent/humano_beta.py": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a",
+    "/Users/alexandre/projects/missao-espacial/src/agent/humano_gamma.py": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914",
+    "/Users/alexandre/projects/missao-espacial/src/agent/humano_random.py": "bf3cbca494bd5208376a619bcde9837a6aa4ba665bbebf45a00d1d914b9d1cf3",
+    "/Users/alexandre/projects/missao-espacial/src/agent/humanoide.py": "cc45dc4b40cf8f4bb4bef8c85b5a519ec29c3bdd87f6b7cf6a9a5c393a5f32cb",
+    "/Users/alexandre/projects/missao-espacial/src/agent_contract.py": "75f91b0be7e365ca71d6029afd9521b69a4211e59148361bb6fcd4d82d94e786",
+    "/Users/alexandre/projects/missao-espacial/src/agent_session.py": "6c75dce8d69f15a678726bb541c388a56f49abb495c751b59baedc94185f8ad4",
+    "/Users/alexandre/projects/missao-espacial/src/carregar_agentes.py": "141b3d51aaed4464d1ae409a6cfd1f2148df386bff1532455179a1caaee575fa",
+    "/Users/alexandre/projects/missao-espacial/src/catalogo_questoes.py": "7ecc60b564721ecc2443749a390beb596e8b2ad1787a2e97f37651ec334da374",
+    "/Users/alexandre/projects/missao-espacial/src/dashboard.py": "23c8eaf423a05ce0a3a13269957e92732a81f1440d7a778bf45dd5c4f4b7f5e0",
+    "/Users/alexandre/projects/missao-espacial/src/experimentos.py": "c72d97842e0944276f8a86d70f2ec2c58d2e01e4a8b6cbf50014e74da08e5285",
+    "/Users/alexandre/projects/missao-espacial/src/missao_espacial.py": "34dc468aec8a77f0bdfd89c82811d9f971b029422c506d942369ec3277ea9409",
+    "/Users/alexandre/projects/missao-espacial/src/setup_jogo.py": "e3767c4a2e5f0a18b4fc45e5abb90f03540db7d403801572887e60c83797c609"
+  },
+  "seed_scheme": "engine=seed_base+replication; agent RNG seeds drawn from the same seeded external stream before on_start",
+  "notes": [
+    "One game is retained at a time; numeric aggregates use constant-memory running statistics. Engine and agent histories are preserved during each game.",
+    "Time is measured wall time; rounds are game duration, not a physical time unit.",
+    "Truth classification uses the pre-answer administrative oracle for all answers, not only random revelations.",
+    "Truth rate is descriptive; no binomial confidence interval is assigned to correlated answers.",
+    "Mean CI uses normal approximation; small samples do not establish a stable effect.",
+    "Maintaining the mission guarantees cargo delivery even if humans do not survive; returning cancels delivery.",
+    "Seed control is self-declared; external models or RNGs may not be controlled."
+  ],
+  "scenarios": [
+    {
+      "name": "Base",
+      "completed": 1000,
+      "metrics": {
+        "rounds": {
+          "n": 1000,
+          "mean": 14.827000000000016,
+          "min": 2,
+          "max": 17,
+          "sd": 1.4598637615209853,
+          "mean_ci95": [
+            14.736516706625052,
+            14.91748329337498
+          ]
+        },
+        "progress": {
+          "n": 1000,
+          "mean": 14.808000000000007,
+          "min": 1,
+          "max": 17,
+          "sd": 1.5917505048435407,
+          "mean_ci95": [
+            14.709342281584249,
+            14.906657718415765
+          ]
+        },
+        "seconds": {
+          "n": 1000,
+          "mean": 0.09272861140174789,
+          "min": 0.01222512498497963,
+          "max": 0.20925695821642876,
+          "sd": 0.01144721497995878,
+          "mean_ci95": [
+            0.09201910566658343,
+            0.09343811713691234
+          ]
+        },
+        "simulation_seconds": {
+          "n": 1000,
+          "mean": 0.0903052383903414,
+          "min": 0.010300707537680864,
+          "max": 0.20644854241982102,
+          "sd": 0.011350986786912261,
+          "mean_ci95": [
+            0.08960169694037386,
+            0.09100877984030893
+          ]
+        },
+        "initialization_seconds": {
+          "n": 1000,
+          "mean": 0.0019424394522793607,
+          "min": 0.0017673750407993793,
+          "max": 0.005621000193059444,
+          "sd": 0.0002453000665966077,
+          "mean_ci95": [
+            0.0019272355966348897,
+            0.0019576433079238316
+          ]
+        },
+        "phases": {
+          "n": 1000,
+          "mean": 59.183000000000014,
+          "min": 9,
+          "max": 69,
+          "sd": 5.567091116867367,
+          "mean_ci95": [
+            58.83794811772858,
+            59.52805188227145
+          ]
+        },
+        "questions_per_round": {
+          "n": 1000,
+          "mean": 2.9244524509803944,
+          "min": 1.0,
+          "max": 3.6,
+          "sd": 0.27040313298577207,
+          "mean_ci95": [
+            2.907692691161458,
+            2.941212210799331
+          ]
+        },
+        "answers_per_round": {
+          "n": 1000,
+          "mean": 2.9244524509803944,
+          "min": 1.0,
+          "max": 3.6,
+          "sd": 0.27040313298577207,
+          "mean_ci95": [
+            2.907692691161458,
+            2.941212210799331
+          ]
+        }
+      },
+      "outcomes": {
+        "returned": {
+          "count": 19,
+          "total": 1000,
+          "rate": 0.019,
+          "ci95": [
+            0.012196787737404147,
+            0.029484688702703543
+          ]
+        },
+        "oxygen_exhausted": {
+          "count": 981,
+          "total": 1000,
+          "rate": 0.981,
+          "ci95": [
+            0.9705153112972965,
+            0.9878032122625958
+          ]
+        },
+        "only_ai": {
+          "count": 0,
+          "total": 1000,
+          "rate": 0.0,
+          "ci95": [
+            0,
+            0.003826898586390522
+          ]
+        },
+        "no_participants": {
+          "count": 0,
+          "total": 1000,
+          "rate": 0.0,
+          "ci95": [
+            0,
+            0.003826898586390522
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 184
+        },
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "nao_sei_falso",
+          "count": 1
+        },
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 5238
+        },
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "recusa_nao_sabe",
+          "count": 111
+        },
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 2904
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q03",
+          "count": 56
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q04",
+          "count": 67
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q05",
+          "count": 65
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q06",
+          "count": 4189
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q07",
+          "count": 1455
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q08",
+          "count": 54
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q09",
+          "count": 65
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q10",
+          "count": 2285
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q11",
+          "count": 56
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q13",
+          "count": 61
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q14",
+          "count": 70
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q19",
+          "count": 7
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q22",
+          "count": 5
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q23",
+          "count": 3
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 62
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 5343
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "recusa_nao_sabe",
+          "count": 40
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 313
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q03",
+          "count": 5
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q04",
+          "count": 6
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q05",
+          "count": 7
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q06",
+          "count": 67
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q07",
+          "count": 2346
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q08",
+          "count": 5
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q09",
+          "count": 7
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q10",
+          "count": 3292
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q11",
+          "count": 3
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q13",
+          "count": 6
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q14",
+          "count": 3
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q19",
+          "count": 4
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q22",
+          "count": 2
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q23",
+          "count": 5
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 25
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "nao_sei_falso",
+          "count": 1
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 7792
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "recusa_nao_sabe",
+          "count": 19
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 956
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q03",
+          "count": 3248
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q04",
+          "count": 12
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q05",
+          "count": 9
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q07",
+          "count": 105
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q08",
+          "count": 5
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q09",
+          "count": 4
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q10",
+          "count": 5398
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q11",
+          "count": 2
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q13",
+          "count": 2
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q14",
+          "count": 2
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q19",
+          "count": 2
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q22",
+          "count": 2
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q23",
+          "count": 2
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 1
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 4861
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "recusa_nao_sabe",
+          "count": 1
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 989
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q03",
+          "count": 624
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q04",
+          "count": 3238
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q05",
+          "count": 13
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q08",
+          "count": 8
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q09",
+          "count": 8
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q10",
+          "count": 1958
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q13",
+          "count": 3
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 1
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "nao_sei_falso",
+          "count": 11
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 11803
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 2866
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q03",
+          "count": 8
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q04",
+          "count": 632
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q05",
+          "count": 3860
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q07",
+          "count": 1
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q08",
+          "count": 3768
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q09",
+          "count": 1405
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q10",
+          "count": 4903
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q11",
+          "count": 20
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q13",
+          "count": 18
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q14",
+          "count": 21
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q19",
+          "count": 11
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q22",
+          "count": 21
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q23",
+          "count": 13
+        }
+      ],
+      "events": {
+        "vote_requested": 855,
+        "vote_result": 1693,
+        "penalty_applied": 792,
+        "advanced": 14808,
+        "exit_requested": 2665,
+        "exit_blockers": 2665,
+        "left_ship": 1996,
+        "question": 43522,
+        "answers_completed": 13981,
+        "finished": 1000,
+        "expelled": 51,
+        "election_required": 24,
+        "controller_elected": 24,
+        "renounced": 8,
+        "penalty_removed": 2
+      },
+      "truth_rate": {
+        "count": 43065,
+        "total": 43351,
+        "rate": 0.9934026896726719
+      },
+      "questions": [
+        {
+          "question": "Q03",
+          "requested": 3942,
+          "asked": 3941,
+          "not_asked": 1,
+          "per_game": 3.941,
+          "per_round": 0.26579888042085387
+        },
+        {
+          "question": "Q04",
+          "requested": 3956,
+          "asked": 3955,
+          "not_asked": 1,
+          "per_game": 3.955,
+          "per_round": 0.26674310379712685
+        },
+        {
+          "question": "Q05",
+          "requested": 3954,
+          "asked": 3954,
+          "not_asked": 0,
+          "per_game": 3.954,
+          "per_round": 0.2666756592702502
+        },
+        {
+          "question": "Q06",
+          "requested": 6366,
+          "asked": 4256,
+          "not_asked": 2110,
+          "per_game": 4.256,
+          "per_round": 0.2870439063869967
+        },
+        {
+          "question": "Q07",
+          "requested": 4051,
+          "asked": 3907,
+          "not_asked": 144,
+          "per_game": 3.907,
+          "per_round": 0.26350576650704793
+        },
+        {
+          "question": "Q08",
+          "requested": 3840,
+          "asked": 3840,
+          "not_asked": 0,
+          "per_game": 3.84,
+          "per_round": 0.2589869832063128
+        },
+        {
+          "question": "Q09",
+          "requested": 1489,
+          "asked": 1489,
+          "not_asked": 0,
+          "per_game": 1.489,
+          "per_round": 0.10042490051932286
+        },
+        {
+          "question": "Q10",
+          "requested": 18683,
+          "asked": 17836,
+          "not_asked": 847,
+          "per_game": 17.836,
+          "per_round": 1.2029405813718217
+        },
+        {
+          "question": "Q11",
+          "requested": 82,
+          "asked": 81,
+          "not_asked": 1,
+          "per_game": 0.081,
+          "per_round": 0.005463006677008161
+        },
+        {
+          "question": "Q13",
+          "requested": 90,
+          "asked": 90,
+          "not_asked": 0,
+          "per_game": 0.09,
+          "per_round": 0.006070007418897957
+        },
+        {
+          "question": "Q14",
+          "requested": 96,
+          "asked": 96,
+          "not_asked": 0,
+          "per_game": 0.096,
+          "per_round": 0.00647467458015782
+        },
+        {
+          "question": "Q19",
+          "requested": 24,
+          "asked": 24,
+          "not_asked": 0,
+          "per_game": 0.024,
+          "per_round": 0.001618668645039455
+        },
+        {
+          "question": "Q22",
+          "requested": 30,
+          "asked": 30,
+          "not_asked": 0,
+          "per_game": 0.03,
+          "per_round": 0.0020233358062993188
+        },
+        {
+          "question": "Q23",
+          "requested": 23,
+          "asked": 23,
+          "not_asked": 0,
+          "per_game": 0.023,
+          "per_round": 0.001551224118162811
+        }
+      ],
+      "answers": [
+        {
+          "question": "Q03",
+          "response": "COLISÃO_COM_LIXO_ESPACIAL",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 986
+        },
+        {
+          "question": "Q03",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 984
+        },
+        {
+          "question": "Q03",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 16
+        },
+        {
+          "question": "Q03",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 1955
+        },
+        {
+          "question": "Q04",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 996
+        },
+        {
+          "question": "Q04",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 15
+        },
+        {
+          "question": "Q04",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 1963
+        },
+        {
+          "question": "Q04",
+          "response": "SIM",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 981
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 992
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 987
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 15
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 1960
+        },
+        {
+          "question": "Q06",
+          "response": "ABASTECER_A_COLÔNIA",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q06",
+          "response": "ABASTECER_A_COLÔNIA",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 937
+        },
+        {
+          "question": "Q06",
+          "response": "ABASTECER_A_COLÔNIA",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 38
+        },
+        {
+          "question": "Q06",
+          "response": "ABASTECER_A_COLÔNIA",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 48
+        },
+        {
+          "question": "Q06",
+          "response": "EXPLORAR_UM_PLANETA",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 49
+        },
+        {
+          "question": "Q06",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 973
+        },
+        {
+          "question": "Q06",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 167
+        },
+        {
+          "question": "Q06",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 48
+        },
+        {
+          "question": "Q06",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 1851
+        },
+        {
+          "question": "Q06",
+          "response": "REALIZAR_UMA_VIAGEM_DE_TESTE",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 46
+        },
+        {
+          "question": "Q06",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 42
+        },
+        {
+          "question": "Q06",
+          "response": "RESGATAR_PESSOAS",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 56
+        },
+        {
+          "question": "Q07",
+          "response": "COLÔNIA_DE_MINERAÇÃO",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 950
+        },
+        {
+          "question": "Q07",
+          "response": "COLÔNIA_DE_MINERAÇÃO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 4
+        },
+        {
+          "question": "Q07",
+          "response": "ESTAÇÃO_DE_ORIGEM",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 7
+        },
+        {
+          "question": "Q07",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 957
+        },
+        {
+          "question": "Q07",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 21
+        },
+        {
+          "question": "Q07",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 7
+        },
+        {
+          "question": "Q07",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 1938
+        },
+        {
+          "question": "Q07",
+          "response": "OUTRO_DESTINO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 7
+        },
+        {
+          "question": "Q07",
+          "response": "PLANETA_HABITACIONAL",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 6
+        },
+        {
+          "question": "Q07",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 10
+        },
+        {
+          "question": "Q08",
+          "response": "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "verdade",
+          "count": 1867
+        },
+        {
+          "question": "Q08",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 977
+        },
+        {
+          "question": "Q08",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 983
+        },
+        {
+          "question": "Q08",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 13
+        },
+        {
+          "question": "Q09",
+          "response": "4",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "verdade",
+          "count": 34
+        },
+        {
+          "question": "Q09",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 722
+        },
+        {
+          "question": "Q09",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 717
+        },
+        {
+          "question": "Q09",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 16
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1057
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 91
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 13420
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 980
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 113
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 1954
+        },
+        {
+          "question": "Q10",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 119
+        },
+        {
+          "question": "Q10",
+          "response": "SIM",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 102
+        },
+        {
+          "question": "Q11",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 25
+        },
+        {
+          "question": "Q11",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 10
+        },
+        {
+          "question": "Q11",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 33
+        },
+        {
+          "question": "Q11",
+          "response": "SIM",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 13
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 20
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 30
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 9
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 31
+        },
+        {
+          "question": "Q14",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 22
+        },
+        {
+          "question": "Q14",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 23
+        },
+        {
+          "question": "Q14",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 20
+        },
+        {
+          "question": "Q14",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 31
+        },
+        {
+          "question": "Q19",
+          "response": "01",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q19",
+          "response": "03",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q19",
+          "response": "03",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q19",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 2
+        },
+        {
+          "question": "Q19",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 2
+        },
+        {
+          "question": "Q19",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 1
+        },
+        {
+          "question": "Q19",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 16
+        },
+        {
+          "question": "Q22",
+          "response": "NÃO",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 9
+        },
+        {
+          "question": "Q22",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 14
+        },
+        {
+          "question": "Q22",
+          "response": "SIM",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 7
+        },
+        {
+          "question": "Q23",
+          "response": "CONCLUIR_MISSÃO",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 3
+        },
+        {
+          "question": "Q23",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_falso",
+          "count": 13
+        },
+        {
+          "question": "Q23",
+          "response": "PRESERVAR_TRIPULAÇÃO",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 5
+        },
+        {
+          "question": "Q23",
+          "response": "PRESERVAR_TRIPULAÇÃO",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 2
+        }
+      ],
+      "revelations": [
+        {
+          "question": "Q03",
+          "status": "verdadeira",
+          "count": 1323
+        },
+        {
+          "question": "Q04",
+          "status": "verdadeira",
+          "count": 1317
+        },
+        {
+          "question": "Q05",
+          "status": "verdadeira",
+          "count": 1301
+        },
+        {
+          "question": "Q06",
+          "status": "falsa",
+          "count": 39
+        },
+        {
+          "question": "Q06",
+          "status": "recusa",
+          "count": 13
+        },
+        {
+          "question": "Q06",
+          "status": "verdadeira",
+          "count": 1026
+        },
+        {
+          "question": "Q07",
+          "status": "falsa",
+          "count": 6
+        },
+        {
+          "question": "Q07",
+          "status": "recusa",
+          "count": 3
+        },
+        {
+          "question": "Q07",
+          "status": "verdadeira",
+          "count": 1271
+        },
+        {
+          "question": "Q08",
+          "status": "verdadeira",
+          "count": 1239
+        },
+        {
+          "question": "Q09",
+          "status": "verdadeira",
+          "count": 495
+        },
+        {
+          "question": "Q10",
+          "status": "falsa",
+          "count": 24
+        },
+        {
+          "question": "Q10",
+          "status": "recusa",
+          "count": 35
+        },
+        {
+          "question": "Q10",
+          "status": "verdadeira",
+          "count": 5788
+        },
+        {
+          "question": "Q11",
+          "status": "verdadeira",
+          "count": 11
+        },
+        {
+          "question": "Q13",
+          "status": "verdadeira",
+          "count": 25
+        },
+        {
+          "question": "Q14",
+          "status": "verdadeira",
+          "count": 31
+        },
+        {
+          "question": "Q19",
+          "status": "verdadeira",
+          "count": 11
+        },
+        {
+          "question": "Q22",
+          "status": "verdadeira",
+          "count": 14
+        },
+        {
+          "question": "Q23",
+          "status": "falsa",
+          "count": 5
+        },
+        {
+          "question": "Q23",
+          "status": "verdadeira",
+          "count": 4
+        }
+      ],
+      "initiatives": [
+        {
+          "implementation": "humano_alpha",
+          "action": "question",
+          "count": 14802
+        },
+        {
+          "implementation": "humano_beta",
+          "action": "question",
+          "count": 14648
+        },
+        {
+          "implementation": "humano_beta",
+          "action": "vote",
+          "count": 22
+        },
+        {
+          "implementation": "humano_gamma",
+          "action": "question",
+          "count": 1669
+        },
+        {
+          "implementation": "humano_random",
+          "action": "question",
+          "count": 771
+        },
+        {
+          "implementation": "humano_random",
+          "action": "vote",
+          "count": 833
+        },
+        {
+          "implementation": "humanoide",
+          "action": "question",
+          "count": 14736
+        }
+      ],
+      "votes": [
+        {
+          "stage": "authorize",
+          "value": "ABSTENÇÃO",
+          "count": 1132
+        },
+        {
+          "stage": "authorize",
+          "value": "A_FAVOR",
+          "count": 2559
+        },
+        {
+          "stage": "authorize",
+          "value": "CONTRA",
+          "count": 276
+        },
+        {
+          "stage": "authorize",
+          "value": "aprovada",
+          "count": 845
+        },
+        {
+          "stage": "authorize",
+          "value": "rejeitada",
+          "count": 3
+        },
+        {
+          "stage": "proposal",
+          "value": "ABSTENÇÃO",
+          "count": 2756
+        },
+        {
+          "stage": "proposal",
+          "value": "A_FAVOR",
+          "count": 289
+        },
+        {
+          "stage": "proposal",
+          "value": "CONTRA",
+          "count": 913
+        },
+        {
+          "stage": "proposal",
+          "value": "aprovada",
+          "count": 88
+        },
+        {
+          "stage": "proposal",
+          "value": "rejeitada",
+          "count": 757
+        }
+      ],
+      "removals": [
+        {
+          "kind": "expelled",
+          "nature": "HUMANO",
+          "count": 27
+        },
+        {
+          "kind": "expelled",
+          "nature": "IA",
+          "count": 24
+        },
+        {
+          "kind": "left_ship",
+          "nature": "HUMANO",
+          "count": 1996
+        }
+      ],
+      "uncontrolled_agents": []
+    },
+    {
+      "name": "Aleatório sem saída voluntária",
+      "completed": 1000,
+      "metrics": {
+        "rounds": {
+          "n": 1000,
+          "mean": 11.81599999999998,
+          "min": 2,
+          "max": 17,
+          "sd": 2.6151449258086976,
+          "mean_ci95": [
+            11.653911638211024,
+            11.978088361788934
+          ]
+        },
+        "progress": {
+          "n": 1000,
+          "mean": 11.586999999999996,
+          "min": 1,
+          "max": 17,
+          "sd": 2.9015254349824082,
+          "mean_ci95": [
+            11.407161590356274,
+            11.766838409643718
+          ]
+        },
+        "seconds": {
+          "n": 1000,
+          "mean": 0.07886393596883857,
+          "min": 0.011827874928712845,
+          "max": 0.1803120831027627,
+          "sd": 0.018978312108313154,
+          "mean_ci95": [
+            0.07768764799764527,
+            0.08004022394003188
+          ]
+        },
+        "simulation_seconds": {
+          "n": 1000,
+          "mean": 0.07655402192799375,
+          "min": 0.010001874063163996,
+          "max": 0.17633749777451158,
+          "sd": 0.018872915615289143,
+          "mean_ci95": [
+            0.07538426649911731,
+            0.0777237773568702
+          ]
+        },
+        "initialization_seconds": {
+          "n": 1000,
+          "mean": 0.0019403414628468446,
+          "min": 0.0017516249790787697,
+          "max": 0.005652457941323519,
+          "sd": 0.000256493314817184,
+          "mean_ci95": [
+            0.0019244438424900379,
+            0.0019562390832036512
+          ]
+        },
+        "phases": {
+          "n": 1000,
+          "mean": 51.17699999999999,
+          "min": 9,
+          "max": 81,
+          "sd": 11.275584677071508,
+          "mean_ci95": [
+            50.47813202121905,
+            51.87586797878094
+          ]
+        },
+        "questions_per_round": {
+          "n": 1000,
+          "mean": 2.2260728374566607,
+          "min": 0.45454545454545453,
+          "max": 4.083333333333333,
+          "sd": 0.5483162229752245,
+          "mean_ci95": [
+            2.1920878458612605,
+            2.260057829052061
+          ]
+        },
+        "answers_per_round": {
+          "n": 1000,
+          "mean": 2.2260728374566607,
+          "min": 0.45454545454545453,
+          "max": 4.083333333333333,
+          "sd": 0.5483162229752245,
+          "mean_ci95": [
+            2.1920878458612605,
+            2.260057829052061
+          ]
+        }
+      },
+      "outcomes": {
+        "returned": {
+          "count": 229,
+          "total": 1000,
+          "rate": 0.229,
+          "ci95": [
+            0.20402269076966784,
+            0.2560514882641559
+          ]
+        },
+        "oxygen_exhausted": {
+          "count": 771,
+          "total": 1000,
+          "rate": 0.771,
+          "ci95": [
+            0.7439485117358441,
+            0.7959773092303323
+          ]
+        },
+        "only_ai": {
+          "count": 0,
+          "total": 1000,
+          "rate": 0.0,
+          "ci95": [
+            0,
+            0.003826898586390522
+          ]
+        },
+        "no_participants": {
+          "count": 0,
+          "total": 1000,
+          "rate": 0.0,
+          "ci95": [
+            0,
+            0.003826898586390522
+          ]
+        }
+      },
+      "stages": [
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 601
+        },
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "nao_sei_falso",
+          "count": 12
+        },
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 4136
+        },
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "recusa_nao_sabe",
+          "count": 352
+        },
+        {
+          "stage": 0,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 2515
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q03",
+          "count": 95
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q04",
+          "count": 103
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q05",
+          "count": 100
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q06",
+          "count": 4798
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q07",
+          "count": 112
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q08",
+          "count": 79
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q09",
+          "count": 79
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q10",
+          "count": 1883
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q11",
+          "count": 101
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q13",
+          "count": 89
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q14",
+          "count": 92
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q19",
+          "count": 35
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q22",
+          "count": 16
+        },
+        {
+          "stage": 0,
+          "kind": "question",
+          "value": "Q23",
+          "count": 34
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 536
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "nao_sei_falso",
+          "count": 15
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 2402
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "recusa_nao_sabe",
+          "count": 346
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "recusa_sabe",
+          "count": 1
+        },
+        {
+          "stage": 1,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 1302
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q03",
+          "count": 54
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q04",
+          "count": 37
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q05",
+          "count": 46
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q06",
+          "count": 510
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q07",
+          "count": 2232
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q08",
+          "count": 50
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q09",
+          "count": 43
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q10",
+          "count": 1313
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q11",
+          "count": 54
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q13",
+          "count": 57
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q14",
+          "count": 53
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q19",
+          "count": 50
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q22",
+          "count": 54
+        },
+        {
+          "stage": 1,
+          "kind": "question",
+          "value": "Q23",
+          "count": 49
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 1027
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "nao_sei_falso",
+          "count": 35
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 3352
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "recusa_nao_sabe",
+          "count": 623
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "recusa_sabe",
+          "count": 1
+        },
+        {
+          "stage": 2,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 984
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q03",
+          "count": 108
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q04",
+          "count": 69
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q05",
+          "count": 62
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q06",
+          "count": 74
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q07",
+          "count": 1575
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q08",
+          "count": 63
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q09",
+          "count": 69
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q10",
+          "count": 3588
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q11",
+          "count": 75
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q13",
+          "count": 74
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q14",
+          "count": 54
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q19",
+          "count": 73
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q22",
+          "count": 61
+        },
+        {
+          "stage": 2,
+          "kind": "question",
+          "value": "Q23",
+          "count": 77
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 518
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "nao_sei_falso",
+          "count": 23
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 1610
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "recusa_nao_sabe",
+          "count": 507
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "recusa_sabe",
+          "count": 1
+        },
+        {
+          "stage": 3,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 1039
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q03",
+          "count": 813
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q04",
+          "count": 76
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q05",
+          "count": 43
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q06",
+          "count": 40
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q07",
+          "count": 38
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q08",
+          "count": 53
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q09",
+          "count": 38
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q10",
+          "count": 2319
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q11",
+          "count": 41
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q13",
+          "count": 45
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q14",
+          "count": 43
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q19",
+          "count": 48
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q22",
+          "count": 46
+        },
+        {
+          "stage": 3,
+          "kind": "question",
+          "value": "Q23",
+          "count": 55
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "mentira",
+          "count": 753
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "nao_sei_falso",
+          "count": 36
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "nao_sei_verdadeiro",
+          "count": 2205
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "recusa_nao_sabe",
+          "count": 491
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "recusa_sabe",
+          "count": 6
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "sem_gabarito",
+          "count": 3
+        },
+        {
+          "stage": 4,
+          "kind": "answer",
+          "value": "verdade",
+          "count": 980
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q03",
+          "count": 1736
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q04",
+          "count": 333
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q05",
+          "count": 229
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q06",
+          "count": 58
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q07",
+          "count": 65
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q08",
+          "count": 115
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q09",
+          "count": 71
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q10",
+          "count": 1461
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q11",
+          "count": 64
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q13",
+          "count": 87
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q14",
+          "count": 46
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q19",
+          "count": 79
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q22",
+          "count": 63
+        },
+        {
+          "stage": 4,
+          "kind": "question",
+          "value": "Q23",
+          "count": 67
+        }
+      ],
+      "events": {
+        "vote_requested": 4729,
+        "vote_result": 8683,
+        "penalty_applied": 3521,
+        "advanced": 11587,
+        "exit_requested": 2051,
+        "exit_blockers": 2051,
+        "left_ship": 998,
+        "question": 26412,
+        "answers_completed": 7607,
+        "expelled": 652,
+        "finished": 1000,
+        "renounced": 316,
+        "election_required": 311,
+        "controller_elected": 311,
+        "penalty_removed": 18
+      },
+      "truth_rate": {
+        "count": 20525,
+        "total": 24081,
+        "rate": 0.8523317137992609
+      },
+      "questions": [
+        {
+          "question": "Q03",
+          "requested": 4104,
+          "asked": 2806,
+          "not_asked": 1298,
+          "per_game": 2.806,
+          "per_round": 0.2374746106973595
+        },
+        {
+          "question": "Q04",
+          "requested": 736,
+          "asked": 618,
+          "not_asked": 118,
+          "per_game": 0.618,
+          "per_round": 0.0523019634394042
+        },
+        {
+          "question": "Q05",
+          "requested": 554,
+          "asked": 480,
+          "not_asked": 74,
+          "per_game": 0.48,
+          "per_round": 0.040622884224779957
+        },
+        {
+          "question": "Q06",
+          "requested": 8774,
+          "asked": 5480,
+          "not_asked": 3294,
+          "per_game": 5.48,
+          "per_round": 0.46377792823290453
+        },
+        {
+          "question": "Q07",
+          "requested": 5969,
+          "asked": 4022,
+          "not_asked": 1947,
+          "per_game": 4.022,
+          "per_round": 0.3403859174001354
+        },
+        {
+          "question": "Q08",
+          "requested": 388,
+          "asked": 360,
+          "not_asked": 28,
+          "per_game": 0.36,
+          "per_round": 0.03046716316858497
+        },
+        {
+          "question": "Q09",
+          "requested": 324,
+          "asked": 300,
+          "not_asked": 24,
+          "per_game": 0.3,
+          "per_round": 0.025389302640487475
+        },
+        {
+          "question": "Q10",
+          "requested": 16252,
+          "asked": 10564,
+          "not_asked": 5688,
+          "per_game": 10.564,
+          "per_round": 0.8940419769803656
+        },
+        {
+          "question": "Q11",
+          "requested": 344,
+          "asked": 335,
+          "not_asked": 9,
+          "per_game": 0.335,
+          "per_round": 0.028351387948544346
+        },
+        {
+          "question": "Q13",
+          "requested": 364,
+          "asked": 352,
+          "not_asked": 12,
+          "per_game": 0.352,
+          "per_round": 0.02979011509817197
+        },
+        {
+          "question": "Q14",
+          "requested": 294,
+          "asked": 288,
+          "not_asked": 6,
+          "per_game": 0.288,
+          "per_round": 0.024373730534867976
+        },
+        {
+          "question": "Q19",
+          "requested": 292,
+          "asked": 285,
+          "not_asked": 7,
+          "per_game": 0.285,
+          "per_round": 0.0241198375084631
+        },
+        {
+          "question": "Q22",
+          "requested": 246,
+          "asked": 240,
+          "not_asked": 6,
+          "per_game": 0.24,
+          "per_round": 0.020311442112389978
+        },
+        {
+          "question": "Q23",
+          "requested": 292,
+          "asked": 282,
+          "not_asked": 10,
+          "per_game": 0.282,
+          "per_round": 0.023865944482058227
+        }
+      ],
+      "answers": [
+        {
+          "question": "Q03",
+          "response": "COLISÃO_COM_LIXO_ESPACIAL",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 566
+        },
+        {
+          "question": "Q03",
+          "response": "COLISÃO_COM_LIXO_ESPACIAL",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 5
+        },
+        {
+          "question": "Q03",
+          "response": "COLISÃO_COM_LIXO_ESPACIAL",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 109
+        },
+        {
+          "question": "Q03",
+          "response": "FALHA_INTERNA",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 111
+        },
+        {
+          "question": "Q03",
+          "response": "FALTA_DE_REABASTECIMENTO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 116
+        },
+        {
+          "question": "Q03",
+          "response": "NÃO_HOUVE_ACIDENTE",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 118
+        },
+        {
+          "question": "Q03",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 541
+        },
+        {
+          "question": "Q03",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 23
+        },
+        {
+          "question": "Q03",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_falso",
+          "count": 1
+        },
+        {
+          "question": "Q03",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 124
+        },
+        {
+          "question": "Q03",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 970
+        },
+        {
+          "question": "Q03",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 119
+        },
+        {
+          "question": "Q03",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_sabe",
+          "count": 3
+        },
+        {
+          "question": "Q04",
+          "response": "NÃO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 30
+        },
+        {
+          "question": "Q04",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 125
+        },
+        {
+          "question": "Q04",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 14
+        },
+        {
+          "question": "Q04",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_falso",
+          "count": 1
+        },
+        {
+          "question": "Q04",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 35
+        },
+        {
+          "question": "Q04",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 195
+        },
+        {
+          "question": "Q04",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 25
+        },
+        {
+          "question": "Q04",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_sabe",
+          "count": 2
+        },
+        {
+          "question": "Q04",
+          "response": "SIM",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 135
+        },
+        {
+          "question": "Q04",
+          "response": "SIM",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q04",
+          "response": "SIM",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 55
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 105
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 22
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 86
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 18
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_falso",
+          "count": 1
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 12
+        },
+        {
+          "question": "Q05",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 190
+        },
+        {
+          "question": "Q05",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 26
+        },
+        {
+          "question": "Q05",
+          "response": "SIM",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 20
+        },
+        {
+          "question": "Q06",
+          "response": "ABASTECER_A_COLÔNIA",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 12
+        },
+        {
+          "question": "Q06",
+          "response": "ABASTECER_A_COLÔNIA",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 939
+        },
+        {
+          "question": "Q06",
+          "response": "ABASTECER_A_COLÔNIA",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 43
+        },
+        {
+          "question": "Q06",
+          "response": "ABASTECER_A_COLÔNIA",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 214
+        },
+        {
+          "question": "Q06",
+          "response": "EXPLORAR_UM_PLANETA",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 211
+        },
+        {
+          "question": "Q06",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 1052
+        },
+        {
+          "question": "Q06",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 316
+        },
+        {
+          "question": "Q06",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_falso",
+          "count": 1
+        },
+        {
+          "question": "Q06",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 250
+        },
+        {
+          "question": "Q06",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 1810
+        },
+        {
+          "question": "Q06",
+          "response": "REALIZAR_UMA_VIAGEM_DE_TESTE",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 203
+        },
+        {
+          "question": "Q06",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 222
+        },
+        {
+          "question": "Q06",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_sabe",
+          "count": 1
+        },
+        {
+          "question": "Q06",
+          "response": "RESGATAR_PESSOAS",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 206
+        },
+        {
+          "question": "Q07",
+          "response": "COLÔNIA_DE_MINERAÇÃO",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 18
+        },
+        {
+          "question": "Q07",
+          "response": "COLÔNIA_DE_MINERAÇÃO",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 760
+        },
+        {
+          "question": "Q07",
+          "response": "COLÔNIA_DE_MINERAÇÃO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 169
+        },
+        {
+          "question": "Q07",
+          "response": "ESTAÇÃO_DE_ORIGEM",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 221
+        },
+        {
+          "question": "Q07",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 778
+        },
+        {
+          "question": "Q07",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 30
+        },
+        {
+          "question": "Q07",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_falso",
+          "count": 2
+        },
+        {
+          "question": "Q07",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 213
+        },
+        {
+          "question": "Q07",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 1260
+        },
+        {
+          "question": "Q07",
+          "response": "OUTRO_DESTINO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 199
+        },
+        {
+          "question": "Q07",
+          "response": "PLANETA_HABITACIONAL",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 197
+        },
+        {
+          "question": "Q07",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 174
+        },
+        {
+          "question": "Q07",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_sabe",
+          "count": 1
+        },
+        {
+          "question": "Q08",
+          "response": "ARMAMENTOS",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 5
+        },
+        {
+          "question": "Q08",
+          "response": "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q08",
+          "response": "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 2
+        },
+        {
+          "question": "Q08",
+          "response": "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "verdade",
+          "count": 139
+        },
+        {
+          "question": "Q08",
+          "response": "MINÉRIOS",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 6
+        },
+        {
+          "question": "Q08",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 101
+        },
+        {
+          "question": "Q08",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 81
+        },
+        {
+          "question": "Q08",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 15
+        },
+        {
+          "question": "Q08",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 1
+        },
+        {
+          "question": "Q08",
+          "response": "PASSAGEIROS",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 5
+        },
+        {
+          "question": "Q08",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 4
+        },
+        {
+          "question": "Q09",
+          "response": "1",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 2
+        },
+        {
+          "question": "Q09",
+          "response": "4",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 2
+        },
+        {
+          "question": "Q09",
+          "response": "4",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "verdade",
+          "count": 90
+        },
+        {
+          "question": "Q09",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 103
+        },
+        {
+          "question": "Q09",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 84
+        },
+        {
+          "question": "Q09",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 14
+        },
+        {
+          "question": "Q09",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 4
+        },
+        {
+          "question": "Q09",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 1
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1223
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1769
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 630
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 613
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 1731
+        },
+        {
+          "question": "Q10",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 1066
+        },
+        {
+          "question": "Q10",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_nao_sabe",
+          "count": 1748
+        },
+        {
+          "question": "Q10",
+          "response": "SIM",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 1784
+        },
+        {
+          "question": "Q11",
+          "response": "NÃO",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q11",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 100
+        },
+        {
+          "question": "Q11",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 101
+        },
+        {
+          "question": "Q11",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 115
+        },
+        {
+          "question": "Q11",
+          "response": "SIM",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 18
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "mentira",
+          "count": 1
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 115
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 103
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 19
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_falso",
+          "count": 4
+        },
+        {
+          "question": "Q13",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 106
+        },
+        {
+          "question": "Q13",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_sabe",
+          "count": 1
+        },
+        {
+          "question": "Q13",
+          "response": "SIM",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 2
+        },
+        {
+          "question": "Q13",
+          "response": "SIM",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q14",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 92
+        },
+        {
+          "question": "Q14",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 80
+        },
+        {
+          "question": "Q14",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 23
+        },
+        {
+          "question": "Q14",
+          "response": "NÃO_SEI",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "nao_sei_falso",
+          "count": 3
+        },
+        {
+          "question": "Q14",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 87
+        },
+        {
+          "question": "Q14",
+          "response": "RECUSO_RESPONDER",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "recusa_sabe",
+          "count": 1
+        },
+        {
+          "question": "Q14",
+          "response": "SIM",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 2
+        },
+        {
+          "question": "Q19",
+          "response": "01",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 17
+        },
+        {
+          "question": "Q19",
+          "response": "02",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 20
+        },
+        {
+          "question": "Q19",
+          "response": "02",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q19",
+          "response": "03",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 32
+        },
+        {
+          "question": "Q19",
+          "response": "03",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 19
+        },
+        {
+          "question": "Q19",
+          "response": "05",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 8
+        },
+        {
+          "question": "Q19",
+          "response": "05",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 2
+        },
+        {
+          "question": "Q19",
+          "response": "NÃO_SEI",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 42
+        },
+        {
+          "question": "Q19",
+          "response": "NÃO_SEI",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 36
+        },
+        {
+          "question": "Q19",
+          "response": "NÃO_SEI",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "nao_sei_verdadeiro",
+          "count": 4
+        },
+        {
+          "question": "Q19",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 104
+        },
+        {
+          "question": "Q22",
+          "response": "NÃO",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 69
+        },
+        {
+          "question": "Q22",
+          "response": "NÃO",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 1
+        },
+        {
+          "question": "Q22",
+          "response": "NÃO",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "sem_gabarito",
+          "count": 1
+        },
+        {
+          "question": "Q22",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_verdadeiro",
+          "count": 93
+        },
+        {
+          "question": "Q22",
+          "response": "SIM",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 74
+        },
+        {
+          "question": "Q22",
+          "response": "SIM",
+          "implementation": "humano_random",
+          "nature": "HUMANO",
+          "status": "sem_gabarito",
+          "count": 2
+        },
+        {
+          "question": "Q23",
+          "response": "CONCLUIR_MISSÃO",
+          "implementation": "humano_alpha",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 98
+        },
+        {
+          "question": "Q23",
+          "response": "NÃO_SEI",
+          "implementation": "humanoide",
+          "nature": "IA",
+          "status": "nao_sei_falso",
+          "count": 108
+        },
+        {
+          "question": "Q23",
+          "response": "PRESERVAR_TRIPULAÇÃO",
+          "implementation": "humano_beta",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 74
+        },
+        {
+          "question": "Q23",
+          "response": "PRESERVAR_TRIPULAÇÃO",
+          "implementation": "humano_gamma",
+          "nature": "HUMANO",
+          "status": "verdade",
+          "count": 2
+        }
+      ],
+      "revelations": [
+        {
+          "question": "Q03",
+          "status": "falsa",
+          "count": 107
+        },
+        {
+          "question": "Q03",
+          "status": "recusa",
+          "count": 38
+        },
+        {
+          "question": "Q03",
+          "status": "verdadeira",
+          "count": 676
+        },
+        {
+          "question": "Q04",
+          "status": "falsa",
+          "count": 14
+        },
+        {
+          "question": "Q04",
+          "status": "recusa",
+          "count": 12
+        },
+        {
+          "question": "Q04",
+          "status": "verdadeira",
+          "count": 196
+        },
+        {
+          "question": "Q05",
+          "status": "falsa",
+          "count": 8
+        },
+        {
+          "question": "Q05",
+          "status": "recusa",
+          "count": 12
+        },
+        {
+          "question": "Q05",
+          "status": "verdadeira",
+          "count": 140
+        },
+        {
+          "question": "Q06",
+          "status": "falsa",
+          "count": 180
+        },
+        {
+          "question": "Q06",
+          "status": "recusa",
+          "count": 54
+        },
+        {
+          "question": "Q06",
+          "status": "verdadeira",
+          "count": 1118
+        },
+        {
+          "question": "Q07",
+          "status": "falsa",
+          "count": 176
+        },
+        {
+          "question": "Q07",
+          "status": "recusa",
+          "count": 45
+        },
+        {
+          "question": "Q07",
+          "status": "verdadeira",
+          "count": 917
+        },
+        {
+          "question": "Q08",
+          "status": "falsa",
+          "count": 11
+        },
+        {
+          "question": "Q08",
+          "status": "recusa",
+          "count": 3
+        },
+        {
+          "question": "Q08",
+          "status": "verdadeira",
+          "count": 113
+        },
+        {
+          "question": "Q09",
+          "status": "falsa",
+          "count": 1
+        },
+        {
+          "question": "Q09",
+          "status": "recusa",
+          "count": 1
+        },
+        {
+          "question": "Q09",
+          "status": "verdadeira",
+          "count": 87
+        },
+        {
+          "question": "Q10",
+          "status": "falsa",
+          "count": 598
+        },
+        {
+          "question": "Q10",
+          "status": "recusa",
+          "count": 527
+        },
+        {
+          "question": "Q10",
+          "status": "verdadeira",
+          "count": 2054
+        },
+        {
+          "question": "Q11",
+          "status": "verdadeira",
+          "count": 89
+        },
+        {
+          "question": "Q13",
+          "status": "falsa",
+          "count": 4
+        },
+        {
+          "question": "Q13",
+          "status": "verdadeira",
+          "count": 103
+        },
+        {
+          "question": "Q14",
+          "status": "falsa",
+          "count": 1
+        },
+        {
+          "question": "Q14",
+          "status": "verdadeira",
+          "count": 81
+        },
+        {
+          "question": "Q19",
+          "status": "verdadeira",
+          "count": 101
+        },
+        {
+          "question": "Q22",
+          "status": "falsa",
+          "count": 2
+        },
+        {
+          "question": "Q22",
+          "status": "verdadeira",
+          "count": 64
+        },
+        {
+          "question": "Q23",
+          "status": "falsa",
+          "count": 38
+        },
+        {
+          "question": "Q23",
+          "status": "verdadeira",
+          "count": 36
+        }
+      ],
+      "initiatives": [
+        {
+          "implementation": "humano_alpha",
+          "action": "question",
+          "count": 11211
+        },
+        {
+          "implementation": "humano_beta",
+          "action": "question",
+          "count": 10095
+        },
+        {
+          "implementation": "humano_beta",
+          "action": "vote",
+          "count": 368
+        },
+        {
+          "implementation": "humano_gamma",
+          "action": "question",
+          "count": 2053
+        },
+        {
+          "implementation": "humano_random",
+          "action": "question",
+          "count": 4382
+        },
+        {
+          "implementation": "humano_random",
+          "action": "vote",
+          "count": 4361
+        },
+        {
+          "implementation": "humanoide",
+          "action": "question",
+          "count": 11192
+        }
+      ],
+      "votes": [
+        {
+          "stage": "authorize",
+          "value": "ABSTENÇÃO",
+          "count": 5853
+        },
+        {
+          "stage": "authorize",
+          "value": "A_FAVOR",
+          "count": 10430
+        },
+        {
+          "stage": "authorize",
+          "value": "CONTRA",
+          "count": 1443
+        },
+        {
+          "stage": "authorize",
+          "value": "aprovada",
+          "count": 4191
+        },
+        {
+          "stage": "authorize",
+          "value": "rejeitada",
+          "count": 301
+        },
+        {
+          "stage": "proposal",
+          "value": "ABSTENÇÃO",
+          "count": 12147
+        },
+        {
+          "stage": "proposal",
+          "value": "A_FAVOR",
+          "count": 1566
+        },
+        {
+          "stage": "proposal",
+          "value": "CONTRA",
+          "count": 3180
+        },
+        {
+          "stage": "proposal",
+          "value": "aprovada",
+          "count": 880
+        },
+        {
+          "stage": "proposal",
+          "value": "rejeitada",
+          "count": 3311
+        }
+      ],
+      "removals": [
+        {
+          "kind": "expelled",
+          "nature": "HUMANO",
+          "count": 351
+        },
+        {
+          "kind": "expelled",
+          "nature": "IA",
+          "count": 301
+        },
+        {
+          "kind": "left_ship",
+          "nature": "HUMANO",
+          "count": 998
+        }
+      ],
+      "uncontrolled_agents": []
+    }
+  ],
+  "comparisons": [
+    {
+      "baseline": "Base",
+      "scenario": "Aleatório sem saída voluntária",
+      "paired_games": 1000,
+      "deltas": {
+        "rounds": {
+          "n": 1000,
+          "mean": -3.011,
+          "min": -15,
+          "max": 11,
+          "sd": 3.0113031974457414,
+          "mean_ci95": [
+            -3.1976425058538154,
+            -2.824357494146185
+          ]
+        },
+        "seconds": {
+          "n": 1000,
+          "mean": -0.013864675432909283,
+          "min": -0.13034833315759897,
+          "max": 0.08132895780727267,
+          "sd": 0.02123728494447032,
+          "mean_ci95": [
+            -0.015180975991062846,
+            -0.01254837487475572
+          ]
+        },
+        "simulation_seconds": {
+          "n": 1000,
+          "mean": -0.01375121646234766,
+          "min": -0.12983333505690098,
+          "max": 0.07980924472212791,
+          "sd": 0.021134875423055664,
+          "mean_ci95": [
+            -0.015061169612602765,
+            -0.012441263312092556
+          ]
+        },
+        "questions": {
+          "n": 1000,
+          "mean": -17.109999999999996,
+          "min": -42,
+          "max": 34,
+          "sd": 9.26162392227614,
+          "mean_ci95": [
+            -17.684041397955376,
+            -16.535958602044616
+          ]
+        },
+        "answers": {
+          "n": 1000,
+          "mean": -17.109999999999996,
+          "min": -42,
+          "max": 34,
+          "sd": 9.26162392227614,
+          "mean_ci95": [
+            -17.684041397955376,
+            -16.535958602044616
+          ]
+        }
+      },
+      "outcome_changes": {
+        "oxygen_exhausted → oxygen_exhausted": 759,
+        "oxygen_exhausted → returned": 222,
+        "returned → returned": 7,
+        "returned → oxygen_exhausted": 12
+      }
+    }
+  ],
+  "errors": [],
+  "collection_directory": "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/evidencias/experimentos/20261012T185857-a84afebc",
+  "collection_source_hashes": {
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/agent/_baseline.py": "4962a015d56918e36d23759d5a5ce0b0e2f98c12f0670d021ff2c088d7570c2e",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/agent/_human_default.py": "7319e5e08f044f9afb7b95702b1b8c5b0907433d18a7e42d7c2b0cbc408c52a3",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/agent/humano_alpha.py": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/agent/humano_beta.py": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/agent/humano_gamma.py": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/agent/humano_random.py": "bf3cbca494bd5208376a619bcde9837a6aa4ba665bbebf45a00d1d914b9d1cf3",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/agent/humanoide.py": "cc45dc4b40cf8f4bb4bef8c85b5a519ec29c3bdd87f6b7cf6a9a5c393a5f32cb",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/agent_contract.py": "75f91b0be7e365ca71d6029afd9521b69a4211e59148361bb6fcd4d82d94e786",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/agent_session.py": "6c75dce8d69f15a678726bb541c388a56f49abb495c751b59baedc94185f8ad4",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/carregar_agentes.py": "141b3d51aaed4464d1ae409a6cfd1f2148df386bff1532455179a1caaee575fa",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/catalogo_questoes.py": "7ecc60b564721ecc2443749a390beb596e8b2ad1787a2e97f37651ec334da374",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/dashboard.py": "23c8eaf423a05ce0a3a13269957e92732a81f1440d7a778bf45dd5c4f4b7f5e0",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/experimentos.py": "c72d97842e0944276f8a86d70f2ec2c58d2e01e4a8b6cbf50014e74da08e5285",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/missao_espacial.py": "34dc468aec8a77f0bdfd89c82811d9f971b029422c506d942369ec3277ea9409",
+    "/Users/alexandre/Documents/2026-1 Senac - CAVI Conteudo diciplina/2026 - 2sem/projetos/missao-espacial/src/setup_jogo.py": "e3767c4a2e5f0a18b4fc45e5abb90f03540db7d403801572887e60c83797c609"
+  },
+  "collection_plan": {
+    "setup_base": "setup.json",
+    "partidas_por_cenario": 1000,
+    "seed_base": 17,
+    "diretorio_resultados": "evidencias/experimentos",
+    "cenarios": [
+      {
+        "nome": "Base",
+        "alteracoes": {}
+      },
+      {
+        "nome": "Aleatório sem saída voluntária",
+        "alteracoes": {
+          "tripulantes": [
+            {
+              "quantidade": 1,
+              "papel": "HUMANO",
+              "implementacao": "humano_alpha"
+            },
+            {
+              "quantidade": 1,
+              "papel": "HUMANO",
+              "implementacao": "humano_beta"
+            },
+            {
+              "quantidade": 1,
+              "papel": "IA",
+              "implementacao": "humanoide"
+            },
+            {
+              "quantidade": 1,
+              "papel": "HUMANO",
+              "implementacao": "humano_gamma"
+            },
+            {
+              "quantidade": 1,
+              "papel": "HUMANO",
+              "implementacao": "humano_random",
+              "perfil": {
+                "never_exit": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

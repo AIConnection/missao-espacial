@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "agent_setup_preserves_existing_files": true,
+  "no_sample_modules_added_to_custom_library": true,
+  "code_cells": 8,
+  "resume_matches_continuous_execution": true,
+  "scope": "local Python cell execution, central setup, random human active, checkpoint save/load; not executed in Google Colab"
+}

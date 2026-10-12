@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "tests_total": 99,
+  "existing_regression_tests": 85,
+  "new_behavior_tests": 14,
+  "command": "python3 -m unittest discover -s evidencias/aula-05-2026-2/engine-v01 -p 'test_*.py'",
+  "scope": [
+    "humanoid restrictions for every ID",
+    "three human variants and independent override points",
+    "private trust and complete own-history retention",
+    "catalog answer coherence with authorized oracle during N=20",
+    "last-human inference, expulsion, compulsory election and return",
+    "checkpoint recovery after each phase"
+  ],
+  "not_tested": [
+    "Google Colab runtime",
+    "Phi-4 training/inference",
+    "100000-round scale of these behaviors"
+  ]
+}

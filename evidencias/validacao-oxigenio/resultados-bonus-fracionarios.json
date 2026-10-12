@@ -1,0 +1,277 @@
+{
+  "scope": "exact_fractional_bonus_arithmetic",
+  "configurations_checked": 10000,
+  "capacities_checked": 50000,
+  "cases": [
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 11,
+      "bonus_per_human_exact": "1/4",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "41/4",
+        "21/2",
+        "43/4",
+        "11"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        10,
+        10,
+        10,
+        11
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "0"
+      ]
+    },
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 12,
+      "bonus_per_human_exact": "1/2",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "21/2",
+        "11",
+        "23/2",
+        "12"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        10,
+        11,
+        11,
+        12
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "1/2",
+        "0",
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 13,
+      "bonus_per_human_exact": "3/4",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "43/4",
+        "23/2",
+        "49/4",
+        "13"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        10,
+        11,
+        12,
+        13
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "3/4",
+        "1/2",
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 14,
+      "bonus_per_human_exact": "1",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 15,
+      "bonus_per_human_exact": "5/4",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "45/4",
+        "25/2",
+        "55/4",
+        "15"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        11,
+        12,
+        13,
+        15
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "0"
+      ]
+    },
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 17,
+      "bonus_per_human_exact": "7/4",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "47/4",
+        "27/2",
+        "61/4",
+        "17"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        11,
+        13,
+        15,
+        17
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "3/4",
+        "1/2",
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 19,
+      "bonus_per_human_exact": "9/4",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "49/4",
+        "29/2",
+        "67/4",
+        "19"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        12,
+        14,
+        16,
+        19
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "0"
+      ]
+    },
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 21,
+      "bonus_per_human_exact": "11/4",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "51/4",
+        "31/2",
+        "73/4",
+        "21"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        12,
+        15,
+        18,
+        21
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "3/4",
+        "1/2",
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 22,
+      "bonus_per_human_exact": "3",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "13",
+        "16",
+        "19",
+        "22"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        13,
+        16,
+        19,
+        22
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "initial_rounds": 10,
+      "destination_rounds": 25,
+      "bonus_per_human_exact": "15/4",
+      "reserve_after_0_to_4_removals": [
+        "10",
+        "55/4",
+        "35/2",
+        "85/4",
+        "25"
+      ],
+      "whole_rounds_after_0_to_4_removals": [
+        10,
+        13,
+        17,
+        21,
+        25
+      ],
+      "fractional_credit_preserved": [
+        "0",
+        "3/4",
+        "1/2",
+        "1/4",
+        "0"
+      ]
+    }
+  ],
+  "counterexamples": {
+    "round_each_bonus_down": 10,
+    "round_each_bonus_up_with_one_human_remaining": 13
+  },
+  "conclusion": "Preserve exact fractional credits; never round each removal separately.",
+  "limits": [
+    "No return-feasibility criterion defined here.",
+    "Whole rounds are the floor of total reserve; fractional credit is retained.",
+    "This script checks arithmetic, not agent policies or the full game."
+  ]
+}

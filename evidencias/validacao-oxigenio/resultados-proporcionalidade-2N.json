@@ -1,0 +1,103 @@
+{
+  "formula_destino": "D = 2N",
+  "formula_bonus": "N / 4",
+  "verificacoes": [
+    {
+      "rodadas_iniciais": 1,
+      "rodadas_ate_colonia": 2,
+      "bonus_por_humano": "1/4",
+      "reservas_apos_0_a_4_remocoes": [
+        "1",
+        "5/4",
+        "3/2",
+        "7/4",
+        "2"
+      ]
+    },
+    {
+      "rodadas_iniciais": 2,
+      "rodadas_ate_colonia": 4,
+      "bonus_por_humano": "1/2",
+      "reservas_apos_0_a_4_remocoes": [
+        "2",
+        "5/2",
+        "3",
+        "7/2",
+        "4"
+      ]
+    },
+    {
+      "rodadas_iniciais": 3,
+      "rodadas_ate_colonia": 6,
+      "bonus_por_humano": "3/4",
+      "reservas_apos_0_a_4_remocoes": [
+        "3",
+        "15/4",
+        "9/2",
+        "21/4",
+        "6"
+      ]
+    },
+    {
+      "rodadas_iniciais": 4,
+      "rodadas_ate_colonia": 8,
+      "bonus_por_humano": "1",
+      "reservas_apos_0_a_4_remocoes": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "rodadas_iniciais": 10,
+      "rodadas_ate_colonia": 20,
+      "bonus_por_humano": "5/2",
+      "reservas_apos_0_a_4_remocoes": [
+        "10",
+        "25/2",
+        "15",
+        "35/2",
+        "20"
+      ]
+    },
+    {
+      "rodadas_iniciais": 100,
+      "rodadas_ate_colonia": 200,
+      "bonus_por_humano": "25",
+      "reservas_apos_0_a_4_remocoes": [
+        "100",
+        "125",
+        "150",
+        "175",
+        "200"
+      ]
+    },
+    {
+      "rodadas_iniciais": 1000,
+      "rodadas_ate_colonia": 2000,
+      "bonus_por_humano": "250",
+      "reservas_apos_0_a_4_remocoes": [
+        "1000",
+        "1250",
+        "1500",
+        "1750",
+        "2000"
+      ]
+    },
+    {
+      "rodadas_iniciais": 100000,
+      "rodadas_ate_colonia": 200000,
+      "bonus_por_humano": "25000",
+      "reservas_apos_0_a_4_remocoes": [
+        "100000",
+        "125000",
+        "150000",
+        "175000",
+        "200000"
+      ]
+    }
+  ],
+  "escopo": "proporcionalidade e reserva; não é execução completa do jogo"
+}

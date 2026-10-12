@@ -1,0 +1,2029 @@
+{
+  "scope": "oxygen_formula_only",
+  "parameters": {
+    "initial_rounds": 10,
+    "destination_rounds_illustrative": 22,
+    "initial_humans": 4,
+    "bonus_per_human": 3
+  },
+  "formula": "oxygen = N + removed_humans * ((D - N) / 4) - round",
+  "cases": [
+    {
+      "id": "01",
+      "descricao": "Sem remoções",
+      "eventos_planejados": {},
+      "eventos_nao_aplicados": [],
+      "humanos_removidos": 0,
+      "humanos_restantes": 4,
+      "ia_presente": true,
+      "bonus_total": 0,
+      "rodadas_executadas": 10,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 12,
+      "alcancou_colonia": false,
+      "timeline": [
+        {
+          "cenario": "01",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "01",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "01",
+          "rodada": 3,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "01",
+          "rodada": 4,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "01",
+          "rodada": 5,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "01",
+          "rodada": 6,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "01",
+          "rodada": 7,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "01",
+          "rodada": 8,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "01",
+          "rodada": 9,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "01",
+          "rodada": 10,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 12
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "descricao": "Expulsar somente a IA na rodada 2",
+      "eventos_planejados": {
+        "2": [
+          "ia"
+        ]
+      },
+      "eventos_nao_aplicados": [],
+      "humanos_removidos": 0,
+      "humanos_restantes": 4,
+      "ia_presente": false,
+      "bonus_total": 0,
+      "rodadas_executadas": 10,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 12,
+      "alcancou_colonia": false,
+      "timeline": [
+        {
+          "cenario": "02",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "02",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "ia",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 4,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "02",
+          "rodada": 3,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 4,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "02",
+          "rodada": 4,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 4,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "02",
+          "rodada": 5,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 4,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "02",
+          "rodada": 6,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 4,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "02",
+          "rodada": 7,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 4,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "02",
+          "rodada": 8,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 4,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "02",
+          "rodada": 9,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 4,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "02",
+          "rodada": 10,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 4,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 12
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "descricao": "Retirar um humano na rodada 2",
+      "eventos_planejados": {
+        "2": [
+          "humano"
+        ]
+      },
+      "eventos_nao_aplicados": [],
+      "humanos_removidos": 1,
+      "humanos_restantes": 3,
+      "ia_presente": true,
+      "bonus_total": 3,
+      "rodadas_executadas": 13,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 9,
+      "alcancou_colonia": false,
+      "timeline": [
+        {
+          "cenario": "03",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "03",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "03",
+          "rodada": 3,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "03",
+          "rodada": 4,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "03",
+          "rodada": 5,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "03",
+          "rodada": 6,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "03",
+          "rodada": 7,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "03",
+          "rodada": 8,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "03",
+          "rodada": 9,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "03",
+          "rodada": 10,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 12
+        },
+        {
+          "cenario": "03",
+          "rodada": 11,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 11
+        },
+        {
+          "cenario": "03",
+          "rodada": 12,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 10
+        },
+        {
+          "cenario": "03",
+          "rodada": 13,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 9
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "descricao": "Retirar um humano na rodada 9",
+      "eventos_planejados": {
+        "9": [
+          "humano"
+        ]
+      },
+      "eventos_nao_aplicados": [],
+      "humanos_removidos": 1,
+      "humanos_restantes": 3,
+      "ia_presente": true,
+      "bonus_total": 3,
+      "rodadas_executadas": 13,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 9,
+      "alcancou_colonia": false,
+      "timeline": [
+        {
+          "cenario": "04",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "04",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "04",
+          "rodada": 3,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "04",
+          "rodada": 4,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "04",
+          "rodada": 5,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "04",
+          "rodada": 6,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "04",
+          "rodada": 7,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "04",
+          "rodada": 8,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "04",
+          "rodada": 9,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "04",
+          "rodada": 10,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 12
+        },
+        {
+          "cenario": "04",
+          "rodada": 11,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 11
+        },
+        {
+          "cenario": "04",
+          "rodada": 12,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 10
+        },
+        {
+          "cenario": "04",
+          "rodada": 13,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 9
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "descricao": "Retirar dois humanos nas rodadas 2 e 5",
+      "eventos_planejados": {
+        "2": [
+          "humano"
+        ],
+        "5": [
+          "humano"
+        ]
+      },
+      "eventos_nao_aplicados": [],
+      "humanos_removidos": 2,
+      "humanos_restantes": 2,
+      "ia_presente": true,
+      "bonus_total": 6,
+      "rodadas_executadas": 16,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 6,
+      "alcancou_colonia": false,
+      "timeline": [
+        {
+          "cenario": "05",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "05",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "05",
+          "rodada": 3,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "05",
+          "rodada": 4,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "05",
+          "rodada": 5,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "05",
+          "rodada": 6,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "05",
+          "rodada": 7,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "05",
+          "rodada": 8,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "05",
+          "rodada": 9,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "05",
+          "rodada": 10,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 12
+        },
+        {
+          "cenario": "05",
+          "rodada": 11,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 11
+        },
+        {
+          "cenario": "05",
+          "rodada": 12,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 10
+        },
+        {
+          "cenario": "05",
+          "rodada": 13,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 9
+        },
+        {
+          "cenario": "05",
+          "rodada": 14,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 8
+        },
+        {
+          "cenario": "05",
+          "rodada": 15,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 7
+        },
+        {
+          "cenario": "05",
+          "rodada": 16,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 6
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "descricao": "Retirar três humanos nas rodadas 2, 5 e 8",
+      "eventos_planejados": {
+        "2": [
+          "humano"
+        ],
+        "5": [
+          "humano"
+        ],
+        "8": [
+          "humano"
+        ]
+      },
+      "eventos_nao_aplicados": [],
+      "humanos_removidos": 3,
+      "humanos_restantes": 1,
+      "ia_presente": true,
+      "bonus_total": 9,
+      "rodadas_executadas": 19,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 3,
+      "alcancou_colonia": false,
+      "timeline": [
+        {
+          "cenario": "06",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "06",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "06",
+          "rodada": 3,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "06",
+          "rodada": 4,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "06",
+          "rodada": 5,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "06",
+          "rodada": 6,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "06",
+          "rodada": 7,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "06",
+          "rodada": 8,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "06",
+          "rodada": 9,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "06",
+          "rodada": 10,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 12
+        },
+        {
+          "cenario": "06",
+          "rodada": 11,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 11
+        },
+        {
+          "cenario": "06",
+          "rodada": 12,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 10
+        },
+        {
+          "cenario": "06",
+          "rodada": 13,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 9
+        },
+        {
+          "cenario": "06",
+          "rodada": 14,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 8
+        },
+        {
+          "cenario": "06",
+          "rodada": 15,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 7
+        },
+        {
+          "cenario": "06",
+          "rodada": 16,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 6
+        },
+        {
+          "cenario": "06",
+          "rodada": 17,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 5
+        },
+        {
+          "cenario": "06",
+          "rodada": 18,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 4
+        },
+        {
+          "cenario": "06",
+          "rodada": 19,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 3
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "descricao": "Retirar quatro humanos nas rodadas 2, 5, 8 e 11",
+      "eventos_planejados": {
+        "2": [
+          "humano"
+        ],
+        "5": [
+          "humano"
+        ],
+        "8": [
+          "humano"
+        ],
+        "11": [
+          "humano"
+        ]
+      },
+      "eventos_nao_aplicados": [],
+      "humanos_removidos": 4,
+      "humanos_restantes": 0,
+      "ia_presente": true,
+      "bonus_total": 12,
+      "rodadas_executadas": 22,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 0,
+      "alcancou_colonia": true,
+      "timeline": [
+        {
+          "cenario": "07",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "07",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "07",
+          "rodada": 3,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "07",
+          "rodada": 4,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "07",
+          "rodada": 5,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "07",
+          "rodada": 6,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "07",
+          "rodada": 7,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "07",
+          "rodada": 8,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "07",
+          "rodada": 9,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "07",
+          "rodada": 10,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 12
+        },
+        {
+          "cenario": "07",
+          "rodada": 11,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 11
+        },
+        {
+          "cenario": "07",
+          "rodada": 12,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 10
+        },
+        {
+          "cenario": "07",
+          "rodada": 13,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 9
+        },
+        {
+          "cenario": "07",
+          "rodada": 14,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 8
+        },
+        {
+          "cenario": "07",
+          "rodada": 15,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 7
+        },
+        {
+          "cenario": "07",
+          "rodada": 16,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 6
+        },
+        {
+          "cenario": "07",
+          "rodada": 17,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 5
+        },
+        {
+          "cenario": "07",
+          "rodada": 18,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 4
+        },
+        {
+          "cenario": "07",
+          "rodada": 19,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 3
+        },
+        {
+          "cenario": "07",
+          "rodada": 20,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 2
+        },
+        {
+          "cenario": "07",
+          "rodada": 21,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 1
+        },
+        {
+          "cenario": "07",
+          "rodada": 22,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 0,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 0
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "descricao": "Retirar um humano por rodada: 6, 7 e 8",
+      "eventos_planejados": {
+        "6": [
+          "humano"
+        ],
+        "7": [
+          "humano"
+        ],
+        "8": [
+          "humano"
+        ]
+      },
+      "eventos_nao_aplicados": [],
+      "humanos_removidos": 3,
+      "humanos_restantes": 1,
+      "ia_presente": true,
+      "bonus_total": 9,
+      "rodadas_executadas": 19,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 3,
+      "alcancou_colonia": false,
+      "timeline": [
+        {
+          "cenario": "08",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "08",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "08",
+          "rodada": 3,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "08",
+          "rodada": 4,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "08",
+          "rodada": 5,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "08",
+          "rodada": 6,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "08",
+          "rodada": 7,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "08",
+          "rodada": 8,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "08",
+          "rodada": 9,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "08",
+          "rodada": 10,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 12
+        },
+        {
+          "cenario": "08",
+          "rodada": 11,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 11
+        },
+        {
+          "cenario": "08",
+          "rodada": 12,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 10
+        },
+        {
+          "cenario": "08",
+          "rodada": 13,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 9
+        },
+        {
+          "cenario": "08",
+          "rodada": 14,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 8
+        },
+        {
+          "cenario": "08",
+          "rodada": 15,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 7
+        },
+        {
+          "cenario": "08",
+          "rodada": 16,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 6
+        },
+        {
+          "cenario": "08",
+          "rodada": 17,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 5
+        },
+        {
+          "cenario": "08",
+          "rodada": 18,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 4
+        },
+        {
+          "cenario": "08",
+          "rodada": 19,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 1,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 3
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "descricao": "Prever retirada no turno 4 da rodada 10, após esgotamento",
+      "eventos_planejados": {
+        "10": [
+          "humano"
+        ]
+      },
+      "eventos_nao_aplicados": [
+        10
+      ],
+      "humanos_removidos": 0,
+      "humanos_restantes": 4,
+      "ia_presente": true,
+      "bonus_total": 0,
+      "rodadas_executadas": 10,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 12,
+      "alcancou_colonia": false,
+      "timeline": [
+        {
+          "cenario": "09",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "09",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "09",
+          "rodada": 3,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "09",
+          "rodada": 4,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "09",
+          "rodada": 5,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "09",
+          "rodada": 6,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "09",
+          "rodada": 7,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "09",
+          "rodada": 8,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "09",
+          "rodada": 9,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "09",
+          "rodada": 10,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 12
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "descricao": "Retirar dois humanos e expulsar a IA",
+      "eventos_planejados": {
+        "2": [
+          "humano"
+        ],
+        "5": [
+          "humano"
+        ],
+        "6": [
+          "ia"
+        ]
+      },
+      "eventos_nao_aplicados": [],
+      "humanos_removidos": 2,
+      "humanos_restantes": 2,
+      "ia_presente": false,
+      "bonus_total": 6,
+      "rodadas_executadas": 16,
+      "oxigenio_final": 0,
+      "rodadas_ate_colonia_no_fim": 6,
+      "alcancou_colonia": false,
+      "timeline": [
+        {
+          "cenario": "10",
+          "rodada": 1,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 4,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 21
+        },
+        {
+          "cenario": "10",
+          "rodada": 2,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 20
+        },
+        {
+          "cenario": "10",
+          "rodada": 3,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 19
+        },
+        {
+          "cenario": "10",
+          "rodada": 4,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 3,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 18
+        },
+        {
+          "cenario": "10",
+          "rodada": 5,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "humano",
+          "bonus": 3,
+          "oxigenio_fim": 11,
+          "humanos_restantes": 2,
+          "ia_presente": true,
+          "rodadas_ate_colonia": 17
+        },
+        {
+          "cenario": "10",
+          "rodada": 6,
+          "oxigenio_inicio": 11,
+          "oxigenio_apos_movimento": 10,
+          "eventos_turno_4": "ia",
+          "bonus": 0,
+          "oxigenio_fim": 10,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 16
+        },
+        {
+          "cenario": "10",
+          "rodada": 7,
+          "oxigenio_inicio": 10,
+          "oxigenio_apos_movimento": 9,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 9,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 15
+        },
+        {
+          "cenario": "10",
+          "rodada": 8,
+          "oxigenio_inicio": 9,
+          "oxigenio_apos_movimento": 8,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 8,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 14
+        },
+        {
+          "cenario": "10",
+          "rodada": 9,
+          "oxigenio_inicio": 8,
+          "oxigenio_apos_movimento": 7,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 7,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 13
+        },
+        {
+          "cenario": "10",
+          "rodada": 10,
+          "oxigenio_inicio": 7,
+          "oxigenio_apos_movimento": 6,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 6,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 12
+        },
+        {
+          "cenario": "10",
+          "rodada": 11,
+          "oxigenio_inicio": 6,
+          "oxigenio_apos_movimento": 5,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 5,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 11
+        },
+        {
+          "cenario": "10",
+          "rodada": 12,
+          "oxigenio_inicio": 5,
+          "oxigenio_apos_movimento": 4,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 4,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 10
+        },
+        {
+          "cenario": "10",
+          "rodada": 13,
+          "oxigenio_inicio": 4,
+          "oxigenio_apos_movimento": 3,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 3,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 9
+        },
+        {
+          "cenario": "10",
+          "rodada": 14,
+          "oxigenio_inicio": 3,
+          "oxigenio_apos_movimento": 2,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 2,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 8
+        },
+        {
+          "cenario": "10",
+          "rodada": 15,
+          "oxigenio_inicio": 2,
+          "oxigenio_apos_movimento": 1,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 1,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 7
+        },
+        {
+          "cenario": "10",
+          "rodada": 16,
+          "oxigenio_inicio": 1,
+          "oxigenio_apos_movimento": 0,
+          "eventos_turno_4": "",
+          "bonus": 0,
+          "oxigenio_fim": 0,
+          "humanos_restantes": 2,
+          "ia_presente": false,
+          "rodadas_ate_colonia": 6
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "all_timeline_balances_match": true,
+    "ai_expulsion_has_zero_bonus": true,
+    "remaining_human_cannot_reach_destination": true,
+    "four_removals_fill_exact_deficit": true,
+    "no_removal_after_exhaustion": true
+  },
+  "limits": [
+    "D=22 is an illustrative input, not a confirmed game constant.",
+    "No fractional bonuses exercised.",
+    "No return-distance formula, policies, voting or classifier simulated.",
+    "With no humans, the reserve remains a bookkeeping horizon, not human consumption."
+  ]
+}

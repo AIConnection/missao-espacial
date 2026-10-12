@@ -1,0 +1,322 @@
+{
+  "root": "projetos/missao-espacial",
+  "moves": {
+    "notebooks/missao_espacial.py": {
+      "path": "projetos/missao-espacial/src/missao_espacial.py",
+      "sha256_before": "0cdd5e78bd2c981cde45b314b705f235f786818fc2a9ed05e02f7acba4724c21"
+    },
+    "notebooks/agent_contract.py": {
+      "path": "projetos/missao-espacial/src/agent_contract.py",
+      "sha256_before": "846ca2ceb1011bc995ad821cda7aac8fdc925839547aeae5d763b6770d662918"
+    },
+    "notebooks/agent_session.py": {
+      "path": "projetos/missao-espacial/src/agent_session.py",
+      "sha256_before": "40edd33ba0970c87b721a0fe5581bd7fa3f860229e8e32445a7a9c1da86baec7"
+    },
+    "notebooks/carregar_agentes.py": {
+      "path": "projetos/missao-espacial/src/carregar_agentes.py",
+      "sha256_before": "7684504e9a3cbf02c402b7f9d7746e52a4125fded535bf9816317997e43f3318"
+    },
+    "notebooks/agent/_baseline.py": {
+      "path": "projetos/missao-espacial/src/agent/_baseline.py",
+      "sha256_before": "aed013eca5954bf30d49b0fae8941400a91ea08ec47f3e3e4b1db1ed0ae803f0"
+    },
+    "notebooks/agent/_human_default.py": {
+      "path": "projetos/missao-espacial/src/agent/_human_default.py",
+      "sha256_before": "72248603b7fc3945984376c283b2b08f86c776f88b0c8b653821106ad4fa9f32"
+    },
+    "notebooks/agent/humano_alpha.py": {
+      "path": "projetos/missao-espacial/src/agent/humano_alpha.py",
+      "sha256_before": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61"
+    },
+    "notebooks/agent/humano_beta.py": {
+      "path": "projetos/missao-espacial/src/agent/humano_beta.py",
+      "sha256_before": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a"
+    },
+    "notebooks/agent/humano_gamma.py": {
+      "path": "projetos/missao-espacial/src/agent/humano_gamma.py",
+      "sha256_before": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914"
+    },
+    "notebooks/agent/humano_random.py": {
+      "path": "projetos/missao-espacial/src/agent/humano_random.py",
+      "sha256_before": "452f74ac1e7c5efcd9fa14aa9f7053ad15d833cfc948809ec1f738cc566226b2"
+    },
+    "notebooks/agent/humanoide.py": {
+      "path": "projetos/missao-espacial/src/agent/humanoide.py",
+      "sha256_before": "cc45dc4b40cf8f4bb4bef8c85b5a519ec29c3bdd87f6b7cf6a9a5c393a5f32cb"
+    },
+    "notebooks/06-Engine_Missao_Espacial_2026-2.ipynb": {
+      "path": "projetos/missao-espacial/notebooks/06-Engine_Missao_Espacial_2026-2.ipynb",
+      "sha256_before": "025018e61bb9859941eaba41c829b6cae6436f18a8a773b79ce7eabbd987c261"
+    },
+    "notebooks/06-exemplo-engine-missao-espacial.py": {
+      "path": "projetos/missao-espacial/examples/06-exemplo-engine-missao-espacial.py",
+      "sha256_before": "81afdceb044724a3a7a1b0fd7d50e7bb118e48a23e3f655e79e54a448786107f"
+    },
+    "notebooks/README_Engine_Missao_Espacial.md": {
+      "path": "projetos/missao-espacial/docs/README_Engine_Missao_Espacial.md",
+      "sha256_before": "37c8cf9853181feb2092f02d3dce0e8a08e498feb2fe64deaddd07e73e432098"
+    },
+    "05-06-Cenario_e_Regras_Jogo_Missao_Espacial_2026-2.md": {
+      "path": "projetos/missao-espacial/docs/05-06-Cenario_e_Regras_Jogo_Missao_Espacial_2026-2.md",
+      "sha256_before": "1d3ceccf5e098b05ff43fd9a9733a7f43d0870c567123077f0ce5ab943f066bc"
+    },
+    "06-Jogo_Missao_Espacial_IA_Humanos_2026-2.md": {
+      "path": "projetos/missao-espacial/docs/historico/proposta-inicial/06-Jogo_Missao_Espacial_IA_Humanos_2026-2.md",
+      "sha256_before": "f835a06bd182cfce63fb59439fb9b4c69cd5e7f1e4287d1ffb9865ee7fee83ae"
+    },
+    "docx/06-Jogo_Missao_Espacial_IA_Humanos_2026-2.docx": {
+      "path": "projetos/missao-espacial/docs/historico/proposta-inicial/06-Jogo_Missao_Espacial_IA_Humanos_2026-2.docx",
+      "sha256_before": "daf940b1e90e684f3fbcbe95ea82e7679341d8d1f253d73339ef634ffd231835"
+    },
+    "pdf/06-Jogo_Missao_Espacial_IA_Humanos_2026-2.pdf": {
+      "path": "projetos/missao-espacial/docs/historico/proposta-inicial/06-Jogo_Missao_Espacial_IA_Humanos_2026-2.pdf",
+      "sha256_before": "d2e654533773740aa3f32c2a18c8cc5485aa909c9cb5cbd4e51939360342c99d"
+    },
+    "evidencias/aula-05-2026-2/diagramas-jogo/01-fluxo-dados.mmd": {
+      "path": "projetos/missao-espacial/docs/diagramas/01-fluxo-dados.mmd",
+      "sha256_before": "f0812599f13b3312bf5464a4c46f834ed8d84b1a593c4499194793d66856f3d3"
+    },
+    "evidencias/aula-05-2026-2/diagramas-jogo/02-turnos-loop.mmd": {
+      "path": "projetos/missao-espacial/docs/diagramas/02-turnos-loop.mmd",
+      "sha256_before": "4019c8637b198d2605d6aede6a04d0c5b1b7610afb524d8fea17138444876f80"
+    },
+    "evidencias/aula-05-2026-2/diagramas-jogo/03-votacao-e-controle.mmd": {
+      "path": "projetos/missao-espacial/docs/diagramas/03-votacao-e-controle.mmd",
+      "sha256_before": "1a312c13d4577b3d0df2b575929159360f94caaa769d79e500d2ea87f5ef2b78"
+    },
+    "evidencias/aula-05-2026-2/diagramas-jogo/04-mapa-mental.mmd": {
+      "path": "projetos/missao-espacial/docs/diagramas/04-mapa-mental.mmd",
+      "sha256_before": "27c251bef9944f1fa149e55d24649959be5e93656f0e25d1899ff66e805ff5c6"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-agentes/README_Engine_Missao_Espacial.md": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-agentes/README_Engine_Missao_Espacial.md",
+      "sha256_before": "ab722fb2f30a504c570d1708ae38b55ca0c4f658e2910bd816e6ff296b97a81c"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-agentes/entrega.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-agentes/entrega.json",
+      "sha256_before": "9fd0c935127674024e5865d398d9524461850be4af8dc8b3c5278079e8159820"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-ciclo-vida/README_Engine_Missao_Espacial.md": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-ciclo-vida/README_Engine_Missao_Espacial.md",
+      "sha256_before": "19bd3fe5b32f22a77345f45494b877c79f4a9fa8145de3f04be3a487b933102e"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-ciclo-vida/entrega.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-ciclo-vida/entrega.json",
+      "sha256_before": "64bddeb3f609be1d41e111b44645e5ba3baa9d4e092526f702aa86909a5a2761"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-comportamentos/README_Engine_Missao_Espacial.md": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-comportamentos/README_Engine_Missao_Espacial.md",
+      "sha256_before": "9293ca330f0a2b58be7f02efeaef278176b7391e9d863a3f24f6942ba40c3cea"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-comportamentos/entrega.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-comportamentos/entrega.json",
+      "sha256_before": "214d3849e977ffeadf2bad60842678c4c60102d03a69842b442a29db4845d3fa"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-desacoplar-ids/README_Engine_Missao_Espacial.md": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-desacoplar-ids/README_Engine_Missao_Espacial.md",
+      "sha256_before": "176075e20cf95b8d60389c0846f2998386f609596a2b77614b98d80516719504"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-desacoplar-ids/entrega.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-desacoplar-ids/entrega.json",
+      "sha256_before": "1c887e1d885997d2841dcb124656325384063e9c5e68dd6295aaccccc83a087b"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-humano-random/README_Engine_Missao_Espacial.md": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-humano-random/README_Engine_Missao_Espacial.md",
+      "sha256_before": "7f0b69a1908e2e8b3a7aec0f54912df5bca0f0c525edce3bd51daa556f0eb146"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-humano-random/entrega.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-humano-random/entrega.json",
+      "sha256_before": "9639cacf23334385e58e2aa803f8571167f1e134f30cc41a15471e4a66eb83d6"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-vinculo-explicito/README_Engine_Missao_Espacial.md": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-vinculo-explicito/README_Engine_Missao_Espacial.md",
+      "sha256_before": "82487f2121f464f7d4ba36981c07aa68bdb4d5e283596f8eaa866d8e6035593f"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/antes-vinculo-explicito/entrega.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/antes-vinculo-explicito/entrega.json",
+      "sha256_before": "1c887e1d885997d2841dcb124656325384063e9c5e68dd6295aaccccc83a087b"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/entrega.json": {
+      "path": "projetos/missao-espacial/entrega.json",
+      "sha256_before": "b00a531adeb17b74fcd40c7f63b23aab9bbc44dff7fca6520db7845ed43a912b"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/gerar_notebook.py": {
+      "path": "projetos/missao-espacial/scripts/gerar_notebook.py",
+      "sha256_before": "b42160f5d5f8d78aa99714bf43e86c73d7ac1d9a517f1d5b33d1a57c7e390d86"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/limpeza-codigo-nao-usado.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/limpeza-codigo-nao-usado.json",
+      "sha256_before": "63503667d76773f1fe20340055e3e2040211e1acd4267969c2001ead050f657e"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/resultado-100000-rodadas.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/resultado-100000-rodadas.json",
+      "sha256_before": "cd900b8a44a0f986debd7437b4ca86a215067b25354b5b21cfefb3ddfe760f14"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/resultado-carregar-agentes.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/resultado-carregar-agentes.json",
+      "sha256_before": "596587a2ce2f537b36d7b2519f1ff41377d6c3313603a9d462475c54323d3709"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/resultado-ciclo-vida.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/resultado-ciclo-vida.json",
+      "sha256_before": "84db3608b30ab2f506128b4a484857ee43d5eb8c015a4c9ed465d7b4e29963f7"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/resultado-comportamentos.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/resultado-comportamentos.json",
+      "sha256_before": "7e665d858a916c0dbc93fa12fe5d6a288ae338f904d7576e85be267762a00d4b"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/resultado-humano-random.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/resultado-humano-random.json",
+      "sha256_before": "36c0038cbd22e99db6a9a54cd171130f9803498175f39d302aaf01b5b9e95037"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/resultado-notebook.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/resultado-notebook.json",
+      "sha256_before": "8a237c2d2f0eab16fc46fc19844617246cdf72dc39f4787116a2b884469525b0"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/resultado-retomada.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/resultado-retomada.json",
+      "sha256_before": "aeda2a6b01bbfe9fec82bae6e382573f7fb7d2c03d07810f958536ecf66f39f8"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/resultado-testes.json": {
+      "path": "projetos/missao-espacial/evidencias/engine-v01/resultado-testes.json",
+      "sha256_before": "295dc51a97cbd34a9cd077d93bcc084b66b2fa1dd93c32ecb26c7e484f9b7c66"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/test_agent_behaviors.py": {
+      "path": "projetos/missao-espacial/tests/test_agent_behaviors.py",
+      "sha256_before": "4dc685cab2ad7be3d3e4cee1b0637ea61c1e6185f275b854be5e29078f8c8aa6"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/test_agent_lifecycle.py": {
+      "path": "projetos/missao-espacial/tests/test_agent_lifecycle.py",
+      "sha256_before": "0e28c7fa1d182800ad1d6bde15886464e5a1f1c805edb38331f9c18d360fa53e"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/test_carregar_agentes.py": {
+      "path": "projetos/missao-espacial/tests/test_carregar_agentes.py",
+      "sha256_before": "6688935e81ba1d21bd7dfdf01c3cdbc42a8c4787bdf33d9a88dbfc327e55bc8e"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/test_engine.py": {
+      "path": "projetos/missao-espacial/tests/test_engine.py",
+      "sha256_before": "dca3e2267c2e473080d7845f0396f8148054395bcfa4855df7ed20337edf00b9"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/test_random_agent.py": {
+      "path": "projetos/missao-espacial/tests/test_random_agent.py",
+      "sha256_before": "ee3698e1c1c2a06dcef57e1651ae680e49f6abeb644e3d29e89c38c407eea293"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/validar_notebook.py": {
+      "path": "projetos/missao-espacial/scripts/validar_notebook.py",
+      "sha256_before": "2729851f46e83b4125df1bd2477e4ac4e3d570e89f5d9602e999c8f7360cf19a"
+    },
+    "evidencias/aula-05-2026-2/engine-v01/verificar_escala.py": {
+      "path": "projetos/missao-espacial/scripts/verificar_escala.py",
+      "sha256_before": "69fa4ac4644e8492c67d5b4588a106c9a719cc7dce48caf4cfbd63ea378c0997"
+    },
+    "evidencias/aula-05-2026-2/informacao-v01/informacao-antes-v01.txt": {
+      "path": "projetos/missao-espacial/evidencias/informacao-v01/informacao-antes-v01.txt",
+      "sha256_before": "404682ea895b583f61a5c199d841b75820475e7ae2f2559e5fd1d007ea290e8e"
+    },
+    "evidencias/aula-05-2026-2/informacao-v01/proposta-tecnica-substituida.txt": {
+      "path": "projetos/missao-espacial/evidencias/informacao-v01/proposta-tecnica-substituida.txt",
+      "sha256_before": "cf4d3625078b33bfbce2733ead111d37d638954e2d008ffca8e312c025ed7c8b"
+    },
+    "evidencias/aula-05-2026-2/questoes-v02/catalogo-e-restricoes-antes-v02.txt": {
+      "path": "projetos/missao-espacial/evidencias/questoes-v02/catalogo-e-restricoes-antes-v02.txt",
+      "sha256_before": "138f1b198e9abda94c7431862834fa4d31d83fc90f7d91f4b1b94c784c7cc4a4"
+    },
+    "evidencias/aula-05-2026-2/questoes-v02/catalogo-questoes-v02.json": {
+      "path": "projetos/missao-espacial/evidencias/questoes-v02/catalogo-questoes-v02.json",
+      "sha256_before": "ef4357798e1389e9d11d588eaede288583f4c38a13d5dea30a4f5553770b6c99"
+    },
+    "evidencias/aula-05-2026-2/questoes-v02/regras_questoes.py": {
+      "path": "projetos/missao-espacial/evidencias/questoes-v02/regras_questoes.py",
+      "sha256_before": "f7507afa0570e748fcb7466ce18806a2cb4729fcfd95e00c2e6e65bee53ff0c4"
+    },
+    "evidencias/aula-05-2026-2/questoes-v02/test_regras_questoes.py": {
+      "path": "projetos/missao-espacial/evidencias/questoes-v02/test_regras_questoes.py",
+      "sha256_before": "53e210df4e03272755c08d828c0013d559d6173953cd960c5652ebc2d3535ed2"
+    },
+    "evidencias/aula-05-2026-2/questoes-v02/validacao-restricoes.json": {
+      "path": "projetos/missao-espacial/evidencias/questoes-v02/validacao-restricoes.json",
+      "sha256_before": "7368505b90613e19b25e021fba4e8f69976e432e3082199dd9f855bcef7540e9"
+    },
+    "evidencias/aula-05-2026-2/questoes-v03/catalogo-questoes-v03.json": {
+      "path": "projetos/missao-espacial/catalogos/catalogo-questoes-v03.json",
+      "sha256_before": "1157a6eb05a6bda85fd075f6166ea0d14fc319693c695a8ddfccb82406470041"
+    },
+    "evidencias/aula-05-2026-2/questoes-v03/catalogo_questoes.py": {
+      "path": "projetos/missao-espacial/src/catalogo_questoes.py",
+      "sha256_before": "9c1ce6f4c934f6d4779b9ec4cdab6897f251600b6779e1fefbd0953f13cf2878"
+    },
+    "evidencias/aula-05-2026-2/questoes-v03/secoes-6-7-antes-v03.txt": {
+      "path": "projetos/missao-espacial/evidencias/questoes-v03/secoes-6-7-antes-v03.txt",
+      "sha256_before": "c5df4da6990f14e67723a79f4ffb2dc6e06e1dbddd145e39591e3c27f9405a6d"
+    },
+    "evidencias/aula-05-2026-2/questoes-v03/test_catalogo_questoes.py": {
+      "path": "projetos/missao-espacial/tests/test_catalogo_questoes.py",
+      "sha256_before": "a6dfdcfb3310e9278acbc70023ceb093a982e8f90cc6e40f91e961ea38a51cb5"
+    },
+    "evidencias/aula-05-2026-2/questoes-v03/validacao-questoes-v03.json": {
+      "path": "projetos/missao-espacial/evidencias/questoes-v03/validacao-questoes-v03.json",
+      "sha256_before": "90f4f7ae7d616f46a7dfe3cad2cdf9290066eb5f4d4a2a540d64ae4b2b0d0ff9"
+    },
+    "evidencias/aula-05-2026-2/validacao-oxigenio/resultados-10-cenarios.json": {
+      "path": "projetos/missao-espacial/evidencias/validacao-oxigenio/resultados-10-cenarios.json",
+      "sha256_before": "f84034105951130d0a43fe394c1f11f95f279a3aae4d2efb0aa7d9c077ea7f6f"
+    },
+    "evidencias/aula-05-2026-2/validacao-oxigenio/resultados-bonus-fracionarios.json": {
+      "path": "projetos/missao-espacial/evidencias/validacao-oxigenio/resultados-bonus-fracionarios.json",
+      "sha256_before": "ea77d7ee8006df738db4a06a69a350c0d17cc3cf4324b338fedc2572a8252bdc"
+    },
+    "evidencias/aula-05-2026-2/validacao-oxigenio/resultados-fracoes-e-retorno-antes-encerramento-ia.json": {
+      "path": "projetos/missao-espacial/evidencias/validacao-oxigenio/resultados-fracoes-e-retorno-antes-encerramento-ia.json",
+      "sha256_before": "8ad6b8e983760578f1bfa5d6126233f248a05d6428a4f03bd1de1d3abf9dfd67"
+    },
+    "evidencias/aula-05-2026-2/validacao-oxigenio/resultados-fracoes-e-retorno.json": {
+      "path": "projetos/missao-espacial/evidencias/validacao-oxigenio/resultados-fracoes-e-retorno.json",
+      "sha256_before": "8313c6be40c5148ad4ad61935e60ac21f6782d27d5df68aa91c96446840184e2"
+    },
+    "evidencias/aula-05-2026-2/validacao-oxigenio/resultados-proporcionalidade-2N.json": {
+      "path": "projetos/missao-espacial/evidencias/validacao-oxigenio/resultados-proporcionalidade-2N.json",
+      "sha256_before": "722081ab8d176ff362c857c9edf17a671ebe88b2432d5364f4a3a471e8a1de51"
+    },
+    "evidencias/aula-05-2026-2/validacao-oxigenio/rodadas-10-cenarios.csv": {
+      "path": "projetos/missao-espacial/evidencias/validacao-oxigenio/rodadas-10-cenarios.csv",
+      "sha256_before": "e5595fea92357229babb853e813801905204f558d27cca901f61459ba9029922"
+    },
+    "evidencias/aula-05-2026-2/validacao-oxigenio/simular_fracoes_e_retorno.py": {
+      "path": "projetos/missao-espacial/scripts/validacao-oxigenio/simular_fracoes_e_retorno.py",
+      "sha256_before": "9e4b8c166ad151a9e585fa8d85a9cdd069d62de2ba1dbd6c03ac7c7e237fc6cc"
+    },
+    "evidencias/aula-05-2026-2/validacao-oxigenio/simular_oxigenio.py": {
+      "path": "projetos/missao-espacial/scripts/validacao-oxigenio/simular_oxigenio.py",
+      "sha256_before": "23bb028800f7c34c842fb32b3247d69ee6c3fcbf93a56358d65e9bb1d80e96a8"
+    },
+    "evidencias/aula-05-2026-2/validacao-oxigenio/verificar_bonus_fracionarios.py": {
+      "path": "projetos/missao-espacial/scripts/validacao-oxigenio/verificar_bonus_fracionarios.py",
+      "sha256_before": "ac43d0545bbce695877011b9682e0fd609536f51510e460ed62cb2ed595af422"
+    }
+  },
+  "mode": "moved, no compatibility copies",
+  "byte_preservation": "checked before source/reference updates",
+  "removed_obsolete_code": [
+    "projetos/missao-espacial/evidencias/questoes-v02/regras_questoes.py",
+    "projetos/missao-espacial/evidencias/questoes-v02/test_regras_questoes.py"
+  ],
+  "reference_updated_files": [
+    "projetos/missao-espacial/examples/06-exemplo-engine-missao-espacial.py",
+    "projetos/missao-espacial/docs/README_Engine_Missao_Espacial.md",
+    "projetos/missao-espacial/docs/05-06-Cenario_e_Regras_Jogo_Missao_Espacial_2026-2.md",
+    "projetos/missao-espacial/scripts/gerar_notebook.py",
+    "projetos/missao-espacial/tests/test_agent_behaviors.py",
+    "projetos/missao-espacial/tests/test_agent_lifecycle.py",
+    "projetos/missao-espacial/tests/test_carregar_agentes.py",
+    "projetos/missao-espacial/tests/test_engine.py",
+    "projetos/missao-espacial/tests/test_random_agent.py",
+    "projetos/missao-espacial/scripts/validar_notebook.py",
+    "projetos/missao-espacial/scripts/verificar_escala.py",
+    "projetos/missao-espacial/src/catalogo_questoes.py",
+    "projetos/missao-espacial/tests/test_catalogo_questoes.py",
+    "projetos/missao-espacial/scripts/validacao-oxigenio/simular_fracoes_e_retorno.py",
+    "projetos/missao-espacial/scripts/validacao-oxigenio/simular_oxigenio.py",
+    "projetos/missao-espacial/scripts/validacao-oxigenio/verificar_bonus_fracionarios.py"
+  ],
+  "validation": "evidencias/organizacao/validacao.json"
+}

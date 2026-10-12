@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-12",
+  "experiment_tests": 16,
+  "experiment_tests_passed": 16,
+  "full_suite_total": 172,
+  "full_suite_passed": 170,
+  "preexisting_failures": [
+    "test_catalog_answers_match_authorized_truth_through_game",
+    "test_session_opinions_match_engine_truth"
+  ],
+  "notebook_local_passed": true,
+  "runs": [
+    "evidencias/experimentos/20261012T185857-a84afebc",
+    "evidencias/experimentos/20261012T190843-6a16e626"
+  ],
+  "games_per_run": 2000,
+  "scenarios_per_run": 2,
+  "games_per_scenario": 1000,
+  "cross_process_records_compared": 2000,
+  "cross_process_results_questions_answers_votes_and_revelations_identical": true,
+  "variable_crew_test": 50,
+  "variable_rounds_test": 20,
+  "browser_checks": [
+    "completed_report",
+    "effective_configuration_diff",
+    "duration_and_outcomes",
+    "question_response_filter_Q10",
+    "corrected_mission_delivery_text"
+  ],
+  "seeded_agent_hooks_before_start": true,
+  "statistics_do_not_change_game_state_or_decisions": true,
+  "interactive_game_and_checkpoint_preserved": true,
+  "scope_notes": [
+    "Timing is local wall-clock time under uncontrolled system load.",
+    "Collected batches preserve source hashes from the versions used; subsequent job error-handling fixes are validated by tests.",
+    "No 100000-game batch or Google Colab dashboard executed.",
+    "Per-game histories remain in memory; numeric aggregates use constant-memory Welford statistics."
+  ],
+  "last_report": "evidencias/experimentos/20261012T190843-6a16e626/relatorio.json",
+  "results": [
+    {
+      "name": "Base",
+      "rounds_mean": 14.827000000000016,
+      "seconds_mean": 0.09083414782071501,
+      "return_rate": 0.019,
+      "questions_per_game": 43.522
+    },
+    {
+      "name": "Aleatório sem saída voluntária",
+      "rounds_mean": 11.81599999999998,
+      "seconds_mean": 0.07740730115911,
+      "return_rate": 0.229,
+      "questions_per_game": 26.412
+    }
+  ],
+  "professor_correction": "Maintaining the mission guarantees cargo delivery, even if humans do not survive. Dashboard, documentation and report explanatory notes corrected; counts/results/timings preserved."
+}

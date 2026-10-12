@@ -1,0 +1,58 @@
+{
+  "version": "engine-v01",
+  "date": "2026-10-12",
+  "status": "implemented_and_locally_validated",
+  "python": "3.13.4",
+  "canonical_files": [
+    {
+      "path": "notebooks/missao_espacial.py",
+      "sha256": "0cdd5e78bd2c981cde45b314b705f235f786818fc2a9ed05e02f7acba4724c21"
+    },
+    {
+      "path": "notebooks/06-exemplo-engine-missao-espacial.py",
+      "sha256": "0046f01a4c61ce96844a93b1d4a65370753bd39eca7af7f97cf60c4172f53993"
+    },
+    {
+      "path": "notebooks/06-Engine_Missao_Espacial_2026-2.ipynb",
+      "sha256": "e63fcb5ac2c0d0833ccad222432d05a06db7f5e3ffb129bf3d25ca8760c2177f"
+    },
+    {
+      "path": "notebooks/README_Engine_Missao_Espacial.md",
+      "sha256": "ab722fb2f30a504c570d1708ae38b55ca0c4f658e2910bd816e6ff296b97a81c"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/test_engine.py",
+      "sha256": "dca3e2267c2e473080d7845f0396f8148054395bcfa4855df7ed20337edf00b9"
+    },
+    {
+      "path": "evidencias/aula-05-2026-2/engine-v01/gerar_notebook.py",
+      "sha256": "9b9fb9ded131f9e483eb57e8a3290113d2d666853aca7efc47d809cc70699602"
+    }
+  ],
+  "validation": {
+    "engine_tests": 41,
+    "catalog_tests": 23,
+    "scale_rounds": 100000,
+    "private_answers": 500000,
+    "private_revelations": 100000,
+    "fresh_process_resume": true,
+    "local_notebook_execution": true,
+    "notebook_engine_synchronized": true
+  },
+  "requirements": {
+    "rules_and_turns": "Game phase methods and test_engine.py",
+    "exact_oxygen_and_endings": "integer quarters; fractional and exhaustion tests",
+    "private_information": "agent-specific copied views; no global truth passed to policies",
+    "checkpoint": "versioned JSON with pending commands, policy memories and RNG",
+    "colab_portability": "single stdlib module and self-contained notebook",
+    "agent_implementation_deferred": "policy callbacks independent of engine and trained model"
+  },
+  "limits": [
+    "Google Colab runtime not executed.",
+    "No model training or inference performed.",
+    "Scale run uses simple Q10 policies; votes and exits validated separately.",
+    "Persisted recovery resumes last completed checkpoint; callbacks/models must be reconnected.",
+    "Question thresholds remain configurable proposed defaults."
+  ],
+  "next_step": "Connect final policies and trained classification head; validate notebook in Google Colab."
+}

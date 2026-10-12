@@ -1,0 +1,7 @@
+{
+  "tests_run": 23,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "scope": "catalog and question availability; privacy fields checked, no full-game routing or NLI inference"
+}
