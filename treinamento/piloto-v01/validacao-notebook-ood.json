@@ -1,22 +1,32 @@
 {
   "passed": true,
   "notebook": "notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb",
-  "notebook_sha256": "cd84bb0c4aa45b1703e7cf97a87825c9693709c3f9d96fcf6a32352a4acd3ac2",
-  "code_cells": 9,
+  "notebook_sha256": "d4135981a7e16f3ba8fb7deaf3d4c4f2326dce51ca78585478e9b6960017e451",
+  "code_cells": 13,
   "checks": [
     "all_code_cells_compile",
-    "no_payload_or_execution_modes_or_validation_flags",
-    "real_github_package_download_before_training",
+    "no_payload_execution_modes_or_validation_flags_in_code",
+    "real_github_download_and_package_hash",
+    "input_and_target_inspection",
+    "class_and_frequency_distributions",
     "20_package_tests_pass",
-    "one_independent_inference_cell_executed_in_empty_namespace",
-    "real_github_heads_and_data_download",
-    "original_head_loader_and_weights_applied_to_historical_features",
-    "confusion_and_accuracy_match_historical_results",
-    "new_result_file_written"
+    "one_actual_optimizer_step_on_420_real_training_vectors",
+    "both_heads_retrained_with_original_real_feature_cache_in_separate_directory",
+    "calibration_reserved_test_evaluation_and_export_executed",
+    "independent_inference_cell_executed_in_empty_namespace_with_real_github_heads_and_cached_features"
   ],
+  "optimizer_step": {
+    "cross_entropy_before": 1.0986119508743286,
+    "cross_entropy_after": 3.2001917362213135,
+    "gradient_weight_norm": 17.84282875061035,
+    "learning_rate": 0.01,
+    "interpretation": "first step increases loss; not hidden or tuned away"
+  },
+  "retrained_nli_test_accuracy": 0.9222222222222223,
   "limitations": [
-    "Dependency installation command mocked during local validation; existing environment used",
-    "Phi-4 body replaced by historical features in the independent-cell validation; no new 30-forward execution",
-    "Complete training and live Colab execution not repeated for this revision"
+    "Dependency installer mocked during local validation; installed environment used",
+    "Full Phi-4 feature extraction not repeated; original verified feature cache read without modifying it",
+    "Independent demonstration validated with historical real features instead of new Phi-4 forwards",
+    "Full notebook not executed in live Colab"
   ]
 }

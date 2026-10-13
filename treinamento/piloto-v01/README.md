@@ -6,11 +6,13 @@ Abra `notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb` no Colab (upload do
 
 [Abra o notebook atualizado da main no Colab](https://colab.research.google.com/github/AIConnection/missao-espacial/blob/main/notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb).
 
-As seções 1 a 8 apresentam o treinamento em sequência: instalar dependências, baixar o pacote do GitHub, conferir dados, extrair features, treinar, calibrar, avaliar, inferir e exportar. Não há modos de execução ou flags de validação no notebook.
+As seções 1 a 10 apresentam o processo de treinamento em sequência: instalar dependências, baixar o pacote do GitHub, conferir dados, extrair features, treinar, calibrar, avaliar, inferir e exportar. Não há modos de execução ou flags de validação no notebook.
 
-A seção 9 apresenta exemplos completos e tem **uma única célula independente** para demonstrar inferência com as cabeças já treinadas da `main`, sem executar células anteriores. Ela prepara suas dependências, baixa scripts, dados e pesos, confere os hashes e executa os 30 pares NLI fora do domínio. O gabarito fica separado da entrada. Para uma demonstração de seis exemplos guiados, altere somente a lista `INDICES` conforme indicado na seção. A cabeça de desfechos não é avaliada fora da missão.
+A seção 11 explica a avaliação de transferência e tem **uma única célula independente** para demonstrar inferência com as cabeças já treinadas da `main`, sem executar células anteriores. Ela prepara suas dependências, baixa scripts, dados e pesos, confere os hashes e executa os 30 pares NLI fora do domínio. O gabarito fica separado da entrada. Para uma demonstração de seis exemplos guiados, altere somente a lista `INDICES` conforme indicado na seção. A cabeça de desfechos não é avaliada fora da missão.
 
-Todos os downloads usam um único commit resolvido a partir da `main`. O Phi-4 base permanece na revisão fixa registrada no pacote; não precisa repetir as 816 extrações para demonstrar inferência. Uma cópia antiga no Drive não é atualizada automaticamente: abra o link acima ou importe novamente o notebook atualizado.
+Todos os downloads usam um único commit resolvido a partir da `main`. O Phi-4 base permanece na revisão fixa registrada no pacote; não precisa repetir as 816 extrações para demonstrar inferência. A organização parte de entrada e alvo, explica a distribuição e separação dos dados, o corpo congelado e o cache, demonstra um passo de otimização com vetores reais e depois apresenta treino completo, calibração, métricas e exportação. Os dados ilustram esses conceitos; não há uma aula de regras do jogo.
+
+Uma cópia antiga no Drive não é atualizada automaticamente: abra o link acima ou importe novamente o notebook atualizado.
 
 Há 600 exemplos NLI balanceados (200 por classe) e todos os 216 exemplos de desfechos do v04. O notebook extrai features do Phi-4 congelado, treina duas cabeças separadas, calibra em partições reservadas, avalia no teste e exporta as heads com contrato, normalização, previsões e relatório.
 
@@ -23,7 +25,7 @@ No Colab, ajuste a pasta de trabalho para armazenamento persistente se quiser re
 ## Validação realizada nesta entrega
 
 - **20 testes passaram**: operações e quantização CPU, seleção de dispositivo, captura do último token, prefill com contexto completo, splits reais sem cruzamento de grupos, normalização de treino, treino sintético das duas heads, calibração, métricas, cache e exportação/reabertura de uma cabeça sintética.
-- Na versão atual, a preparação do treinamento baixou o pacote real do GitHub e executou os 20 testes. A célula de demonstração foi executada isoladamente em namespace vazio, com download real e cabeça real; apenas o corpo Phi-4 foi substituído por features históricas para conferir o fluxo e as métricas. Essa validação não é uma nova execução integral de inferência. Não há modo leve no notebook.
+- Na versão atual, a preparação do treinamento baixou o pacote real do GitHub e executou os 20 testes. As células de inspeção, distribuições e atualização foram executadas; o treino completo das duas cabeças foi reexecutado com o cache original de representações reais, em outra pasta, reproduzindo 83/90 na classificação, sem repetir a extração do corpo. A célula de demonstração foi executada isoladamente em namespace vazio, com download real e cabeça real; apenas o corpo Phi-4 foi substituído por features históricas para conferir o fluxo e as métricas. Essa validação não é uma nova execução integral de inferência. Não há modo leve no notebook.
 - As 816 entradas foram comparadas com os datasets originais. As 600 sequências NLI têm codificação idêntica ao contrato v03; as 216 entradas de desfechos são idênticas ao v04. Máximo: 9.119 tokens, abaixo de 16.384, sem recorte.
 - Os relatórios de validação estão nesta pasta. O notebook mantém outputs vazios para começar uma execução nova.
 
