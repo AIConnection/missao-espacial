@@ -7,7 +7,7 @@
   "export_accepted_by_original_loader": true,
   "source_loader_copied_verbatim": true,
   "notebook": "notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb",
-  "notebook_sha256": "17e05ba692d5bcf604cea7de93d9dd64ddbfa07e024c932c81a43cccf093e031",
+  "notebook_sha256": "c32ad12f1fb687568c26ab848011b4d3dfb0986f371ec07ab9e7a03ff7bde8f8",
   "code_cells": 16,
   "training_preview": "first 5 and last 5 training rows per task, full input and separate supervision",
   "demo_preview": "first 5 and last 5 of 30 rows, full input and separate supervision",
