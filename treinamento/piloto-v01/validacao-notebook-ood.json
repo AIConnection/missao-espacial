@@ -1,33 +1,22 @@
 {
   "passed": true,
+  "inline_nli_accuracy": 0.9222222222222223,
+  "inline_ood_accuracy": 0.7666666666666667,
+  "all_816_encoded_inputs_identical": true,
+  "head_weights_equal_original": true,
+  "export_accepted_by_original_loader": true,
+  "source_loader_copied_verbatim": true,
   "notebook": "notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb",
-  "notebook_sha256": "15136c0285361320b201583f1a5e2bed0caa987aeb1d3e6fe7c8e0d2a4018156",
-  "support_module_sha256": "7eaffcbdb4015e16bcd8f885113b510bb4ce59c03ec5e6fd32abcbbdcfdb10d1",
-  "code_cells": 14,
-  "checks": [
-    "python_cell_bodies_compile_shell_lines_simulated",
-    "git_shallow_clone_main_executed_successfully",
-    "central_optimizer_and_training_cells_identical_to_previous_revision",
-    "both_heads_trained_using_verified_original_feature_cache_in_separate_directory",
-    "compact_metric_summaries_executed",
-    "exported_head_bytes_checked",
-    "independent_demo_with_original_real_heads_and_historical_phi4_features",
-    "ood_confusion_and_accuracy_match_historical_results",
-    "altered_evaluation_data_rejected_before_loading_model",
-    "duplicate_evaluation_indices_rejected",
-    "20_original_portable_tests_pass",
-    "explicit_training_download_and_demo_download_request_identical_model_revision_and_files",
-    "downloaded_directory_passed_to_original_loader",
-    "20_portable_tests_pass_after_explicit_phi4_revision"
-  ],
-  "retrained_nli_test_accuracy": 0.9222222222222223,
-  "ood_accuracy_with_historical_features": 0.7666666666666667,
+  "notebook_sha256": "17e05ba692d5bcf604cea7de93d9dd64ddbfa07e024c932c81a43cccf093e031",
+  "code_cells": 16,
+  "training_preview": "first 5 and last 5 training rows per task, full input and separate supervision",
+  "demo_preview": "first 5 and last 5 of 30 rows, full input and separate supervision",
+  "original_scripts_preserved": true,
+  "colab_session_changed": false,
   "limitations": [
-    "pip installation and notebook shell lines simulated during local cell validation; existing environment used",
-    "Real git clone separately executed; notebook validation uses local checkout paths",
-    "Phi-4 extraction and new OOD forwards not repeated",
-    "Full notebook not executed in live Colab",
-    "Explicit snapshot download calls validated with local public Phi-4 assets returned by a test double; 8.2 GB not downloaded again"
-  ],
-  "dependency_validation": "validacao-dependencias-colab.json"
+    "Shell installation and git clone not reexecuted in this validation; local checkout paths used",
+    "Phi-4 body replaced by historical real features for validation; full new extraction not performed",
+    "Explicit head training executed on CPU with verified original real representations",
+    "Full revised notebook not executed in live Colab"
+  ]
 }
