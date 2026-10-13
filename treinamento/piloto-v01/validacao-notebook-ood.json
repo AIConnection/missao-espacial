@@ -1,32 +1,28 @@
 {
   "passed": true,
   "notebook": "notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb",
-  "notebook_sha256": "d4135981a7e16f3ba8fb7deaf3d4c4f2326dce51ca78585478e9b6960017e451",
+  "notebook_sha256": "929a58c342773b117f5831f2074aad04f9fbaf097fe0cc695469d8872f087e8b",
+  "support_module_sha256": "8ae9c4bada22eaa61d20c6c6e62570d45f59e087e2ababc0c2983b6bfd4099e9",
   "code_cells": 13,
   "checks": [
-    "all_code_cells_compile",
-    "no_payload_execution_modes_or_validation_flags_in_code",
-    "real_github_download_and_package_hash",
-    "input_and_target_inspection",
-    "class_and_frequency_distributions",
-    "20_package_tests_pass",
-    "one_actual_optimizer_step_on_420_real_training_vectors",
-    "both_heads_retrained_with_original_real_feature_cache_in_separate_directory",
-    "calibration_reserved_test_evaluation_and_export_executed",
-    "independent_inference_cell_executed_in_empty_namespace_with_real_github_heads_and_cached_features"
+    "python_cell_bodies_compile_shell_lines_simulated",
+    "git_shallow_clone_main_executed_successfully",
+    "central_optimizer_and_training_cells_identical_to_previous_revision",
+    "both_heads_trained_using_verified_original_feature_cache_in_separate_directory",
+    "compact_metric_summaries_executed",
+    "exported_head_bytes_checked",
+    "independent_demo_with_original_real_heads_and_historical_phi4_features",
+    "ood_confusion_and_accuracy_match_historical_results",
+    "altered_evaluation_data_rejected_before_loading_model",
+    "duplicate_evaluation_indices_rejected",
+    "20_original_portable_tests_pass"
   ],
-  "optimizer_step": {
-    "cross_entropy_before": 1.0986119508743286,
-    "cross_entropy_after": 3.2001917362213135,
-    "gradient_weight_norm": 17.84282875061035,
-    "learning_rate": 0.01,
-    "interpretation": "first step increases loss; not hidden or tuned away"
-  },
   "retrained_nli_test_accuracy": 0.9222222222222223,
+  "ood_accuracy_with_historical_features": 0.7666666666666667,
   "limitations": [
-    "Dependency installer mocked during local validation; installed environment used",
-    "Full Phi-4 feature extraction not repeated; original verified feature cache read without modifying it",
-    "Independent demonstration validated with historical real features instead of new Phi-4 forwards",
+    "pip installation and notebook shell lines simulated during local cell validation; existing environment used",
+    "Real git clone separately executed; notebook validation uses local checkout paths",
+    "Phi-4 extraction and new OOD forwards not repeated",
     "Full notebook not executed in live Colab"
   ]
 }

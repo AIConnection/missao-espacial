@@ -1,16 +1,16 @@
 # Treinamento piloto portátil — Missão Espacial
 
-Abra `notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb` no Colab (upload do notebook) ou em Jupyter local. O notebook baixa os dados e os scripts do GitHub, sem PAYLOAD Base64. Não requer clonagem do projeto, caminhos do computador do professor ou upload separado de datasets.
+Abra `notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb` no Colab (upload do notebook) ou em Jupyter local. O notebook clona a main do GitHub para obter os dados, scripts e pesos treinados, sem PAYLOAD Base64. Não requer clonagem do projeto, caminhos do computador do professor ou upload separado de datasets.
 
 ## Inferência fora do domínio no Colab
 
 [Abra o notebook atualizado da main no Colab](https://colab.research.google.com/github/AIConnection/missao-espacial/blob/main/notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb).
 
-As seções 1 a 10 apresentam o processo de treinamento em sequência: instalar dependências, baixar o pacote do GitHub, conferir dados, extrair features, treinar, calibrar, avaliar, inferir e exportar. Não há modos de execução ou flags de validação no notebook.
+As seções 1 a 10 apresentam o processo de treinamento em sequência: instalar as três dependências específicas com `!pip install`, clonar o GitHub, conferir dados, extrair features, treinar, calibrar, avaliar, inferir e exportar. Não há modos de execução ou flags de validação no notebook.
 
-A seção 11 explica a avaliação de transferência e tem **uma única célula independente** para demonstrar inferência com as cabeças já treinadas da `main`, sem executar células anteriores. Ela prepara suas dependências, baixa scripts, dados e pesos, confere os hashes e executa os 30 pares NLI fora do domínio. O gabarito fica separado da entrada. Para uma demonstração de seis exemplos guiados, altere somente a lista `INDICES` conforme indicado na seção. A cabeça de desfechos não é avaliada fora da missão.
+A seção 11 explica a avaliação de transferência e tem **uma única célula independente** para demonstrar inferência com as cabeças já treinadas da `main`, sem executar células anteriores. Ela instala as dependências específicas, clona a main e usa `scripts/apoio_aula05.py` para preparar os arquivos e apresentar os resultados e executa os 30 pares NLI fora do domínio. O gabarito fica separado da entrada. Para uma demonstração de seis exemplos guiados, altere somente a lista `INDICES` conforme indicado na seção. A cabeça de desfechos não é avaliada fora da missão.
 
-Todos os downloads usam um único commit resolvido a partir da `main`. O Phi-4 base permanece na revisão fixa registrada no pacote; não precisa repetir as 816 extrações para demonstrar inferência. A organização parte de entrada e alvo, explica a distribuição e separação dos dados, o corpo congelado e o cache, demonstra um passo de otimização com vetores reais e depois apresenta treino completo, calibração, métricas e exportação. Os dados ilustram esses conceitos; não há uma aula de regras do jogo.
+Cada checkout usa um único commit da `main`; o apoio registra esse commit e preserva as verificações de dados e pesos. O Phi-4 base permanece na revisão fixa registrada no pacote; não precisa repetir as 816 extrações para demonstrar inferência. A organização parte de entrada e alvo, explica a distribuição e separação dos dados, o corpo congelado e o cache, demonstra um passo de otimização com vetores reais e depois apresenta treino completo, calibração, métricas e exportação. Os dados ilustram esses conceitos; não há uma aula de regras do jogo.
 
 Uma cópia antiga no Drive não é atualizada automaticamente: abra o link acima ou importe novamente o notebook atualizado.
 
@@ -18,14 +18,14 @@ Há 600 exemplos NLI balanceados (200 por classe) e todos os 216 exemplos de des
 
 A seleção é automática entre CUDA, MPS/Metal e CPU. Não há exigência de uma GPU específica. Os pesos de aproximadamente 8,2 GB são baixados de uma revisão fixa e verificados. CPU exige memória suficiente e pode ser lenta. Prefill em blocos mantém todo o contexto em cache; a janela de 16.384 tokens não é truncada.
 
-Para terminal/local, use a pasta `pacote/` ou descompacte `pacote-treinamento.zip` e siga seu README. `pacote/requirements.txt` tem as dependências. O notebook preserva o PyTorch compatível instalado pelo ambiente, evitando substituição automática da instalação CUDA do Colab.
+Para terminal/local, use a pasta `pacote/` ou descompacte `pacote-treinamento.zip` e siga seu README. `pacote/requirements.txt` tem as dependências. No Colab, o notebook aproveita PyTorch e NumPy do ambiente e instala apenas Transformers, safetensors e huggingface-hub nas versões específicas do carregador. A preparação, apresentação de métricas e exportação estão no módulo de apoio; a normalização e o passo de otimização continuam visíveis no notebook.
 
 No Colab, ajuste a pasta de trabalho para armazenamento persistente se quiser retomar entre sessões. Cada feature tem checkpoint e verificação de integridade. O treino recusa cache parcial. As cabeças exportadas têm um script de inferência independente; não modificam o simulador ou o runtime do Crivo.
 
 ## Validação realizada nesta entrega
 
 - **20 testes passaram**: operações e quantização CPU, seleção de dispositivo, captura do último token, prefill com contexto completo, splits reais sem cruzamento de grupos, normalização de treino, treino sintético das duas heads, calibração, métricas, cache e exportação/reabertura de uma cabeça sintética.
-- Na versão atual, a preparação do treinamento baixou o pacote real do GitHub e executou os 20 testes. As células de inspeção, distribuições e atualização foram executadas; o treino completo das duas cabeças foi reexecutado com o cache original de representações reais, em outra pasta, reproduzindo 83/90 na classificação, sem repetir a extração do corpo. A célula de demonstração foi executada isoladamente em namespace vazio, com download real e cabeça real; apenas o corpo Phi-4 foi substituído por features históricas para conferir o fluxo e as métricas. Essa validação não é uma nova execução integral de inferência. Não há modo leve no notebook.
+- Na versão atual, a preparação do treinamento baixou os arquivos reais do GitHub e executou os 20 testes. As células de inspeção, distribuições e atualização foram executadas; o treino completo das duas cabeças foi reexecutado com o cache original de representações reais, em outra pasta, reproduzindo 83/90 na classificação, sem repetir a extração do corpo. A célula de demonstração foi executada isoladamente em namespace vazio, com download real e cabeça real; apenas o corpo Phi-4 foi substituído por features históricas para conferir o fluxo e as métricas. Essa validação não é uma nova execução integral de inferência. Não há modo leve no notebook.
 - As 816 entradas foram comparadas com os datasets originais. As 600 sequências NLI têm codificação idêntica ao contrato v03; as 216 entradas de desfechos são idênticas ao v04. Máximo: 9.119 tokens, abaixo de 16.384, sem recorte.
 - Os relatórios de validação estão nesta pasta. O notebook mantém outputs vazios para começar uma execução nova.
 
