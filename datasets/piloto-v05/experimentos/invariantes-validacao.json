@@ -1,0 +1,6 @@
+{
+  "observations_checked": 64801,
+  "oxygen_distance_invariant_passed": true,
+  "all_available_sensor_values_match_engine_equations": true,
+  "human_sacrifice_is_structural_for_continuation": true
+}

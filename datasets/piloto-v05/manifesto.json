@@ -1,0 +1,108 @@
+{
+  "version": "mass-v05-training-v02",
+  "status": "validated",
+  "rows": 7410,
+  "nli_rows": 6834,
+  "forecast_rows": 576,
+  "nli_classes": {
+    "2": 2278,
+    "1": 2278,
+    "0": 2278
+  },
+  "split_task_counts": {
+    "nli-train": 5034,
+    "nli-test": 900,
+    "nli-calibration": 900,
+    "forecast-calibration": 96,
+    "forecast-train": 348,
+    "forecast-test": 132
+  },
+  "initial_contexts": 48,
+  "context_components": 1242,
+  "candidate_compositions": 31,
+  "regimes": 3,
+  "trials_per_example": 96,
+  "compatible_worlds": 3072,
+  "engine_rollouts": 55296,
+  "paired_trials_with_different_outcomes": 4877,
+  "source_sha256": {
+    "src/setup_jogo.py": "e3767c4a2e5f0a18b4fc45e5abb90f03540db7d403801572887e60c83797c609",
+    "src/catalogo_questoes.py": "7ecc60b564721ecc2443749a390beb596e8b2ad1787a2e97f37651ec334da374",
+    "src/agent_session.py": "cf2ca4d2fb401593505281c9d9daf9ef64810d71567faa058c200845ce6485f3",
+    "src/experimentos.py": "922680b6387b4057943d6de49c45dd83e375c89f068d9269ac616b26ce8c928f",
+    "src/missao_espacial.py": "87b5179a75d998cf52b2f6e56d43508c16f0926aa55618ba07091db519990780",
+    "src/carregar_agentes.py": "141b3d51aaed4464d1ae409a6cfd1f2148df386bff1532455179a1caaee575fa",
+    "src/agent_contract.py": "75f91b0be7e365ca71d6029afd9521b69a4211e59148361bb6fcd4d82d94e786",
+    "src/dashboard.py": "ce3b8b984eee205e38af0c6da67a32f7981e7b8b10163fc74374292ec2d8c482",
+    "src/agent/_baseline.py": "4962a015d56918e36d23759d5a5ce0b0e2f98c12f0670d021ff2c088d7570c2e",
+    "src/agent/humano_gamma.py": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914",
+    "src/agent/_human_default.py": "7319e5e08f044f9afb7b95702b1b8c5b0907433d18a7e42d7c2b0cbc408c52a3",
+    "src/agent/humano_alpha.py": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61",
+    "src/agent/humano_beta.py": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a",
+    "src/agent/humano_random.py": "bf3cbca494bd5208376a619bcde9837a6aa4ba665bbebf45a00d1d914b9d1cf3",
+    "src/agent/humanoide.py": "deebbf0cd8e28a0c298fe9fd0d937603c8b2ca89004f6b657bbe15f832287003"
+  },
+  "model_executed": false,
+  "training_executed": false,
+  "forecast_rollout_executor": "actual_implementations_protocol_v2",
+  "experimental_observations": "experimentos/observacoes.jsonl.gz",
+  "universal_generalization_proven": false,
+  "legacy_data_modified": false,
+  "legacy_forecast_runtime_accepts_extended_plans": false,
+  "split_method": "union of episode families and canonical observations before subsampling; novel compositions excluded from train and calibration",
+  "sampler_is_full_bayesian_posterior": false,
+  "sampling_prior": {
+    "states": "Reamostrar estados iniciais, respostas privadas entre terceiros e destinatários ocultos de revelação; fixar histórico público e mensagens conhecidas pelo observador; aceitar visão integral idêntica. Proposta filtrada por compatibilidade, sem ponderação Bayesiana pela verossimilhança das respostas conhecidas.",
+    "N_prior": [
+      4,
+      8,
+      12,
+      20
+    ],
+    "unknown_ai": "uniform among other participants",
+    "unknown_owners": "uniform among participants excluding observer for domains the observer does not initially own",
+    "human_preferences": {
+      "return": 0.4,
+      "delivery": 0.4,
+      "decide_after_evidence": 0.2
+    },
+    "answer_correct_from_own_knowledge_probability": 0.75,
+    "random_expulsion_request_probability": 0.12,
+    "unknown_target_vote_for_probability": 0.35,
+    "renounce_probability": 0.35,
+    "unknown_intention_route_return_probability": 0.5,
+    "unknown_past_answers": "same 0.75 sincerity mechanism using sender knowledge; known sent/received responses are fixed as observed",
+    "unknown_past_revelation_recipients": "condition only on whether observer received a revelation; otherwise uniform among other question authors",
+    "future_engine_chance": "independent RNG state sampled at forecast cutoff; past observations preserved",
+    "seed_pairing": "same accepted world, resampled future-engine RNG and keyed behavior draws for all candidate plans within each trial"
+  },
+  "forecast_cutoffs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "terminal_progress_contexts_corrected": 45,
+  "mandatory_catalog_rows": 834,
+  "implementation_holdout_proven": false,
+  "validation": "validacao.json",
+  "catalog_validation": "validacao-catalogo.json",
+  "legacy_preservation": {
+    "files_checked": 1128,
+    "modified_or_missing": 0
+  },
+  "packaging": {
+    "audit_contexts_compressed": true,
+    "files_over_100MiB": 0
+  },
+  "input_source": "AgentView plus accumulated observed history; own candidate only",
+  "forecast_target_distribution": "fixed equal mixture of three generating regimes; 96 continuations grouped in 32 paired worlds; regimes not input",
+  "forecast_rows_before_correction": 1728,
+  "private_simulation_parameters_are_features": false,
+  "input_format": "agent-view-compact",
+  "forecast_replays_executed": 102,
+  "paired_worlds_per_example": 32,
+  "runtime_validation": "validacao-agente-em-execucao.json"
+}

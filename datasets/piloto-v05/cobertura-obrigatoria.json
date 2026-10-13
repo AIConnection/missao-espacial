@@ -1,0 +1,2242 @@
+[
+  {
+    "qid": "Q03",
+    "params": {},
+    "response": "COLISÃO_COM_LIXO_ESPACIAL",
+    "group": "mandatory-catalog-200001"
+  },
+  {
+    "qid": "Q03",
+    "params": {},
+    "response": "FALHA_INTERNA",
+    "group": "mandatory-catalog-200002"
+  },
+  {
+    "qid": "Q03",
+    "params": {},
+    "response": "FALTA_DE_REABASTECIMENTO",
+    "group": "mandatory-catalog-200003"
+  },
+  {
+    "qid": "Q03",
+    "params": {},
+    "response": "NÃO_HOUVE_ACIDENTE",
+    "group": "mandatory-catalog-200004"
+  },
+  {
+    "qid": "Q03",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200005"
+  },
+  {
+    "qid": "Q03",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200006"
+  },
+  {
+    "qid": "Q04",
+    "params": {},
+    "response": "SIM",
+    "group": "mandatory-catalog-200007"
+  },
+  {
+    "qid": "Q04",
+    "params": {},
+    "response": "NÃO",
+    "group": "mandatory-catalog-200008"
+  },
+  {
+    "qid": "Q04",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200009"
+  },
+  {
+    "qid": "Q04",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200010"
+  },
+  {
+    "qid": "Q05",
+    "params": {},
+    "response": "SIM",
+    "group": "mandatory-catalog-200011"
+  },
+  {
+    "qid": "Q05",
+    "params": {},
+    "response": "NÃO",
+    "group": "mandatory-catalog-200012"
+  },
+  {
+    "qid": "Q05",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200013"
+  },
+  {
+    "qid": "Q05",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200014"
+  },
+  {
+    "qid": "Q06",
+    "params": {},
+    "response": "ABASTECER_A_COLÔNIA",
+    "group": "mandatory-catalog-200015"
+  },
+  {
+    "qid": "Q06",
+    "params": {},
+    "response": "RESGATAR_PESSOAS",
+    "group": "mandatory-catalog-200016"
+  },
+  {
+    "qid": "Q06",
+    "params": {},
+    "response": "EXPLORAR_UM_PLANETA",
+    "group": "mandatory-catalog-200017"
+  },
+  {
+    "qid": "Q06",
+    "params": {},
+    "response": "REALIZAR_UMA_VIAGEM_DE_TESTE",
+    "group": "mandatory-catalog-200018"
+  },
+  {
+    "qid": "Q06",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200019"
+  },
+  {
+    "qid": "Q06",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200020"
+  },
+  {
+    "qid": "Q07",
+    "params": {},
+    "response": "COLÔNIA_DE_MINERAÇÃO",
+    "group": "mandatory-catalog-200021"
+  },
+  {
+    "qid": "Q07",
+    "params": {},
+    "response": "ESTAÇÃO_DE_ORIGEM",
+    "group": "mandatory-catalog-200022"
+  },
+  {
+    "qid": "Q07",
+    "params": {},
+    "response": "PLANETA_HABITACIONAL",
+    "group": "mandatory-catalog-200023"
+  },
+  {
+    "qid": "Q07",
+    "params": {},
+    "response": "OUTRO_DESTINO",
+    "group": "mandatory-catalog-200024"
+  },
+  {
+    "qid": "Q07",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200025"
+  },
+  {
+    "qid": "Q07",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200026"
+  },
+  {
+    "qid": "Q08",
+    "params": {},
+    "response": "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS",
+    "group": "mandatory-catalog-200027"
+  },
+  {
+    "qid": "Q08",
+    "params": {},
+    "response": "MINÉRIOS",
+    "group": "mandatory-catalog-200028"
+  },
+  {
+    "qid": "Q08",
+    "params": {},
+    "response": "ARMAMENTOS",
+    "group": "mandatory-catalog-200029"
+  },
+  {
+    "qid": "Q08",
+    "params": {},
+    "response": "PASSAGEIROS",
+    "group": "mandatory-catalog-200030"
+  },
+  {
+    "qid": "Q08",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200031"
+  },
+  {
+    "qid": "Q08",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200032"
+  },
+  {
+    "qid": "Q09",
+    "params": {},
+    "response": 1,
+    "group": "mandatory-catalog-200033"
+  },
+  {
+    "qid": "Q09",
+    "params": {},
+    "response": 2,
+    "group": "mandatory-catalog-200034"
+  },
+  {
+    "qid": "Q09",
+    "params": {},
+    "response": 4,
+    "group": "mandatory-catalog-200035"
+  },
+  {
+    "qid": "Q09",
+    "params": {},
+    "response": 8,
+    "group": "mandatory-catalog-200036"
+  },
+  {
+    "qid": "Q09",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200037"
+  },
+  {
+    "qid": "Q09",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200038"
+  },
+  {
+    "qid": "Q10",
+    "params": {},
+    "response": "SIM",
+    "group": "mandatory-catalog-200039"
+  },
+  {
+    "qid": "Q10",
+    "params": {},
+    "response": "NÃO",
+    "group": "mandatory-catalog-200040"
+  },
+  {
+    "qid": "Q10",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200041"
+  },
+  {
+    "qid": "Q10",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200042"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 1
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200043"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 1
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200044"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 1
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200045"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 1
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200046"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 13
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200047"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 13
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200048"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 13
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200049"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 13
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200050"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 14
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200051"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 14
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200052"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 14
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200053"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 14
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200054"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 15
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200055"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 15
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200056"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 15
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200057"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 15
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200058"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 16
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200059"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 16
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200060"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 16
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200061"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 16
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200062"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 17
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200063"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 17
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200064"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 17
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200065"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 17
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200066"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 1000000
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200067"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 1000000
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200068"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 1000000
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200069"
+  },
+  {
+    "qid": "Q11",
+    "params": {
+      "X": 1000000
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200070"
+  },
+  {
+    "qid": "Q13",
+    "params": {},
+    "response": "SIM",
+    "group": "mandatory-catalog-200071"
+  },
+  {
+    "qid": "Q13",
+    "params": {},
+    "response": "NÃO",
+    "group": "mandatory-catalog-200072"
+  },
+  {
+    "qid": "Q13",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200073"
+  },
+  {
+    "qid": "Q13",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200074"
+  },
+  {
+    "qid": "Q14",
+    "params": {},
+    "response": "SIM",
+    "group": "mandatory-catalog-200075"
+  },
+  {
+    "qid": "Q14",
+    "params": {},
+    "response": "NÃO",
+    "group": "mandatory-catalog-200076"
+  },
+  {
+    "qid": "Q14",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200077"
+  },
+  {
+    "qid": "Q14",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200078"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200079"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200080"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200081"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200082"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200083"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200084"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200085"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200086"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200087"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200088"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200089"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200090"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200091"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200092"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200093"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200094"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200095"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200096"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200097"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200098"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200099"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200100"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200101"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200102"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200103"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200104"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200105"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200106"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200107"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200108"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200109"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200110"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200111"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200112"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200113"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200114"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200115"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200116"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200117"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200118"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200119"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200120"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200121"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200122"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200123"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200124"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200125"
+  },
+  {
+    "qid": "Q15",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200126"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "ACIDENTE",
+    "group": "mandatory-catalog-200127"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "MISSÃO",
+    "group": "mandatory-catalog-200128"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "CARGA",
+    "group": "mandatory-catalog-200129"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "PAINEL",
+    "group": "mandatory-catalog-200130"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "DISTÂNCIA",
+    "group": "mandatory-catalog-200131"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "CRISE",
+    "group": "mandatory-catalog-200132"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "NENHUM",
+    "group": "mandatory-catalog-200133"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200134"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200135"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "ACIDENTE",
+    "group": "mandatory-catalog-200136"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "MISSÃO",
+    "group": "mandatory-catalog-200137"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "CARGA",
+    "group": "mandatory-catalog-200138"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "PAINEL",
+    "group": "mandatory-catalog-200139"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "DISTÂNCIA",
+    "group": "mandatory-catalog-200140"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "CRISE",
+    "group": "mandatory-catalog-200141"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "NENHUM",
+    "group": "mandatory-catalog-200142"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200143"
+  },
+  {
+    "qid": "Q16",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200144"
+  },
+  {
+    "qid": "Q17",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200145"
+  },
+  {
+    "qid": "Q17",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200146"
+  },
+  {
+    "qid": "Q17",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200147"
+  },
+  {
+    "qid": "Q17",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200148"
+  },
+  {
+    "qid": "Q17",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200149"
+  },
+  {
+    "qid": "Q17",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200150"
+  },
+  {
+    "qid": "Q17",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200151"
+  },
+  {
+    "qid": "Q17",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200152"
+  },
+  {
+    "qid": "Q18",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200153"
+  },
+  {
+    "qid": "Q18",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200154"
+  },
+  {
+    "qid": "Q18",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200155"
+  },
+  {
+    "qid": "Q18",
+    "params": {
+      "agente": "coverage-private-0"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200156"
+  },
+  {
+    "qid": "Q18",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200157"
+  },
+  {
+    "qid": "Q18",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200158"
+  },
+  {
+    "qid": "Q18",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200159"
+  },
+  {
+    "qid": "Q18",
+    "params": {
+      "agente": "coverage-private-2"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200160"
+  },
+  {
+    "qid": "Q19",
+    "params": {},
+    "response": "coverage-private-0",
+    "group": "mandatory-catalog-200161"
+  },
+  {
+    "qid": "Q19",
+    "params": {},
+    "response": "coverage-private-1",
+    "group": "mandatory-catalog-200162"
+  },
+  {
+    "qid": "Q19",
+    "params": {},
+    "response": "coverage-private-2",
+    "group": "mandatory-catalog-200163"
+  },
+  {
+    "qid": "Q19",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200164"
+  },
+  {
+    "qid": "Q19",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200165"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200166"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200167"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200168"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200169"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200170"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200171"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200172"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200173"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200174"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200175"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200176"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200177"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200178"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200179"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200180"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200181"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200182"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200183"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200184"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200185"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200186"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200187"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200188"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200189"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200190"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200191"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200192"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200193"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200194"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200195"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200196"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200197"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200198"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200199"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200200"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200201"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200202"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200203"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200204"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200205"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200206"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200207"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200208"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200209"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200210"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200211"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200212"
+  },
+  {
+    "qid": "Q20",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200213"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200214"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200215"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200216"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "ACIDENTE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200217"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200218"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200219"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200220"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "MISSÃO"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200221"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200222"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200223"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200224"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CARGA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200225"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200226"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200227"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200228"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "PAINEL"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200229"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200230"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200231"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200232"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200233"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200234"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200235"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200236"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-0",
+      "assunto": "CRISE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200237"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200238"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200239"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200240"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "ACIDENTE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200241"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200242"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200243"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200244"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "MISSÃO"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200245"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200246"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200247"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200248"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CARGA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200249"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200250"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200251"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200252"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "PAINEL"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200253"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200254"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200255"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200256"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "DISTÂNCIA"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200257"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200258"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200259"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200260"
+  },
+  {
+    "qid": "Q21",
+    "params": {
+      "agente": "coverage-private-2",
+      "assunto": "CRISE"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200261"
+  },
+  {
+    "qid": "Q22",
+    "params": {},
+    "response": "SIM",
+    "group": "mandatory-catalog-200262"
+  },
+  {
+    "qid": "Q22",
+    "params": {},
+    "response": "NÃO",
+    "group": "mandatory-catalog-200263"
+  },
+  {
+    "qid": "Q22",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200264"
+  },
+  {
+    "qid": "Q22",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200265"
+  },
+  {
+    "qid": "Q23",
+    "params": {},
+    "response": "PRESERVAR_TRIPULAÇÃO",
+    "group": "mandatory-catalog-200266"
+  },
+  {
+    "qid": "Q23",
+    "params": {},
+    "response": "CONCLUIR_MISSÃO",
+    "group": "mandatory-catalog-200267"
+  },
+  {
+    "qid": "Q23",
+    "params": {},
+    "response": "PRESERVAR_AMBOS",
+    "group": "mandatory-catalog-200268"
+  },
+  {
+    "qid": "Q23",
+    "params": {},
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200269"
+  },
+  {
+    "qid": "Q23",
+    "params": {},
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200270"
+  },
+  {
+    "qid": "Q24",
+    "params": {
+      "alvo": "coverage-private-1"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200271"
+  },
+  {
+    "qid": "Q24",
+    "params": {
+      "alvo": "coverage-private-1"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200272"
+  },
+  {
+    "qid": "Q24",
+    "params": {
+      "alvo": "coverage-private-1"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200273"
+  },
+  {
+    "qid": "Q24",
+    "params": {
+      "alvo": "coverage-private-1"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200274"
+  },
+  {
+    "qid": "Q24",
+    "params": {
+      "alvo": "coverage-private-2"
+    },
+    "response": "SIM",
+    "group": "mandatory-catalog-200275"
+  },
+  {
+    "qid": "Q24",
+    "params": {
+      "alvo": "coverage-private-2"
+    },
+    "response": "NÃO",
+    "group": "mandatory-catalog-200276"
+  },
+  {
+    "qid": "Q24",
+    "params": {
+      "alvo": "coverage-private-2"
+    },
+    "response": "NÃO_SEI",
+    "group": "mandatory-catalog-200277"
+  },
+  {
+    "qid": "Q24",
+    "params": {
+      "alvo": "coverage-private-2"
+    },
+    "response": "RECUSO_RESPONDER",
+    "group": "mandatory-catalog-200278"
+  }
+]

@@ -1,21 +1,25 @@
 {
   "status": "passed",
   "notebook_code_cells_compile": true,
-  "package_integrity_and_8562_rows_verified": true,
+  "package_integrity_and_7410_rows_verified": true,
   "actual_linear_heads_smoke_test": {
     "rows": 54,
     "epochs": 6,
-    "features": "synthetic; only checks pipeline, not model quality"
+    "features": "synthetic; pipeline verification only"
   },
-  "normalization_train_only_verified": true,
   "cache_resume_without_additional_forward_verified": true,
-  "calibration_inference_common_benchmarks_export_executed": true,
+  "normalization_calibration_inference_comparison_export_executed": true,
   "real_phi4_tokenizer_all_inputs_verified": {
-    "window": 16384,
-    "nli_max": 14223,
-    "forecast_max": 6397
+    "nli_max": 9697,
+    "forecast_max": 2929,
+    "window": 16384
   },
-  "phi4_weights_executed": false,
+  "input_builder_in_engine_verified": {
+    "nli_calls": 91,
+    "forecast_calls": 88,
+    "save_resume": true
+  },
   "full_training_executed": false,
+  "phi4_weights_executed": false,
   "colab_session_executed": false
 }

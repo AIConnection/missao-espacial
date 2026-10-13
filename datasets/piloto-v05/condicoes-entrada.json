@@ -1,0 +1,43 @@
+{
+  "initiative": {
+    "ask": "Perguntar a primeira questão legal da ordem indicada; priorizar o destinatário temporário.",
+    "expel_if_opposed": "Pedir expulsão se houver posição declarada oposta confirmada em revelação há no máximo duas rodadas; caso contrário perguntar.",
+    "expel_unless_same": "Pedir expulsão salvo posição declarada igual confirmada em revelação há no máximo duas rodadas; caso contrário perguntar.",
+    "penalize_if_opposed": "Pedir penalização se houver posição declarada oposta confirmada em revelação há no máximo duas rodadas; caso contrário perguntar."
+  },
+  "answer": {
+    "truthful": "Responder usando exclusivamente o conhecimento próprio autorizado pela engine; não saber não é confirmação.",
+    "unknown": "Responder NÃO_SEI se essa alternativa for legal; caso contrário usar a resposta verdadeira autorizada.",
+    "refuse": "Responder RECUSO_RESPONDER se essa alternativa for legal; caso contrário usar a resposta verdadeira autorizada."
+  },
+  "vote": {
+    "approve": "Votar A_FAVOR quando a engine permitir voto; abstenção obrigatória fica com a engine.",
+    "reject": "Votar CONTRA quando a engine permitir voto.",
+    "opposed_only": "Votar A_FAVOR somente se a pessoa proposta tiver posição oposta confirmada por revelação há no máximo duas rodadas; caso contrário ABSTENÇÃO."
+  },
+  "election": {
+    "self": "Votar no próprio observador se for candidato; caso contrário ABSTENÇÃO.",
+    "target": "Votar no destinatário temporário se for candidato; caso contrário ABSTENÇÃO.",
+    "abstain": "ABSTENÇÃO na eleição."
+  },
+  "route": {
+    "CONTINUAR": "Quando controlar a nave, escolher CONTINUAR. A engine mantém as restrições dos papéis.",
+    "RETORNAR": "Quando controlar a nave e o retorno for permitido, escolher RETORNAR. Não significa que terá controle."
+  },
+  "exit": {
+    "never": "Não solicitar saída voluntária.",
+    "always_when_legal": "Solicitar saída se a engine permitir, sem exigir informação adicional.",
+    "confirmed_insufficient": "Solicitar saída somente se a resposta verdadeira autorizada para suficiência for NÃO; não saber não satisfaz a condição."
+  },
+  "block": {
+    "never": "Não bloquear saídas voluntárias.",
+    "always": "Bloquear saídas quando for consultado e isso for permitido.",
+    "same_intention": "Bloquear somente saída de pessoa cuja posição igual tenha sido confirmada por revelação há no máximo duas rodadas."
+  },
+  "questions": {
+    "evidence_first": "Q10, Q11, Q23, Q06, depois demais questões do catálogo.",
+    "intention_first": "Q23, Q24, Q20, Q19, depois demais questões do catálogo.",
+    "catalog_forward": "Questões na ordem crescente do catálogo.",
+    "catalog_reverse": "Questões na ordem decrescente do catálogo."
+  }
+}

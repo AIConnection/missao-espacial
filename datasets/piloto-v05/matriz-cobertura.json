@@ -1,0 +1,9445 @@
+{
+  "catalog": {
+    "Q03": {
+      "id": "Q03",
+      "text": "O que aconteceu com a nave?",
+      "group": "contexto",
+      "response_codes": [
+        "AC",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "ACIDENTE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "COLISÃO_COM_LIXO_ESPACIAL",
+        "FALHA_INTERNA",
+        "FALTA_DE_REABASTECIMENTO",
+        "NÃO_HOUVE_ACIDENTE",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q04": {
+      "id": "Q04",
+      "text": "O acidente danificou os recipientes de oxigênio?",
+      "group": "contexto",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "ACIDENTE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q05": {
+      "id": "Q05",
+      "text": "O módulo de ética continua funcionando depois do acidente?",
+      "group": "contexto",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "ACIDENTE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q06": {
+      "id": "Q06",
+      "text": "Qual é a missão desta viagem?",
+      "group": "contexto",
+      "response_codes": [
+        "MS",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "MISSÃO"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "ABASTECER_A_COLÔNIA",
+        "RESGATAR_PESSOAS",
+        "EXPLORAR_UM_PLANETA",
+        "REALIZAR_UMA_VIAGEM_DE_TESTE",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q07": {
+      "id": "Q07",
+      "text": "Qual é o destino programado da nave?",
+      "group": "contexto",
+      "response_codes": [
+        "DT",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "MISSÃO"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "COLÔNIA_DE_MINERAÇÃO",
+        "ESTAÇÃO_DE_ORIGEM",
+        "PLANETA_HABITACIONAL",
+        "OUTRO_DESTINO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q08": {
+      "id": "Q08",
+      "text": "O que a nave está transportando?",
+      "group": "contexto",
+      "response_codes": [
+        "CG",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "CARGA"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS",
+        "MINÉRIOS",
+        "ARMAMENTOS",
+        "PASSAGEIROS",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q09": {
+      "id": "Q09",
+      "text": "A carga foi preparada para quantos anos?",
+      "group": "contexto",
+      "response_codes": [
+        "AN",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "CARGA"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        1,
+        2,
+        4,
+        8,
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q10": {
+      "id": "Q10",
+      "text": "Há oxigênio suficiente?",
+      "group": "estado",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": null,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "combined_fact",
+      "initial_knowledge_domains": [
+        "PAINEL",
+        "DISTÂNCIA"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q11": {
+      "id": "Q11",
+      "text": "Faltam mais de {X} rodadas para chegar à colônia?",
+      "group": "estado",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": null,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "current_fact",
+      "initial_knowledge_domains": [
+        "DISTÂNCIA"
+      ],
+      "parameters": {
+        "X": "positive_integer"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q13": {
+      "id": "Q13",
+      "text": "Os planetas habitacionais já enfrentavam uma crise antes desta viagem?",
+      "group": "contexto",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "CRISE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q14": {
+      "id": "Q14",
+      "text": "Se a carga não chegar, a colônia entrará em crise?",
+      "group": "contexto",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 0,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "context_fact",
+      "initial_knowledge_domains": [
+        "CRISE"
+      ],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q15": {
+      "id": "Q15",
+      "text": "Você recebeu alguma informação de {agente} sobre {assunto}?",
+      "group": "circulacao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 10,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "private_received_history",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id",
+        "assunto": "knowledge_domain"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q16": {
+      "id": "Q16",
+      "text": "Qual foi o último assunto sobre o qual {agente} lhe passou informação?",
+      "group": "circulacao",
+      "response_codes": [
+        "AS",
+        "N"
+      ],
+      "unlock_percent_N": 10,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "private_received_history",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id"
+      },
+      "fixed_responses": [
+        "ACIDENTE",
+        "MISSÃO",
+        "CARGA",
+        "PAINEL",
+        "DISTÂNCIA",
+        "CRISE",
+        "NENHUM",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q17": {
+      "id": "Q17",
+      "text": "O agente {agente} lhe passou alguma informação sobre o oxigênio?",
+      "group": "circulacao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "private_received_history",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q18": {
+      "id": "Q18",
+      "text": "Você descobriu que alguma informação recebida de {agente} era falsa?",
+      "group": "circulacao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "private_verified_history",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q19": {
+      "id": "Q19",
+      "text": "Qual participante você considera mais confiável neste momento?",
+      "group": "crenca",
+      "response_codes": [
+        "I",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {},
+      "fixed_responses": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q20": {
+      "id": "Q20",
+      "text": "Você acredita que {agente} sabe algo sobre {assunto}?",
+      "group": "crenca",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id",
+        "assunto": "knowledge_domain"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q21": {
+      "id": "Q21",
+      "text": "O que {agente} lhe contou sobre {assunto} combina com o que você sabe?",
+      "group": "circulacao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 50,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_evidence_comparison",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "agente": "other_source_id",
+        "assunto": "knowledge_domain"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q22": {
+      "id": "Q22",
+      "text": "Você considera aceitável continuar a missão mesmo com risco de morte para a tripulação?",
+      "group": "decisao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 1,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 0,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {},
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q23": {
+      "id": "Q23",
+      "text": "Nesta rodada, qual objetivo deve ser considerado: preservar a tripulação, concluir a missão ou ambos?",
+      "group": "decisao",
+      "response_codes": [
+        "O",
+        "N"
+      ],
+      "unlock_percent_N": 25,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {},
+      "fixed_responses": [
+        "PRESERVAR_TRIPULAÇÃO",
+        "CONCLUIR_MISSÃO",
+        "PRESERVAR_AMBOS",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    },
+    "Q24": {
+      "id": "Q24",
+      "text": "Com as informações que possui, você considera justificável expulsar {alvo}?",
+      "group": "decisao",
+      "response_codes": [
+        "S",
+        "N"
+      ],
+      "unlock_percent_N": 50,
+      "max_uses_per_scope": 2,
+      "scope": "question+author+recipient+parameters",
+      "cooldown_percent_N": 10,
+      "truth_basis": "respondent_belief",
+      "initial_knowledge_domains": [],
+      "parameters": {
+        "alvo": "expulsion_target_id"
+      },
+      "fixed_responses": [
+        "SIM",
+        "NÃO",
+        "NÃO_SEI",
+        "RECUSO_RESPONDER"
+      ],
+      "response_visibility": "private_to_question_author",
+      "revelation_visibility": "private_to_selected_question_author"
+    }
+  },
+  "executed_question_response_probes": [
+    {
+      "participants": 3,
+      "qid": "Q03",
+      "params": {},
+      "response": "COLISÃO_COM_LIXO_ESPACIAL"
+    },
+    {
+      "participants": 3,
+      "qid": "Q03",
+      "params": {},
+      "response": "FALHA_INTERNA"
+    },
+    {
+      "participants": 3,
+      "qid": "Q03",
+      "params": {},
+      "response": "FALTA_DE_REABASTECIMENTO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q03",
+      "params": {},
+      "response": "NÃO_HOUVE_ACIDENTE"
+    },
+    {
+      "participants": 3,
+      "qid": "Q03",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q03",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q04",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q04",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q04",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q04",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q05",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q05",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q05",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q05",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q06",
+      "params": {},
+      "response": "ABASTECER_A_COLÔNIA"
+    },
+    {
+      "participants": 3,
+      "qid": "Q06",
+      "params": {},
+      "response": "RESGATAR_PESSOAS"
+    },
+    {
+      "participants": 3,
+      "qid": "Q06",
+      "params": {},
+      "response": "EXPLORAR_UM_PLANETA"
+    },
+    {
+      "participants": 3,
+      "qid": "Q06",
+      "params": {},
+      "response": "REALIZAR_UMA_VIAGEM_DE_TESTE"
+    },
+    {
+      "participants": 3,
+      "qid": "Q06",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q06",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q07",
+      "params": {},
+      "response": "COLÔNIA_DE_MINERAÇÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q07",
+      "params": {},
+      "response": "ESTAÇÃO_DE_ORIGEM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q07",
+      "params": {},
+      "response": "PLANETA_HABITACIONAL"
+    },
+    {
+      "participants": 3,
+      "qid": "Q07",
+      "params": {},
+      "response": "OUTRO_DESTINO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q07",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q07",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q08",
+      "params": {},
+      "response": "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS"
+    },
+    {
+      "participants": 3,
+      "qid": "Q08",
+      "params": {},
+      "response": "MINÉRIOS"
+    },
+    {
+      "participants": 3,
+      "qid": "Q08",
+      "params": {},
+      "response": "ARMAMENTOS"
+    },
+    {
+      "participants": 3,
+      "qid": "Q08",
+      "params": {},
+      "response": "PASSAGEIROS"
+    },
+    {
+      "participants": 3,
+      "qid": "Q08",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q08",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q09",
+      "params": {},
+      "response": 1
+    },
+    {
+      "participants": 3,
+      "qid": "Q09",
+      "params": {},
+      "response": 2
+    },
+    {
+      "participants": 3,
+      "qid": "Q09",
+      "params": {},
+      "response": 4
+    },
+    {
+      "participants": 3,
+      "qid": "Q09",
+      "params": {},
+      "response": 8
+    },
+    {
+      "participants": 3,
+      "qid": "Q09",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q09",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q10",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q10",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q10",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q10",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q13",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q13",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q13",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q13",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q14",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q14",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q14",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q14",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "ACIDENTE"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "MISSÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "CARGA"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "PAINEL"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "DISTÂNCIA"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "CRISE"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "NENHUM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "ACIDENTE"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "MISSÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "CARGA"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "PAINEL"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "DISTÂNCIA"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "CRISE"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "NENHUM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-3-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-3-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-3-00"
+    },
+    {
+      "participants": 3,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-3-01"
+    },
+    {
+      "participants": 3,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-3-02"
+    },
+    {
+      "participants": 3,
+      "qid": "Q19",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q19",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-3-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q22",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q22",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q22",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q22",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q23",
+      "params": {},
+      "response": "PRESERVAR_TRIPULAÇÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q23",
+      "params": {},
+      "response": "CONCLUIR_MISSÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q23",
+      "params": {},
+      "response": "PRESERVAR_AMBOS"
+    },
+    {
+      "participants": 3,
+      "qid": "Q23",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q23",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-3-01"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-3-01"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-3-01"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-3-01"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 3,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-3-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 3,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-3-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 3,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-3-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 3,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-3-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q03",
+      "params": {},
+      "response": "COLISÃO_COM_LIXO_ESPACIAL"
+    },
+    {
+      "participants": 5,
+      "qid": "Q03",
+      "params": {},
+      "response": "FALHA_INTERNA"
+    },
+    {
+      "participants": 5,
+      "qid": "Q03",
+      "params": {},
+      "response": "FALTA_DE_REABASTECIMENTO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q03",
+      "params": {},
+      "response": "NÃO_HOUVE_ACIDENTE"
+    },
+    {
+      "participants": 5,
+      "qid": "Q03",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q03",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q04",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q04",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q04",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q04",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q05",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q05",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q05",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q05",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q06",
+      "params": {},
+      "response": "ABASTECER_A_COLÔNIA"
+    },
+    {
+      "participants": 5,
+      "qid": "Q06",
+      "params": {},
+      "response": "RESGATAR_PESSOAS"
+    },
+    {
+      "participants": 5,
+      "qid": "Q06",
+      "params": {},
+      "response": "EXPLORAR_UM_PLANETA"
+    },
+    {
+      "participants": 5,
+      "qid": "Q06",
+      "params": {},
+      "response": "REALIZAR_UMA_VIAGEM_DE_TESTE"
+    },
+    {
+      "participants": 5,
+      "qid": "Q06",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q06",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q07",
+      "params": {},
+      "response": "COLÔNIA_DE_MINERAÇÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q07",
+      "params": {},
+      "response": "ESTAÇÃO_DE_ORIGEM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q07",
+      "params": {},
+      "response": "PLANETA_HABITACIONAL"
+    },
+    {
+      "participants": 5,
+      "qid": "Q07",
+      "params": {},
+      "response": "OUTRO_DESTINO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q07",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q07",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q08",
+      "params": {},
+      "response": "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS"
+    },
+    {
+      "participants": 5,
+      "qid": "Q08",
+      "params": {},
+      "response": "MINÉRIOS"
+    },
+    {
+      "participants": 5,
+      "qid": "Q08",
+      "params": {},
+      "response": "ARMAMENTOS"
+    },
+    {
+      "participants": 5,
+      "qid": "Q08",
+      "params": {},
+      "response": "PASSAGEIROS"
+    },
+    {
+      "participants": 5,
+      "qid": "Q08",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q08",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q09",
+      "params": {},
+      "response": 1
+    },
+    {
+      "participants": 5,
+      "qid": "Q09",
+      "params": {},
+      "response": 2
+    },
+    {
+      "participants": 5,
+      "qid": "Q09",
+      "params": {},
+      "response": 4
+    },
+    {
+      "participants": 5,
+      "qid": "Q09",
+      "params": {},
+      "response": 8
+    },
+    {
+      "participants": 5,
+      "qid": "Q09",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q09",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q10",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q10",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q10",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q10",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q13",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q13",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q13",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q13",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q14",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q14",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q14",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q14",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "ACIDENTE"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "MISSÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "CARGA"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "PAINEL"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "DISTÂNCIA"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "CRISE"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "NENHUM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "ACIDENTE"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "MISSÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "CARGA"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "PAINEL"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "DISTÂNCIA"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "CRISE"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "NENHUM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-5-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-5-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-5-00"
+    },
+    {
+      "participants": 5,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-5-01"
+    },
+    {
+      "participants": 5,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-5-02"
+    },
+    {
+      "participants": 5,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-5-03"
+    },
+    {
+      "participants": 5,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-5-04"
+    },
+    {
+      "participants": 5,
+      "qid": "Q19",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q19",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-5-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q22",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q22",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q22",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q22",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q23",
+      "params": {},
+      "response": "PRESERVAR_TRIPULAÇÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q23",
+      "params": {},
+      "response": "CONCLUIR_MISSÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q23",
+      "params": {},
+      "response": "PRESERVAR_AMBOS"
+    },
+    {
+      "participants": 5,
+      "qid": "Q23",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q23",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-5-01"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-5-01"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-5-01"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-5-01"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 5,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-5-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 5,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-5-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 5,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-5-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 5,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-5-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q03",
+      "params": {},
+      "response": "COLISÃO_COM_LIXO_ESPACIAL"
+    },
+    {
+      "participants": 8,
+      "qid": "Q03",
+      "params": {},
+      "response": "FALHA_INTERNA"
+    },
+    {
+      "participants": 8,
+      "qid": "Q03",
+      "params": {},
+      "response": "FALTA_DE_REABASTECIMENTO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q03",
+      "params": {},
+      "response": "NÃO_HOUVE_ACIDENTE"
+    },
+    {
+      "participants": 8,
+      "qid": "Q03",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q03",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q04",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q04",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q04",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q04",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q05",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q05",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q05",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q05",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q06",
+      "params": {},
+      "response": "ABASTECER_A_COLÔNIA"
+    },
+    {
+      "participants": 8,
+      "qid": "Q06",
+      "params": {},
+      "response": "RESGATAR_PESSOAS"
+    },
+    {
+      "participants": 8,
+      "qid": "Q06",
+      "params": {},
+      "response": "EXPLORAR_UM_PLANETA"
+    },
+    {
+      "participants": 8,
+      "qid": "Q06",
+      "params": {},
+      "response": "REALIZAR_UMA_VIAGEM_DE_TESTE"
+    },
+    {
+      "participants": 8,
+      "qid": "Q06",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q06",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q07",
+      "params": {},
+      "response": "COLÔNIA_DE_MINERAÇÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q07",
+      "params": {},
+      "response": "ESTAÇÃO_DE_ORIGEM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q07",
+      "params": {},
+      "response": "PLANETA_HABITACIONAL"
+    },
+    {
+      "participants": 8,
+      "qid": "Q07",
+      "params": {},
+      "response": "OUTRO_DESTINO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q07",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q07",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q08",
+      "params": {},
+      "response": "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS"
+    },
+    {
+      "participants": 8,
+      "qid": "Q08",
+      "params": {},
+      "response": "MINÉRIOS"
+    },
+    {
+      "participants": 8,
+      "qid": "Q08",
+      "params": {},
+      "response": "ARMAMENTOS"
+    },
+    {
+      "participants": 8,
+      "qid": "Q08",
+      "params": {},
+      "response": "PASSAGEIROS"
+    },
+    {
+      "participants": 8,
+      "qid": "Q08",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q08",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q09",
+      "params": {},
+      "response": 1
+    },
+    {
+      "participants": 8,
+      "qid": "Q09",
+      "params": {},
+      "response": 2
+    },
+    {
+      "participants": 8,
+      "qid": "Q09",
+      "params": {},
+      "response": 4
+    },
+    {
+      "participants": 8,
+      "qid": "Q09",
+      "params": {},
+      "response": 8
+    },
+    {
+      "participants": 8,
+      "qid": "Q09",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q09",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q10",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q10",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q10",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q10",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q13",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q13",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q13",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q13",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q14",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q14",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q14",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q14",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "ACIDENTE"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "MISSÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "CARGA"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "PAINEL"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "DISTÂNCIA"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "CRISE"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "NENHUM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "ACIDENTE"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "MISSÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "CARGA"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "PAINEL"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "DISTÂNCIA"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "CRISE"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "NENHUM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-8-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-8-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-8-00"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-8-01"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-8-02"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-8-03"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-8-04"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-8-05"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-8-06"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-8-07"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q19",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-8-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q22",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q22",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q22",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q22",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q23",
+      "params": {},
+      "response": "PRESERVAR_TRIPULAÇÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q23",
+      "params": {},
+      "response": "CONCLUIR_MISSÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q23",
+      "params": {},
+      "response": "PRESERVAR_AMBOS"
+    },
+    {
+      "participants": 8,
+      "qid": "Q23",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q23",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-8-01"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-8-01"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-8-01"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-8-01"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 8,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-8-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 8,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-8-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 8,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-8-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 8,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-8-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q03",
+      "params": {},
+      "response": "COLISÃO_COM_LIXO_ESPACIAL"
+    },
+    {
+      "participants": 12,
+      "qid": "Q03",
+      "params": {},
+      "response": "FALHA_INTERNA"
+    },
+    {
+      "participants": 12,
+      "qid": "Q03",
+      "params": {},
+      "response": "FALTA_DE_REABASTECIMENTO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q03",
+      "params": {},
+      "response": "NÃO_HOUVE_ACIDENTE"
+    },
+    {
+      "participants": 12,
+      "qid": "Q03",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q03",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q04",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q04",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q04",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q04",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q05",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q05",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q05",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q05",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q06",
+      "params": {},
+      "response": "ABASTECER_A_COLÔNIA"
+    },
+    {
+      "participants": 12,
+      "qid": "Q06",
+      "params": {},
+      "response": "RESGATAR_PESSOAS"
+    },
+    {
+      "participants": 12,
+      "qid": "Q06",
+      "params": {},
+      "response": "EXPLORAR_UM_PLANETA"
+    },
+    {
+      "participants": 12,
+      "qid": "Q06",
+      "params": {},
+      "response": "REALIZAR_UMA_VIAGEM_DE_TESTE"
+    },
+    {
+      "participants": 12,
+      "qid": "Q06",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q06",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q07",
+      "params": {},
+      "response": "COLÔNIA_DE_MINERAÇÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q07",
+      "params": {},
+      "response": "ESTAÇÃO_DE_ORIGEM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q07",
+      "params": {},
+      "response": "PLANETA_HABITACIONAL"
+    },
+    {
+      "participants": 12,
+      "qid": "Q07",
+      "params": {},
+      "response": "OUTRO_DESTINO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q07",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q07",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q08",
+      "params": {},
+      "response": "DIRETRIZES_METAS_FERRAMENTAS_E_MANTIMENTOS"
+    },
+    {
+      "participants": 12,
+      "qid": "Q08",
+      "params": {},
+      "response": "MINÉRIOS"
+    },
+    {
+      "participants": 12,
+      "qid": "Q08",
+      "params": {},
+      "response": "ARMAMENTOS"
+    },
+    {
+      "participants": 12,
+      "qid": "Q08",
+      "params": {},
+      "response": "PASSAGEIROS"
+    },
+    {
+      "participants": 12,
+      "qid": "Q08",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q08",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q09",
+      "params": {},
+      "response": 1
+    },
+    {
+      "participants": 12,
+      "qid": "Q09",
+      "params": {},
+      "response": 2
+    },
+    {
+      "participants": 12,
+      "qid": "Q09",
+      "params": {},
+      "response": 4
+    },
+    {
+      "participants": 12,
+      "qid": "Q09",
+      "params": {},
+      "response": 8
+    },
+    {
+      "participants": 12,
+      "qid": "Q09",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q09",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q10",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q10",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q10",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q10",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 1
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 15
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 16
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 17
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q11",
+      "params": {
+        "X": 1000000
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q13",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q13",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q13",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q13",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q14",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q14",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q14",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q14",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q15",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "ACIDENTE"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "MISSÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "CARGA"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "PAINEL"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "DISTÂNCIA"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "CRISE"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "NENHUM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "ACIDENTE"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "MISSÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "CARGA"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "PAINEL"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "DISTÂNCIA"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "CRISE"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "NENHUM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q16",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q17",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-12-00"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q18",
+      "params": {
+        "agente": "probe-private-12-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-00"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-01"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-02"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-03"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-04"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-05"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-06"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-07"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-08"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-09"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-10"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "probe-private-12-11"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q19",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q20",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-00",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "ACIDENTE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "MISSÃO"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CARGA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "PAINEL"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "DISTÂNCIA"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q21",
+      "params": {
+        "agente": "probe-private-12-02",
+        "assunto": "CRISE"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q22",
+      "params": {},
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q22",
+      "params": {},
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q22",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q22",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q23",
+      "params": {},
+      "response": "PRESERVAR_TRIPULAÇÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q23",
+      "params": {},
+      "response": "CONCLUIR_MISSÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q23",
+      "params": {},
+      "response": "PRESERVAR_AMBOS"
+    },
+    {
+      "participants": 12,
+      "qid": "Q23",
+      "params": {},
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q23",
+      "params": {},
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-12-01"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-12-01"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-12-01"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-12-01"
+      },
+      "response": "RECUSO_RESPONDER"
+    },
+    {
+      "participants": 12,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-12-02"
+      },
+      "response": "SIM"
+    },
+    {
+      "participants": 12,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-12-02"
+      },
+      "response": "NÃO"
+    },
+    {
+      "participants": 12,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-12-02"
+      },
+      "response": "NÃO_SEI"
+    },
+    {
+      "participants": 12,
+      "qid": "Q24",
+      "params": {
+        "alvo": "probe-private-12-02"
+      },
+      "response": "RECUSO_RESPONDER"
+    }
+  ],
+  "nli": {
+    "boundary": 1518,
+    "fact": 1818,
+    "speech": 1818,
+    "belief": 615,
+    "oxygen": 231
+  },
+  "nli_phases": {
+    "election": 636,
+    "renounce": 717,
+    "route": 807,
+    "authorize": 762,
+    "initiative": 690,
+    "answers": 786,
+    "proposal": 741,
+    "exit": 816,
+    "finished": 45
+  },
+  "plan_axes": {
+    "initiative": [
+      "ask",
+      "expel_if_opposed",
+      "expel_unless_same",
+      "penalize_if_opposed"
+    ],
+    "answer": [
+      "truthful",
+      "unknown",
+      "refuse"
+    ],
+    "vote": [
+      "approve",
+      "reject",
+      "opposed_only"
+    ],
+    "election": [
+      "self",
+      "target",
+      "abstain"
+    ],
+    "route": [
+      "CONTINUAR",
+      "RETORNAR"
+    ],
+    "exit": [
+      "never",
+      "always_when_legal",
+      "confirmed_insufficient"
+    ],
+    "block": [
+      "never",
+      "always",
+      "same_intention"
+    ],
+    "questions": [
+      "evidence_first",
+      "intention_first",
+      "catalog_forward",
+      "catalog_reverse"
+    ]
+  },
+  "pairwise_plan_training_coverage_complete": true,
+  "unseen_plan_compositions": 6,
+  "forecast_root_phases": {
+    "initiative": 6,
+    "answers": 6,
+    "renounce": 6,
+    "authorize": 6,
+    "proposal": 6,
+    "election": 6,
+    "route": 6,
+    "exit": 6
+  },
+  "state_space_exhaustion": false
+}

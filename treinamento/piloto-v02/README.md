@@ -1,16 +1,13 @@
-# Aula 05 — treinamento v02 no Colab
+# Aula 05 — Colab v02 corrigido
 
-1. Abra [o notebook no Colab](https://colab.research.google.com/github/AIConnection/missao-espacial/blob/main/notebooks/05-Treinamento_Cabecas_v02.ipynb).
-2. Execute as células em ordem. A seção 2 baixa `dados-colab-v02.zip` da main do GitHub.
-3. A seção 5 baixa o corpo Phi-4; a seção 6 extrai vetores com os pesos congelados; a seção 7 treina as duas cabeças.
-4. As seções seguintes calibram, avaliam, demonstram inferência, comparam classificação com a v01 e exportam resultados.
+Abra [o Colab](https://colab.research.google.com/github/AIConnection/missao-espacial/blob/main/notebooks/05-Treinamento_Cabecas_v02.ipynb) e execute em ordem. A seção 2 baixa o pacote corrigido da main.
 
-O pacote tem aproximadamente 3 MB e contém a massa v05 completa (8.562 entradas), instruções constantes, protocolo, hashes e referências NLI anteriores. Não inclui a auditoria privada nem os pesos do corpo; estes são obtidos do Hugging Face na revisão fixada do modelo. O notebook e o pacote são publicados juntos no GitHub.
+A massa contém 7.410 entradas: 6.834 de classificação e 576 probabilísticas. Entradas vêm apenas de AgentView e memória observada, pela mesma função InputBuilder usada nos agentes. A condição candidata é própria; distribuições de implementações de terceiros e parâmetros de geração não entram no modelo. O pacote não contém auditoria privada.
 
-As entradas e alvos dos cinco primeiros e cinco últimos exemplos aparecem separadamente. As distribuições e partições são mostradas antes da extração. Carregador, preparação de textos, treino, calibração, avaliação e exportação estão nas células; não há scripts de treino ocultos, Base64 ou modos de execução.
+As previsões combinam os três regimes de geração, com pesos iguais, em 96 continuações de 32 mundos pareados. A distribuição de geração é documentada fora das features e limita a interpretação das probabilidades. Nenhuma das 55.296 continuações foi descartada.
 
-O trabalho desta execução fica em `/content/treinamento-aula05-v02`. Para persistir após perder a sessão, mude `WORK_DIR` para uma pasta persistente já montada antes de extrair. Checkpoints são gravados a cada 32 entradas. Ao final, baixe o ZIP de resultados com dados, vetores, cabeças e relatórios. O notebook anterior e a massa v05 original não foram modificados.
+Amostras, distribuições, carregamento do Phi-4, extração, treino, calibração, avaliação e exportação ficam nas células. Checkpoints de vetores são gravados em blocos de 32 entradas. O pacote mudou: os vetores anteriores não são compatíveis; é necessário extrair novamente. O cache rejeita outra identidade de dados.
 
-Validação local: leitura e integridade da massa inteira; treino real das camadas lineares em 54 exemplos com vetores sintéticos e seis épocas; retomada do cache; normalização, calibração, inferência, comparação e exportação; tokenização real das 8.562 entradas com o tokenizer Phi-4. Máximos: 14.223 tokens na classificação e 6.397 na previsão, dentro de 16.384, sem truncamento. Os vetores sintéticos serviram somente para verificar o pipeline, sem produzir métricas de qualidade do Phi-4.
+A comparação NLI usa 88 casos antigos reproduzíveis. Dois dos 90 tinham sensores ausentes da visão registrada e ficam fora da comparação coerente, com motivo documentado; a v01 permanece intacta. O benchmark fora do domínio antigo continua arquivado e requer adaptação de formato para a cabeça nova.
 
-Não foi executada uma sessão do Colab, extração completa do Phi-4 ou treinamento completo v02. O protocolo no notebook usa a massa completa e 400 épocas, mantendo arquitetura e hiperparâmetros do piloto anterior. A cabeça probabilística antiga não é comparada diretamente no contrato novo.
+Validação local: massa completa conferida; tokenizer Phi-4 real; cabeças lineares treinadas em 54 vetores sintéticos por seis épocas para verificar o fluxo; retomada de cache, calibração, comparação e exportação exercitadas. Além disso, a preparação de entradas foi executada em 91 hooks durante uma partida real, com 88 entradas probabilísticas próprias, histórico curto e retomada. Não foi executado treinamento completo nem sessão do Colab nesta correção.

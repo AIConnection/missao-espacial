@@ -20,6 +20,9 @@
     "insuficiente",
     "contradição"
   ],
-  "forecast_input_contract": "mission-plan-compositional-v2",
-  "training_executed_on_packaging": false
+  "forecast_input_contract": "authorized context and own continuation condition only",
+  "training_executed_on_packaging": false,
+  "input_contract": "agent-view-compact",
+  "forecast_trials": 96,
+  "forecast_independent_worlds": 32
 }

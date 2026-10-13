@@ -1,0 +1,65 @@
+{
+  "Q03": {
+    "text": "O que aconteceu com a nave?"
+  },
+  "Q04": {
+    "text": "O acidente danificou os recipientes de oxigênio?"
+  },
+  "Q05": {
+    "text": "O módulo de ética continua funcionando depois do acidente?"
+  },
+  "Q06": {
+    "text": "Qual é a missão desta viagem?"
+  },
+  "Q07": {
+    "text": "Qual é o destino programado da nave?"
+  },
+  "Q08": {
+    "text": "O que a nave está transportando?"
+  },
+  "Q09": {
+    "text": "A carga foi preparada para quantos anos?"
+  },
+  "Q10": {
+    "text": "Há oxigênio suficiente?"
+  },
+  "Q11": {
+    "text": "Faltam mais de {X} rodadas para chegar à colônia?"
+  },
+  "Q13": {
+    "text": "Os planetas habitacionais já enfrentavam uma crise antes desta viagem?"
+  },
+  "Q14": {
+    "text": "Se a carga não chegar, a colônia entrará em crise?"
+  },
+  "Q15": {
+    "text": "Você recebeu alguma informação de {agente} sobre {assunto}?"
+  },
+  "Q16": {
+    "text": "Qual foi o último assunto sobre o qual {agente} lhe passou informação?"
+  },
+  "Q17": {
+    "text": "O agente {agente} lhe passou alguma informação sobre o oxigênio?"
+  },
+  "Q18": {
+    "text": "Você descobriu que alguma informação recebida de {agente} era falsa?"
+  },
+  "Q19": {
+    "text": "Qual participante você considera mais confiável neste momento?"
+  },
+  "Q20": {
+    "text": "Você acredita que {agente} sabe algo sobre {assunto}?"
+  },
+  "Q21": {
+    "text": "O que {agente} lhe contou sobre {assunto} combina com o que você sabe?"
+  },
+  "Q22": {
+    "text": "Você considera aceitável continuar a missão mesmo com risco de morte para a tripulação?"
+  },
+  "Q23": {
+    "text": "Nesta rodada, qual objetivo deve ser considerado: preservar a tripulação, concluir a missão ou ambos?"
+  },
+  "Q24": {
+    "text": "Com as informações que possui, você considera justificável expulsar {alvo}?"
+  }
+}

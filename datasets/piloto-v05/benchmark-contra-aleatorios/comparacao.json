@@ -1,0 +1,206 @@
+{
+  "games": 260,
+  "replications_per_comparison": 20,
+  "comparisons": [
+    {
+      "implementation": "humano_alpha",
+      "objective": "ENTREGA_NO_PLANETA",
+      "games": 20,
+      "specific_successes": 18,
+      "random_control_successes": 19,
+      "paired_mean_difference": -0.05,
+      "better": 0,
+      "equal": 19,
+      "worse": 1,
+      "paired_bootstrap_95": [
+        -0.15,
+        0.0
+      ],
+      "mean_rounds": 15.75,
+      "elections": 4
+    },
+    {
+      "implementation": "humano_beta",
+      "objective": "ENTREGA_NO_PLANETA",
+      "games": 20,
+      "specific_successes": 18,
+      "random_control_successes": 19,
+      "paired_mean_difference": -0.05,
+      "better": 0,
+      "equal": 19,
+      "worse": 1,
+      "paired_bootstrap_95": [
+        -0.15,
+        0.0
+      ],
+      "mean_rounds": 15.75,
+      "elections": 4
+    },
+    {
+      "implementation": "humano_gamma",
+      "objective": "ENTREGA_NO_PLANETA",
+      "games": 20,
+      "specific_successes": 19,
+      "random_control_successes": 19,
+      "paired_mean_difference": 0.0,
+      "better": 1,
+      "equal": 18,
+      "worse": 1,
+      "paired_bootstrap_95": [
+        -0.15,
+        0.15
+      ],
+      "mean_rounds": 17.4,
+      "elections": 3
+    },
+    {
+      "implementation": "evidence",
+      "objective": "ENTREGA_NO_PLANETA",
+      "games": 20,
+      "specific_successes": 18,
+      "random_control_successes": 19,
+      "paired_mean_difference": -0.05,
+      "better": 0,
+      "equal": 19,
+      "worse": 1,
+      "paired_bootstrap_95": [
+        -0.15,
+        0.0
+      ],
+      "mean_rounds": 15.85,
+      "elections": 7
+    },
+    {
+      "implementation": "pressure",
+      "objective": "ENTREGA_NO_PLANETA",
+      "games": 20,
+      "specific_successes": 20,
+      "random_control_successes": 19,
+      "paired_mean_difference": 0.05,
+      "better": 1,
+      "equal": 19,
+      "worse": 0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.15
+      ],
+      "mean_rounds": 18.1,
+      "elections": 11
+    },
+    {
+      "implementation": "pressure_keep",
+      "objective": "ENTREGA_NO_PLANETA",
+      "games": 20,
+      "specific_successes": 20,
+      "random_control_successes": 19,
+      "paired_mean_difference": 0.05,
+      "better": 1,
+      "equal": 19,
+      "worse": 0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.15
+      ],
+      "mean_rounds": 18.2,
+      "elections": 9
+    },
+    {
+      "implementation": "humano_beta",
+      "objective": "RETORNO_COM_SOBREVIVENCIA",
+      "games": 20,
+      "specific_successes": 10,
+      "random_control_successes": 3,
+      "paired_mean_difference": 0.35,
+      "better": 8,
+      "equal": 11,
+      "worse": 1,
+      "paired_bootstrap_95": [
+        0.1,
+        0.6
+      ],
+      "mean_rounds": 9.85,
+      "elections": 11
+    },
+    {
+      "implementation": "humano_gamma",
+      "objective": "RETORNO_COM_SOBREVIVENCIA",
+      "games": 20,
+      "specific_successes": 2,
+      "random_control_successes": 3,
+      "paired_mean_difference": -0.05,
+      "better": 1,
+      "equal": 17,
+      "worse": 2,
+      "paired_bootstrap_95": [
+        -0.2,
+        0.1
+      ],
+      "mean_rounds": 16.7,
+      "elections": 3
+    },
+    {
+      "implementation": "evidence",
+      "objective": "RETORNO_COM_SOBREVIVENCIA",
+      "games": 20,
+      "specific_successes": 4,
+      "random_control_successes": 3,
+      "paired_mean_difference": 0.05,
+      "better": 2,
+      "equal": 17,
+      "worse": 1,
+      "paired_bootstrap_95": [
+        -0.1,
+        0.2
+      ],
+      "mean_rounds": 14.95,
+      "elections": 6
+    },
+    {
+      "implementation": "pressure",
+      "objective": "RETORNO_COM_SOBREVIVENCIA",
+      "games": 20,
+      "specific_successes": 9,
+      "random_control_successes": 3,
+      "paired_mean_difference": 0.3,
+      "better": 7,
+      "equal": 12,
+      "worse": 1,
+      "paired_bootstrap_95": [
+        0.05,
+        0.55
+      ],
+      "mean_rounds": 10.4,
+      "elections": 11
+    },
+    {
+      "implementation": "pressure_keep",
+      "objective": "RETORNO_COM_SOBREVIVENCIA",
+      "games": 20,
+      "specific_successes": 8,
+      "random_control_successes": 3,
+      "paired_mean_difference": 0.25,
+      "better": 7,
+      "equal": 11,
+      "worse": 2,
+      "paired_bootstrap_95": [
+        0.0,
+        0.5
+      ],
+      "mean_rounds": 10.05,
+      "elections": 8
+    }
+  ],
+  "control": "Only focal implementation changes; initial world, focal objective, profiles, nature, owners, engine RNG seed and seeds per participant are paired. Different behavior can consume random streams in different orders.",
+  "uncertainty": "Exploratory paired bootstrap over game worlds; not independent-answer binomial inference or proof of optimal strategy.",
+  "filter_rule": "No deletion by victory/defeat. Validate context, anonymity, completeness, token budget; select by evidence type and temporal coverage; preserve a benchmark before fitting.",
+  "used_for_training": false,
+  "model_executed": false,
+  "individual_external_survival_evaluated": false,
+  "excluded_incompatible_goal": {
+    "humano_alpha": "RETORNO_COM_SOBREVIVENCIA: implementação declara objetivo de missão."
+  },
+  "source_sha256": {
+    "agentes_experimentais.py": "64af6d42627afb0c79d77db5a5452d6d880acd8cab879d0c6e2ed94e3763de7a",
+    "comparar_contra_aleatorios.py": "c3e1644071757ecfd757ddb03449ac3e988cffcb58eb8f9960353cdd5c02b149"
+  }
+}

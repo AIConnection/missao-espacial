@@ -1,0 +1,6587 @@
+{
+  "train": {
+    "per_class": {
+      "fact": 426,
+      "speech": 426,
+      "boundary": 356,
+      "belief": 145,
+      "oxygen": 47
+    },
+    "capacity_per_class": {
+      "fact": 13654,
+      "speech": 17658,
+      "boundary": 4897,
+      "belief": 7349,
+      "oxygen": 47
+    },
+    "temporal_per_class": [
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 329
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 93
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 7,
+        "capacity": 16
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 389
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 57
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 108
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 7,
+        "capacity": 399
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 160
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 35
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 7,
+        "capacity": 9
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 159
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 162
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 38
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 62
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 7,
+        "capacity": 189
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 356
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 67
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 6,
+        "capacity": 6
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 427
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 386
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 62
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 170
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 7,
+        "capacity": 423
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 338
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 126
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 7,
+        "capacity": 15
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 403
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 394
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 79
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 148
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 7,
+        "capacity": 426
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 417
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 71
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 5,
+        "capacity": 5
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 451
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 434
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 29
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 168
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 7,
+        "capacity": 458
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 354
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 75
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 7,
+        "capacity": 21
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 388
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 404
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 41
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 168
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 7,
+        "capacity": 400
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 353
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 80
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 4,
+        "capacity": 4
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 381
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 386
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 42
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 161
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 6,
+        "capacity": 400
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 6,
+        "capacity": 375
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 6,
+        "capacity": 110
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 6,
+        "capacity": 10
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 6,
+        "capacity": 383
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 6,
+        "capacity": 390
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 6,
+        "capacity": 95
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 6,
+        "capacity": 170
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 6,
+        "capacity": 399
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 8,
+        "capacity": 272
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 8,
+        "capacity": 270
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 8,
+        "capacity": 262
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 8,
+        "capacity": 57
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 8,
+        "capacity": 12
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 8,
+        "capacity": 255
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 8,
+        "capacity": 270
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 8,
+        "capacity": 60
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 8,
+        "capacity": 86
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 8,
+        "capacity": 297
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 8,
+        "capacity": 262
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 8,
+        "capacity": 47
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 8,
+        "capacity": 17
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 8,
+        "capacity": 542
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 8,
+        "capacity": 274
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 8,
+        "capacity": 39
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 8,
+        "capacity": 112
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 8,
+        "capacity": 536
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 8,
+        "capacity": 441
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 8,
+        "capacity": 149
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 7,
+        "capacity": 40
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 549
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 512
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 118
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 162
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 7,
+        "capacity": 578
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 598
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 111
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 7,
+        "capacity": 26
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 669
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 612
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 54
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 193
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 7,
+        "capacity": 684
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 538
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 141
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 7,
+        "capacity": 47
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 602
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 588
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 80
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 201
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 7,
+        "capacity": 612
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 525
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 135
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 7,
+        "capacity": 30
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 589
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 595
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 92
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 191
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 7,
+        "capacity": 606
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 7,
+        "capacity": 570
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 7,
+        "capacity": 203
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 7,
+        "capacity": 44
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 7,
+        "capacity": 558
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 7,
+        "capacity": 587
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 7,
+        "capacity": 173
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 7,
+        "capacity": 217
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 7,
+        "capacity": 568
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 6,
+        "capacity": 126
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 6,
+        "capacity": 27
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 6,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 6,
+        "capacity": 141
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "finished",
+        "count": 3,
+        "capacity": 3
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 6,
+        "capacity": 15
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 6,
+        "capacity": 24
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 6,
+        "capacity": 141
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 6,
+        "capacity": 56
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 6,
+        "capacity": 12
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 4,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 6,
+        "capacity": 64
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 6,
+        "capacity": 60
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 6,
+        "capacity": 19
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 6,
+        "capacity": 24
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 6,
+        "capacity": 100
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 6,
+        "capacity": 117
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 6,
+        "capacity": 31
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 4,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 6,
+        "capacity": 148
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "finished",
+        "count": 6,
+        "capacity": 9
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 6,
+        "capacity": 141
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 6,
+        "capacity": 31
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 6,
+        "capacity": 54
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 6,
+        "capacity": 148
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 6,
+        "capacity": 115
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 6,
+        "capacity": 39
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 6,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 6,
+        "capacity": 116
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 6,
+        "capacity": 127
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 6,
+        "capacity": 26
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 6,
+        "capacity": 40
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 6,
+        "capacity": 131
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 6,
+        "capacity": 150
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 6,
+        "capacity": 37
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 6,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 6,
+        "capacity": 163
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 6,
+        "capacity": 151
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 6,
+        "capacity": 15
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 5,
+        "capacity": 51
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 5,
+        "capacity": 174
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 5,
+        "capacity": 124
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 5,
+        "capacity": 35
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 5,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 5,
+        "capacity": 143
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 5,
+        "capacity": 146
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 5,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 5,
+        "capacity": 66
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 5,
+        "capacity": 140
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 5,
+        "capacity": 116
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 5,
+        "capacity": 47
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 4,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 5,
+        "capacity": 128
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 5,
+        "capacity": 136
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 5,
+        "capacity": 23
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 5,
+        "capacity": 55
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 5,
+        "capacity": 143
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 5,
+        "capacity": 125
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 5,
+        "capacity": 54
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 5,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 5,
+        "capacity": 134
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 5,
+        "capacity": 136
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 5,
+        "capacity": 42
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 5,
+        "capacity": 62
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 5,
+        "capacity": 150
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 3,
+        "capacity": 176
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 3,
+        "capacity": 43
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 3,
+        "capacity": 10
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 3,
+        "capacity": 206
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 3,
+        "capacity": 32
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 3,
+        "capacity": 62
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 3,
+        "capacity": 213
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 3,
+        "capacity": 88
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 3,
+        "capacity": 19
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 3,
+        "capacity": 4
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 3,
+        "capacity": 86
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 3,
+        "capacity": 90
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 3,
+        "capacity": 22
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 3,
+        "capacity": 44
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 3,
+        "capacity": 106
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 3,
+        "capacity": 194
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 3,
+        "capacity": 30
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 3,
+        "capacity": 223
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 3,
+        "capacity": 208
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 25
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 105
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 2,
+        "capacity": 223
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 179
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 62
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 213
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 213
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 41
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 100
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 2,
+        "capacity": 222
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 218
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 35
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 2,
+        "capacity": 3
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 236
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 230
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 16
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 106
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 2,
+        "capacity": 240
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 192
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 42
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 2,
+        "capacity": 10
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 209
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 212
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 22
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 101
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 2,
+        "capacity": 215
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 185
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 41
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 203
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 209
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 25
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 98
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 2,
+        "capacity": 210
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 196
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 66
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 2,
+        "capacity": 9
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 198
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 203
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 54
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 106
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 2,
+        "capacity": 207
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "finished",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "finished",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 3,
+        "capacity": 3
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 3,
+        "capacity": 3
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 3,
+        "capacity": 3
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 3,
+        "capacity": 3
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 1,
+        "capacity": 1
+      }
+    ]
+  },
+  "calibration": {
+    "per_class": {
+      "fact": 90,
+      "speech": 90,
+      "boundary": 75,
+      "belief": 30,
+      "oxygen": 15
+    },
+    "capacity_per_class": {
+      "fact": 3308,
+      "speech": 5149,
+      "boundary": 468,
+      "belief": 2112,
+      "oxygen": 71
+    },
+    "temporal_per_class": [
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 68
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 17
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 96
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 17
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 34
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 2,
+        "capacity": 96
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 20
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 6
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 20
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 20
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 6
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 16
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 2,
+        "capacity": 28
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 74
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 25
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 2,
+        "capacity": 15
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 98
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 93
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 25
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 52
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 2,
+        "capacity": 104
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 90
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 25
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 2,
+        "capacity": 6
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 103
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 93
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 59
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 2,
+        "capacity": 99
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 85
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 35
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 1,
+        "capacity": 7
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 108
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 108
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 23
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 40
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 1,
+        "capacity": 108
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 65
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 27
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 89
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 87
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 27
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 41
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 1,
+        "capacity": 89
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 74
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 24
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 1,
+        "capacity": 11
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 103
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 89
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 31
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 30
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 1,
+        "capacity": 103
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 85
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 33
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 1,
+        "capacity": 5
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 82
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 103
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 31
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 53
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 1,
+        "capacity": 89
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 87
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 2,
+        "capacity": 87
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 48
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 24
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 48
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 48
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 24
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 12
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 2,
+        "capacity": 58
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 72
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 24
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 2,
+        "capacity": 15
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 146
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 83
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 27
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 42
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 2,
+        "capacity": 154
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 138
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 42
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 2,
+        "capacity": 8
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 178
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 138
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 28
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 81
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 2,
+        "capacity": 165
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 147
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 54
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 2,
+        "capacity": 5
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 187
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 182
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 36
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 68
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 2,
+        "capacity": 183
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 123
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 40
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 161
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 154
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 41
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 57
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 1,
+        "capacity": 159
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 128
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 51
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 1,
+        "capacity": 24
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 193
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 164
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 65
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 54
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 1,
+        "capacity": 191
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 169
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 64
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 1,
+        "capacity": 7
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 157
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 194
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 55
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 92
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 1,
+        "capacity": 166
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 2,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 2,
+        "capacity": 14
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "finished",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 2,
+        "capacity": 25
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 25
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 14
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 19
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 1,
+        "capacity": 19
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 12
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 19
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 15
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 1,
+        "capacity": 8
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 44
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 12
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 58
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 12
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 22
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 1,
+        "capacity": 58
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 16
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 8
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 16
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 16
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 8
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 6
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 1,
+        "capacity": 20
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 45
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 15
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 1,
+        "capacity": 6
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 60
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 57
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 15
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 34
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 1,
+        "capacity": 63
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 50
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 21
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 1,
+        "capacity": 4
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 65
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 58
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 16
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 40
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 1,
+        "capacity": 63
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 49
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 23
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 68
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 67
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 18
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 28
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 0,
+        "capacity": 68
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 43
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 17
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 57
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 57
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 17
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 26
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 0,
+        "capacity": 57
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 42
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 18
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 0,
+        "capacity": 7
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 64
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 57
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 23
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 22
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 0,
+        "capacity": 64
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 57
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 22
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 0,
+        "capacity": 3
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 54
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 64
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 20
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 32
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 0,
+        "capacity": 58
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 1,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "finished",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 3
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 0,
+        "capacity": 3
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 4
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 0,
+        "capacity": 4
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 4
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 4
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 0,
+        "capacity": 2
+      }
+    ]
+  },
+  "test": {
+    "per_class": {
+      "fact": 90,
+      "speech": 90,
+      "boundary": 75,
+      "belief": 30,
+      "oxygen": 15
+    },
+    "capacity_per_class": {
+      "fact": 3484,
+      "speech": 4952,
+      "boundary": 1124,
+      "belief": 1942,
+      "oxygen": 29
+    },
+    "temporal_per_class": [
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 72
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 29
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 2,
+        "capacity": 9
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 112
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 31
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 32
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 2,
+        "capacity": 121
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 27
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 9
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 21
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 32
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 9
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 2,
+        "capacity": 33
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 94
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 29
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 111
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 112
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 22
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 44
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 2,
+        "capacity": 111
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 88
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 10
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 101
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 95
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 7
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 42
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 2,
+        "capacity": 101
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 95
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 24
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 1,
+        "capacity": 12
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 114
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 115
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 34
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 49
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 1,
+        "capacity": 119
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 86
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 22
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 94
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 98
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 24
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 43
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 1,
+        "capacity": 99
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 86
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 14
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 1,
+        "capacity": 2
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 101
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 93
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 14
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 31
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 1,
+        "capacity": 101
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 94
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 26
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 1,
+        "capacity": 7
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 99
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 101
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 28
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 44
+      },
+      {
+        "kind": "fact",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 1,
+        "capacity": 99
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 71
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 2,
+        "capacity": 72
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 48
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 2,
+        "capacity": 5
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 42
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 54
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 9
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 2,
+        "capacity": 60
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 58
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 21
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "election",
+        "count": 2,
+        "capacity": 2
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 148
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 72
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 26
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 29
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 2,
+        "capacity": 150
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 125
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 18
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "election",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 161
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 137
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 8
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 43
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 2,
+        "capacity": 167
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 161
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 41
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 2,
+        "capacity": 22
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 204
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 189
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 53
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 81
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 1,
+        "capacity": 207
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 142
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 45
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 1,
+        "capacity": 10
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 164
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 180
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 49
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 70
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 1,
+        "capacity": 185
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 145
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 26
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 1,
+        "capacity": 5
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 172
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 165
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 28
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 38
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 1,
+        "capacity": 167
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 157
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 67
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 1,
+        "capacity": 14
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 153
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 172
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 52
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 66
+      },
+      {
+        "kind": "speech",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 1,
+        "capacity": 159
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 20
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 8
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 31
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "finished",
+        "count": 2,
+        "capacity": 6
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 8
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 2,
+        "capacity": 8
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 2,
+        "capacity": 35
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 2,
+        "capacity": 8
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 2,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 2,
+        "capacity": 8
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 23
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 15
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 35
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "finished",
+        "count": 1,
+        "capacity": 6
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 31
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 13
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 12
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 1,
+        "capacity": 36
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 28
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 24
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 28
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 16
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 1,
+        "capacity": 24
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 33
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 12
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 1,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 39
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 36
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 15
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 13
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 1,
+        "capacity": 41
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 20
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 1,
+        "capacity": 7
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 27
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 26
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 13
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 25
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 1,
+        "capacity": 33
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 23
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 1,
+        "capacity": 4
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 34
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 27
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 11
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 8
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 1,
+        "capacity": 27
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 23
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 28
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 20
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 34
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 15
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 26
+      },
+      {
+        "kind": "boundary",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 1,
+        "capacity": 27
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 37
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 18
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 1,
+        "capacity": 3
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 56
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 17
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 18
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 1,
+        "capacity": 59
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 16
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 6
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 1,
+        "capacity": 2
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 14
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 18
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 6
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 4
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 1,
+        "capacity": 20
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 45
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 17
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 62
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 56
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 17
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 21
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 1,
+        "capacity": 62
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 49
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 10
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 56
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 55
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 6
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 1,
+        "capacity": 22
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 1,
+        "capacity": 56
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 52
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 17
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 0,
+        "capacity": 6
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 67
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 64
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 18
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 27
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 0,
+        "capacity": 68
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 47
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 14
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 54
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 59
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 15
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 24
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 0,
+        "capacity": 59
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 47
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 9
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 56
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 53
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 9
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 14
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 0,
+        "capacity": 54
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 51
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 22
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 0,
+        "capacity": 4
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 51
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 56
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 17
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 23
+      },
+      {
+        "kind": "belief",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 0,
+        "capacity": 53
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "finished",
+        "count": 1,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "1",
+        "phase": "route",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "13+",
+        "phase": "route",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "finished",
+        "count": 1,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "2",
+        "phase": "route",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "3",
+        "phase": "route",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "answers",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "exit",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "initiative",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "proposal",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "4",
+        "phase": "route",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "authorize",
+        "count": 1,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "election",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "5",
+        "phase": "route",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "6",
+        "phase": "route",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "answers",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "authorize",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "election",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "exit",
+        "count": 0,
+        "capacity": 0
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "initiative",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "proposal",
+        "count": 0,
+        "capacity": 2
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "renounce",
+        "count": 0,
+        "capacity": 1
+      },
+      {
+        "kind": "oxygen",
+        "round_bucket": "7-12",
+        "phase": "route",
+        "count": 0,
+        "capacity": 1
+      }
+    ]
+  }
+}

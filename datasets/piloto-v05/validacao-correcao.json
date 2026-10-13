@@ -1,0 +1,27 @@
+{
+  "nli_rows": 6834,
+  "nli_classes": {
+    "2": 2278,
+    "1": 2278,
+    "0": 2278
+  },
+  "forecast_rows": 576,
+  "rollouts_preserved": 55296,
+  "split_normalized_input_overlap": 0,
+  "split_group_overlap": 0,
+  "oracle_labels_unchanged": true,
+  "typed_agent_view_contexts_reproduced": 4264,
+  "features_from_private_engine_state": false,
+  "mean_input_characters": {
+    "nli": {
+      "before": 7532.960345332162,
+      "after": 4790.363184079602,
+      "reduction_fraction": 0.36407959627081066
+    },
+    "forecast": {
+      "before": 10357.131944444445,
+      "after": 4145.819444444444,
+      "reduction_fraction": 0.5997135629165893
+    }
+  }
+}

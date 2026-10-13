@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "rows": 7410,
+  "nli_oracle_and_serialized_semantics_verified": 6834,
+  "agent_view_reproduction_verified": 7410,
+  "forecast_marginal_targets_verified": 576,
+  "forecast_terminal_results_verified": 55296,
+  "forecast_replays_executed": 102,
+  "split_normalized_input_overlap": 0,
+  "split_group_overlap": 0,
+  "class_type_round_phase_balance_verified": true,
+  "window_tokens": 16384,
+  "tokens": {
+    "nli": {
+      "min": 938,
+      "median": 1862,
+      "max": 9697
+    },
+    "forecast": {
+      "min": 882,
+      "median": 1655,
+      "max": 2929
+    }
+  },
+  "truncation": false,
+  "model_weights_executed": false
+}

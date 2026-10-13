@@ -1,0 +1,14 @@
+{
+  "rows": 88,
+  "excluded": [
+    {
+      "source_row": "me-p03-a918a71bec625da12be2",
+      "error": "('label', 'neutral', 0)"
+    },
+    {
+      "source_row": "me-p03-6f05c73c0567aadb084d",
+      "error": "('label', 'neutral', 0)"
+    }
+  ],
+  "reason": "Two legacy cases contain sensors absent from their recorded authorized view; original v01 benchmark preserved"
+}

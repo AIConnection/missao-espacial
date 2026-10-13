@@ -1,0 +1,436 @@
+[
+  {
+    "key": "d121b24316de",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_if_opposed",
+      "answer": "truthful",
+      "vote": "approve",
+      "election": "self",
+      "route": "RETORNAR",
+      "exit": "always_when_legal",
+      "block": "never",
+      "questions": "catalog_forward"
+    }
+  },
+  {
+    "key": "3ca4f49255a3",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_unless_same",
+      "answer": "truthful",
+      "vote": "reject",
+      "election": "abstain",
+      "route": "CONTINUAR",
+      "exit": "confirmed_insufficient",
+      "block": "always",
+      "questions": "catalog_reverse"
+    }
+  },
+  {
+    "key": "63d6512161aa",
+    "split": "train",
+    "controls": {
+      "initiative": "ask",
+      "answer": "refuse",
+      "vote": "opposed_only",
+      "election": "self",
+      "route": "CONTINUAR",
+      "exit": "never",
+      "block": "same_intention",
+      "questions": "evidence_first"
+    }
+  },
+  {
+    "key": "73ce00210388",
+    "split": "train",
+    "controls": {
+      "initiative": "penalize_if_opposed",
+      "answer": "unknown",
+      "vote": "reject",
+      "election": "target",
+      "route": "RETORNAR",
+      "exit": "never",
+      "block": "always",
+      "questions": "intention_first"
+    }
+  },
+  {
+    "key": "c476434ce795",
+    "split": "train",
+    "controls": {
+      "initiative": "penalize_if_opposed",
+      "answer": "unknown",
+      "vote": "approve",
+      "election": "abstain",
+      "route": "RETORNAR",
+      "exit": "confirmed_insufficient",
+      "block": "same_intention",
+      "questions": "evidence_first"
+    }
+  },
+  {
+    "key": "a930c9c7e223",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_unless_same",
+      "answer": "refuse",
+      "vote": "opposed_only",
+      "election": "target",
+      "route": "RETORNAR",
+      "exit": "always_when_legal",
+      "block": "never",
+      "questions": "catalog_reverse"
+    }
+  },
+  {
+    "key": "37712364a71c",
+    "split": "train",
+    "controls": {
+      "initiative": "ask",
+      "answer": "unknown",
+      "vote": "reject",
+      "election": "target",
+      "route": "CONTINUAR",
+      "exit": "confirmed_insufficient",
+      "block": "never",
+      "questions": "catalog_forward"
+    }
+  },
+  {
+    "key": "7a0b943cd38e",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_if_opposed",
+      "answer": "unknown",
+      "vote": "opposed_only",
+      "election": "abstain",
+      "route": "CONTINUAR",
+      "exit": "always_when_legal",
+      "block": "always",
+      "questions": "intention_first"
+    }
+  },
+  {
+    "key": "ca55479a8cad",
+    "split": "train",
+    "controls": {
+      "initiative": "penalize_if_opposed",
+      "answer": "refuse",
+      "vote": "approve",
+      "election": "self",
+      "route": "CONTINUAR",
+      "exit": "confirmed_insufficient",
+      "block": "always",
+      "questions": "intention_first"
+    }
+  },
+  {
+    "key": "01b39d93fa81",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_if_opposed",
+      "answer": "truthful",
+      "vote": "reject",
+      "election": "target",
+      "route": "RETORNAR",
+      "exit": "never",
+      "block": "same_intention",
+      "questions": "evidence_first"
+    }
+  },
+  {
+    "key": "c0d5317a44ab",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_unless_same",
+      "answer": "unknown",
+      "vote": "approve",
+      "election": "self",
+      "route": "RETORNAR",
+      "exit": "never",
+      "block": "never",
+      "questions": "catalog_reverse"
+    }
+  },
+  {
+    "key": "ec8b17470a7c",
+    "split": "train",
+    "controls": {
+      "initiative": "ask",
+      "answer": "refuse",
+      "vote": "reject",
+      "election": "abstain",
+      "route": "RETORNAR",
+      "exit": "never",
+      "block": "always",
+      "questions": "catalog_forward"
+    }
+  },
+  {
+    "key": "580f26eda826",
+    "split": "train",
+    "controls": {
+      "initiative": "ask",
+      "answer": "truthful",
+      "vote": "reject",
+      "election": "self",
+      "route": "RETORNAR",
+      "exit": "always_when_legal",
+      "block": "same_intention",
+      "questions": "intention_first"
+    }
+  },
+  {
+    "key": "9e82a736576a",
+    "split": "train",
+    "controls": {
+      "initiative": "penalize_if_opposed",
+      "answer": "truthful",
+      "vote": "opposed_only",
+      "election": "abstain",
+      "route": "CONTINUAR",
+      "exit": "confirmed_insufficient",
+      "block": "never",
+      "questions": "catalog_forward"
+    }
+  },
+  {
+    "key": "affe53deef41",
+    "split": "train",
+    "controls": {
+      "initiative": "ask",
+      "answer": "truthful",
+      "vote": "approve",
+      "election": "target",
+      "route": "RETORNAR",
+      "exit": "always_when_legal",
+      "block": "same_intention",
+      "questions": "catalog_reverse"
+    }
+  },
+  {
+    "key": "4d241686ff26",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_unless_same",
+      "answer": "unknown",
+      "vote": "approve",
+      "election": "self",
+      "route": "RETORNAR",
+      "exit": "always_when_legal",
+      "block": "always",
+      "questions": "evidence_first"
+    }
+  },
+  {
+    "key": "0a39b66f1d34",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_unless_same",
+      "answer": "truthful",
+      "vote": "reject",
+      "election": "abstain",
+      "route": "CONTINUAR",
+      "exit": "confirmed_insufficient",
+      "block": "same_intention",
+      "questions": "catalog_forward"
+    }
+  },
+  {
+    "key": "e3ca9cc5faa0",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_if_opposed",
+      "answer": "refuse",
+      "vote": "reject",
+      "election": "target",
+      "route": "RETORNAR",
+      "exit": "confirmed_insufficient",
+      "block": "always",
+      "questions": "catalog_reverse"
+    }
+  },
+  {
+    "key": "ddefd114edc1",
+    "split": "train",
+    "controls": {
+      "initiative": "penalize_if_opposed",
+      "answer": "truthful",
+      "vote": "reject",
+      "election": "abstain",
+      "route": "CONTINUAR",
+      "exit": "always_when_legal",
+      "block": "never",
+      "questions": "evidence_first"
+    }
+  },
+  {
+    "key": "abdc50c7c94a",
+    "split": "train",
+    "controls": {
+      "initiative": "expel_unless_same",
+      "answer": "truthful",
+      "vote": "reject",
+      "election": "self",
+      "route": "RETORNAR",
+      "exit": "confirmed_insufficient",
+      "block": "never",
+      "questions": "intention_first"
+    }
+  },
+  {
+    "key": "1384ad49acc1",
+    "split": "train",
+    "controls": {
+      "initiative": "penalize_if_opposed",
+      "answer": "refuse",
+      "vote": "opposed_only",
+      "election": "self",
+      "route": "RETORNAR",
+      "exit": "confirmed_insufficient",
+      "block": "never",
+      "questions": "catalog_reverse"
+    }
+  },
+  {
+    "key": "8c49cd0a45f4",
+    "split": "calibration",
+    "controls": {
+      "initiative": "expel_unless_same",
+      "answer": "truthful",
+      "vote": "reject",
+      "election": "target",
+      "route": "RETORNAR",
+      "exit": "never",
+      "block": "same_intention",
+      "questions": "catalog_forward"
+    }
+  },
+  {
+    "key": "a0a5b2f543ea",
+    "split": "calibration",
+    "controls": {
+      "initiative": "ask",
+      "answer": "refuse",
+      "vote": "opposed_only",
+      "election": "self",
+      "route": "CONTINUAR",
+      "exit": "always_when_legal",
+      "block": "never",
+      "questions": "catalog_reverse"
+    }
+  },
+  {
+    "key": "c1408046a7a3",
+    "split": "calibration",
+    "controls": {
+      "initiative": "penalize_if_opposed",
+      "answer": "unknown",
+      "vote": "approve",
+      "election": "self",
+      "route": "CONTINUAR",
+      "exit": "always_when_legal",
+      "block": "never",
+      "questions": "intention_first"
+    }
+  },
+  {
+    "key": "b4632f56f26e",
+    "split": "calibration",
+    "controls": {
+      "initiative": "expel_if_opposed",
+      "answer": "refuse",
+      "vote": "reject",
+      "election": "abstain",
+      "route": "CONTINUAR",
+      "exit": "always_when_legal",
+      "block": "same_intention",
+      "questions": "intention_first"
+    }
+  },
+  {
+    "key": "bbcaa956ff2c",
+    "split": "test",
+    "controls": {
+      "initiative": "penalize_if_opposed",
+      "answer": "truthful",
+      "vote": "approve",
+      "election": "self",
+      "route": "CONTINUAR",
+      "exit": "always_when_legal",
+      "block": "always",
+      "questions": "evidence_first"
+    }
+  },
+  {
+    "key": "1611f4fa5678",
+    "split": "test",
+    "controls": {
+      "initiative": "expel_unless_same",
+      "answer": "unknown",
+      "vote": "opposed_only",
+      "election": "self",
+      "route": "CONTINUAR",
+      "exit": "always_when_legal",
+      "block": "never",
+      "questions": "intention_first"
+    }
+  },
+  {
+    "key": "4a20ac3a4880",
+    "split": "test",
+    "controls": {
+      "initiative": "expel_unless_same",
+      "answer": "refuse",
+      "vote": "reject",
+      "election": "self",
+      "route": "CONTINUAR",
+      "exit": "always_when_legal",
+      "block": "same_intention",
+      "questions": "catalog_forward"
+    }
+  },
+  {
+    "key": "602f7c1d8808",
+    "split": "test",
+    "controls": {
+      "initiative": "expel_if_opposed",
+      "answer": "refuse",
+      "vote": "opposed_only",
+      "election": "target",
+      "route": "RETORNAR",
+      "exit": "confirmed_insufficient",
+      "block": "same_intention",
+      "questions": "catalog_forward"
+    }
+  },
+  {
+    "key": "7a49a2baeb4b",
+    "split": "test",
+    "controls": {
+      "initiative": "expel_if_opposed",
+      "answer": "unknown",
+      "vote": "approve",
+      "election": "abstain",
+      "route": "RETORNAR",
+      "exit": "confirmed_insufficient",
+      "block": "never",
+      "questions": "evidence_first"
+    }
+  },
+  {
+    "key": "4f6565b2b2c8",
+    "split": "test",
+    "controls": {
+      "initiative": "ask",
+      "answer": "truthful",
+      "vote": "reject",
+      "election": "abstain",
+      "route": "CONTINUAR",
+      "exit": "confirmed_insufficient",
+      "block": "same_intention",
+      "questions": "catalog_reverse"
+    }
+  }
+]

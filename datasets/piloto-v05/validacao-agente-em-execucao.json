@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "live_agent_callbacks_compiled": 91,
+  "live_forecast_inputs_compiled": 88,
+  "phases_seen": [
+    "answers",
+    "authorize",
+    "election",
+    "exit",
+    "finished",
+    "initiative",
+    "proposal",
+    "renounce",
+    "route"
+  ],
+  "session_resume_verified": true,
+  "short_history_limit": 2,
+  "incomplete_memory_rejected": true,
+  "engine_source_modified": false,
+  "private_engine_state_read_by_compiler": false
+}

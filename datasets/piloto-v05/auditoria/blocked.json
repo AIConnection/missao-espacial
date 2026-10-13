@@ -1,0 +1,732 @@
+[
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-0-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-2-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-2-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-2-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-2-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-2-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-6-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-7-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-7-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-8-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-9-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-17-random_only",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-10-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-10-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-10-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-10-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-10-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-10-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-13-mixed_new_ai",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-7-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-7-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-7-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-7-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-7-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  },
+  {
+    "family": "experiment-11-mixed_pressure_keep",
+    "kind": "speech",
+    "reason": "UNKNOWN_PERSON_REFERENCE"
+  }
+]
