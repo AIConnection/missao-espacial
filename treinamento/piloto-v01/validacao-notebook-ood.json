@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "notebook": "notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb",
+  "notebook_sha256": "7df67ffb6928ee8182b67ef22673601d43ae90dd6052e4ff437b45a2f05c540a",
+  "code_cells": 12,
+  "checks": [
+    "all_code_cells_compile",
+    "full_lightweight_flow_without_phi4",
+    "real_main_download_and_head_hashes",
+    "30_cases_balanced_and_supervision_separate",
+    "loop_metrics_and_export_with_explicit_test_double",
+    "original_embedded_package_unchanged",
+    "one_real_phi4_forward_using_github_heads"
+  ],
+  "real_forward": {
+    "case_index": 15,
+    "classification": "suporte",
+    "expected": "suporte",
+    "device": "mps",
+    "github_commit": "b1ede9be215ba077a3677d2ba1f95a2bd573800e"
+  },
+  "limitations": [
+    "Entire 30-case notebook inference not rerun in this validation",
+    "Full notebook not executed in a live Colab session",
+    "Test-double metric checks reuse historical predictions only in the validation harness, never in the notebook inference cell"
+  ]
+}

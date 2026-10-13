@@ -2,6 +2,14 @@
 
 Abra `notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb` no Colab (upload do notebook) ou em Jupyter local. O notebook incorpora os dados e os scripts: não requer clonagem do projeto, caminhos do computador do professor ou upload separado de datasets.
 
+## Inferência fora do domínio no Colab
+
+[Abra o notebook atualizado da main no Colab](https://colab.research.google.com/github/AIConnection/missao-espacial/blob/main/notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb).
+
+O modo padrão `MODO_EXECUCAO="inferencia-github"` pula o treinamento e usa as duas cabeças publicadas em `execucao-local-01/heads/`, com verificação de hashes. A seção 9 executa 30 pares NLI fora do domínio do jogo, com 10 exemplos por classe, mostra os casos completos, calcula acurácia, macro F1, precisão, recall e matriz de confusão e exporta os resultados. Apenas premissa e hipótese entram no modelo. A cabeça de desfechos não é avaliada fora do contrato da missão.
+
+Todos os downloads usam um único commit resolvido a partir da `main`. O Phi-4 base permanece na revisão fixa registrada no pacote; não precisa repetir as 816 extrações para usar as cabeças. Para percorrer o treinamento original, selecione `MODO_EXECUCAO="treinamento"`. Uma cópia antiga no Drive não é atualizada automaticamente: abra o link acima ou importe novamente o notebook atualizado.
+
 Há 600 exemplos NLI balanceados (200 por classe) e todos os 216 exemplos de desfechos do v04. O notebook extrai features do Phi-4 congelado, treina duas cabeças separadas, calibra em partições reservadas, avalia no teste e exporta as heads com contrato, normalização, previsões e relatório.
 
 A seleção é automática entre CUDA, MPS/Metal e CPU. Não há exigência de uma GPU específica. Os pesos de aproximadamente 8,2 GB são baixados de uma revisão fixa e verificados. CPU exige memória suficiente e pode ser lenta. Prefill em blocos mantém todo o contexto em cache; a janela de 16.384 tokens não é truncada.
