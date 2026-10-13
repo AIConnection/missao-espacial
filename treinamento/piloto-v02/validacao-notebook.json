@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "notebook_code_cells_compile": true,
+  "package_integrity_and_8562_rows_verified": true,
+  "actual_linear_heads_smoke_test": {
+    "rows": 54,
+    "epochs": 6,
+    "features": "synthetic; only checks pipeline, not model quality"
+  },
+  "normalization_train_only_verified": true,
+  "cache_resume_without_additional_forward_verified": true,
+  "calibration_inference_common_benchmarks_export_executed": true,
+  "real_phi4_tokenizer_all_inputs_verified": {
+    "window": 16384,
+    "nli_max": 14223,
+    "forecast_max": 6397
+  },
+  "phi4_weights_executed": false,
+  "full_training_executed": false,
+  "colab_session_executed": false
+}

@@ -1,0 +1,25 @@
+{
+  "seed": 171,
+  "optimization": {
+    "epochs": 400,
+    "learning_rate": 0.01,
+    "l2": 0.1,
+    "batch": "full train",
+    "optimizer": "Adam",
+    "epoch_selection": "fixed before test"
+  },
+  "normalization_min_std": 0.001,
+  "calibration": "temperature selected using calibration NLL only, grid [0.5,0.75,1,1.5,2,3,5,10]",
+  "model_feature_dimension": 5120,
+  "version": "mission-training-v02",
+  "dataset": "mass-v05-training-v02",
+  "body_frozen": true,
+  "head": "Linear 5120x3 NLI; Linear 5120x1 forecast; initialized at zero",
+  "classes": [
+    "suporte",
+    "insuficiente",
+    "contradição"
+  ],
+  "forecast_input_contract": "mission-plan-compositional-v2",
+  "training_executed_on_packaging": false
+}
