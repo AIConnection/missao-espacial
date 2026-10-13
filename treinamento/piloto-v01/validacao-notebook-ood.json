@@ -1,33 +1,22 @@
 {
   "passed": true,
   "notebook": "notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb",
-  "notebook_sha256": "735be40818abc4c288e2b61f57c1f1705479141f25f22bc43707d0413941d32d",
-  "code_cells": 13,
+  "notebook_sha256": "cd84bb0c4aa45b1703e7cf97a87825c9693709c3f9d96fcf6a32352a4acd3ac2",
+  "code_cells": 9,
   "checks": [
     "all_code_cells_compile",
-    "full_lightweight_flow_without_phi4",
-    "real_main_download_and_head_hashes",
-    "30_cases_balanced_and_supervision_separate",
-    "loop_metrics_and_export_with_explicit_test_double",
-    "original_embedded_package_unchanged",
-    "one_real_phi4_forward_using_github_heads",
-    "guided_examples_match_original_inputs_and_labels",
-    "original_first_17_cells_unchanged",
-    "rendered_prompt_tokens_equal_original_encode_nli_with_real_tokenizer",
-    "single_case_inspection_with_gabarito_hidden_by_default"
+    "no_payload_or_execution_modes_or_validation_flags",
+    "real_github_package_download_before_training",
+    "20_package_tests_pass",
+    "one_independent_inference_cell_executed_in_empty_namespace",
+    "real_github_heads_and_data_download",
+    "original_head_loader_and_weights_applied_to_historical_features",
+    "confusion_and_accuracy_match_historical_results",
+    "new_result_file_written"
   ],
-  "real_forward": {
-    "case_index": 15,
-    "classification": "suporte",
-    "expected": "suporte",
-    "device": "mps",
-    "github_commit": "b1ede9be215ba077a3677d2ba1f95a2bd573800e",
-    "performed_before_didactic_revision": true
-  },
   "limitations": [
-    "Entire 30-case notebook inference not rerun in this validation",
-    "Full notebook not executed in a live Colab session",
-    "Test-double metric checks reuse historical predictions only in the validation harness, never in the notebook inference cell",
-    "Didactic revision validated with real tokenizer and explicit inference test double; no additional Phi-4 forward in this revision"
+    "Dependency installation command mocked during local validation; existing environment used",
+    "Phi-4 body replaced by historical features in the independent-cell validation; no new 30-forward execution",
+    "Complete training and live Colab execution not repeated for this revision"
   ]
 }
