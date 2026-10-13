@@ -1,8 +1,8 @@
 {
   "passed": true,
   "notebook": "notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb",
-  "notebook_sha256": "7df67ffb6928ee8182b67ef22673601d43ae90dd6052e4ff437b45a2f05c540a",
-  "code_cells": 12,
+  "notebook_sha256": "735be40818abc4c288e2b61f57c1f1705479141f25f22bc43707d0413941d32d",
+  "code_cells": 13,
   "checks": [
     "all_code_cells_compile",
     "full_lightweight_flow_without_phi4",
@@ -10,18 +10,24 @@
     "30_cases_balanced_and_supervision_separate",
     "loop_metrics_and_export_with_explicit_test_double",
     "original_embedded_package_unchanged",
-    "one_real_phi4_forward_using_github_heads"
+    "one_real_phi4_forward_using_github_heads",
+    "guided_examples_match_original_inputs_and_labels",
+    "original_first_17_cells_unchanged",
+    "rendered_prompt_tokens_equal_original_encode_nli_with_real_tokenizer",
+    "single_case_inspection_with_gabarito_hidden_by_default"
   ],
   "real_forward": {
     "case_index": 15,
     "classification": "suporte",
     "expected": "suporte",
     "device": "mps",
-    "github_commit": "b1ede9be215ba077a3677d2ba1f95a2bd573800e"
+    "github_commit": "b1ede9be215ba077a3677d2ba1f95a2bd573800e",
+    "performed_before_didactic_revision": true
   },
   "limitations": [
     "Entire 30-case notebook inference not rerun in this validation",
     "Full notebook not executed in a live Colab session",
-    "Test-double metric checks reuse historical predictions only in the validation harness, never in the notebook inference cell"
+    "Test-double metric checks reuse historical predictions only in the validation harness, never in the notebook inference cell",
+    "Didactic revision validated with real tokenizer and explicit inference test double; no additional Phi-4 forward in this revision"
   ]
 }
