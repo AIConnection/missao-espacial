@@ -1,0 +1,9 @@
+{
+  "first_example_seconds": 14.45132941706106,
+  "feature_max_absolute_difference_from_portable_projection": 0.0,
+  "baseline_abc_max_difference": 0.0,
+  "no_old_features_reused": true,
+  "same_quantized_base_model": true,
+  "projection_grouping_may_change_rounding": true,
+  "domain_heads_loaded": false
+}

@@ -1,0 +1,86 @@
+{
+  "version": "piloto-v04",
+  "status": "generated_not_trained",
+  "rows": 216,
+  "families": 12,
+  "independent_split_families": 6,
+  "paired_groups": 72,
+  "candidate_programs": 3,
+  "trials_per_candidate": 32,
+  "compatible_worlds": 2304,
+  "rollouts": 6912,
+  "sampling_attempts": 4990,
+  "outcomes": {
+    "oxygen_exhausted": 6684,
+    "returned": 228
+  },
+  "paired_trials_with_different_outcomes": 156,
+  "partitions": {
+    "train": 144,
+    "calibration": 36,
+    "test": 36
+  },
+  "source_hashes": {
+    "src/setup_jogo.py": "e3767c4a2e5f0a18b4fc45e5abb90f03540db7d403801572887e60c83797c609",
+    "src/catalogo_questoes.py": "7ecc60b564721ecc2443749a390beb596e8b2ad1787a2e97f37651ec334da374",
+    "src/agent_session.py": "cf2ca4d2fb401593505281c9d9daf9ef64810d71567faa058c200845ce6485f3",
+    "src/experimentos.py": "922680b6387b4057943d6de49c45dd83e375c89f068d9269ac616b26ce8c928f",
+    "src/missao_espacial.py": "87b5179a75d998cf52b2f6e56d43508c16f0926aa55618ba07091db519990780",
+    "src/carregar_agentes.py": "141b3d51aaed4464d1ae409a6cfd1f2148df386bff1532455179a1caaee575fa",
+    "src/agent_contract.py": "75f91b0be7e365ca71d6029afd9521b69a4211e59148361bb6fcd4d82d94e786",
+    "src/dashboard.py": "ce3b8b984eee205e38af0c6da67a32f7981e7b8b10163fc74374292ec2d8c482",
+    "src/agent/_baseline.py": "4962a015d56918e36d23759d5a5ce0b0e2f98c12f0670d021ff2c088d7570c2e",
+    "src/agent/humano_gamma.py": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914",
+    "src/agent/_human_default.py": "7319e5e08f044f9afb7b95702b1b8c5b0907433d18a7e42d7c2b0cbc408c52a3",
+    "src/agent/humano_alpha.py": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61",
+    "src/agent/humano_beta.py": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a",
+    "src/agent/humano_random.py": "bf3cbca494bd5208376a619bcde9837a6aa4ba665bbebf45a00d1d914b9d1cf3",
+    "src/agent/humanoide.py": "deebbf0cd8e28a0c298fe9fd0d937603c8b2ca89004f6b657bbe15f832287003"
+  },
+  "model_executed": false,
+  "thresholds_fitted": false,
+  "universal_strategy_generalization_proven": false,
+  "hidden_sampler": {
+    "states": "Reamostrar estados iniciais, respostas privadas entre terceiros e destinatários ocultos de revelação; fixar histórico público e mensagens conhecidas pelo observador; aceitar visão integral idêntica. Proposta filtrada por compatibilidade, sem ponderação Bayesiana pela verossimilhança das respostas conhecidas.",
+    "N_prior": [
+      8,
+      10,
+      12
+    ],
+    "unknown_ai": "uniform among other participants",
+    "unknown_owners": "uniform among participants excluding observer for domains the observer does not initially own",
+    "human_preferences": {
+      "return": 0.4,
+      "delivery": 0.4,
+      "decide_after_evidence": 0.2
+    },
+    "answer_correct_from_own_knowledge_probability": 0.75,
+    "random_expulsion_request_probability": 0.12,
+    "unknown_target_vote_for_probability": 0.35,
+    "renounce_probability": 0.35,
+    "unknown_intention_route_return_probability": 0.5,
+    "unknown_past_answers": "same 0.75 sincerity mechanism using sender knowledge; known sent/received responses are fixed as observed",
+    "unknown_past_revelation_recipients": "condition only on whether observer received a revelation; otherwise uniform among other question authors",
+    "future_engine_chance": "independent RNG state sampled at forecast cutoff; past observations preserved",
+    "seed_pairing": "same accepted world, resampled future-engine RNG and keyed behavior draws for all candidate plans within each trial"
+  },
+  "checkpoint_contains_secrets": "audit_only",
+  "validation": "all_rollouts_replayed",
+  "tests_passed": 24,
+  "model_prompt_max_tokens": 4051,
+  "model_context_window": 16384,
+  "contract_version": "plan-outcome-v1",
+  "tool_hashes": {
+    "gerar_planos.py": "f7720da48fe207410f12486cee931d681741342240e3bfbcd74fdad2bcae4414",
+    "contrato.py": "0d944aec0de59b07f6587ef66fc2bc0cb623b6aecc51be9b7d41394fc5410997",
+    "anonimo.py": "411777c5e9b304bb6e4d3da528cda334b09c42544fd696a5b666986b9be7c12b",
+    "avaliar_probabilidades.py": "302001ad0b047f1eebe29048b6b3292d18a27168fbc63df4fe782a6ecd3741bd",
+    "compactar_auditoria.py": "647a5f72fbc7e353c8b7eac1f6015a68b71ec43522ed5f0ee3d1e78418e56aa0",
+    "validar_planos.py": "c3c63fa38ddd821533634bc17f6d461ab99b277a5153ee260df67c1db7b86348",
+    "testar_planos.py": "d6af328dc38a94053784e59f246b4114cdd37b071b295d26cdd3589931cd05f8",
+    "planos.py": "f64e2e18f848ad5a868aaa24b90b569ff5eed57375300c3335a70049815a9645",
+    "epistemico.py": "9fcae205af25e83949846f8a953403679fd07aaa5f0cb6ee5b639540e7fd988d",
+    "desfecho.py": "3bc4bb97820b52b80f86350d4f8373adc515a0b2e0106f290359aad80687ab14",
+    "referencias.py": "7645139e212e24795427da971617d9c9c0b6c10b84c7f850842af962a4b53f34"
+  }
+}

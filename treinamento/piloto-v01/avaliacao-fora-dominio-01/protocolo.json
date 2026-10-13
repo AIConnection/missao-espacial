@@ -1,0 +1,33 @@
+{
+  "version": "ood-nli-01",
+  "scope": "Exploratory OOD NLI; no training or recalibration",
+  "rows": 30,
+  "families": 8,
+  "classes": {
+    "suporte": 10,
+    "insuficiente": 10,
+    "contradição": 10
+  },
+  "model_input_keys": [
+    "premise",
+    "hypothesis"
+  ],
+  "supervision_external": true,
+  "frozen_original_prefix": true,
+  "no_truncation": true,
+  "no_source_code_changes": true,
+  "no_engine_forecast_target_outside_its_domain": true,
+  "format": "Source-aware context headings; no participant identity",
+  "label_timing": "All expected labels and rationales saved and hashed before model loading",
+  "correlated_variants": 6,
+  "limits": [
+    "Convenience sample, author-annotated; no independent human adjudication",
+    "OOD topics and new textual formulations jointly tested; not a controlled estimate of domain effect alone",
+    "Original mission-specific constant prefix remains part of every encoded input",
+    "No universal generalization or statistical independence of 30 rows assumed"
+  ],
+  "data_sha256": {
+    "inputs.jsonl": "8b072e0f45eb6b58b6473ebf18a2982943594ee2da37c2b8b848e2d5f1f8c015",
+    "supervisao.jsonl": "f3ef10630671ab49510da02fd931b4433a95853ad049b927f06f975267ceec88"
+  }
+}

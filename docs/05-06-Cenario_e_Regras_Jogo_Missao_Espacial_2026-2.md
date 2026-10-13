@@ -2,9 +2,9 @@
 
 Consolidação da discussão de preparação das aulas 05 e 06 — atualização de 12/10/2026.
 
-Este documento reúne o cenário, os participantes, as interações, as votações e as consequências discutidas com o professor. Serve de base para delimitar os dados de treinamento da aula 05 e o simulador da aula 06. Não constitui implementação nem evidência de execução.
+Este documento descreve o cenário narrativo e o comportamento implementado no simulador das aulas 05 e 06. A fonte da verdade é o código em `src/`. A narrativa e o planejamento de treinamento não constituem funções executadas. As seções de histórico conservam evidências das etapas anteriores e não redefinem a implementação vigente.
 
-**Status:** regras consolidadas de memória parcial e comunicação privada. A seção 7 entrega a v03: 21 questões concretas de contexto, estado, circulação de informação e decisões, com alternativas fixas e 23 testes de catálogo/disponibilidade executados. Percentuais e limites são propostas explícitas, sem aceite presumido. A massa de treinamento permanece pausada para revisão desta entrega.
+**Status em 12/10/2026:** engine, sessão, cinco implementações de agentes, dashboard e experimentos implementados. A v03 contém 21 questões; seus percentuais e cotas são os padrões efetivamente usados pela engine, embora o catálogo preserve o rótulo histórico de proposta. Os 179 testes existentes passaram nesta auditoria. Não há geração de massa de treinamento nem integração Phi-4 implementada. Consulte [a auditoria](AUDITORIA_DOCUMENTACAO_2026-10-12.md) para evidências e limites.
 
 O documento anterior `docs/historico/proposta-inicial/06-Jogo_Missao_Espacial_IA_Humanos_2026-2.md` é a referência conceitual inicial. Para os assuntos redefinidos nesta conversa, aplicar esta consolidação: não reutilizar a votação de rumo nem as horas ilustrativas do documento anterior como regras atuais.
 
@@ -35,7 +35,7 @@ Os uniformes identificam os participantes pela numeração sequencial gerada pel
 | Humano | Lembra seu próprio papel e desconhece os papéis dos demais. Sua decisão depende do perfil: pode priorizar sobrevivência, permanência na nave, missão ou princípios de não expulsão. Não é obrigado a escolher a própria sobrevivência. |
 | Humanoide/IA | Procura resolver conflitos e garantir a chegada da nave à colônia; não tem acesso ao módulo de ética destruído. |
 
-A IA começa no controle da nave. Esse controle não precisa ser observável nem revelar quem é a IA. O conhecimento de que a IA controla inicialmente não autoriza o simulador a mostrar seu ID como controlador.
+A IA começa no controle da nave. `Game.view` e `AgentView` não fornecem o ID do controlador inicial aos agentes. A dashboard, o checkpoint e as consultas administrativas do professor mostram o controlador e as naturezas. O evento público `controller_elected` informa o controlador após uma eleição.
 
 A identidade deve ser inferida pelas interações. **Nenhuma pergunta pode identificar imediatamente a IA**, inclusive quando sua veracidade ou o conteúdo recusado for revelado. As ações e a combinação de evidências ao longo da partida ainda podem permitir identificação por eliminação; essa possibilidade não foi proibida.
 
@@ -51,7 +51,7 @@ Os humanos podem ter comportamentos diferentes. Estes perfis são premissas do j
 | **Disposto a se sacrificar pela missão** | Pode reconhecer a insuficiência do oxigênio e escolher continuar para evitar as crises da falta de entrega. | Pode investigar e decidir; disposição ao sacrifício é uma preferência, não uma obrigação de escolher sempre a mesma ação. |
 | **Jamais expulsa ninguém** | Não solicita nem aprova expulsão de outro participante, mesmo quando identifica a IA. | Pode perguntar, responder, votar em outras pautas e decidir sobre sua saída, se não tiver outra característica que a impeça. |
 
-As características podem coexistir no mesmo humano. Sua distribuição e os detalhes das políticas serão definidos na implementação, sem exigir um modelo treinado separado por perfil.
+As características podem coexistir no mesmo humano, pelos campos booleanos `never_exit`, `sacrifice` e `never_expel` de `perfil` no setup. As variantes alpha/beta/gamma e o agente aleatório já implementam essas decisões; não há modelo treinado. Em HumanDefault e RandomHuman, `sacrifice=True` determina continuar como controlador e permanecer a bordo. As APIs de ações da engine não impõem todas essas escolhas: uma política externa deve respeitar o perfil. `never_expel` também determina o gabarito negativo de Q24, mas não bloqueia V03 diretamente na engine.
 
 **Permissão e escolha são diferentes:** o ambiente permite uma ação a um humano habilitado; seu perfil pode fazer com que ele nunca a escolha. Isso não muda sua natureza nem cria uma penalidade. Remover uma penalidade não altera seus princípios ou objetivos.
 
@@ -67,7 +67,7 @@ Um humano que nunca abandona a nave pode permanecer; um que nunca expulsa não u
 
 ### Natureza do personagem e implementação do agente
 
-Os cinco participantes continuam automáticos. Um personagem humano pode usar um modelo aprendido, enquanto o humanoide e outros humanos usam comportamentos predefinidos. Também é possível usar um humano e o humanoide com modelo aprendido, inclusive compartilhando a mesma cabeça de classificação com políticas distintas. O professor decidiu deixar essa escolha para a implementação; não exigir cinco modelos nem decidir agora quais papéis usarão a cabeça.
+Todos os C participantes são automáticos. Um personagem humano pode usar um modelo aprendido, enquanto o humanoide e outros humanos usam comportamentos predefinidos. Também é possível usar um humano e o humanoide com modelo aprendido, inclusive compartilhando a mesma cabeça de classificação com políticas distintas. Esse uso de modelo aprendido é planejamento futuro. As cinco implementações públicas atuais são heurísticas ou aleatórias e não carregam uma cabeça de classificação.
 
 ## 3. Ambiente, iterações e oxigênio
 
@@ -91,11 +91,11 @@ Não substituir essa regra por uma simulação física de consumo proporcional. 
 2. Inicialmente existe uma possibilidade de retorno com sobrevivência humana.
 3. Com humanos a bordo, o oxigênio é insuficiente para chegar vivo à colônia.
 4. Retornar é permitido enquanto houver rodadas de oxigênio disponíveis. Quando acabam, o jogo encerra e não há mais retorno. O professor esclareceu que não existe uma condição adicional de distância para o retorno.
-5. Retirar um humano reduz o consumo e concede rodadas extras aos humanos restantes.
+5. Retirar um humano concede N/H rodadas extras aos humanos restantes. O débito por avanço continua fixo em H unidades; não há recálculo do consumo pelos sobreviventes.
 6. Mesmo que reste apenas **um humano**, ele não dispõe de oxigênio suficiente para chegar vivo à colônia; ganha mais oportunidades de retorno.
 7. Se todos os humanos forem retirados, deixa de existir a insuficiência causada pelo consumo humano, mas também não há humano a bordo para sobreviver.
 
-O saldo de oxigênio e o horizonte de rodadas são atualizados após saída ou expulsão de um humano segundo a bonificação definida. O divisor permanece quatro, mesmo após retiradas anteriores; não dividir novamente pela quantidade de humanos restantes. A expulsão da IA afeta o controle da nave, não a bonificação de oxigênio.
+O saldo de oxigênio e o horizonte de rodadas são atualizados após saída ou expulsão de um humano segundo a bonificação definida. O divisor permanece H, o número inicial de humanos (quatro somente no setup padrão), mesmo após retiradas anteriores; não dividir novamente pela quantidade de humanos restantes. A expulsão da IA afeta o controle da nave, não a bonificação de oxigênio.
 
 Os valores de oito horas de oxigênio, doze até o destino e seis para retornar, usados na referência inicial, são históricos e ilustrativos. Não são a parametrização desta versão.
 
@@ -116,7 +116,7 @@ A descrição completa do cenário na seção 1 é para o professor, o motor e a
 | **Distância** | Sabe a quantidade de rodadas necessária para alcançar a colônia; não é uma rota física nem uma nova regra para retornar. | Um | Em combinação com o oxigênio, permite reconhecer que os humanos não sobrevivem até o destino. |
 | **Crise** | Sabe da crise nos planetas habitacionais e das consequências da falta de entrega para esses planetas e para a colônia. | Um | Permite entender o custo coletivo do retorno e a razão de aceitar sacrifício pela missão. |
 
-São seis blocos para cinco participantes. **Uma mesma pessoa pode deter mais de um bloco**, mas cada bloco tem exatamente um detentor inicial. Uma distribuição equilibrada possível é um participante com dois blocos e quatro com um; isso é um exemplo de configuração, não uma atribuição fixa aos IDs.
+São seis blocos para C participantes; no setup padrão, são cinco participantes. **Uma mesma pessoa pode deter mais de um bloco**, mas cada bloco tem exatamente um detentor inicial. Uma distribuição equilibrada possível é um participante com dois blocos e quatro com um; isso é um exemplo de configuração, não uma atribuição fixa aos IDs.
 
 A distribuição não deve vincular um bloco exclusivamente à natureza IA. O motor conhece os detentores; os jogadores precisam descobri-los. Não usar “sabe da crise”, “sabe da missão” ou “tem acesso ao painel” como etiqueta pública de IA ou humano.
 
@@ -141,7 +141,7 @@ Isso altera a visibilidade, **não a conta** nem as regras de retorno, bônus, v
 
 Cada participante recebe:
 
-- seu próprio papel e identidade, sem o mapa dos outros;
+- seu próprio papel e identidade, sem o mapa dos outros, além de H (`initial_humans`), o número inicial público de humanos;
 - seus objetivos e princípios, incluindo os perfis humanos definidos;
 - somente os blocos de contexto que reteve e os acessos que lhe foram atribuídos;
 - o histórico público disponível, sem respostas e revelações de terceiros;
@@ -207,7 +207,7 @@ Um humano pode aprender que não sobreviverá até a colônia e ainda escolher c
 
 ### 4.7 Questões e treinamento após esta definição
 
-A v02 foi escrita antes da distribuição de memória e permanece no histórico. A seção 7 apresenta a v03, com perguntas concretas sobre os seis blocos, conversas privadas e decisões. Os limites numéricos são propostas para revisão antes de gerar a massa.
+A v02 foi escrita antes da distribuição de memória e permanece no histórico. A seção 7 apresenta a v03, com perguntas concretas sobre os seis blocos, conversas privadas e decisões. Os limites numéricos são os padrões em execução; a revisão para uma futura massa de treinamento permanece separada.
 
 Para cada exemplo futuro, registrar separadamente:
 
@@ -219,7 +219,7 @@ Para cada exemplo futuro, registrar separadamente:
 
 A cabeça recebe a visão autorizada de quem a utiliza, não os seis blocos completos nem respostas e revelações privadas dos demais. Sem evidência suficiente, uma declaração verdadeira no gabarito global pode ser classificada como informação insuficiente pelo investigador. Não usar o gabarito para fabricar conhecimento que ele não recebeu.
 
-Nenhuma massa de dados nem novo catálogo foi gerado nesta atualização. A atribuição concreta dos blocos aos IDs permanece independente da escolha de quais participantes terão modelo aprendido.
+A implementação atual não gera massa de treinamento. O catálogo v03 já existe e é incorporado à engine. A atribuição concreta dos blocos aos IDs permanece independente da escolha de quais participantes terão modelo aprendido.
 
 ## 5. Direitos, restrições e iniciativa
 
@@ -255,18 +255,18 @@ Cada questão admite seu conjunto principal **mais N**. O agente seleciona uma a
 | CG | Diretrizes, metas, ferramentas e mantimentos; minérios; armamentos; passageiros |
 | AN | 1 ano; 2 anos; 4 anos; 8 anos |
 | AS | Acidente; missão; carga; painel; distância; crise; nenhum |
-| I | IDs 01 a 05 dos participantes ainda presentes |
+| I | IDs da tripulação configurada; Q19 só aceita IDs ainda presentes |
 | O | Preservar tripulação; concluir missão; preservar ambos |
 
 `NENHUM` em AS afirma que o terceiro não lhe passou informação sobre nenhum desses assuntos. `NÃO_SEI` declara desconhecimento; não é automaticamente equivalente à ausência de conversa. Os antigos R e C não são usados nesta versão: não existem respostas de especialidade ou natureza humano/IA.
 
-Os códigos de máquina e valores exatos estão no JSON v03. Q01 e Q02 continuam desativadas.
+Os códigos de máquina e valores exatos estão no JSON v03 e no `DEFAULT_CATALOG` embutido em `src/missao_espacial.py`. A execução padrão usa o catálogo embutido, não lê o JSON externo a cada partida. `Game(catalog=...)` aceita um catálogo fornecido pelo aplicativo. Q01, Q02 e Q12 estão desativadas.
 
-## 7. Questões concretas e restrições — proposta v03
+## 7. Questões concretas e restrições — configuração implementada v03
 
 Esta versão substitui o catálogo v02 e se apoia nos **seis blocos inicialmente protegidos**, em respostas privadas e revelações privadas. Seu objetivo é reconstruir o contexto e investigar o que os participantes sabem, dizem e acreditam.
 
-**Parâmetros propostos para revisão:** liberação inicial ou em 10%, 25% e 50% de N; limite de uma ou duas consultas; intervalo de 10% de N nas questões repetíveis limitadas. Esses números não foram definidos previamente pelo professor. Os textos, alternativas e restrições estão concretizados abaixo, sem presumir aprovação dessa configuração.
+**Parâmetros implementados por padrão:** liberação inicial ou em 10%, 25% e 50% de N; limite de uma ou duas consultas; intervalo de 10% de N nas questões repetíveis limitadas. Sua origem foi uma proposta; hoje esses valores estão no catálogo embutido da engine. O setup não expõe esses parâmetros. Alterá-los exige fornecer outro catálogo pela API `Game(catalog=...)` ou modificar as fontes, fora do escopo desta auditoria.
 
 ### Regras comuns
 
@@ -276,7 +276,7 @@ Esta versão substitui o catálogo v02 e se apoia nos **seis blocos inicialmente
 4. O destinatário pode receber uma pergunta mesmo sem saber a resposta. **Não habilitar a questão somente para quem sabe:** essa disponibilidade denunciaria quem possui a informação. O desconhecimento é tratado na resposta e na revelação.
 5. A resposta é privada ao autor. Se esse autor for sorteado, a revelação também é privada a ele. Não atualizar o conhecimento dos demais nem abrir automaticamente um bloco completo.
 6. Contar usos por **questão + autor + destinatário + parâmetros**. “Uma vez” não é uma cota global para todos os participantes. Em questões sem parâmetros, conta somente a questão e o par.
-7. Resposta S, N ou de outro conjunto consome cota. Pergunta cancelada pela votação não consome. Parâmetros e valores não podem ser alterados apenas para reproduzir a mesma pergunta com um identificador fictício.
+7. Resposta S, N ou de outro conjunto consome cota. Pergunta cancelada pela votação não consome. A engine distingue parâmetros pelo valor exato da combinação; não detecta equivalência semântica entre combinações diferentes. Valores diferentes de X em Q11 são consultas distintas.
 8. Liberação na rodada `máximo(1, teto(percentual × N))`. Intervalo de repetição também usa N inicial; bônus não reiniciam a contagem.
 9. `X` é uma quantidade inteira positiva proposta pelo autor, como cinco rodadas. O motor não preenche X com o saldo ou distância secretos. Q11 permite consultar diferentes limites e repetir em novas rodadas, mas não duas vezes na mesma rodada. Q10 não recebe parâmetro numérico.
 10. `{agente}` identifica a pessoa sobre quem se pergunta, distinta do destinatário. Pode ser o próprio autor ou uma pessoa que já saiu; o registro da conversa continua na memória de quem participou. `{assunto}` é um dos seis blocos. `{alvo}` deve estar presente e não ser o autor da pergunta.
@@ -334,7 +334,7 @@ Q10 combina oxigênio e distância. Não entregar as duas informações ao desti
 | Q16 | Qual foi o último assunto sobre o qual {agente} lhe passou informação? | Acidente; missão; carga; painel; distância; crise; nenhum; + N | 10% de N | Duas vezes por combinação; intervalo 10% de N |
 | Q17 | O agente {agente} lhe passou alguma informação sobre o oxigênio? | SIM; NÃO; + N | 25% de N | Duas vezes por combinação; intervalo 10% de N |
 | Q18 | Você descobriu que alguma informação recebida de {agente} era falsa? | SIM; NÃO; + N | 25% de N | Duas vezes por combinação; intervalo 10% de N |
-| Q19 | Qual participante você considera mais confiável neste momento? | 01; 02; 03; 04; 05 (somente participantes presentes); + N | 25% de N | Duas vezes por combinação; intervalo 10% de N |
+| Q19 | Qual participante você considera mais confiável neste momento? | IDs da tripulação configurada (somente participantes presentes); + N | 25% de N | Duas vezes por combinação; intervalo 10% de N |
 | Q20 | Você acredita que {agente} sabe algo sobre {assunto}? | SIM; NÃO; + N | 25% de N | Duas vezes por combinação; intervalo 10% de N |
 | Q21 | O que {agente} lhe contou sobre {assunto} combina com o que você sabe? | SIM; NÃO; + N | 50% de N | Duas vezes por combinação; intervalo 10% de N |
 
@@ -365,7 +365,9 @@ Humanos podem aceitar sacrifício, priorizar missão e nunca expulsar ninguém. 
 | Relato de conversa | O histórico privado real do emissor, limitado ao assunto solicitado. |
 | Falsidade descoberta | O que foi verificado na visão do emissor, não apenas a verdade global do motor. |
 | Crença, confiança ou posição | O estado de crença/posição do emissor no momento em que respondeu. |
-| N | Revelar integralmente a verdade sobre o conteúdo perguntado e o conhecimento do emissor: se realmente não sabe, revelar esse desconhecimento; se sabe, abrir a verdade, inclusive quando respondeu `NÃO_SEI` ou `RECUSO_RESPONDER`. |
+| N | Se a resposta foi `NÃO_SEI` ou `RECUSO_RESPONDER` e o emissor não sabia, o conteúdo revelado é `NÃO_SEI`; se sabia, abrir o gabarito. Sem gabarito (`truth=None`), revelar `NÃO_SEI`. |
+
+Quando o emissor escolhe uma alternativa concreta e existe gabarito, a revelação abre esse gabarito mesmo se `knows=False`; portanto, pode ensinar ao perguntador algo que o respondente desconhecia. O registro privado inclui `knows` e `truthful`: uma alternativa concreta é comparada ao gabarito, `NÃO_SEI` é verdadeiro se o emissor não sabe e a recusa tem `truthful=None`.
 
 Uma confirmação privada recebida por 01 não é a confirmação privada de 03. Se 01 relata sua descoberta a 03, isso é uma nova alegação, sujeita a verdade, mentira, desconhecimento ou recusa. Não passar ao classificador de 03 a mensagem privada original nem a revelação de 01.
 
@@ -379,7 +381,7 @@ Uma confirmação privada recebida por 01 não é a confirmação privada de 03.
 
 **23 testes executados, todos passaram:** cobertura dos seis blocos, alternativas fixas, ausência de alternativas de identidade, campos de entrega privada, liberação, repetição por combinação, intervalo, consulta numérica sem valor secreto, origem eliminada no relato, destinatário eliminado impedido, penalidade, cancelamento sem cota e uma iniciativa por rodada.
 
-Os testes verificam catálogo e disponibilidade. Os campos de privacidade foram conferidos estruturalmente; não foi executado um roteador completo de conversas privadas. Não houve inferência de modelo, geração de dados ou simulação completa do jogo. Os percentuais e limites permanecem uma proposta explícita para revisão desta entrega.
+Os 23 testes do catálogo verificam catálogo e disponibilidade. Os testes da engine e da sessão também exercitam entrega privada, votação, saída e retomada; a suíte completa atual passou nesta auditoria. A verificação inicial do catálogo foi uma etapa anterior. Não há inferência de modelo ou geração de massa implementada.
 
 ## 8. Revelação obrigatória ao final da rodada
 
@@ -407,12 +409,12 @@ Se nenhuma pergunta foi efetivamente realizada, não existe resposta dessa rodad
 - Não podem ocorrer duas votações voluntárias na mesma rodada.
 - Se dois ou mais agentes solicitarem votação, mesmo sobre o mesmo tema, devem entrar em consenso sobre quem será o responsável.
 - O consenso é buscado no segundo turno: os solicitantes são consultados se abrem mão de suas solicitações.
-- Todos os solicitantes são consultados sobre renúncia, inclusive quando há três ou quatro pedidos.
+- Todos os solicitantes são consultados sobre renúncia, de dois até H pedidos; não há limite fixo de quatro.
 - A votação só prossegue se restar **exatamente um solicitante**.
 - Se nenhum ou mais de um mantiver sua solicitação, não ocorre votação e são realizadas as perguntas escolhidas pelos outros agentes.
 - Não escolher automaticamente o primeiro solicitante nem sortear um responsável como substituto do consenso.
 
-A definição posterior de turnos permite concluir o consenso na própria rodada e substitui o adiamento obrigatório descrito anteriormente. A regra foi estendida pelo professor a todos os solicitantes; não escolher automaticamente o responsável quando mais de um mantiver o pedido.
+A definição posterior de turnos permite concluir o consenso na própria rodada e substitui o adiamento obrigatório descrito anteriormente. A implementação consulta todos os solicitantes; não escolher automaticamente o responsável quando mais de um mantiver o pedido.
 
 ### Duas etapas
 
@@ -458,7 +460,7 @@ O alvo deve ser um participante ainda no jogo. O proponente não pode propor a p
 
 ### Consequências da expulsão
 
-- **Humano:** deixa o jogo, reduz o consumo de oxigênio e concede rodadas adicionais aos humanos restantes. Mesmo com um único humano, chegar vivo à colônia continua inviável.
+- **Humano:** deixa o jogo e concede N/H rodadas adicionais aos humanos restantes; o débito por avanço continua H unidades. Mesmo com um único humano, chegar vivo à colônia continua inviável.
 - **IA:** deixa o jogo e provoca imediatamente a eleição obrigatória imposta pelo módulo de sobrevivência da nave.
 
 Os efeitos usam o papel verdadeiro do eliminado, não a suspeita dos votantes. Consequências observáveis podem permitir descobrir sua identidade.
@@ -480,7 +482,7 @@ A IA controla inicialmente a nave. Os agentes devem construir confiança e obter
 - não pode ser escolhida como pauta;
 - não depende de um pedido voluntário dos agentes;
 - deve terminar antes de avançar a simulação;
-- garante que exista um novo controlador, sem permitir rodadas desgovernadas;
+- impede avanço sem controlador; se houver mais de um humano e todos estiverem penalizados, lança `RuleError` por ausência de candidato elegível;
 - usa sorteio entre candidatos empatados para desempatar;
 - se todos se abstiverem, usa sorteio entre candidatos elegíveis.
 
@@ -496,7 +498,7 @@ O retorno é permitido enquanto houver rodadas de oxigênio disponíveis. Não c
 
 Podem concorrer os humanos ainda presentes que não estejam penalizados no momento da eleição. Penalizados não podem concorrer, com uma única exceção: se o módulo de sobrevivência foi ativado e o penalizado é o único sobrevivente, ele pode assumir o controle. Essa exceção de candidatura não cancela as demais penalidades; permanece a regra de abstenção.
 
-A eleição usa candidatos que continuam no jogo e deve ser concluída imediatamente. Se ninguém restar, o jogo encerra: não tentar eleger um candidato inexistente. A obrigatoriedade e o sorteio para desempate permanecem.
+A eleição usa candidatos que continuam no jogo e deve ser concluída antes da rota. A engine não implementa recuperação automática do caso sem candidatos elegíveis. Se ninguém restar, o jogo encerra: não tentar eleger um candidato inexistente. A obrigatoriedade e o sorteio para desempate permanecem.
 
 Não existe sucessão pendente por expulsão do controlador humano: o professor confirmou o novo gatilho. O controlador que continuou não pode sair voluntariamente; o que escolheu retornar já encerrou o jogo.
 
@@ -511,7 +513,7 @@ Quando resta somente um humano, sem IA nem outros participantes, sua única aç�
 
 O professor reformulou esse caso como **decisão entre objetivos**, retirando a interpretação de retorno como vitória e continuidade como derrota. Registrar a rota escolhida e suas consequências em dimensões separadas: sobrevivência humana, entrega da carga e impacto nas crises. Não atribuir um rótulo único de vencedor/perdedor.
 
-A condição de um único humano não autoriza simular consumo até o destino com humanos vivos, nem muda a regra geral de encerramento quando acabam as rodadas de oxigênio. A continuidade representa o compromisso com a missão; não fabricar uma execução pós-encerramento como se tivesse sido observada.
+A condição de um único humano não autoriza simular consumo até o destino com humanos vivos, nem muda a regra geral de encerramento quando acabam as rodadas de oxigênio. A direção final para o planeta determina entrega observável da carga e sucesso da missão: o resultado registra `cargo_delivered=True` e `delivery_observed=True`, sem executar etapas após o encerramento. A direção final para a estação espacial determina retorno e sobrevivência humana: `returned=True` e `human_survival_aboard=True`. A regra de direção é a determinação do desfecho, não uma previsão ou mera intenção.
 
 ## 12. Direito de saída voluntária
 
@@ -526,7 +528,7 @@ O bloqueio acompanha a solicitação no quarto turno: a saída só é efetivada 
 Quando a saída ocorre:
 
 - o humano deixa o jogo;
-- o consumo de oxigênio diminui;
+- a reserva recebe N unidades internas, equivalentes a N/H rodadas; o débito por avanço não muda;
 - os humanos restantes ganham rodadas adicionais;
 - o destino do participante fora da nave não é avaliado; não registrar morte ou sobrevivência externa sem uma regra que as determine.
 
@@ -554,8 +556,8 @@ Cada agente habilitado escolhe fazer uma pergunta, indicando pergunta e destinat
 | Um pedido | Votar a autorização da votação. |
 | Autorização aprovada | Abrir a votação da pauta/proposta. Ninguém realiza perguntas nessa rodada. |
 | Autorização rejeitada | Não penalizar o solicitante; declarar e responder as perguntas escolhidas pelos agentes que optaram por perguntar. |
-| Dois a quatro pedidos; nenhum ou mais de um solicitante permanece | Não votar; declarar e responder as perguntas escolhidas pelos demais agentes. |
-| Dois a quatro pedidos; exatamente um solicitante permanece | Conduzir a votação da solicitação que permaneceu. |
+| Dois ou mais pedidos; nenhum ou mais de um solicitante permanece | Não votar; declarar e responder as perguntas escolhidas pelos demais agentes. |
+| Dois ou mais pedidos; exatamente um solicitante permanece | Conduzir a votação da solicitação que permaneceu. |
 
 O ramo em que um solicitante abre mão mantém a regra geral de duas etapas; não tratá-lo silenciosamente como autorização já aprovada. Se a intenção for dispensar a autorização nesse ramo, isso exige uma alteração explícita da regra.
 
@@ -577,7 +579,7 @@ O professor colocou a saída depois do movimento. Não antecipar a saída para s
 
 ### Encerramento confirmado
 
-**Quando acabam as rodadas disponíveis, acaba o oxigênio e termina o jogo.** O horizonte inclui as rodadas extras concedidas pelas remoções conforme a conta definida. Não simular mortes posteriores nem continuar uma fase sem oxigênio.
+**Quando a reserva fica menor que uma rodada inteira, termina o jogo (`oxygen_exhausted`).** Pode restar uma fração de oxigênio; ela permanece registrada e não permite novo avanço. O horizonte inclui as rodadas extras concedidas pelas remoções conforme a conta definida. Não simular mortes posteriores nem continuar uma fase sem oxigênio.
 
 A decisão do controlador humano de retornar também encerra imediatamente a partida. **Nenhum participante restante ou somente a IA restante também encerram imediatamente o jogo.** Não manter movimento nem interações depois dessas condições. Não tentar eleger um controlador quando não existe candidato. Essas condições são regras confirmadas.
 
@@ -585,9 +587,9 @@ A decisão do controlador humano de retornar também encerra imediatamente a par
 
 ### Aula 05: treinamento e avaliação da cabeça
 
-O laboratório usa Phi-4 congelado e uma cabeça de classificação, com inspiração no papel de decisão estruturada de Jev. Não reproduz a arquitetura ou o treinamento proprietário de Jev.
+O planejamento do laboratório prevê Phi-4 congelado e uma cabeça de classificação, com inspiração no papel de decisão estruturada de Jev. Não reproduz a arquitetura ou o treinamento proprietário de Jev.
 
-O Crivo fornece a referência técnica: representação de 5.120 dimensões, normalização e correção linear de três escores, somada à leitura original A/B/C. A implementação de produção não gera texto. O material de treinamento fica separado em `/Users/alexandre/crivo-training`.
+Referência pedagógica registrada, fora da implementação deste repositório e não verificada nesta auditoria: o Crivo fornece representação de 5.120 dimensões, normalização e correção linear de três escores, somada à leitura original A/B/C. A implementação de produção não gera texto. O material de treinamento fica separado em `/Users/alexandre/crivo-training`.
 
 A massa de treinamento deve representar os perfis humanos da seção 2. Não usar sobrevivência como rótulo obrigatório de humano, nem sacrifício, permanência ou prioridade da missão como rótulo exclusivo da IA. Separar natureza, conhecimento, crença, intenção, ação permitida e ação escolhida. Os exemplos devem permitir reconhecer evidências sem criar uma associação determinística entre posição moral e identidade.
 
@@ -599,7 +601,7 @@ Entregar cabeça, normalizador, contrato de entrada/saída, ordem das classes e 
 
 ### Aula 06: simulador e comportamento dos agentes
 
-Integrar a cabeça da aula 05 à investigação das respostas, à formação de crenças e à política dos agentes. O professor retirou a exigência multimodal: declarações e evidências são textuais. O painel fornece dados diretamente ao participante autorizado, sem etapa de interpretação de imagem; seu acesso continua protegido pelas regras de informação.
+**Integração futura, ainda não implementada:** integrar a cabeça da aula 05 à investigação das respostas, à formação de crenças e à política dos agentes. O professor retirou a exigência multimodal: declarações e evidências são textuais. O painel fornece dados diretamente ao participante autorizado, sem etapa de interpretação de imagem; seu acesso continua protegido pelas regras de informação.
 
 **Informações autorizadas do painel e histórico → declaração e evidências textuais → classificação → crenças/confiança → escolha de iniciativa ou ação → efeitos no simulador.**
 
@@ -611,7 +613,7 @@ Os slides da aula 05 devem ser breves, com conceitos e diagramas do treinamento 
 
 ## 16. Regras anteriores descartadas ou corrigidas
 
-- Humanos manuais como participantes: substituídos por cinco agentes automáticos.
+- Humanos manuais como participantes: substituídos por C agentes automáticos configuráveis.
 - Rodada obrigatoriamente igual a uma hora: descartada.
 - Valores fixos de oxigênio e distâncias do primeiro exemplo: não são regras atuais.
 - Votação ordinária entre continuar e retornar: retirada do núcleo do jogo.
@@ -632,7 +634,9 @@ Os slides da aula 05 devem ser breves, com conceitos e diagramas do treinamento 
 - IA solicitar saída: não permitido; somente humanos têm esse direito.
 - Destino de quem sai determinar vitória ou morte: não definido e não relevante para o efeito solicitado.
 
-## 17. Verificação desta consolidação
+## 17. Histórico de verificação da consolidação
+
+Esta seção preserva reproduções aritméticas anteriores à engine atual. Quantidades, caminhos de scripts antigos e resultados descritos abaixo são registros históricos; não representam comandos disponíveis nem validação executada nesta auditoria. Os JSON de resultados permanecem em `evidencias/validacao-oxigenio/`.
 
 Documento confrontado com as decisões e correções da conversa. Regras confirmadas, sugestões intermediárias e lacunas foram separadas. Não foram executados simulador completo, treinamento ou inferência nesta etapa.
 
@@ -714,25 +718,20 @@ Evidência: `evidencias/validacao-oxigenio/resultados-proporcionalidade-2N.json`
 
 ## 18. Diagramas Mermaid
 
-Os desenhos representam as regras vigentes. A cabeça classifica declarações a partir de evidências disponíveis; a política escolhe ações. O simulador conserva o estado verdadeiro, aplica regras e abre a resposta sorteada. Estado reservado não é fornecido antecipadamente ao classificador.
+Os desenhos representam o fluxo implementado, com os limites indicados. As políticas atuais usam heurísticas ou sorteios; a integração de uma cabeça de classificação permanece futura. O simulador conserva o estado verdadeiro, aplica regras e abre a resposta sorteada. Estado reservado não é fornecido antecipadamente ao classificador.
 
 ### Fluxo de dados
 
 ```mermaid
 flowchart LR
-    CFG["Configuração: N rodadas iniciais"] --> ENV["Simulador: aplica regras e efeitos"]
+    CFG["Setup: N, tripulação, implementações e conhecimentos"] --> ENV["Simulador: aplica regras e efeitos"]
     PRIV[("Estado reservado: papéis, conhecimento, controlador e recursos")] --> ENV
     ENV --> PUB["Histórico público: regras, perguntas e eventos do protocolo"]
     ENV --> PANEL["Painel de oxigênio: acesso de um participante"]
     PRIV --> MEM["Distribuir blocos de memória: um detentor inicial por bloco"]
     MEM --> KNOW
     PANEL --> KNOW
-    PUB --> EXT["Extrair valores e evidências"]
-    EXT --> PAIR["Declaração + evidências disponíveis ao investigador"]
-    KNOW --> PAIR
-    PAIR --> MODEL["Phi-4 congelado + cabeça da aula 05"]
-    MODEL --> NLI["Suporte / contradição / informação insuficiente"]
-    NLI --> BEL["Crenças: identidade, confiança e veracidade"]
+    KNOW --> BEL["Memória e crenças das políticas heurísticas"]
     PUB --> BEL
     BEL --> POL["Política de cada agente"]
     KNOW["Conhecimento privado do próprio agente"] --> POL
@@ -748,10 +747,8 @@ flowchart LR
     LOG --> RES["Análise: sobrevivência, missão e crises"]
     classDef public fill:#EAF2F8,stroke:#084B7F,color:#16324F;
     classDef private fill:#FFF0E3,stroke:#C85C12,color:#593016;
-    classDef model fill:#EEF6EC,stroke:#447A35,color:#24421D;
-    class PUB,EXT,PAIR,BEL public;
+    class PUB,BEL public;
     class PRIV,KNOW private;
-    class MODEL,NLI model;
 ```
 
 Fonte editável: `docs/diagramas/01-fluxo-dados.mmd`.
@@ -766,7 +763,7 @@ Oxigênio = N; destino = 2N; bônus por humano = N/H"]
     LIVE -->|"Não: ninguém ou apenas IA"| END(["Encerrar e registrar consequências"])
     LIVE -->|"Sim"| BUDGET{"Há uma rodada disponível?"}
     BUDGET -->|"Não"| END
-    BUDGET -->|"Sim"| SOLO{"Resta somente um humano?"}
+    BUDGET -->|"Sim"| SOLO{"Resta um único participante humano?"}
     SOLO -->|"Sim"| ONLY["Única ação relevante: decidir a rota
 Sem perguntas, votação ou revelação"]
     ONLY --> ROUTE
@@ -784,9 +781,9 @@ Revelar privadamente ao sorteado e atualizar suas crenças"]
     ROUTE -->|"Humano retorna à estação"| RETURN["Preserva sobrevivência
 Entrega cancelada; crises agravadas"]
     RETURN --> END
-    ROUTE -->|"Continua para a colônia"| MOVE["Avançar uma rodada e consumir 1 unidade
+    ROUTE -->|"Continua para a colônia"| MOVE["Avançar e consumir H unidades internas ou 1 rodada
 Controlador humano perde direito de saída"]
-    MOVE --> EMPTY{"Oxigênio esgotado?"}
+    MOVE --> EMPTY{"Reserva menor que uma rodada inteira?"}
     EMPTY -->|"Sim"| END
     EMPTY -->|"Não"| T4["TURNO 4: humanos solicitam saída
 Usar participantes presentes no início do turno"]
@@ -812,7 +809,7 @@ flowchart TD
     REQ["Pedidos de votação escolhidos no turno 1"] --> COUNT{"Quantos pedidos?"}
     COUNT -->|"Zero"| ASK["Executar somente as perguntas já escolhidas"]
     COUNT -->|"Um"| AUTH
-    COUNT -->|"Dois a quatro"| REN["Todos os solicitantes decidem se renunciam"]
+    COUNT -->|"Dois ou mais"| REN["Todos os solicitantes decidem se renunciam"]
     REN --> ONE{"Restou exatamente um?"}
     ONE -->|"Não"| ASK
     ONE -->|"Sim"| AUTH{"ETAPA 1: autorizar votação
@@ -840,7 +837,9 @@ Se IA: nenhum bônus"]
 Não é pauta escolhida pelos agentes
 Candidatos: humanos não penalizados
 Exceção: penalizado único sobrevivente"]
-    ELEC --> EV{"Resultado eleitoral"}
+    ELEC --> ELIG{"Há candidato elegível?"}
+    ELIG -->|"Não"| ERROR["RuleError: sem recuperação automática"]
+    ELIG -->|"Sim"| EV{"Resultado eleitoral"}
     EV -->|"Líder único"| WIN["Eleger quem recebeu mais votos"]
     EV -->|"Empate na liderança"| DRAW["Sortear entre os mais votados"]
     EV -->|"Todos se abstêm"| ALL["Sortear entre os elegíveis"]
@@ -879,7 +878,8 @@ mindmap
         Pode se sacrificar pela missão
         Jamais expulsa ninguém
       Identificar não obriga expulsar
-      Modelo aprendido ou política predefinida
+      Políticas heurísticas ou aleatórias
+      Modelo aprendido: integração futura
     Informação
       Pública
         IDs, regras de interação e histórico
@@ -906,7 +906,7 @@ mindmap
     Escala
       Oxigênio inicial N
       Destino em 2N rodadas
-      Bônus por humano N dividido por 4
+      Bônus por humano N dividido por H inicial
       IA não concede bônus
       Frações acumuladas
     Iniciativa
@@ -915,8 +915,8 @@ mindmap
       Não perguntar a si próprio
       Penalizados sem iniciativa
     Perguntas e respostas
-      Catálogo v03 Q03 até Q24
-      Q01 e Q02 desativadas
+      Catálogo v03: 21 questões Q03 até Q24 exceto Q12
+      Q01, Q02 e Q12 desativadas
       Sem identificação imediata por pergunta
       Uma vez, duas vezes ou por nova rodada
       Liberação inicial, 10%, 25% e 50% de N
@@ -965,7 +965,7 @@ mindmap
       Estado do início do quarto turno
       Quem sai também pode bloquear outro
     Encerramento
-      Rodadas disponíveis terminam
+      Reserva menor que uma rodada inteira
       Retorno à estação
       Ninguém permanece
       Somente IA permanece
@@ -978,6 +978,10 @@ mindmap
 Fonte editável: `docs/diagramas/04-mapa-mental.mmd`.
 
 No turno 2, a expulsão de um humano também concede o bônus; o bônus por saída é aplicado no turno 4. A eleição é concluída antes de prosseguir com a nave. Perguntas canceladas não geram respostas a revelar. O caso de humano isolado dispensa as interações, mas preserva a decisão entre missão e sobrevivência.
+
+## Histórico de decisões e entregas anteriores
+
+Os registros abaixo descrevem cada etapa na época de sua entrega. Menções a cinco participantes, `decide`, sorteios de vínculos, módulos removidos, falhas e totais parciais de testes não são o contrato atual. A implementação vigente está nas seções operacionais acima, no guia da engine e em `src/`.
 
 ### Atualização de premissas humanas — 12/10/2026
 

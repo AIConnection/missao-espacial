@@ -127,7 +127,7 @@ if game.finished:
 ''')
 markdown('''## 8. Inspecionar uma visão privada
 
-O professor pode inspecionar uma visão; não encaminhe o checkpoint ou `snapshot()` aos agentes. `history_limit=None` permite consultar o histórico completo autorizado de um agente. O resultado distingue retorno, oxigênio e compromisso com a missão; não define um vencedor único e não afirma entrega da carga depois do encerramento.
+O professor pode inspecionar uma visão; não encaminhe o checkpoint ou `snapshot()` aos agentes. `history_limit=None` permite consultar o histórico completo autorizado de um agente. O resultado distingue motivo de encerramento e objetivos. Por determinação do jogo, direção final ao planeta significa entrega observável da carga; direção final à estação espacial significa retorno e sobrevivência humana. Esses resultados são registrados no encerramento, sem executar um trajeto posterior e sem definir um vencedor único.
 ''')
 code('''view_01 = game.view("01")
 print({"id": view_01["id"], "respostas_recebidas": view_01["history_sizes"]["received"],

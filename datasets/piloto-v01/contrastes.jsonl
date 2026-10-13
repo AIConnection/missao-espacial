@@ -1,0 +1,2 @@
+{"hypothesis": "Na rodada 10, o participante 01 respondeu «COLÔNIA_DE_MINERAÇÃO» à pergunta «Qual é o destino programado da nave?».", "members": {"neutral": "me-p01-0b33ce0074b5ef3e0502", "contradiction": "me-p01-0f915020f28283ceb32a", "entailment": "me-p01-656a87505a42b6512b52"}}
+{"hypothesis": "Na rodada 4, o participante 05 respondeu «SIM» à pergunta «Os planetas habitacionais já enfrentavam uma crise antes desta viagem?».", "members": {"neutral": "me-p01-0420ba0354e123b9fc18", "entailment": "me-p01-1d7cdba237f7253882cd", "contradiction": "me-p01-472b9f9835a7b2e75ffe"}}

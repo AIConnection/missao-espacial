@@ -1,0 +1,276 @@
+{
+  "unique_pairs": 2249,
+  "classes": {
+    "contradiction": 750,
+    "neutral": 749,
+    "entailment": 750
+  },
+  "questions": 21,
+  "question_response_slots": 211,
+  "parameter_response_slots": 549,
+  "covered_in_three_classes": 211,
+  "question_response_percent": 100,
+  "semantic_content_coverage_percent": null,
+  "scope": "exact_registered_speech",
+  "configurations": [
+    5,
+    10
+  ],
+  "anonymity_metamorphic_pairs": 2249,
+  "parameter_exhaustion": false,
+  "questions_summary": [
+    {
+      "participant_count": 5,
+      "question_id": "Q03",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q04",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q05",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q06",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q07",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q08",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q09",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q10",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q11",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q13",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q14",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q15",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q16",
+      "expected_responses": 9,
+      "covered_in_three_classes": 9
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q17",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q18",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q19",
+      "expected_responses": 7,
+      "covered_in_three_classes": 7
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q20",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q21",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q22",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q23",
+      "expected_responses": 5,
+      "covered_in_three_classes": 5
+    },
+    {
+      "participant_count": 5,
+      "question_id": "Q24",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q03",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q04",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q05",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q06",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q07",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q08",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q09",
+      "expected_responses": 6,
+      "covered_in_three_classes": 6
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q10",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q11",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q13",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q14",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q15",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q16",
+      "expected_responses": 9,
+      "covered_in_three_classes": 9
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q17",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q18",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q19",
+      "expected_responses": 12,
+      "covered_in_three_classes": 12
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q20",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q21",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q22",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q23",
+      "expected_responses": 5,
+      "covered_in_three_classes": 5
+    },
+    {
+      "participant_count": 10,
+      "question_id": "Q24",
+      "expected_responses": 4,
+      "covered_in_three_classes": 4
+    }
+  ],
+  "model_executed": false
+}

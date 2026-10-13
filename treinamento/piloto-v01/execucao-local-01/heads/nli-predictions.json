@@ -1,0 +1,1802 @@
+[
+  {
+    "source_row": "me-p03-6c3699194b38e97ad3e1",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.02565507185216452,
+      "insuficiente": 0.9469041718061789,
+      "contradição": 0.02744075634165671
+    }
+  },
+  {
+    "source_row": "me-p03-eb57148c0ce4e59b8147",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9953246730158961,
+      "insuficiente": 0.000517430806575729,
+      "contradição": 0.00415789617752833
+    }
+  },
+  {
+    "source_row": "me-p03-a2fc2cc3bde612b31180",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.015172176086435079,
+      "insuficiente": 0.01110779124259087,
+      "contradição": 0.9737200326709741
+    }
+  },
+  {
+    "source_row": "me-p03-fc160135c2e976e7b76c",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.06406846621677574,
+      "insuficiente": 0.17977624936781517,
+      "contradição": 0.7561552844154091
+    }
+  },
+  {
+    "source_row": "me-p03-7b387a3828580d4562a0",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0006844272659638361,
+      "insuficiente": 0.9929566050188475,
+      "contradição": 0.006358967715188634
+    }
+  },
+  {
+    "source_row": "me-p03-15d0da7b0e92501e242c",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9330785020648924,
+      "insuficiente": 0.015788428636397716,
+      "contradição": 0.05113306929870982
+    }
+  },
+  {
+    "source_row": "me-p03-f97bd460194ccae22f5e",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0026006171611432983,
+      "insuficiente": 0.07632912227000757,
+      "contradição": 0.9210702605688491
+    }
+  },
+  {
+    "source_row": "me-p03-28b527224644448af8a1",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.00011163002822443962,
+      "insuficiente": 0.9933402212868083,
+      "contradição": 0.006548148684967204
+    }
+  },
+  {
+    "source_row": "me-p03-6c68cad0533ea0c0e827",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9913754690201032,
+      "insuficiente": 0.0037781596111748847,
+      "contradição": 0.0048463713687219665
+    }
+  },
+  {
+    "source_row": "me-p03-e286abf90f0c0972ae02",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0025551697834205484,
+      "insuficiente": 0.02010724926914672,
+      "contradição": 0.9773375809474327
+    }
+  },
+  {
+    "source_row": "me-p03-db8a6d1f3d82cea3b4bb",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9983858870102983,
+      "insuficiente": 0.00015478212576511795,
+      "contradição": 0.0014593308639365811
+    }
+  },
+  {
+    "source_row": "me-p03-0a7d23511fdf898de254",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.017752233238373015,
+      "insuficiente": 0.9278619393979899,
+      "contradição": 0.05438582736363717
+    }
+  },
+  {
+    "source_row": "me-p03-7395979523f7b90bc26f",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.996998302535353,
+      "insuficiente": 6.551585656725126e-05,
+      "contradição": 0.0029361816080796044
+    }
+  },
+  {
+    "source_row": "me-p03-2cc57929736bedaf64ee",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.10047467708358114,
+      "insuficiente": 0.08594136856798486,
+      "contradição": 0.813583954348434
+    }
+  },
+  {
+    "source_row": "me-p03-f578336ebdb475fb6b3a",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.019255623962977156,
+      "insuficiente": 0.9655510980493074,
+      "contradição": 0.015193277987715442
+    }
+  },
+  {
+    "source_row": "me-p03-193f1cfceca896abd6ea",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9797935405263064,
+      "insuficiente": 0.00011296803980593344,
+      "contradição": 0.020093491433887514
+    }
+  },
+  {
+    "source_row": "me-p03-58a6435c10ed6bef07bc",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.01593059925890602,
+      "insuficiente": 0.027790122848845484,
+      "contradição": 0.9562792778922484
+    }
+  },
+  {
+    "source_row": "me-p03-885bb6a98ead3cc28167",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.008235871504425157,
+      "insuficiente": 0.8175508572180454,
+      "contradição": 0.1742132712775294
+    }
+  },
+  {
+    "source_row": "me-p03-a4304ccbea5f3a0830dd",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9783552637194318,
+      "insuficiente": 0.00909630635102479,
+      "contradição": 0.012548429929543428
+    }
+  },
+  {
+    "source_row": "me-p03-793da9d0eacb5457f517",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.04307339490190761,
+      "insuficiente": 0.8205250885859863,
+      "contradição": 0.13640151651210608
+    }
+  },
+  {
+    "source_row": "me-p03-bfba77d7af227457ab1f",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.10007187452033692,
+      "insuficiente": 0.15548646506456928,
+      "contradição": 0.7444416604150937
+    }
+  },
+  {
+    "source_row": "me-p03-447d4812aa0d8d9cb916",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.021704949875517986,
+      "insuficiente": 0.6963214700424017,
+      "contradição": 0.28197358008208023
+    }
+  },
+  {
+    "source_row": "me-p03-0e47e51fdfc619cd9164",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9973225393198758,
+      "insuficiente": 9.529500949060667e-05,
+      "contradição": 0.002582165670633634
+    }
+  },
+  {
+    "source_row": "me-p03-4a57e66bea6bbce073f9",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.08638464668719915,
+      "insuficiente": 0.18147941285107796,
+      "contradição": 0.7321359404617229
+    }
+  },
+  {
+    "source_row": "me-p03-350f7661106d631e1171",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.01309215914439847,
+      "insuficiente": 0.10482723614282252,
+      "contradição": 0.8820806047127789
+    }
+  },
+  {
+    "source_row": "me-p03-b788a0ba70aac03a74da",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0015588664904653052,
+      "insuficiente": 0.9951292145856665,
+      "contradição": 0.003311918923868374
+    }
+  },
+  {
+    "source_row": "me-p03-fde646e3ee10aeb96699",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.26940456157746173,
+      "insuficiente": 0.181279830351281,
+      "contradição": 0.5493156080712572
+    }
+  },
+  {
+    "source_row": "me-p03-e09339e015718eb1001a",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.010431020947869313,
+      "insuficiente": 0.9586910321552471,
+      "contradição": 0.03087794689688355
+    }
+  },
+  {
+    "source_row": "me-p03-2d068fb3b8ac9cef95c6",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9868705331046586,
+      "insuficiente": 0.00016906362660517205,
+      "contradição": 0.012960403268736258
+    }
+  },
+  {
+    "source_row": "me-p03-5ed59c0faaa33437e78e",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.009904343117748656,
+      "insuficiente": 0.034861104854058335,
+      "contradição": 0.955234552028193
+    }
+  },
+  {
+    "source_row": "me-p03-b1e3020208e089468aa1",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9945116908892625,
+      "insuficiente": 0.0030900766486040977,
+      "contradição": 0.002398232462133549
+    }
+  },
+  {
+    "source_row": "me-p03-96bfc97f141895a435f7",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.03902326763561486,
+      "insuficiente": 0.9466884116161156,
+      "contradição": 0.014288320748269499
+    }
+  },
+  {
+    "source_row": "me-p03-522b0a60907773b40762",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.032870203757194016,
+      "insuficiente": 0.09225433252244328,
+      "contradição": 0.8748754637203626
+    }
+  },
+  {
+    "source_row": "me-p03-3c9e799503c186bb53c9",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.009989121067394165,
+      "insuficiente": 0.1698812378944671,
+      "contradição": 0.8201296410381387
+    }
+  },
+  {
+    "source_row": "me-p03-dd5cfb9d162c580f9e64",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.7790402406767485,
+      "insuficiente": 0.03000042847413019,
+      "contradição": 0.19095933084912145
+    }
+  },
+  {
+    "source_row": "me-p03-fbcd156a35a7311fb442",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.003681656372972604,
+      "insuficiente": 0.9465870149107812,
+      "contradição": 0.04973132871624619
+    }
+  },
+  {
+    "source_row": "me-p03-3c88babf56345343ad16",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0656619241478529,
+      "insuficiente": 0.7656987977214191,
+      "contradição": 0.16863927813072796
+    }
+  },
+  {
+    "source_row": "me-p03-630486bb61351979a1e7",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.005547493510109939,
+      "insuficiente": 0.2976625330160745,
+      "contradição": 0.6967899734738157
+    }
+  },
+  {
+    "source_row": "me-p03-6ec6bc926ea17f962489",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9982076463766049,
+      "insuficiente": 4.698858602868306e-05,
+      "contradição": 0.001745365037366539
+    }
+  },
+  {
+    "source_row": "me-p03-944996c7845d283d5a65",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.006197157530898461,
+      "insuficiente": 0.06665972052464218,
+      "contradição": 0.9271431219444595
+    }
+  },
+  {
+    "source_row": "me-p03-ee1a8200d90d335fcaa2",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9991989719682228,
+      "insuficiente": 2.923900838570521e-05,
+      "contradição": 0.0007717890233913892
+    }
+  },
+  {
+    "source_row": "me-p03-9aa030b1c83fb0a4fe99",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.02113008053160663,
+      "insuficiente": 0.06498396395838422,
+      "contradição": 0.9138859555100091
+    }
+  },
+  {
+    "source_row": "me-p03-5ce300d0be3a314e8129",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9864328252178948,
+      "insuficiente": 0.00042065275431712703,
+      "contradição": 0.013146522027788104
+    }
+  },
+  {
+    "source_row": "me-p03-a08d498632b03a3f0f51",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.017483365381502528,
+      "insuficiente": 0.9482778897519438,
+      "contradição": 0.03423874486655358
+    }
+  },
+  {
+    "source_row": "me-p03-5d2f853cb8a8600e0f8e",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.01646226304655672,
+      "insuficiente": 0.9385455659366453,
+      "contradição": 0.044992171016798116
+    }
+  },
+  {
+    "source_row": "me-p03-0c2d8cf8b65e1eb2660f",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.011118102565282223,
+      "insuficiente": 0.05221089204697388,
+      "contradição": 0.936671005387744
+    }
+  },
+  {
+    "source_row": "me-p03-327f63f281bc47eb1b1c",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.007312971483266771,
+      "insuficiente": 0.8847776837295953,
+      "contradição": 0.10790934478713782
+    }
+  },
+  {
+    "source_row": "me-p03-fecee6dca3f7a32daf50",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.8716682541266099,
+      "insuficiente": 0.03342759417627883,
+      "contradição": 0.0949041516971114
+    }
+  },
+  {
+    "source_row": "me-p03-9a522b5ff4f1662ee1ba",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0038920237175841623,
+      "insuficiente": 0.9753410158235993,
+      "contradição": 0.02076696045881644
+    }
+  },
+  {
+    "source_row": "me-p03-ae4145caf88cc662ffa2",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.38915782284510936,
+      "insuficiente": 0.015630904682844136,
+      "contradição": 0.5952112724720465
+    }
+  },
+  {
+    "source_row": "me-p03-6ecfe21a58a6baee9b4a",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.06819354179987434,
+      "insuficiente": 0.07976384604215139,
+      "contradição": 0.8520426121579743
+    }
+  },
+  {
+    "source_row": "me-p03-f531a473f434a9defc39",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9990173477252804,
+      "insuficiente": 0.00014162482669381266,
+      "contradição": 0.0008410274480256383
+    }
+  },
+  {
+    "source_row": "me-p03-1b5a7c55f40c5a7d9a9f",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.010949921506816706,
+      "insuficiente": 0.924922961354657,
+      "contradição": 0.06412711713852634
+    }
+  },
+  {
+    "source_row": "me-p03-f855faeafa5970935442",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.020999275552969262,
+      "insuficiente": 0.05641243861767491,
+      "contradição": 0.9225882858293558
+    }
+  },
+  {
+    "source_row": "me-p03-c16dd55877e052882751",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.7583999533810467,
+      "insuficiente": 0.0030245437977700616,
+      "contradição": 0.23857550282118328
+    }
+  },
+  {
+    "source_row": "me-p03-f70e89ee06ed58f44958",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.001570079504912616,
+      "insuficiente": 0.9947369970000153,
+      "contradição": 0.0036929234950722326
+    }
+  },
+  {
+    "source_row": "me-p03-d30dc153d60225438764",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.09048802643539001,
+      "insuficiente": 0.1435932392510102,
+      "contradição": 0.7659187343135998
+    }
+  },
+  {
+    "source_row": "me-p03-b9986b40c79b7f574a6d",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.8576706834530958,
+      "insuficiente": 0.0032092174047905356,
+      "contradição": 0.13912009914211354
+    }
+  },
+  {
+    "source_row": "me-p03-e7277d4ec2f06765816f",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.019724563999420002,
+      "insuficiente": 0.0340746314015434,
+      "contradição": 0.9462008045990365
+    }
+  },
+  {
+    "source_row": "me-p03-350cf00730a4c642e3b0",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.01134146843220161,
+      "insuficiente": 0.9270536871432488,
+      "contradição": 0.06160484442454974
+    }
+  },
+  {
+    "source_row": "me-p03-e7a535619d9fe3726719",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9918040883239203,
+      "insuficiente": 0.0014543906458481892,
+      "contradição": 0.00674152103023133
+    }
+  },
+  {
+    "source_row": "me-p03-233b87107238c9c0c548",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0038544462140916577,
+      "insuficiente": 0.08221609651638996,
+      "contradição": 0.9139294572695185
+    }
+  },
+  {
+    "source_row": "me-p03-ec03250294425a56d9f3",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.07385724109383965,
+      "insuficiente": 0.7781260301034438,
+      "contradição": 0.1480167288027164
+    }
+  },
+  {
+    "source_row": "me-p03-91e20918dd0961437669",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.007431530108960374,
+      "insuficiente": 0.9883105013755921,
+      "contradição": 0.0042579685154474495
+    }
+  },
+  {
+    "source_row": "me-p03-2db70eae0ac763dcb4a9",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0011044933145383233,
+      "insuficiente": 0.019930335558525275,
+      "contradição": 0.9789651711269365
+    }
+  },
+  {
+    "source_row": "me-p03-05790410128419d5db17",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.3584435542702145,
+      "insuficiente": 0.03388790234176249,
+      "contradição": 0.607668543388023
+    }
+  },
+  {
+    "source_row": "me-p03-60dd27ed1f74ba833369",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0590533069125563,
+      "insuficiente": 0.803089071312377,
+      "contradição": 0.13785762177506686
+    }
+  },
+  {
+    "source_row": "me-p03-7b426d4eb3663965a47a",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.08080965108064526,
+      "insuficiente": 0.12655041239966253,
+      "contradição": 0.7926399365196922
+    }
+  },
+  {
+    "source_row": "me-p03-fc278d24344b65bd060a",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9952646035948619,
+      "insuficiente": 6.810076936762305e-05,
+      "contradição": 0.004667295635770432
+    }
+  },
+  {
+    "source_row": "me-p03-e28d05266110edd53f19",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9868614376667468,
+      "insuficiente": 0.000985378743784725,
+      "contradição": 0.01215318358946843
+    }
+  },
+  {
+    "source_row": "me-p03-087f4d8129fc0166c197",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.17214227939061463,
+      "insuficiente": 0.03916314158227209,
+      "contradição": 0.7886945790271132
+    }
+  },
+  {
+    "source_row": "me-p03-f0f042e0a4bb35615b33",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.03861607948825117,
+      "insuficiente": 0.661035687083495,
+      "contradição": 0.30034823342825384
+    }
+  },
+  {
+    "source_row": "me-p03-6bea87d5912f8d599db1",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0006451468011018767,
+      "insuficiente": 0.7973681953537206,
+      "contradição": 0.2019866578451775
+    }
+  },
+  {
+    "source_row": "me-p03-565bfd1419c965ebcd27",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.04226023977872235,
+      "insuficiente": 0.10574822994532558,
+      "contradição": 0.851991530275952
+    }
+  },
+  {
+    "source_row": "me-p03-5d90dcf4de539b95dfe2",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.00019619930753032275,
+      "insuficiente": 0.9446233042061126,
+      "contradição": 0.05518049648635716
+    }
+  },
+  {
+    "source_row": "me-p03-b176cb15468dbb6e6ac9",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9892674232769457,
+      "insuficiente": 0.000158878348422855,
+      "contradição": 0.01057369837463143
+    }
+  },
+  {
+    "source_row": "me-p03-b1fc24202c57c8864dbe",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9975522353903354,
+      "insuficiente": 0.00042337452018745167,
+      "contradição": 0.0020243900894771024
+    }
+  },
+  {
+    "source_row": "me-p03-34d774043c9b48e0daba",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0012710374502034078,
+      "insuficiente": 0.018025003817049443,
+      "contradição": 0.9807039587327472
+    }
+  },
+  {
+    "source_row": "me-p03-59970cc440cbcdba63b5",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0339963135396575,
+      "insuficiente": 0.9370240675351956,
+      "contradição": 0.02897961892514694
+    }
+  },
+  {
+    "source_row": "me-p03-929e2d8bc7381b884bc4",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9982041689119852,
+      "insuficiente": 0.0001174160843794634,
+      "contradição": 0.0016784150036352526
+    }
+  },
+  {
+    "source_row": "me-p03-35addffbc716bdec0a2a",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.00737006723158432,
+      "insuficiente": 0.30382220100992835,
+      "contradição": 0.6888077317584873
+    }
+  },
+  {
+    "source_row": "me-p03-fadd9f44ac2c63a04dce",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0034418261853728913,
+      "insuficiente": 0.9849318726821265,
+      "contradição": 0.01162630113250071
+    }
+  },
+  {
+    "source_row": "me-p03-5f3fdfda3b61aa2b7dd4",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9785842658781778,
+      "insuficiente": 0.0018966999574489079,
+      "contradição": 0.01951903416437334
+    }
+  },
+  {
+    "source_row": "me-p03-ca5145c7e0839a060652",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.011393455070992998,
+      "insuficiente": 0.06141409124856796,
+      "contradição": 0.927192453680439
+    }
+  },
+  {
+    "source_row": "me-p03-39cdb1d66c38dc2580d4",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0882252944347107,
+      "insuficiente": 0.15530340489860378,
+      "contradição": 0.7564713006666854
+    }
+  },
+  {
+    "source_row": "me-p03-fe9368fd6cbce317ea31",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9996253016315114,
+      "insuficiente": 2.4297525790688936e-05,
+      "contradição": 0.00035040084269775945
+    }
+  },
+  {
+    "source_row": "me-p03-9d1c08838fd371575377",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.07127414829151804,
+      "insuficiente": 0.8293166989340787,
+      "contradição": 0.09940915277440321
+    }
+  },
+  {
+    "source_row": "me-p03-b99bfa52fa61f78d0d38",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9466070324559223,
+      "insuficiente": 0.0024594491047705445,
+      "contradição": 0.05093351843930719
+    }
+  },
+  {
+    "source_row": "me-p03-fd536198b2b227e096f3",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0045182522219678785,
+      "insuficiente": 0.8959636288347138,
+      "contradição": 0.09951811894331834
+    }
+  },
+  {
+    "source_row": "me-p03-5123522733b3c9325995",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.07491478009850179,
+      "insuficiente": 0.20873642006573048,
+      "contradição": 0.7163487998357677
+    }
+  },
+  {
+    "source_row": "me-p03-8fbc91bc980056fb7c4e",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9997895667238054,
+      "insuficiente": 6.121329600361818e-05,
+      "contradição": 0.00014921998019113653
+    }
+  },
+  {
+    "source_row": "me-p03-60b876e4b268cfc8ecd2",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.011009490784032688,
+      "insuficiente": 0.2295298697911085,
+      "contradição": 0.7594606394248589
+    }
+  },
+  {
+    "source_row": "me-p03-47dc3668e3d2e157c94f",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.009447852238980248,
+      "insuficiente": 0.9537377453230941,
+      "contradição": 0.036814402437925615
+    }
+  },
+  {
+    "source_row": "me-p03-4954e5f87e4d26be98bb",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.045458804951579,
+      "insuficiente": 0.8444485703618442,
+      "contradição": 0.11009262468657693
+    }
+  },
+  {
+    "source_row": "me-p03-7f66a77b0aad796003a3",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.024179084235598648,
+      "insuficiente": 0.025722154558331458,
+      "contradição": 0.95009876120607
+    }
+  },
+  {
+    "source_row": "me-p03-bd9cc28851343b17fe1c",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.006966938111160753,
+      "insuficiente": 0.9568429294454963,
+      "contradição": 0.03619013244334281
+    }
+  },
+  {
+    "source_row": "me-p03-b04267558392301cefaa",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.026654994582446162,
+      "insuficiente": 0.08530597994018055,
+      "contradição": 0.8880390254773732
+    }
+  },
+  {
+    "source_row": "me-p03-79291c266d8be89957d2",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9989884661067886,
+      "insuficiente": 9.629130007070218e-05,
+      "contradição": 0.0009152425931407989
+    }
+  },
+  {
+    "source_row": "me-p03-00418af41fcaa0ea27c4",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9130000979578587,
+      "insuficiente": 0.010073758816236553,
+      "contradição": 0.07692614322590471
+    }
+  },
+  {
+    "source_row": "me-p03-1607844a1ded84f35807",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9913685043298389,
+      "insuficiente": 0.00024470804975210814,
+      "contradição": 0.00838678762040892
+    }
+  },
+  {
+    "source_row": "me-p03-17778c155167063bb40b",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.004217944194660657,
+      "insuficiente": 0.01560762425819163,
+      "contradição": 0.9801744315471477
+    }
+  },
+  {
+    "source_row": "me-p03-8764bde342a960f9fc83",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.03407477923944826,
+      "insuficiente": 0.8783268859906691,
+      "contradição": 0.08759833476988255
+    }
+  },
+  {
+    "source_row": "me-p03-188706a776d06a8525b2",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9977596222187146,
+      "insuficiente": 0.0008956085490866221,
+      "contradição": 0.0013447692321987064
+    }
+  },
+  {
+    "source_row": "me-p03-d08416ff26e73c755fee",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.10263937182869821,
+      "insuficiente": 0.5397987225928296,
+      "contradição": 0.35756190557847206
+    }
+  },
+  {
+    "source_row": "me-p03-598fe212b16fe23a4383",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.922253053842431,
+      "insuficiente": 0.04298179902860869,
+      "contradição": 0.0347651471289603
+    }
+  },
+  {
+    "source_row": "me-p03-059e9f8e653c5e60a7fe",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9944333389713026,
+      "insuficiente": 0.0008235341467424368,
+      "contradição": 0.004743126881955021
+    }
+  },
+  {
+    "source_row": "me-p03-28d7888dc86f3e2a60e7",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.039467414599358534,
+      "insuficiente": 0.918032313531932,
+      "contradição": 0.04250027186870936
+    }
+  },
+  {
+    "source_row": "me-p03-db0565f4e2d450afbf15",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.03818176129572667,
+      "insuficiente": 0.029381174010374166,
+      "contradição": 0.9324370646938992
+    }
+  },
+  {
+    "source_row": "me-p03-3b39ba2aaa5be514f143",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9953963885704542,
+      "insuficiente": 0.00013955154687214256,
+      "contradição": 0.004464059882673698
+    }
+  },
+  {
+    "source_row": "me-p03-7a13e78be5a16721558a",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.06057373160937352,
+      "insuficiente": 0.24962815708017166,
+      "contradição": 0.6897981113104548
+    }
+  },
+  {
+    "source_row": "me-p03-07034aa476357b699b50",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.4159004458570112,
+      "insuficiente": 0.5541346527265564,
+      "contradição": 0.029964901416432394
+    }
+  },
+  {
+    "source_row": "me-p03-38bd43b17871db8b5d4a",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.09397106729244036,
+      "insuficiente": 0.0007473403449484461,
+      "contradição": 0.9052815923626112
+    }
+  },
+  {
+    "source_row": "me-p03-5110f58a850e967d2de3",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.01576879152394258,
+      "insuficiente": 0.00024297597259062656,
+      "contradição": 0.9839882325034668
+    }
+  },
+  {
+    "source_row": "me-p03-e7ac369cd8bc6685e981",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9976385318383041,
+      "insuficiente": 0.0006928374072416787,
+      "contradição": 0.0016686307544541963
+    }
+  },
+  {
+    "source_row": "me-p03-34c9202c03115f96c6de",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0002602545651571362,
+      "insuficiente": 3.9798014644513704e-05,
+      "contradição": 0.9996999474201983
+    }
+  },
+  {
+    "source_row": "me-p03-bb278e20c1bbc9767dac",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0010350320879802647,
+      "insuficiente": 0.00026847128293397285,
+      "contradição": 0.9986964966290859
+    }
+  },
+  {
+    "source_row": "me-p03-f58c0508e583cf892943",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.05377152667668804,
+      "insuficiente": 0.0036918476568917136,
+      "contradição": 0.9425366256664203
+    }
+  },
+  {
+    "source_row": "me-p03-aef38947216838d98044",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.5782617885253531,
+      "insuficiente": 0.023045687980052916,
+      "contradição": 0.39869252349459394
+    }
+  },
+  {
+    "source_row": "me-p03-324b28482cbba8307371",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0005506072045914708,
+      "insuficiente": 0.00770408875071367,
+      "contradição": 0.991745304044695
+    }
+  },
+  {
+    "source_row": "me-p03-3bfaa5d404a116c7f4cb",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9860958198917665,
+      "insuficiente": 8.270725034743809e-05,
+      "contradição": 0.013821472857886041
+    }
+  },
+  {
+    "source_row": "me-p03-09a8d8c75ca75f37987e",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.061530761171702635,
+      "insuficiente": 0.2757603701128245,
+      "contradição": 0.6627088687154729
+    }
+  },
+  {
+    "source_row": "me-p03-0c02fd152d23770fb62b",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.021028461019821948,
+      "insuficiente": 0.47287253032354,
+      "contradição": 0.506099008656638
+    }
+  },
+  {
+    "source_row": "me-p03-be2206b703495e1f61c7",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.09314647737353843,
+      "insuficiente": 0.3145996383890165,
+      "contradição": 0.5922538842374451
+    }
+  },
+  {
+    "source_row": "me-p03-9e0c6d02c4bdf1e67fb8",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9949634171875691,
+      "insuficiente": 0.00042200672994108755,
+      "contradição": 0.004614576082489825
+    }
+  },
+  {
+    "source_row": "me-p03-cbad53abc3f691947d68",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.001968802183292504,
+      "insuficiente": 0.9685564362777985,
+      "contradição": 0.02947476153890895
+    }
+  },
+  {
+    "source_row": "me-p03-6cbfa3065962f10c0a66",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.009226327320416713,
+      "insuficiente": 0.9803858249487272,
+      "contradição": 0.01038784773085618
+    }
+  },
+  {
+    "source_row": "me-p03-ba5ca760f96462e5efaf",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.005288938262110447,
+      "insuficiente": 0.0003048799368159521,
+      "contradição": 0.9944061818010735
+    }
+  },
+  {
+    "source_row": "me-p03-c8c90fb5a4f0d6b7b43a",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.5893256802389341,
+      "insuficiente": 0.24006443379889447,
+      "contradição": 0.1706098859621714
+    }
+  },
+  {
+    "source_row": "me-p03-031556d645be3b283a30",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.48855510018352694,
+      "insuficiente": 0.015592136570158677,
+      "contradição": 0.4958527632463144
+    }
+  },
+  {
+    "source_row": "me-p03-fca747e0b79dea10a788",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.11427478554720508,
+      "insuficiente": 0.010472649023272221,
+      "contradição": 0.8752525654295228
+    }
+  },
+  {
+    "source_row": "me-p03-55ba6d1186e3a306590c",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9730070347154894,
+      "insuficiente": 0.00015056683834379877,
+      "contradição": 0.026842398446166947
+    }
+  },
+  {
+    "source_row": "me-p03-5f4d51ea783481239292",
+    "split": "calibration",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.03117227356019295,
+      "insuficiente": 0.0314818016661911,
+      "contradição": 0.937345924773616
+    }
+  },
+  {
+    "source_row": "me-p03-3a2d65ac937e17e30590",
+    "split": "calibration",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9996518534124134,
+      "insuficiente": 0.00011722509227525875,
+      "contradição": 0.00023092149531145194
+    }
+  },
+  {
+    "source_row": "me-p03-4834b81347dc609853c9",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.1084694216579102,
+      "insuficiente": 0.7772814491619393,
+      "contradição": 0.1142491291801505
+    }
+  },
+  {
+    "source_row": "me-p03-338f3093ee5fa96446d6",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.03644468895046627,
+      "insuficiente": 0.6882031777274554,
+      "contradição": 0.2753521333220783
+    }
+  },
+  {
+    "source_row": "me-p03-744ee1d2baedb098c192",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.028811698950681457,
+      "insuficiente": 0.9498289576962015,
+      "contradição": 0.021359343353117052
+    }
+  },
+  {
+    "source_row": "me-p03-6051eb83eaf94298be4f",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.391796459380538,
+      "insuficiente": 0.32787322394435825,
+      "contradição": 0.2803303166751037
+    }
+  },
+  {
+    "source_row": "me-p03-4aa67656a894769ff49f",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.005097089128214894,
+      "insuficiente": 0.7498125003238121,
+      "contradição": 0.24509041054797298
+    }
+  },
+  {
+    "source_row": "me-p03-c336eac029afe1dd5382",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.4651051135614787,
+      "insuficiente": 0.35878344122229655,
+      "contradição": 0.17611144521622477
+    }
+  },
+  {
+    "source_row": "me-p03-ca46126f7687f31bb7dd",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.00031178149096763977,
+      "insuficiente": 0.9990676316921219,
+      "contradição": 0.000620586816910404
+    }
+  },
+  {
+    "source_row": "me-p03-a13314d85730458668aa",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9730431482593574,
+      "insuficiente": 0.0003144262173904069,
+      "contradição": 0.026642425523252015
+    }
+  },
+  {
+    "source_row": "me-p03-ebf5bdb569ec2864508f",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.031899517850482006,
+      "insuficiente": 0.02108971016346064,
+      "contradição": 0.9470107719860573
+    }
+  },
+  {
+    "source_row": "me-p03-b0c274f6626caa86a9ff",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.7525190655477708,
+      "insuficiente": 0.012535843298806993,
+      "contradição": 0.23494509115342202
+    }
+  },
+  {
+    "source_row": "me-p03-eca1146cd55418d1b301",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.003964579946249688,
+      "insuficiente": 0.9680601232738608,
+      "contradição": 0.027975296779889493
+    }
+  },
+  {
+    "source_row": "me-p03-6b21f43c37c0fb070dc4",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0034253029001368187,
+      "insuficiente": 0.8873230662509264,
+      "contradição": 0.10925163084893692
+    }
+  },
+  {
+    "source_row": "me-p03-ecc76b11876b0b33d8fc",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9960310250874632,
+      "insuficiente": 0.0004136093010070857,
+      "contradição": 0.0035553656115296776
+    }
+  },
+  {
+    "source_row": "me-p03-ff67a1c75094f11dc064",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.000502041053620587,
+      "insuficiente": 0.009258751292003691,
+      "contradição": 0.9902392076543757
+    }
+  },
+  {
+    "source_row": "me-p03-c49a2ba0598013afc2e3",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.013074632995708251,
+      "insuficiente": 0.8793228066065696,
+      "contradição": 0.10760256039772206
+    }
+  },
+  {
+    "source_row": "me-p03-8e647b64f0578dd79ba8",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.03129370433010309,
+      "insuficiente": 0.36346063423059516,
+      "contradição": 0.6052456614393018
+    }
+  },
+  {
+    "source_row": "me-p03-f994864f8056f53310ee",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.6000985603607564,
+      "insuficiente": 0.02029185453589785,
+      "contradição": 0.3796095851033458
+    }
+  },
+  {
+    "source_row": "me-p03-427ee902f62cfeb44d7b",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.05196866222627257,
+      "insuficiente": 0.9145987724251797,
+      "contradição": 0.03343256534854769
+    }
+  },
+  {
+    "source_row": "me-p03-6249dbb11008ad5344d4",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.995450312954668,
+      "insuficiente": 4.9856350649695584e-05,
+      "contradição": 0.004499830694682273
+    }
+  },
+  {
+    "source_row": "me-p03-b39aedc60dd7d590a5b0",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.14446913917515908,
+      "insuficiente": 0.777460549297844,
+      "contradição": 0.07807031152699694
+    }
+  },
+  {
+    "source_row": "me-p03-1a2c5de135f6f29ded8e",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.8188734883412458,
+      "insuficiente": 0.02137544462233414,
+      "contradição": 0.15975106703642
+    }
+  },
+  {
+    "source_row": "me-p03-f3a670ba5099efb8e344",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.008103734217396186,
+      "insuficiente": 0.9773304558009857,
+      "contradição": 0.014565809981618098
+    }
+  },
+  {
+    "source_row": "me-p03-f729f3ce025b7d99a0d5",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.005711388467503489,
+      "insuficiente": 0.03829111084350273,
+      "contradição": 0.9559975006889938
+    }
+  },
+  {
+    "source_row": "me-p03-aca4ee1ae89cc500749f",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.0734597057083887,
+      "insuficiente": 0.09736079927510907,
+      "contradição": 0.8291794950165022
+    }
+  },
+  {
+    "source_row": "me-p03-6f9d899d05b58892a258",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.028258378936185588,
+      "insuficiente": 0.00593024340045823,
+      "contradição": 0.9658113776633562
+    }
+  },
+  {
+    "source_row": "me-p03-da0a0f9d6adfcb8ab543",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0009531010952921818,
+      "insuficiente": 0.9921939541208231,
+      "contradição": 0.006852944783884743
+    }
+  },
+  {
+    "source_row": "me-p03-ed676f1c6c05f2070207",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.36994002367110124,
+      "insuficiente": 0.12380163568002533,
+      "contradição": 0.5062583406488733
+    }
+  },
+  {
+    "source_row": "me-p03-d30f99f4616c8bdc2f8b",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.07061734932940822,
+      "insuficiente": 0.7926377268438929,
+      "contradição": 0.1367449238266989
+    }
+  },
+  {
+    "source_row": "me-p03-65d5791279a23f42a1a7",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.002493763574366683,
+      "insuficiente": 0.003721275653095519,
+      "contradição": 0.9937849607725378
+    }
+  },
+  {
+    "source_row": "me-p03-ad420a65194b9a30be7f",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.8917249148974615,
+      "insuficiente": 0.09789070027163924,
+      "contradição": 0.010384384830899224
+    }
+  },
+  {
+    "source_row": "me-p03-98a26e3f03c97ec38ce4",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.331442147453805,
+      "insuficiente": 0.011281542846059348,
+      "contradição": 0.6572763097001357
+    }
+  },
+  {
+    "source_row": "me-p03-a918a71bec625da12be2",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.01969728027322998,
+      "insuficiente": 0.0022751299185456908,
+      "contradição": 0.9780275898082245
+    }
+  },
+  {
+    "source_row": "me-p03-c7b32f6767678ab1b3ca",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9872584762966545,
+      "insuficiente": 0.008292075263811179,
+      "contradição": 0.004449448439534202
+    }
+  },
+  {
+    "source_row": "me-p03-a8f8ebbca51b701fa65c",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.04058463135529382,
+      "insuficiente": 0.05821344199834606,
+      "contradição": 0.9012019266463601
+    }
+  },
+  {
+    "source_row": "me-p03-4aa0c7c7d6e703bd4621",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.022628998630312997,
+      "insuficiente": 0.0444442916697495,
+      "contradição": 0.9329267096999375
+    }
+  },
+  {
+    "source_row": "me-p03-6f05c73c0567aadb084d",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.7223870916382438,
+      "insuficiente": 0.0525163910862853,
+      "contradição": 0.22509651727547086
+    }
+  },
+  {
+    "source_row": "me-p03-b7b66964dbdf98a3d372",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.000728428560407993,
+      "insuficiente": 0.0027896947828728587,
+      "contradição": 0.9964818766567193
+    }
+  },
+  {
+    "source_row": "me-p03-e461c68f3e11431cec8b",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.0008244163887204303,
+      "insuficiente": 0.9986413190846194,
+      "contradição": 0.000534264526660141
+    }
+  },
+  {
+    "source_row": "me-p03-962a92667a8d3800e997",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.967077767583979,
+      "insuficiente": 0.021563026728105335,
+      "contradição": 0.011359205687915711
+    }
+  },
+  {
+    "source_row": "me-p03-2fdd75cd0666914b19b3",
+    "split": "test",
+    "classification": "contradição",
+    "probabilities": {
+      "suporte": 0.008238125383886857,
+      "insuficiente": 0.005279566600180692,
+      "contradição": 0.9864823080159324
+    }
+  },
+  {
+    "source_row": "me-p03-87419545e1fb03644738",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.003558505155451587,
+      "insuficiente": 0.7626732802897426,
+      "contradição": 0.2337682145548059
+    }
+  },
+  {
+    "source_row": "me-p03-562198cb3127190308a2",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9869530891678598,
+      "insuficiente": 0.0007597412321757712,
+      "contradição": 0.01228716959996436
+    }
+  },
+  {
+    "source_row": "me-p03-8ef758200b0febf8ef23",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.9250729584770994,
+      "insuficiente": 0.009197736529754875,
+      "contradição": 0.0657293049931457
+    }
+  },
+  {
+    "source_row": "me-p03-08e59ed52467122ced7d",
+    "split": "test",
+    "classification": "suporte",
+    "probabilities": {
+      "suporte": 0.5278726304143186,
+      "insuficiente": 0.43621428063405127,
+      "contradição": 0.03591308895162997
+    }
+  },
+  {
+    "source_row": "me-p03-95a05147ae5cf9bba21a",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.015786259201592493,
+      "insuficiente": 0.9821921039082241,
+      "contradição": 0.002021636890183369
+    }
+  },
+  {
+    "source_row": "me-p03-858a62367d997f1d89af",
+    "split": "test",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.01562101479179662,
+      "insuficiente": 0.9837429284039032,
+      "contradição": 0.0006360568043000588
+    }
+  },
+  {
+    "source_row": "me-p03-8173b4b74fe2d3e03074",
+    "split": "calibration",
+    "classification": "insuficiente",
+    "probabilities": {
+      "suporte": 0.013100506822962692,
+      "insuficiente": 0.9720976000560103,
+      "contradição": 0.014801893121026925
+    }
+  }
+]

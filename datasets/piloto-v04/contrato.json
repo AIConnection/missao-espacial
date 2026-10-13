@@ -1,0 +1,152 @@
+{
+  "version": "plan-outcome-v1",
+  "status": "implemented_and_validated_for_declared_scope",
+  "tasks": {
+    "evidence_classification": {
+      "labels": {
+        "0": "suporte",
+        "1": "insuficiente",
+        "2": "contradição"
+      },
+      "data": "../piloto-v03/",
+      "probability_of_correctness_is_not_a_new_target": true
+    },
+    "plan_outcome_forecast": {
+      "input_keys": [
+        "context",
+        "objective",
+        "candidate_plan",
+        "forecast_target",
+        "sampling_assumptions"
+      ],
+      "output_keys": [
+        "entrega_no_planeta",
+        "retorno_com_sobrevivencia"
+      ],
+      "output_range": [
+        0,
+        1
+      ],
+      "output_sum": 1,
+      "head_returns_action": false,
+      "head_selects_best_plan": false
+    }
+  },
+  "scope": {
+    "observer": "active human",
+    "phase": "initiative",
+    "own_profile": "empty; other profiles require semantic compilation",
+    "own_policy_state": "empty; additional memory requires semantic adapter",
+    "participant_counts_collected": [
+      5,
+      10
+    ],
+    "observed_rounds_collected": [
+      1,
+      3,
+      5
+    ],
+    "objectives": [
+      "ENTREGA_NO_PLANETA",
+      "RETORNO_COM_SOBREVIVENCIA"
+    ],
+    "candidate_program_count": 3,
+    "plan_keys": [
+      "answer_rule",
+      "block_rule",
+      "election_rule",
+      "exit_rule",
+      "expulsion_condition",
+      "initiative",
+      "query_order",
+      "route",
+      "target",
+      "vote_rule"
+    ],
+    "additional_unknown_view_fields": "reject"
+  },
+  "outcomes": {
+    "PLANETA": "cargo delivered and delivery observed by determination",
+    "ESTAÇÃO_ESPACIAL": "return and human survival by determination",
+    "individual_external_survival": "not labelled"
+  },
+  "privacy": {
+    "persistent_agent_ids_in_features": false,
+    "implementation_names_in_features": false,
+    "nature_and_profile_in_features": false,
+    "ephemeral_references": "bijection per evaluation; shared within candidate comparison batch; renewed between contexts",
+    "routing": "audit only"
+  },
+  "temporal_cutoff": "authorized observation before intervention; no continuation data in model input",
+  "sampling": {
+    "states": "Reamostrar estados iniciais, respostas privadas entre terceiros e destinatários ocultos de revelação; fixar histórico público e mensagens conhecidas pelo observador; aceitar visão integral idêntica. Proposta filtrada por compatibilidade, sem ponderação Bayesiana pela verossimilhança das respostas conhecidas.",
+    "N_prior": [
+      8,
+      10,
+      12
+    ],
+    "unknown_ai": "uniform among other participants",
+    "unknown_owners": "uniform among participants excluding observer for domains the observer does not initially own",
+    "human_preferences": {
+      "return": 0.4,
+      "delivery": 0.4,
+      "decide_after_evidence": 0.2
+    },
+    "answer_correct_from_own_knowledge_probability": 0.75,
+    "random_expulsion_request_probability": 0.12,
+    "unknown_target_vote_for_probability": 0.35,
+    "renounce_probability": 0.35,
+    "unknown_intention_route_return_probability": 0.5,
+    "unknown_past_answers": "same 0.75 sincerity mechanism using sender knowledge; known sent/received responses are fixed as observed",
+    "unknown_past_revelation_recipients": "condition only on whether observer received a revelation; otherwise uniform among other question authors",
+    "future_engine_chance": "independent RNG state sampled at forecast cutoff; past observations preserved",
+    "seed_pairing": "same accepted world, resampled future-engine RNG and keyed behavior draws for all candidate plans within each trial"
+  },
+  "supervision": {
+    "trials": 32,
+    "counts": "observed terminal events from current source",
+    "point_estimate": "count/trials",
+    "interval": "Wilson 95%; not certainty of a true probability",
+    "failed_or_censored_continuation": "error, never failure label"
+  },
+  "partitions": {
+    "unit": "both variants, goals, times, candidate plans and all rollouts of same structural family",
+    "rows": {
+      "train": 144,
+      "calibration": 36,
+      "test": 36
+    },
+    "selection": "deterministic partition before inspecting outcomes",
+    "no_canonical_cross_partition_duplicates": true
+  },
+  "context_encoding": {
+    "entrypoint": "ferramentas/contrato.py:ForecastEncoder.prepare",
+    "system_file": "system-modelo.txt",
+    "context_window_report": "contexto-validacao.json",
+    "no_truncation": true,
+    "output_reserve": 0,
+    "reservation_assumption": "future probability heads produce logits, not generated text"
+  },
+  "probability_validation_entrypoint": "ferramentas/contrato.py:validate_output",
+  "evaluation": {
+    "entrypoint": "ferramentas/avaliar_probabilidades.py",
+    "requires_real_held_out_predictions": true,
+    "metrics": [
+      "Bernoulli Brier",
+      "Bernoulli log loss",
+      "calibration bins",
+      "cost operating point",
+      "candidate-plan selection diagnostic"
+    ],
+    "threshold_fit_split": "calibration",
+    "test_threshold_reused_without_refit": true,
+    "not_a_universal_tactical_threshold": true
+  },
+  "not_done": [
+    "model training",
+    "integration of new probability head into existing backend",
+    "model calibration",
+    "threshold fitting with real model predictions",
+    "proof of generalization to arbitrary strategies or programs"
+  ]
+}

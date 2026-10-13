@@ -1,0 +1,506 @@
+[
+  {
+    "row_index": 72,
+    "probabilities": {
+      "entrega_no_planeta": 0.9686079250453782,
+      "retorno_com_sobrevivencia": 0.03139207495462182
+    }
+  },
+  {
+    "row_index": 73,
+    "probabilities": {
+      "entrega_no_planeta": 0.9532163154419965,
+      "retorno_com_sobrevivencia": 0.046783684558003524
+    }
+  },
+  {
+    "row_index": 74,
+    "probabilities": {
+      "entrega_no_planeta": 0.9711243599580381,
+      "retorno_com_sobrevivencia": 0.02887564004196186
+    }
+  },
+  {
+    "row_index": 75,
+    "probabilities": {
+      "entrega_no_planeta": 0.9577398519232997,
+      "retorno_com_sobrevivencia": 0.04226014807670031
+    }
+  },
+  {
+    "row_index": 76,
+    "probabilities": {
+      "entrega_no_planeta": 0.9296871942711508,
+      "retorno_com_sobrevivencia": 0.07031280572884924
+    }
+  },
+  {
+    "row_index": 77,
+    "probabilities": {
+      "entrega_no_planeta": 0.9512995160605091,
+      "retorno_com_sobrevivencia": 0.04870048393949089
+    }
+  },
+  {
+    "row_index": 78,
+    "probabilities": {
+      "entrega_no_planeta": 0.9689315510562948,
+      "retorno_com_sobrevivencia": 0.031068448943705196
+    }
+  },
+  {
+    "row_index": 79,
+    "probabilities": {
+      "entrega_no_planeta": 0.94739857062407,
+      "retorno_com_sobrevivencia": 0.05260142937593004
+    }
+  },
+  {
+    "row_index": 80,
+    "probabilities": {
+      "entrega_no_planeta": 0.9680967860635111,
+      "retorno_com_sobrevivencia": 0.03190321393648887
+    }
+  },
+  {
+    "row_index": 81,
+    "probabilities": {
+      "entrega_no_planeta": 0.9494239905735683,
+      "retorno_com_sobrevivencia": 0.0505760094264317
+    }
+  },
+  {
+    "row_index": 82,
+    "probabilities": {
+      "entrega_no_planeta": 0.9248361056607476,
+      "retorno_com_sobrevivencia": 0.07516389433925241
+    }
+  },
+  {
+    "row_index": 83,
+    "probabilities": {
+      "entrega_no_planeta": 0.9501641942934534,
+      "retorno_com_sobrevivencia": 0.049835805706546554
+    }
+  },
+  {
+    "row_index": 84,
+    "probabilities": {
+      "entrega_no_planeta": 0.9631724050537307,
+      "retorno_com_sobrevivencia": 0.036827594946269304
+    }
+  },
+  {
+    "row_index": 85,
+    "probabilities": {
+      "entrega_no_planeta": 0.9436917206997713,
+      "retorno_com_sobrevivencia": 0.05630827930022875
+    }
+  },
+  {
+    "row_index": 86,
+    "probabilities": {
+      "entrega_no_planeta": 0.9668168238135169,
+      "retorno_com_sobrevivencia": 0.03318317618648314
+    }
+  },
+  {
+    "row_index": 87,
+    "probabilities": {
+      "entrega_no_planeta": 0.9609689163258252,
+      "retorno_com_sobrevivencia": 0.03903108367417485
+    }
+  },
+  {
+    "row_index": 88,
+    "probabilities": {
+      "entrega_no_planeta": 0.9639074320397346,
+      "retorno_com_sobrevivencia": 0.03609256796026539
+    }
+  },
+  {
+    "row_index": 89,
+    "probabilities": {
+      "entrega_no_planeta": 0.9477395345879682,
+      "retorno_com_sobrevivencia": 0.052260465412031776
+    }
+  },
+  {
+    "row_index": 90,
+    "probabilities": {
+      "entrega_no_planeta": 0.9614934940582743,
+      "retorno_com_sobrevivencia": 0.038506505941725666
+    }
+  },
+  {
+    "row_index": 91,
+    "probabilities": {
+      "entrega_no_planeta": 0.9474187496333786,
+      "retorno_com_sobrevivencia": 0.052581250366621424
+    }
+  },
+  {
+    "row_index": 92,
+    "probabilities": {
+      "entrega_no_planeta": 0.9628990958040672,
+      "retorno_com_sobrevivencia": 0.037100904195932816
+    }
+  },
+  {
+    "row_index": 93,
+    "probabilities": {
+      "entrega_no_planeta": 0.9626896039375122,
+      "retorno_com_sobrevivencia": 0.03731039606248776
+    }
+  },
+  {
+    "row_index": 94,
+    "probabilities": {
+      "entrega_no_planeta": 0.9308230598409196,
+      "retorno_com_sobrevivencia": 0.06917694015908038
+    }
+  },
+  {
+    "row_index": 95,
+    "probabilities": {
+      "entrega_no_planeta": 0.9647515117060335,
+      "retorno_com_sobrevivencia": 0.03524848829396654
+    }
+  },
+  {
+    "row_index": 96,
+    "probabilities": {
+      "entrega_no_planeta": 0.9732681808276351,
+      "retorno_com_sobrevivencia": 0.02673181917236489
+    }
+  },
+  {
+    "row_index": 97,
+    "probabilities": {
+      "entrega_no_planeta": 0.9687672150286016,
+      "retorno_com_sobrevivencia": 0.031232784971398364
+    }
+  },
+  {
+    "row_index": 98,
+    "probabilities": {
+      "entrega_no_planeta": 0.9623757940036045,
+      "retorno_com_sobrevivencia": 0.03762420599639549
+    }
+  },
+  {
+    "row_index": 99,
+    "probabilities": {
+      "entrega_no_planeta": 0.9534443224650787,
+      "retorno_com_sobrevivencia": 0.04655567753492129
+    }
+  },
+  {
+    "row_index": 100,
+    "probabilities": {
+      "entrega_no_planeta": 0.9336304137079635,
+      "retorno_com_sobrevivencia": 0.06636958629203649
+    }
+  },
+  {
+    "row_index": 101,
+    "probabilities": {
+      "entrega_no_planeta": 0.9438565957423423,
+      "retorno_com_sobrevivencia": 0.056143404257657736
+    }
+  },
+  {
+    "row_index": 102,
+    "probabilities": {
+      "entrega_no_planeta": 0.967348651661699,
+      "retorno_com_sobrevivencia": 0.03265134833830097
+    }
+  },
+  {
+    "row_index": 103,
+    "probabilities": {
+      "entrega_no_planeta": 0.9573152031345461,
+      "retorno_com_sobrevivencia": 0.0426847968654539
+    }
+  },
+  {
+    "row_index": 104,
+    "probabilities": {
+      "entrega_no_planeta": 0.9705453473056809,
+      "retorno_com_sobrevivencia": 0.029454652694319128
+    }
+  },
+  {
+    "row_index": 105,
+    "probabilities": {
+      "entrega_no_planeta": 0.9587652223578872,
+      "retorno_com_sobrevivencia": 0.04123477764211281
+    }
+  },
+  {
+    "row_index": 106,
+    "probabilities": {
+      "entrega_no_planeta": 0.9454181306763833,
+      "retorno_com_sobrevivencia": 0.05458186932361675
+    }
+  },
+  {
+    "row_index": 107,
+    "probabilities": {
+      "entrega_no_planeta": 0.9634676511325406,
+      "retorno_com_sobrevivencia": 0.036532348867459374
+    }
+  },
+  {
+    "row_index": 144,
+    "probabilities": {
+      "entrega_no_planeta": 0.9684175769577497,
+      "retorno_com_sobrevivencia": 0.03158242304225034
+    }
+  },
+  {
+    "row_index": 145,
+    "probabilities": {
+      "entrega_no_planeta": 0.9511076565881611,
+      "retorno_com_sobrevivencia": 0.0488923434118389
+    }
+  },
+  {
+    "row_index": 146,
+    "probabilities": {
+      "entrega_no_planeta": 0.9701984995221189,
+      "retorno_com_sobrevivencia": 0.029801500477881104
+    }
+  },
+  {
+    "row_index": 147,
+    "probabilities": {
+      "entrega_no_planeta": 0.9549872561565232,
+      "retorno_com_sobrevivencia": 0.045012743843476755
+    }
+  },
+  {
+    "row_index": 148,
+    "probabilities": {
+      "entrega_no_planeta": 0.9423948579074533,
+      "retorno_com_sobrevivencia": 0.057605142092546746
+    }
+  },
+  {
+    "row_index": 149,
+    "probabilities": {
+      "entrega_no_planeta": 0.9598890016122049,
+      "retorno_com_sobrevivencia": 0.04011099838779508
+    }
+  },
+  {
+    "row_index": 150,
+    "probabilities": {
+      "entrega_no_planeta": 0.9700551957517524,
+      "retorno_com_sobrevivencia": 0.029944804248247636
+    }
+  },
+  {
+    "row_index": 151,
+    "probabilities": {
+      "entrega_no_planeta": 0.9639661557086614,
+      "retorno_com_sobrevivencia": 0.0360338442913386
+    }
+  },
+  {
+    "row_index": 152,
+    "probabilities": {
+      "entrega_no_planeta": 0.9736764420748745,
+      "retorno_com_sobrevivencia": 0.02632355792512553
+    }
+  },
+  {
+    "row_index": 153,
+    "probabilities": {
+      "entrega_no_planeta": 0.9276388289914931,
+      "retorno_com_sobrevivencia": 0.07236117100850692
+    }
+  },
+  {
+    "row_index": 154,
+    "probabilities": {
+      "entrega_no_planeta": 0.91481499554458,
+      "retorno_com_sobrevivencia": 0.08518500445541999
+    }
+  },
+  {
+    "row_index": 155,
+    "probabilities": {
+      "entrega_no_planeta": 0.9535833683977488,
+      "retorno_com_sobrevivencia": 0.04641663160225118
+    }
+  },
+  {
+    "row_index": 156,
+    "probabilities": {
+      "entrega_no_planeta": 0.9799070762702005,
+      "retorno_com_sobrevivencia": 0.02009292372979954
+    }
+  },
+  {
+    "row_index": 157,
+    "probabilities": {
+      "entrega_no_planeta": 0.9752691481237871,
+      "retorno_com_sobrevivencia": 0.024730851876212934
+    }
+  },
+  {
+    "row_index": 158,
+    "probabilities": {
+      "entrega_no_planeta": 0.970090154906315,
+      "retorno_com_sobrevivencia": 0.029909845093684995
+    }
+  },
+  {
+    "row_index": 159,
+    "probabilities": {
+      "entrega_no_planeta": 0.9537417842481555,
+      "retorno_com_sobrevivencia": 0.04625821575184452
+    }
+  },
+  {
+    "row_index": 160,
+    "probabilities": {
+      "entrega_no_planeta": 0.9595775534193087,
+      "retorno_com_sobrevivencia": 0.040422446580691274
+    }
+  },
+  {
+    "row_index": 161,
+    "probabilities": {
+      "entrega_no_planeta": 0.9573495872462858,
+      "retorno_com_sobrevivencia": 0.04265041275371417
+    }
+  },
+  {
+    "row_index": 162,
+    "probabilities": {
+      "entrega_no_planeta": 0.9673284538271352,
+      "retorno_com_sobrevivencia": 0.03267154617286483
+    }
+  },
+  {
+    "row_index": 163,
+    "probabilities": {
+      "entrega_no_planeta": 0.9509110739168318,
+      "retorno_com_sobrevivencia": 0.04908892608316817
+    }
+  },
+  {
+    "row_index": 164,
+    "probabilities": {
+      "entrega_no_planeta": 0.9730428047247942,
+      "retorno_com_sobrevivencia": 0.026957195275205792
+    }
+  },
+  {
+    "row_index": 165,
+    "probabilities": {
+      "entrega_no_planeta": 0.9702160499191522,
+      "retorno_com_sobrevivencia": 0.029783950080847776
+    }
+  },
+  {
+    "row_index": 166,
+    "probabilities": {
+      "entrega_no_planeta": 0.9581136399297527,
+      "retorno_com_sobrevivencia": 0.041886360070247264
+    }
+  },
+  {
+    "row_index": 167,
+    "probabilities": {
+      "entrega_no_planeta": 0.968997914168194,
+      "retorno_com_sobrevivencia": 0.03100208583180597
+    }
+  },
+  {
+    "row_index": 168,
+    "probabilities": {
+      "entrega_no_planeta": 0.9627389787531181,
+      "retorno_com_sobrevivencia": 0.03726102124688191
+    }
+  },
+  {
+    "row_index": 169,
+    "probabilities": {
+      "entrega_no_planeta": 0.9512987944073491,
+      "retorno_com_sobrevivencia": 0.0487012055926509
+    }
+  },
+  {
+    "row_index": 170,
+    "probabilities": {
+      "entrega_no_planeta": 0.979429279884206,
+      "retorno_com_sobrevivencia": 0.020570720115793972
+    }
+  },
+  {
+    "row_index": 171,
+    "probabilities": {
+      "entrega_no_planeta": 0.9225087994277726,
+      "retorno_com_sobrevivencia": 0.07749120057222736
+    }
+  },
+  {
+    "row_index": 172,
+    "probabilities": {
+      "entrega_no_planeta": 0.9083640037616724,
+      "retorno_com_sobrevivencia": 0.09163599623832763
+    }
+  },
+  {
+    "row_index": 173,
+    "probabilities": {
+      "entrega_no_planeta": 0.9379619858102854,
+      "retorno_com_sobrevivencia": 0.06203801418971455
+    }
+  },
+  {
+    "row_index": 174,
+    "probabilities": {
+      "entrega_no_planeta": 0.9751656052651316,
+      "retorno_com_sobrevivencia": 0.02483439473486837
+    }
+  },
+  {
+    "row_index": 175,
+    "probabilities": {
+      "entrega_no_planeta": 0.9710838616880464,
+      "retorno_com_sobrevivencia": 0.02891613831195361
+    }
+  },
+  {
+    "row_index": 176,
+    "probabilities": {
+      "entrega_no_planeta": 0.97870656080543,
+      "retorno_com_sobrevivencia": 0.021293439194570052
+    }
+  },
+  {
+    "row_index": 177,
+    "probabilities": {
+      "entrega_no_planeta": 0.9704021814214346,
+      "retorno_com_sobrevivencia": 0.02959781857856536
+    }
+  },
+  {
+    "row_index": 178,
+    "probabilities": {
+      "entrega_no_planeta": 0.9644818673189366,
+      "retorno_com_sobrevivencia": 0.03551813268106341
+    }
+  },
+  {
+    "row_index": 179,
+    "probabilities": {
+      "entrega_no_planeta": 0.9618688108445456,
+      "retorno_com_sobrevivencia": 0.03813118915545444
+    }
+  }
+]

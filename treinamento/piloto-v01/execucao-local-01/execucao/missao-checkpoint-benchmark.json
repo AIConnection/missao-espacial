@@ -1,0 +1,8 @@
+{
+  "checkpoint_repetitions": 100,
+  "median_checkpoint_seconds": 0.0016417086590081453,
+  "max_checkpoint_seconds": 0.003537209238857031,
+  "measured_forward_median_seconds": 19.66622491599992,
+  "completed_rows_at_measurement": 39,
+  "timings_do_not_include_model_loading": true
+}

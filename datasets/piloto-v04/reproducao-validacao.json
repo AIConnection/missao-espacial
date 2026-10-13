@@ -1,0 +1,6 @@
+{
+  "reproduced_inputs": 108,
+  "reproduced_worlds": 72,
+  "reproduced_exact_rollouts": 216,
+  "same_source_and_seeds": true
+}

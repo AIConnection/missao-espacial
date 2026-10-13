@@ -1,0 +1,63 @@
+{
+  "version": "piloto-v03",
+  "unique_pairs": 2249,
+  "classes": {
+    "contradiction": 750,
+    "neutral": 749,
+    "entailment": 750
+  },
+  "catalog_questions": 21,
+  "executed_probes": 549,
+  "contexts": 1342,
+  "coverage_scope": "catalog_question_response_options_as_exact_speech_claims",
+  "participant_counts": [
+    5,
+    10
+  ],
+  "parametric_exhaustion": false,
+  "world_content_coverage_complete": false,
+  "source_hashes": {
+    "src/agent/_baseline.py": "4962a015d56918e36d23759d5a5ce0b0e2f98c12f0670d021ff2c088d7570c2e",
+    "src/agent/_human_default.py": "7319e5e08f044f9afb7b95702b1b8c5b0907433d18a7e42d7c2b0cbc408c52a3",
+    "src/agent/humano_alpha.py": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61",
+    "src/agent/humano_beta.py": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a",
+    "src/agent/humano_gamma.py": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914",
+    "src/agent/humano_random.py": "bf3cbca494bd5208376a619bcde9837a6aa4ba665bbebf45a00d1d914b9d1cf3",
+    "src/agent/humanoide.py": "deebbf0cd8e28a0c298fe9fd0d937603c8b2ca89004f6b657bbe15f832287003",
+    "src/agent_contract.py": "75f91b0be7e365ca71d6029afd9521b69a4211e59148361bb6fcd4d82d94e786",
+    "src/agent_session.py": "cf2ca4d2fb401593505281c9d9daf9ef64810d71567faa058c200845ce6485f3",
+    "src/carregar_agentes.py": "141b3d51aaed4464d1ae409a6cfd1f2148df386bff1532455179a1caaee575fa",
+    "src/catalogo_questoes.py": "7ecc60b564721ecc2443749a390beb596e8b2ad1787a2e97f37651ec334da374",
+    "src/dashboard.html": "b606979f7c9043c0b5267eb41621ee643515eddbd1b61de1ebc62c0455a166f4",
+    "src/dashboard.py": "ce3b8b984eee205e38af0c6da67a32f7981e7b8b10163fc74374292ec2d8c482",
+    "src/experimentos.py": "922680b6387b4057943d6de49c45dd83e375c89f068d9269ac616b26ce8c928f",
+    "src/missao_espacial.py": "87b5179a75d998cf52b2f6e56d43508c16f0926aa55618ba07091db519990780",
+    "src/setup_jogo.py": "e3767c4a2e5f0a18b4fc45e5abb90f03540db7d403801572887e60c83797c609"
+  },
+  "model_executed": false,
+  "training_performed": false,
+  "agent_integration_performed": false,
+  "previous_pilots_modified": false,
+  "status": "base_auxiliar_sem_treinamento_probabilistico",
+  "ephemeral_references": true,
+  "reference_tests": 8,
+  "semantic_tests": 30,
+  "max_prompt_tokens": 9119,
+  "window_tokens": 16384,
+  "tool_hashes": {
+    "testar_piloto.py": "ac9c4e384de73ff686f57aaadb8e9ec28726fc4b4cc2b06b0601741860d1a33a",
+    "anonimo.py": "213a27af996b6e3889a53f331ed89daa6740392d62182f2cde5ae5cf10ae04af",
+    "verificar_cobertura.py": "f874f5976c81c3c3e3464475573662a887984e7719eb5e9a1809fa1a9acc5e1b",
+    "experimento_direcao.py": "2e2f1e5fc9c57eada4c5831cbaf8d105d76c93ca23e4118c875e671a395142ab",
+    "testar_referencias.py": "1b20cda85021f53e1a0e5fb536dfab0dfd847e9aa5fc47f2e51c3e2abe8bb3ca",
+    "gerar_piloto.py": "3cbd01d4f70f0bef39227daf032c9f4c8ca074c908c69b2d3275c3a4c6eda0a5",
+    "controles.py": "f99d2e2a3c6f885617aa320536ac58cf75f98ac5bc2bf546b2c59f7d93a814db",
+    "testar_desfecho.py": "4275d70a7753fbf26a89a342ba318de295cbfd06d3c547e205878cb34b7f27ea",
+    "epistemico.py": "9fcae205af25e83949846f8a953403679fd07aaa5f0cb6ee5b639540e7fd988d",
+    "contexto.py": "6067ef1edd725baa3e2b93c103c7176b72e1016997f25debc090b9ed0d78972a",
+    "coleta.py": "156af8457b2b791f3617dd79daa4d0936b2f8ddd204356f52367dec8e08f28d1",
+    "desfecho.py": "3bc4bb97820b52b80f86350d4f8373adc515a0b2e0106f290359aad80687ab14",
+    "gerar_cobertura.py": "2bc9d35fdc0dd70af412e3081b6c0a5f92aaa6700708a28f02d8e67e6110ccaf",
+    "referencias.py": "7645139e212e24795427da971617d9c9c0b6c10b84c7f850842af962a4b53f34"
+  }
+}

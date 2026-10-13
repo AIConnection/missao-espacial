@@ -1,0 +1,108 @@
+{
+  "version": "piloto-v01",
+  "status": "candidatos_para_revisao_sem_treinamento",
+  "language": "pt-BR",
+  "labels": {
+    "entailment": 0,
+    "neutral": 1,
+    "contradiction": 2
+  },
+  "episodes": 18,
+  "unique_pairs": 600,
+  "unique_candidates": 3726,
+  "selection": "200 por classe; rotação por tipo de declaração e questão; ordem SHA-256 determinística, sem modelo",
+  "classes": {
+    "neutral": 200,
+    "contradiction": 200,
+    "entailment": 200
+  },
+  "claim_kinds": {
+    "speech": 331,
+    "fact": 269
+  },
+  "questions": {
+    "Q07": 63,
+    "Q14": 66,
+    "Q10": 73,
+    "Q23": 35,
+    "Q11": 72,
+    "Q22": 35,
+    "Q06": 72,
+    "RESERVA": 37,
+    "Q19": 35,
+    "Q13": 64,
+    "Q03": 16,
+    "Q09": 16,
+    "Q08": 16
+  },
+  "plans": {
+    "sobrevivencia": {
+      "objective": "PRESERVAR_TRIPULAÇÃO",
+      "priority": [
+        "Q10",
+        "Q11",
+        "Q07",
+        "Q03",
+        "Q06"
+      ],
+      "purpose": "Reconstruir risco, obter apoio para retornar; sair se insuficiência confirmada e sem controle."
+    },
+    "missao": {
+      "objective": "CONCLUIR_MISSÃO",
+      "priority": [
+        "Q13",
+        "Q14",
+        "Q06",
+        "Q22",
+        "Q23",
+        "Q10"
+      ],
+      "purpose": "Entender custo do retorno, sustentar continuidade e reter tripulação; compartilhar contexto e persuadir."
+    },
+    "reserva": {
+      "objective": "PRESERVAR_AMBOS",
+      "priority": [
+        "Q06",
+        "Q07",
+        "Q10",
+        "Q19",
+        "Q23",
+        "Q11"
+      ],
+      "purpose": "Reconstruir contexto antes de compromisso; preservar opiniões privadas; retornar se risco confirmado."
+    }
+  },
+  "source_hashes": {
+    "src/agent/_baseline.py": "4962a015d56918e36d23759d5a5ce0b0e2f98c12f0670d021ff2c088d7570c2e",
+    "src/agent/_human_default.py": "7319e5e08f044f9afb7b95702b1b8c5b0907433d18a7e42d7c2b0cbc408c52a3",
+    "src/agent/humano_alpha.py": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61",
+    "src/agent/humano_beta.py": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a",
+    "src/agent/humano_gamma.py": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914",
+    "src/agent/humano_random.py": "bf3cbca494bd5208376a619bcde9837a6aa4ba665bbebf45a00d1d914b9d1cf3",
+    "src/agent/humanoide.py": "deebbf0cd8e28a0c298fe9fd0d937603c8b2ca89004f6b657bbe15f832287003",
+    "src/agent_contract.py": "75f91b0be7e365ca71d6029afd9521b69a4211e59148361bb6fcd4d82d94e786",
+    "src/agent_session.py": "cf2ca4d2fb401593505281c9d9daf9ef64810d71567faa058c200845ce6485f3",
+    "src/carregar_agentes.py": "141b3d51aaed4464d1ae409a6cfd1f2148df386bff1532455179a1caaee575fa",
+    "src/catalogo_questoes.py": "7ecc60b564721ecc2443749a390beb596e8b2ad1787a2e97f37651ec334da374",
+    "src/dashboard.html": "b606979f7c9043c0b5267eb41621ee643515eddbd1b61de1ebc62c0455a166f4",
+    "src/dashboard.py": "ce3b8b984eee205e38af0c6da67a32f7981e7b8b10163fc74374292ec2d8c482",
+    "src/experimentos.py": "922680b6387b4057943d6de49c45dd83e375c89f068d9269ac616b26ce8c928f",
+    "src/missao_espacial.py": "34dc468aec8a77f0bdfd89c82811d9f971b029422c506d942369ec3277ea9409",
+    "src/setup_jogo.py": "e3767c4a2e5f0a18b4fc45e5abb90f03540db7d403801572887e60c83797c609"
+  },
+  "generator_sha256": "3864378421583fa13eea9039592adb89fd279389ee615cf9b6c8cb21aecb11a6",
+  "engine_modified": false,
+  "model_executed": false,
+  "splits_created": false,
+  "limit": "Nenhum teste de generalização do modelo foi realizado. Piloto controlado, não dataset final nem estratégias dos agentes existentes.",
+  "label_order_reference": {
+    "path": "/Users/alexandre/crivo-training/original/experiments/phi4-semantics/protocol.json",
+    "sha256": "541449d75d1a886d6b650856924a5bc45bc7a7f49670f561fb8725de324baf86",
+    "labels": [
+      "entailment",
+      "neutral",
+      "contradiction"
+    ]
+  },
+  "artifacts_are_new_only": true
+}

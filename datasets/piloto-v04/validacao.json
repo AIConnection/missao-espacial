@@ -1,0 +1,17 @@
+{
+  "rows_verified": 216,
+  "paired_worlds_verified": 2304,
+  "rollouts_replayed": 6912,
+  "strict_authorized_view_compatibility": true,
+  "reactions_and_belief_updates_replayed": true,
+  "same_random_seeds_across_plans": true,
+  "independent_future_engine_rng_between_trials": true,
+  "third_party_private_past_resampled": true,
+  "unknown_past_revelation_recipients_resampled": true,
+  "input_identity_metamorphic_checks": 216,
+  "canonical_cross_partition_duplicates": 0,
+  "source_hashes_match": true,
+  "train_calibration_test_families_separated": true,
+  "model_executed": false,
+  "thresholds_fitted": false
+}

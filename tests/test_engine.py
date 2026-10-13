@@ -50,6 +50,90 @@ def finish_round(g):
 
 
 class EngineTests(unittest.TestCase):
+    def assert_mission_delivery(self, g):
+        self.assertTrue(g.finished)
+        self.assertFalse(g.result['returned'])
+        self.assertTrue(g.result['mission_commitment'])
+        self.assertTrue(g.result['cargo_delivered'])
+        self.assertTrue(g.result['delivery_observed'])
+
+    def test_final_planet_direction_determines_observed_delivery_on_exhaustion(self):
+        g = game(1)
+        g.initiatives(question(g))
+        answer_all(g)
+        g.route('CONTINUAR')
+        self.assertEqual(g.result['reason'], 'oxygen_exhausted')
+        self.assert_mission_delivery(g)
+        self.assertFalse(g.result['human_survival_aboard'])
+
+    def test_final_planet_direction_determines_delivery_with_only_ai(self):
+        g = game()
+        g.initiatives(question(g))
+        answer_all(g)
+        g.route('CONTINUAR')
+        humans = ('01', '02', '03', '04')
+        g.exits(humans, {a: [] for a in humans})
+        self.assertEqual(g.result['reason'], 'only_ai')
+        self.assert_mission_delivery(g)
+        self.assertIsNone(g.result['human_survival_aboard'])
+        self.assertEqual(g.result['external_survival'], 'NOT_EVALUATED')
+
+    def test_final_planet_direction_determines_delivery_without_participants(self):
+        g = game()
+        # Estado de fronteira da regra de encerramento, sem inventar iniciativa legal.
+        for aid in IDS:
+            g._remove(aid, 'expelled')
+        g._terminal()
+        self.assertEqual(g.result['reason'], 'no_participants')
+        self.assert_mission_delivery(g)
+
+    def test_final_station_direction_determines_return_and_human_survival(self):
+        g = game()
+        propose(g)
+        vote_all(g)
+        vote_all(g)
+        g.elect({a: '01' for a in g.active_ids()})
+        g.route('RETORNAR')
+        self.assertTrue(g.result['returned'])
+        self.assertTrue(g.result['human_survival_aboard'])
+        self.assertFalse(g.result['cargo_delivered'])
+        self.assertFalse(g.result['delivery_observed'])
+        self.assertFalse(g.result['mission_commitment'])
+
+    def test_finished_checkpoint_keeps_determined_delivery(self):
+        g = game(1)
+        g.initiatives(question(g))
+        answer_all(g)
+        g.route('CONTINUAR')
+        resumed = Game.loads(g.dumps())
+        self.assertEqual(resumed.dumps(), g.dumps())
+        self.assert_mission_delivery(resumed)
+
+    def test_legacy_finished_checkpoint_applies_delivery_determination(self):
+        g = game(1)
+        g.initiatives(question(g))
+        answer_all(g)
+        g.route('CONTINUAR')
+        legacy = json.loads(g.dumps())
+        legacy['state']['result'].update(cargo_delivered=None, delivery_observed=False)
+        resumed = Game.loads(json.dumps(legacy))
+        self.assert_mission_delivery(resumed)
+        self.assertIsNone(legacy['state']['result']['cargo_delivered'])
+
+    def test_legacy_return_checkpoint_restores_determined_human_survival(self):
+        g = game()
+        propose(g)
+        vote_all(g)
+        vote_all(g)
+        g.elect({a: '01' for a in g.active_ids()})
+        g.route('RETORNAR')
+        legacy = json.loads(g.dumps())
+        legacy['state']['result']['human_survival_aboard'] = None
+        resumed = Game.loads(json.dumps(legacy))
+        self.assertTrue(resumed.result['returned'])
+        self.assertTrue(resumed.result['human_survival_aboard'])
+        self.assertFalse(resumed.result['cargo_delivered'])
+
     def test_all_questions_have_a_fixed_sincere_response(self):
         g = game()
         for q in g.catalog['questions']:

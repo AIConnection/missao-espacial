@@ -1,0 +1,48 @@
+{
+  "actual_phi4_forward": true,
+  "original_portable_loader": true,
+  "device": "mps",
+  "checks": [
+    {
+      "task": "nli",
+      "index": 696,
+      "tokens": 1349,
+      "output": {
+        "classification": "contradição"
+      },
+      "elapsed_seconds": 21.593591040931642,
+      "matches_saved_feature_prediction": true
+    },
+    {
+      "task": "nli",
+      "index": 705,
+      "tokens": 1385,
+      "output": {
+        "classification": "insuficiente"
+      },
+      "elapsed_seconds": 21.13949220906943,
+      "matches_saved_feature_prediction": true
+    },
+    {
+      "task": "nli",
+      "index": 693,
+      "tokens": 1445,
+      "output": {
+        "classification": "contradição"
+      },
+      "elapsed_seconds": 22.109267791733146,
+      "matches_saved_feature_prediction": true
+    },
+    {
+      "task": "forecast",
+      "index": 146,
+      "tokens": 1609,
+      "output": {
+        "entrega_no_planeta": 0.9701984995221189,
+        "retorno_com_sobrevivencia": 0.029801500477881104
+      },
+      "elapsed_seconds": 24.333715583197773,
+      "matches_saved_feature_prediction": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "single_seconds": [
+    13.925900792237371,
+    13.751052082981914,
+    14.028134958352894
+  ],
+  "single_total_seconds": 41.70508783357218,
+  "batch_3_seconds": 42.333402374759316,
+  "batch_speedup": 0.9851579484298252,
+  "batch_features_max_absolute_difference": 0.0,
+  "batch_abc_max_difference": 0.0,
+  "batch_features_bit_identical": true,
+  "same_all_input_tokens": true,
+  "no_other_domain_head_loaded": true,
+  "prefix_common_tokens": 504,
+  "prefix_combined_seconds": 24.93585225008428,
+  "prefix_feature_max_absolute_difference": 0.0
+}

@@ -1,0 +1,250 @@
+{
+  "rows": 30,
+  "all_features_logits_probabilities_finite": true,
+  "all_classifications_match_original_inference": true,
+  "torch_max_probability_difference": 2.220446049250313e-16,
+  "float64_max_probability_difference": 4.55699628032491e-08,
+  "checks": [
+    {
+      "index": 0,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 5.701017213866066e-09
+    },
+    {
+      "index": 1,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 5.551115123125783e-17,
+      "float64_max_probability_difference": 4.55699628032491e-08
+    },
+    {
+      "index": 2,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 1.3877787807814457e-17,
+      "float64_max_probability_difference": 1.1915028630404834e-08
+    },
+    {
+      "index": 3,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.8415150515593837e-09
+    },
+    {
+      "index": 4,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 5.551115123125783e-17,
+      "float64_max_probability_difference": 6.115189188360404e-09
+    },
+    {
+      "index": 5,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 8.673617379884035e-19,
+      "float64_max_probability_difference": 3.3620612960305607e-09
+    },
+    {
+      "index": 6,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.8440078353165745e-09
+    },
+    {
+      "index": 7,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 3.469446951953614e-18,
+      "float64_max_probability_difference": 8.779463933628051e-09
+    },
+    {
+      "index": 8,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 2.7406013014541486e-09
+    },
+    {
+      "index": 9,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 1.0842021724855044e-19,
+      "float64_max_probability_difference": 4.411723897312925e-08
+    },
+    {
+      "index": 10,
+      "torch_classification": "insuficiente",
+      "float64_classification": "insuficiente",
+      "original_classification": "insuficiente",
+      "torch_max_probability_difference": 2.220446049250313e-16,
+      "float64_max_probability_difference": 1.2587657582940892e-08
+    },
+    {
+      "index": 11,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 4.336808689942018e-19,
+      "float64_max_probability_difference": 9.788356791773367e-10
+    },
+    {
+      "index": 12,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 2.06478933950649e-09
+    },
+    {
+      "index": 13,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 1.1102230246251565e-16,
+      "float64_max_probability_difference": 2.4656399089106884e-08
+    },
+    {
+      "index": 14,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 4.630511529768455e-10
+    },
+    {
+      "index": 15,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.3902123115888676e-10
+    },
+    {
+      "index": 16,
+      "torch_classification": "insuficiente",
+      "float64_classification": "insuficiente",
+      "original_classification": "insuficiente",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.2120122627745644e-08
+    },
+    {
+      "index": 17,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.1417247789552443e-11
+    },
+    {
+      "index": 18,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 2.811301136329547e-08
+    },
+    {
+      "index": 19,
+      "torch_classification": "insuficiente",
+      "float64_classification": "insuficiente",
+      "original_classification": "insuficiente",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.3548499266935465e-09
+    },
+    {
+      "index": 20,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.8866238626902287e-08
+    },
+    {
+      "index": 21,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 2.7755575615628914e-17,
+      "float64_max_probability_difference": 3.287651018091253e-08
+    },
+    {
+      "index": 22,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 4.090262573086534e-10
+    },
+    {
+      "index": 23,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 2.168404344971009e-19,
+      "float64_max_probability_difference": 3.809134119237001e-10
+    },
+    {
+      "index": 24,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 1.1102230246251565e-16,
+      "float64_max_probability_difference": 2.176985225421646e-08
+    },
+    {
+      "index": 25,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 5.126296054314139e-10
+    },
+    {
+      "index": 26,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.1129275279131434e-10
+    },
+    {
+      "index": 27,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 1.0842021724855044e-19,
+      "float64_max_probability_difference": 1.6185823872600508e-10
+    },
+    {
+      "index": 28,
+      "torch_classification": "suporte",
+      "float64_classification": "suporte",
+      "original_classification": "suporte",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.619503620098328e-08
+    },
+    {
+      "index": 29,
+      "torch_classification": "contradição",
+      "float64_classification": "contradição",
+      "original_classification": "contradição",
+      "torch_max_probability_difference": 0.0,
+      "float64_max_probability_difference": 1.2640147817322145e-08
+    }
+  ],
+  "scope": "CPU head arithmetic only; Phi-4 not rerun and no weights updated"
+}

@@ -21,13 +21,13 @@ missao-espacial/
 └── entrega.json             # Manifesto atual, caminhos e hashes
 ```
 
-As [regras atuais](docs/05-06-Cenario_e_Regras_Jogo_Missao_Espacial_2026-2.md) delimitam o jogo. A [documentação da engine](docs/README_Engine_Missao_Espacial.md) descreve contratos, agentes e checkpoints. Os [diagramas](docs/diagramas/) mostram os turnos e decisões. A proposta inicial em `docs/historico/` contém ideias substituídas e não define o comportamento atual.
+As [regras atuais](docs/05-06-Cenario_e_Regras_Jogo_Missao_Espacial_2026-2.md) delimitam o jogo. A [documentação da engine](docs/README_Engine_Missao_Espacial.md) descreve contratos, agentes e checkpoints. A [auditoria de documentação](docs/AUDITORIA_DOCUMENTACAO_2026-10-12.md) registra as divergências corrigidas e as verificações executadas; o código fonte em `src/` é a fonte da verdade. Os [diagramas](docs/diagramas/) mostram os turnos e decisões. A proposta inicial em `docs/historico/` contém ideias substituídas e não define o comportamento atual.
 
 ## Configurar em um único lugar
 
 Edite [setup.json](setup.json). Ali estão `rodadas`, `seed` do motor, diretório dos agentes, checkpoint, os grupos de `tripulantes` e os detentores de `conhecimentos`. Cada grupo define `quantidade`, `papel` (`HUMANO`/`IA`) e `implementacao`. O total de tripulantes é a soma das quantidades; não há limite de cinco participantes ou de cinco módulos disponíveis.
 
-Na configuração padrão, quatro grupos têm quantidade 1. Altere a quantidade do último grupo para:
+Na configuração padrão, cinco grupos têm quantidade 1. Altere a quantidade do último grupo para:
 
 | Total desejado | Quantidade do último grupo | Humanos iniciais | Maioria se todos os humanos votarem |
 |---|---:|---:|---:|
@@ -38,7 +38,7 @@ Na configuração padrão, quatro grupos têm quantidade 1. Altere a quantidade 
 
 Para 100.000 rodadas iniciais, use `"rodadas": 100000`. As bonificações podem ampliar a duração; retorno e remoções podem encerrar a partida antes. Os IDs são atribuídos pela ordem dos grupos, sem identidade sorteada. Ao mudar quantidades nos primeiros grupos, revise os IDs em `conhecimentos`; o resumo exibido antes da partida mostra o vínculo expandido. Cada bloco protegido mantém exatamente um detentor; um agente pode deter vários blocos.
 
-Pode selecionar 50 implementações diferentes ou reutilizar uma implementação em vários agentes. Cada participante recebe uma instância e memória independentes. O papel deve ser compatível com `NATURE` do módulo. A partida mantém exatamente um humanoide IA. O perfil opcional de cada grupo permite restrições humanas adicionais.
+Pode selecionar 50 implementações diferentes ou reutilizar uma implementação em vários agentes. Cada participante recebe uma instância e memória independentes. O papel deve ser compatível com `NATURE` do módulo. A partida mantém exatamente um humanoide IA. O perfil opcional de cada grupo aceita `never_exit`, `sacrifice` e `never_expel`. Os agentes fornecidos consultam esses campos para suas decisões. A engine valida os campos e usa alguns nas crenças, mas não impõe todos os perfis nas APIs de ações; implementações externas precisam respeitá-los.
 
 O motor deriva destino em `2 × N`, bônus de `N ÷ humanos iniciais` por humano removido e maioria de **mais da metade dos votos válidos**. IA, penalizados e abstenções não contam como votos válidos. Eleição do controlador usa o maior número de votos. A saída continua exigindo pelo menos dois bloqueadores. O denominador do bônus permanece o número inicial de humanos.
 
@@ -64,7 +64,7 @@ O executor de escala registra a partida configurada em `evidencias/setup/execuca
 
 ## Estado da validação
 
-179 de 179 testes passaram, incluindo os 20 testes do setup. As falhas nas respostas de histórico e objetivo do humanoide foram corrigidas, sem enfraquecer os testes. Foram validadas tripulações de 5, 10, 15 e 50, configuração de 10, 20, 50 e 100.000 rodadas, 50 implementações distintas, frações exatas, votação e retomada com 50 participantes.
+Na auditoria de 12/10/2026, a suíte existente foi executada: 179 de 179 testes passaram, incluindo os 20 testes do setup. As falhas nas respostas de histórico e objetivo do humanoide foram corrigidas, sem enfraquecer os testes. Foram validadas tripulações de 5, 10, 15 e 50, configuração de 10, 20, 50 e 100.000 rodadas, 50 implementações distintas, frações exatas, votação e retomada com 50 participantes.
 
 Também foram executadas 100.000 rodadas completas do núcleo com cinco participantes e ações controladas, gerando 500.000 respostas e 100.000 revelações. Essa execução não mede políticas aprendidas ou 50 agentes por 100.000 rodadas. O notebook foi executado localmente e retomou o mesmo estado da execução contínua. Não houve execução no serviço Colab ou treinamento Phi-4.
 
@@ -86,7 +86,7 @@ Avance por fase ou rodada, ou execute automaticamente e pause entre rodadas. O h
 
 Esta é a visão administrativa do professor, com naturezas e informações privadas visíveis. Ela não altera o contexto entregue aos agentes. A interface funciona no navegador local, com Python e biblioteca padrão; ainda não foi integrada à interface do Colab. O observador `dashboard.observe(session, participant)` também permite consultar uma sessão existente sem executar decisões.
 
-Foram validados seis testes da dashboard e interações reais no navegador. A engine e os comportamentos dos agentes não foram modificados.
+Na auditoria, passaram os seis testes da dashboard. As interações reais no navegador são evidência de uma etapa anterior; não foram repetidas nesta auditoria. A engine e os comportamentos dos agentes não foram modificados.
 
 ## Experimentos: muitas partidas e comparação de cenários
 
@@ -109,17 +109,17 @@ A dashboard exibe progresso, permite interromper seu próprio lote entre fases e
 Cada lote cria um diretório próprio em `diretorio_resultados`, contendo:
 
 - `relatorio.json`: configurações efetivas, hashes das fontes, resultados agregados e diferenças pareadas.
-- `partidas.csv`: cenário, réplica, sementes, rodadas, progresso, fases, tempo e resultado de cada partida.
+- `partidas.csv`: cenário, réplica, semente do motor, rodadas, progresso, fases, tempos, motivo de encerramento, humanos a bordo e totais de perguntas/respostas. As sementes individuais dos agentes são derivadas do fluxo descrito abaixo; não são colunas do CSV.
 - `partidas.jsonl`: resultado e contagens detalhadas por questão, resposta, implementação, votação, revelação e remoção.
 
-Partidas incompletas ou com erro não entram como encerramentos naturais nem nos denominadores. Interrupção/erro permanece explícito no relatório. Os arquivos de partidas são gravados após cada conclusão; o agregado é publicado a cada 25 partidas e ao finalizar. Uma queda pode deixar o agregado atrás dos registros já escritos; não há recuperação automática do lote nesta versão.
+Partidas interrompidas ou que falham durante a simulação não entram como encerramentos naturais nem nos denominadores. Uma falha de escrita posterior à agregação pode deixar o agregado e os arquivos de partidas inconsistentes: a gravação não é transacional. Interrupção/erro permanece explícito no relatório. Os arquivos de partidas são gravados após cada conclusão; o agregado é publicado a cada 25 partidas e ao finalizar. Uma queda pode deixar o agregado atrás dos registros já escritos; não há recuperação automática do lote nesta versão.
 
 ### O que é medido
 
 - Rodadas efetivamente visitadas (incluindo uma rodada que termina por retorno), avanços e fases executadas.
 - Tempo total, preparação de agentes e tempo executando fases, em segundos reais do computador. O total inclui coleta de métricas; não inclui gravação posterior da linha da partida nem publicação do relatório. Não é uma medida de tempo físico dentro do jogo ou um benchmark isolado de carga do sistema.
 - Médias, extremos, desvio padrão e intervalo aproximado de 95% da média. Diferenças são calculadas entre pares com a mesma semente inicial; o tempo de execução tem ordem de cenários alternada aleatoriamente por réplica.
-- Frequência de cada motivo de encerramento, com intervalo de Wilson de 95%. Os resultados não são convertidos em vitória/derrota: manter a missão garante a entrega da carga, mesmo que os humanos não sobrevivam; retornar cancela a entrega.
+- Frequência de cada motivo de encerramento, com intervalo de Wilson de 95%. Os resultados não são convertidos em vitória/derrota. A direção final determina o resultado: estação espacial significa retorno e sobrevivência humana (`returned=True`, `human_survival_aboard=True`); planeta significa entrega observável da carga (`cargo_delivered=True`, `delivery_observed=True`). A entrega é determinada pela regra do jogo no encerramento, sem exigir execução de um trajeto posterior. O retorno cancela a entrega. Checkpoints encerrados de versões anteriores são adequados a essas determinações ao carregar; relatórios históricos não são reescritos.
 - Perguntas escolhidas, efetivamente declaradas e não realizadas, taxas por partida/rodada e respostas por questão/alternativa/implementação/natureza.
 - Verdade, mentira, `NÃO_SEI` verdadeiro/falso, recusas de quem sabe/não sabe e declarações sem gabarito. O gabarito de todas as respostas é capturado administrativamente antes de sua entrega, sem revelar conteúdo aos agentes.
 - Revelações sorteadas separadas da análise de todas as respostas; iniciativas, votos, penalidades, expulsões, saídas e controle. Perguntas/respostas também são agrupadas por faixas proporcionais de N e rodadas extras.
@@ -132,7 +132,7 @@ Para cada réplica, o motor recebe `seed_base + réplica`, e os RNGs de agentes 
 
 O comportamento padrão fora dos experimentos é preservado. A semente de `setup.json` continua sendo a semente do motor; os novos argumentos opcionais de `GameSetup.start` permitem controlar RNGs de agentes e reutilizar implementações já carregadas no lote. Não é permitido substituir sementes ao retomar um checkpoint: a sequência salva deve ser preservada. O notebook foi regenerado com o mesmo contrato e validado localmente.
 
-Os agregados numéricos usam estatísticas incrementais com memória constante, e os registros de partidas ficam em disco. Cada partida preserva seus históricos da engine e dos agentes; removê-los alteraria conhecimentos e comportamentos. A memória necessária para **uma partida longa** continua dependendo desses históricos. Este lote validou 2.000 partidas de cinco tripulantes com N=10; não é evidência de 100.000 partidas ou de 50 agentes por 100.000 rodadas.
+Cada estatística numérica usa memória constante e os registros de partidas ficam em disco. O executor também mantém uma lista de sementes proporcional a `partidas_por_cenario`, contadores por categoria e dados da réplica corrente; a memória total do lote não é constante. Cada partida preserva seus históricos da engine e dos agentes; removê-los alteraria conhecimentos e comportamentos. A memória necessária para **uma partida longa** continua dependendo desses históricos. Este lote validou 2.000 partidas de cinco tripulantes com N=10; não é evidência de 100.000 partidas ou de 50 agentes por 100.000 rodadas.
 
 Validação adicional: 23 testes de experimentos, incluindo pares idênticos, não interferência da coleta, gabarito de respostas não reveladas, recusas, sementes não controladas, cancelamento, falha, recuperação do relatório e tripulação de 50 com N=20. A suíte completa está aprovada; as falhas Q15/Q23 do humanoide foram corrigidas.
 

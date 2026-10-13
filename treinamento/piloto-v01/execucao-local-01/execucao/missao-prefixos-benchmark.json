@@ -1,0 +1,8 @@
+{
+  "input_tokens": 2507816,
+  "exact_shared_prefix_tokens_in_lexical_order": 561226,
+  "suffix_tokens_requiring_new_forward": 1946590,
+  "fraction_reusable": 0.22379074062849907,
+  "no_input_transformation_required": true,
+  "labels_not_used_for_ordering": true
+}

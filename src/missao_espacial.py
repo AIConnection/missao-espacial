@@ -536,8 +536,9 @@ class Game:
             'remaining_ids': self.active_ids(),
             'humans_aboard': [aid for aid in self.active_ids() if self._human(aid)],
             'returned': reason == 'returned',
-            'cargo_delivered': False if reason == 'returned' else None,
-            'delivery_observed': False,
+            # Determinação do jogo: direção ao planeta é entrega observada.
+            'cargo_delivered': reason != 'returned',
+            'delivery_observed': reason != 'returned',
             'human_survival_aboard': True if reason == 'returned' else (False if reason == 'oxygen_exhausted' else None),
             'mission_commitment': reason != 'returned',
             'crisis_if_delivery_cancelled': reason == 'returned',
@@ -1055,6 +1056,14 @@ class Game:
         game._rng = random.Random()
         game._rng.setstate(_tuples(data['rng_state']))
         game._validate_state()
+        if game.finished and game._state.get('result'):
+            # Checkpoints anteriores preservavam entrega como não observada.
+            result = game._state['result']
+            returned = result['reason'] == 'returned'
+            result.update(returned=returned, mission_commitment=not returned,
+                          cargo_delivered=not returned, delivery_observed=not returned)
+            if returned:
+                result['human_survival_aboard'] = True
         return game
 
     def _validate_state(self):

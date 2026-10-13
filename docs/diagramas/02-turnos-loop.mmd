@@ -5,7 +5,7 @@ Oxigênio = N; destino = 2N; bônus por humano = N/H"]
     LIVE -->|"Não: ninguém ou apenas IA"| END(["Encerrar e registrar consequências"])
     LIVE -->|"Sim"| BUDGET{"Há uma rodada disponível?"}
     BUDGET -->|"Não"| END
-    BUDGET -->|"Sim"| SOLO{"Resta somente um humano?"}
+    BUDGET -->|"Sim"| SOLO{"Resta um único participante humano?"}
     SOLO -->|"Sim"| ONLY["Única ação relevante: decidir a rota
 Sem perguntas, votação ou revelação"]
     ONLY --> ROUTE
@@ -23,9 +23,9 @@ Revelar privadamente ao sorteado e atualizar suas crenças"]
     ROUTE -->|"Humano retorna à estação"| RETURN["Preserva sobrevivência
 Entrega cancelada; crises agravadas"]
     RETURN --> END
-    ROUTE -->|"Continua para a colônia"| MOVE["Avançar uma rodada e consumir 1 unidade
+    ROUTE -->|"Continua para a colônia"| MOVE["Avançar e consumir H unidades internas ou 1 rodada
 Controlador humano perde direito de saída"]
-    MOVE --> EMPTY{"Oxigênio esgotado?"}
+    MOVE --> EMPTY{"Reserva menor que uma rodada inteira?"}
     EMPTY -->|"Sim"| END
     EMPTY -->|"Não"| T4["TURNO 4: humanos solicitam saída
 Usar participantes presentes no início do turno"]

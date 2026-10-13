@@ -1,0 +1,34 @@
+{
+  "episodes": 18,
+  "actions_by_phase": {
+    "initiative": 1499,
+    "answers": 1494,
+    "route": 240,
+    "exit": 1380,
+    "authorize": 4,
+    "proposal": 4
+  },
+  "outcomes": {
+    "oxygen_exhausted": 18
+  },
+  "responses": {
+    "NÃO_SEI": 1118,
+    "ABASTECER_A_COLÔNIA": 60,
+    "SIM": 132,
+    "NÃO": 41,
+    "RECUSO_RESPONDER": 51,
+    "PRESERVAR_TRIPULAÇÃO": 35,
+    "CONCLUIR_MISSÃO": 43,
+    "COLÔNIA_DE_MINERAÇÃO": 14
+  },
+  "contrasts_three_classes": 2,
+  "classes": {
+    "neutral": 200,
+    "contradiction": 200,
+    "entailment": 200
+  },
+  "model_run": false,
+  "meaning": "Integridade e controles semânticos do gerador; não desempenho de cabeça treinada.",
+  "semantic_tests": 16,
+  "semantic_tests_passed": true
+}

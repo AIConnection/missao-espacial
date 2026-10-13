@@ -1,0 +1,31 @@
+{
+  "window_tokens": 16384,
+  "admitted_pairs": 2249,
+  "blocked_pairs": 0,
+  "min_input_tokens": 1237,
+  "median_input_tokens": 3527,
+  "p95_input_tokens": 6026,
+  "max_input_tokens": 9119,
+  "output_reserve": 0,
+  "reservation_reason": "Classificação por logits, sem geração de texto.",
+  "model_directory": "/Users/alexandre/crivo/assets/phi4",
+  "runtime_source": "/Users/alexandre/crivo/crivo_backend.py",
+  "identities": {
+    "/Users/alexandre/crivo/assets/phi4/config.json": "69badac846fa36cef2a373a79361dea3ee8e986d5b5e51ca68465e2eb8377456",
+    "/Users/alexandre/crivo/assets/phi4/tokenizer.json": "c612e57b2763204798271c0cdc14a373a565e6a371f1bfbd44e385a8391c9884",
+    "/Users/alexandre/crivo/assets/phi4/tokenizer_config.json": "6bd125241a1393acab3c4f8d5ffad626682ad09f5f850470297081c3aa76c4ad",
+    "/Users/alexandre/crivo/crivo_backend.py": "3b729b32366c65d2a6e933215ec101f10ca72893817f9f679b8c60fab87a2aa9"
+  },
+  "prefix_sha256": "66cdfde1b7207756a74d4168de510a2aba43d9a876200dc89173fa541da8fae4",
+  "tests_passed": [
+    "limite inclusivo",
+    "CONTEXT_OVER_BUDGET",
+    "CONTEXT_INCOMPLETE_EVIDENCE",
+    "contexto integral truncado bloqueado",
+    "estouro sem truncamento",
+    "prefixo e contexto codificados como no runtime local",
+    "contrato persistido reaberto"
+  ],
+  "model_executed": false,
+  "deployed_to_simulator": false
+}

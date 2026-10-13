@@ -1,0 +1,62 @@
+{
+  "version": "mission-training-portable-pilot-01",
+  "seed": 171,
+  "model": "Frozen Phi-4 at fixed revision; native PyTorch affine 4-bit decoding; CUDA/MPS/CPU",
+  "features": "only approved model inputs; audit metadata excluded",
+  "rows": {
+    "forecast": 216,
+    "nli": 600
+  },
+  "nli_splits": {
+    "train": {
+      "0": 140,
+      "1": 140,
+      "2": 140
+    },
+    "calibration": {
+      "0": 30,
+      "1": 30,
+      "2": 30
+    },
+    "test": {
+      "0": 30,
+      "1": 30,
+      "2": 30
+    }
+  },
+  "forecast_splits": {
+    "train": 144,
+    "calibration": 36,
+    "test": 36
+  },
+  "grouped_nli_by": "transitive connected components of episode, context, alias-normalized premise and hypothetical case; numeric variants of same hypothetical family kept together",
+  "normalization": "train only; minimum std 1e-3",
+  "head": "Two independent linear heads from zero; NLI baseline = frozen Phi-4 A/B/C LM projection, not deployed Crivo head",
+  "optimization": {
+    "epochs": 400,
+    "learning_rate": 0.01,
+    "l2": 0.1,
+    "batch": "full train",
+    "optimizer": "Adam",
+    "epoch_selection": "fixed before test"
+  },
+  "calibration": "temperature selected using calibration NLL only, grid [0.5,0.75,1,1.5,2,3,5,10]",
+  "threshold_costs": {
+    "fp": 1,
+    "fn": 1,
+    "purpose": "diagnostic only; not production preference"
+  },
+  "production_modified": false,
+  "source_hashes": {
+    "datasets/piloto-v03/pares.jsonl": "6e7a84eb80d7bed1f46b4d9cddae374181fc9f0040c43ffcc6b24332b79cf4b1",
+    "datasets/piloto-v04/inputs.jsonl": "2fe5442a7fd4ddb9a4e5f629528699d42dcec0e7f58749de572ee5ba86f17546",
+    "datasets/piloto-v04/supervisao.jsonl": "a745c2bd12387a1c98d73bf54e288edd9fb5ef464369f1e39be3ecc9fabfb8bb",
+    "datasets/piloto-v04/particoes.jsonl": "ef7e012ede3e867b591f3fb6e7488aa837a8466cda043e0527e1e8964c8d4546"
+  },
+  "head_epochs_fixed_before_execution": true,
+  "cache_resume": "verify package/runtime/device/dtype/environment identity; never truncate",
+  "training_executed_on_packaging": false,
+  "model_feature_dimension": 5120,
+  "normalization_min_std": 0.001,
+  "declared_scope": "NLI subsample and 3 v04 candidate programs; no guarantee of arbitrary strategy generalization"
+}

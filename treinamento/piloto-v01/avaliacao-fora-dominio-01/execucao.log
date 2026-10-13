@@ -1,0 +1,32 @@
+Carregando somente corpo público Phi-4 e cabeça NLI exportada da Missão Espacial.
+{"index": 0, "family": "fronteira", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 729, "elapsed_seconds": 17.737894874997437}
+{"index": 1, "family": "suposicao", "expected": "insuficiente", "output": {"classification": "contradição"}, "correct": false, "tokens": 730, "elapsed_seconds": 17.114313791971654}
+{"index": 2, "family": "regra-explicita", "expected": "insuficiente", "output": {"classification": "contradição"}, "correct": false, "tokens": 766, "elapsed_seconds": 17.18972691707313}
+{"index": 3, "family": "tempo", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 793, "elapsed_seconds": 17.69587174989283}
+{"index": 4, "family": "fronteira", "expected": "insuficiente", "output": {"classification": "suporte"}, "correct": false, "tokens": 736, "elapsed_seconds": 17.621498375199735}
+{"index": 5, "family": "estoque", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 800, "elapsed_seconds": 18.632588374894112}
+{"index": 6, "family": "relatos-conflitantes", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 769, "elapsed_seconds": 18.48608412500471}
+{"index": 7, "family": "suposicao", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 731, "elapsed_seconds": 18.091055917087942}
+{"index": 8, "family": "relato", "expected": "insuficiente", "output": {"classification": "suporte"}, "correct": false, "tokens": 777, "elapsed_seconds": 18.740010207984596}
+{"index": 9, "family": "fronteira", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 766, "elapsed_seconds": 18.267210290767252}
+{"index": 10, "family": "tempo", "expected": "insuficiente", "output": {"classification": "insuficiente"}, "correct": true, "tokens": 752, "elapsed_seconds": 18.296189582906663}
+{"index": 11, "family": "relato", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 742, "elapsed_seconds": 18.316943333949894}
+{"index": 12, "family": "regra-explicita", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 768, "elapsed_seconds": 18.286140457727015}
+{"index": 13, "family": "relato", "expected": "insuficiente", "output": {"classification": "contradição"}, "correct": false, "tokens": 736, "elapsed_seconds": 18.22674445901066}
+{"index": 14, "family": "categorias-abertas", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 771, "elapsed_seconds": 18.66495804209262}
+{"index": 15, "family": "estoque", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 760, "elapsed_seconds": 18.675749249756336}
+{"index": 16, "family": "estoque", "expected": "insuficiente", "output": {"classification": "insuficiente"}, "correct": true, "tokens": 757, "elapsed_seconds": 18.530480000190437}
+{"index": 17, "family": "tempo", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 754, "elapsed_seconds": 18.266712999902666}
+{"index": 18, "family": "estoque", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 760, "elapsed_seconds": 18.28145004203543}
+{"index": 19, "family": "categorias-abertas", "expected": "insuficiente", "output": {"classification": "insuficiente"}, "correct": true, "tokens": 733, "elapsed_seconds": 18.22485587466508}
+{"index": 20, "family": "suposicao", "expected": "insuficiente", "output": {"classification": "suporte"}, "correct": false, "tokens": 771, "elapsed_seconds": 18.93340733414516}
+{"index": 21, "family": "relatos-conflitantes", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 770, "elapsed_seconds": 18.606061041820794}
+{"index": 22, "family": "fronteira", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 729, "elapsed_seconds": 18.202245583757758}
+{"index": 23, "family": "suposicao", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 733, "elapsed_seconds": 18.234725042246282}
+{"index": 24, "family": "relato", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 743, "elapsed_seconds": 18.114366834051907}
+{"index": 25, "family": "regra-explicita", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 769, "elapsed_seconds": 19.007628959137946}
+{"index": 26, "family": "categorias-abertas", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 733, "elapsed_seconds": 18.29747954197228}
+{"index": 27, "family": "tempo", "expected": "suporte", "output": {"classification": "suporte"}, "correct": true, "tokens": 754, "elapsed_seconds": 18.075176166836172}
+{"index": 28, "family": "relatos-conflitantes", "expected": "insuficiente", "output": {"classification": "suporte"}, "correct": false, "tokens": 761, "elapsed_seconds": 18.12996937474236}
+{"index": 29, "family": "categorias-abertas", "expected": "contradição", "output": {"classification": "contradição"}, "correct": true, "tokens": 734, "elapsed_seconds": 17.962640499696136}
+CONCLUÍDO: {"rows": 30, "families": 8, "accuracy": 0.7666666666666667, "macro_f1": 0.7214790040876998, "nll_audit_only": 0.6737348439122913, "confusion_matrix_true_rows_predicted_columns": [[10, 0, 0], [4, 3, 3], [0, 0, 10]], "labels": ["suporte", "insuficiente", "contradição"], "per_class": [{"label": "suporte", "precision": 0.7142857142857143, "recall": 1.0, "f1": 0.8333333333333334}, {"label": "insuficiente", "precision": 1.0, "recall": 0.3, "f1": 0.46153846153846156}, {"label": "contradição", "precision": 0.7692307692307693, "recall": 1.0, "f1": 0.8695652173913043}], "base_cases_accuracy": 0.7916666666666666, "by_family": {"categorias-abertas": {"rows": 4, "correct": 4}, "estoque": {"rows": 4, "correct": 4}, "fronteira": {"rows": 4, "correct": 3}, "regra-explicita": {"rows": 3, "correct": 2}, "relato": {"rows": 4, "correct": 2}, "relatos-conflitantes": {"rows": 3, "correct": 2}, "suposicao": {"rows": 4, "correct": 2}, "tempo": {"rows": 4, "correct": 4}}}

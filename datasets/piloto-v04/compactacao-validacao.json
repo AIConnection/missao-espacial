@@ -1,0 +1,14 @@
+[
+  {
+    "name": "mundos.jsonl",
+    "original_bytes": 70288986,
+    "compressed_bytes": 11061153,
+    "same_content": true
+  },
+  {
+    "name": "continuacoes.jsonl",
+    "original_bytes": 191578399,
+    "compressed_bytes": 5850791,
+    "same_content": true
+  }
+]

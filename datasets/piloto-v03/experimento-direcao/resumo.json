@@ -1,0 +1,39 @@
+{
+  "trials": 200,
+  "results": {
+    "returned": 165,
+    "oxygen_exhausted": 28,
+    "only_ai": 7
+  },
+  "p_mission_success_and_cargo_delivery": 0.175,
+  "p_return_and_human_survival": 0.825,
+  "mission_wilson_95": [
+    0.12860515066273331,
+    0.23364431148248993
+  ],
+  "crew_wilson_95": [
+    0.7663556885175099,
+    0.8713948493372666
+  ],
+  "sampling_distribution": {
+    "initial_state": "Game(N=10), seed=1701+trial, five participants",
+    "expulsion_request_probability": 0.2,
+    "truthful_answer_probability": 0.6,
+    "vote_for_probability": 0.75,
+    "renounce_probability": 0.35,
+    "human_return_probability": 0.5,
+    "exit_request_probability": 0.02,
+    "human_block_probability": 0.2,
+    "other_choices": "uniform among enumerated legal options"
+  },
+  "interpretation": "Frequência marginal sob este amostrador, não previsão individual, probabilidade universal ou calibração do modelo.",
+  "observational_scope": "Direção final PLANETA determina entrega observada e sucesso da missão; ESTAÇÃO_ESPACIAL determina retorno e sobrevivência dos humanos",
+  "cargo_delivery_evaluated": true,
+  "delivery_rule_source": "determinação explícita do usuário",
+  "engine_metadata_divergences": 0,
+  "collaboration_defined": false,
+  "betrayal_defined": false,
+  "model_executed": false,
+  "thresholds_fitted": false,
+  "engine_sha256": "87b5179a75d998cf52b2f6e56d43508c16f0926aa55618ba07091db519990780"
+}

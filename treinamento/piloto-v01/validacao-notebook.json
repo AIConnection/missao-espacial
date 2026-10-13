@@ -1,0 +1,11 @@
+{
+  "notebook_sha256": "b68928c948e355d859303b17cff738c454ad690bc09e398cb4b76194f9338f94",
+  "code_cells_executed": 8,
+  "mode": "lightweight; real CPU unit operations and tiny Phi3; no Phi4 download/forward/training",
+  "full_phi4_training_executed": false,
+  "cuda_executed": false,
+  "mps_executed": false,
+  "bundle_bootstrap_and_export_executed": true,
+  "dataset_rows_verified": 816,
+  "quality_metrics_fabricated": false
+}

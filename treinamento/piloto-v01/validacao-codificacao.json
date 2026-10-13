@@ -1,0 +1,9 @@
+{
+  "rows_with_original_inputs_verified": 816,
+  "nli_token_sequences_identical_to_v03_contract": 600,
+  "forecast_inputs_identical_to_v04": 216,
+  "max_tokens": 9119,
+  "window": 16384,
+  "truncation": false,
+  "model_weights_executed": false
+}

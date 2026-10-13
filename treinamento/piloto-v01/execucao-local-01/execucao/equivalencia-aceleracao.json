@@ -1,0 +1,9 @@
+{
+  "verified_weight_values": 14145290240,
+  "verified_chunks": 2218,
+  "all_comparisons_exact": true,
+  "cached_rows_features_bit_identical": 9,
+  "runtime_uses_same_weight_revision": true,
+  "domain_head_loaded": false,
+  "acceleration_source_sha256": "b37bd7b826c7e30c6f35cabab62b9a62348b4e4b6dc5fd8528216fdd49b5ba08"
+}

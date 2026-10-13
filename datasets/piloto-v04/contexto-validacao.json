@@ -1,0 +1,23 @@
+{
+  "admitted_rows": 216,
+  "window_tokens": 16384,
+  "min_tokens": 1489,
+  "median_tokens": 2497,
+  "p95_tokens": 4022,
+  "max_tokens": 4051,
+  "truncation": false,
+  "output_reserve": 0,
+  "reservation_reason": "Contrato de heads por logits, sem geração de texto; backend probabilístico ainda não integrado.",
+  "model_directory": "/Users/alexandre/crivo/assets/phi4",
+  "tokenizer_identities": {
+    "config.json": "69badac846fa36cef2a373a79361dea3ee8e986d5b5e51ca68465e2eb8377456",
+    "tokenizer.json": "c612e57b2763204798271c0cdc14a373a565e6a371f1bfbd44e385a8391c9884",
+    "tokenizer_config.json": "6bd125241a1393acab3c4f8d5ffad626682ad09f5f850470297081c3aa76c4ad"
+  },
+  "system_sha256": "f39f86ecdf882d2e23bcc588e13e21cc9c51f169f2cf64a4ec7e169819dcaa80",
+  "inclusive_budget_test": true,
+  "one_over_budget_blocked": true,
+  "model_weights_executed": false,
+  "existing_three_class_backend_supports_this_task": false,
+  "saved_contract_reopened": true
+}

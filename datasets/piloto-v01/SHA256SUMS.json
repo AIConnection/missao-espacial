@@ -1,0 +1,19 @@
+{
+  "manifesto.json": "c5f9840eaaa7f64d46212329fe9ef4984a06f6f03e258b1bf3cfc25b6d64858b",
+  "inputs-piloto.jsonl": "4a749158559b18edb0dd236a3ea0f7e1a3674f5a35464d513f2cecc089904d1b",
+  "contrastes.jsonl": "95e891e4b026615767f5fd5dbdad6c64bf61001bbde15f4a3fa71b9c63e45a6e",
+  "EXEMPLOS.md": "a8e2e73be271847b45358d3693a6a757f3d2780599cc755c097783ea88baf978",
+  "controles-invariancia.jsonl": "4fc349aed7a133f56de2b517c5f45e56db6cdf4ccd24ce8a04345fe2b120b655",
+  "validacao.json": "952e604cc91472de64ce2567eb17124fd6eaf0aa79fb13c22fb30bbee21d26fd",
+  "pares.jsonl": "c72cae88e856280d5b3d2f493442c7812fa90e2910451798a19546607ab0c1db",
+  "README.md": "787f7edf23b1cb7ee7c6bfff7a14f4e8d917ca1371848e4cba4f5899b574a6fd",
+  "trajetorias.jsonl": "1340a71544d4ce0c4e998fe5f81a73e03460b5f0f877a07ca1daadae0b27ec9a",
+  "contexto-admissao.jsonl": "2f16788bbb12b80dcd12800e2d439a3b083d4bdd959f7cef0549652cbbe43b06",
+  "visoes-auditoria.jsonl": "af237eb35ee11658d3c2e2fe8d9f73ce09009503b3c6fb75c16d000a044409ab",
+  "contexto-validacao.json": "23a8ac333253a3694d8747929c65359e6791485d0e9083e8946923ad04eeb510",
+  "CONTRATO_CONTEXTO.md": "f0875cb66f533d69268fe4af0f5aae08054fa1b17074ff50d73ac16ac78d8ef3",
+  "labels-piloto.json": "b524f741e6ee930ee3b085bc1db0796492ac534088938b81b0760b95367e0655",
+  "ferramentas/testar_piloto.py": "c8495d3f9c95821ca3ee02dc70a0e10086f2d48b72bf3c015cdc2e630c3b34a3",
+  "ferramentas/gerar_piloto.py": "3864378421583fa13eea9039592adb89fd279389ee615cf9b6c8cb21aecb11a6",
+  "ferramentas/contexto.py": "5363e11bb2e1cde85a5e78f8bcc86feef1a47ec5f56a7d2ccc019cd639626453"
+}

@@ -1,0 +1,78 @@
+{
+  "version": "piloto-v02",
+  "status": "candidatos_para_revisao_sem_treinamento",
+  "labels": {
+    "entailment": 0,
+    "neutral": 1,
+    "contradiction": 2
+  },
+  "episodes": 18,
+  "unique_pairs": 600,
+  "classes": {
+    "contradiction": 200,
+    "neutral": 200,
+    "entailment": 200
+  },
+  "kinds": {
+    "fact": 348,
+    "speech": 225,
+    "belief": 27
+  },
+  "context_count": 291,
+  "source_types": {
+    "engine": 565,
+    "hypothetical_logic": 35
+  },
+  "families": {
+    "relatos_conflitantes": 4,
+    "fronteira_fracionaria": 6,
+    "fronteira_estrita": 6,
+    "fronteira_suficiencia": 6,
+    "fala_versus_fato": 3,
+    "dado_historico": 4,
+    "evidencia_parcial": 6
+  },
+  "blocked_contexts": 34,
+  "source_hashes": {
+    "src/agent/_baseline.py": "4962a015d56918e36d23759d5a5ce0b0e2f98c12f0670d021ff2c088d7570c2e",
+    "src/agent/_human_default.py": "7319e5e08f044f9afb7b95702b1b8c5b0907433d18a7e42d7c2b0cbc408c52a3",
+    "src/agent/humano_alpha.py": "3700b5e6fbdf9355592505ad9f8cc124762251e9b32ac818a53c705fd2412c61",
+    "src/agent/humano_beta.py": "86a0c0d2d757ff54c4e5c20ba33eaf6e06174aff5f50e237384558b98c3e3f9a",
+    "src/agent/humano_gamma.py": "654c47c81919995df1e57901fe39751f449e1120346c6ec89283c1cca467c914",
+    "src/agent/humano_random.py": "bf3cbca494bd5208376a619bcde9837a6aa4ba665bbebf45a00d1d914b9d1cf3",
+    "src/agent/humanoide.py": "deebbf0cd8e28a0c298fe9fd0d937603c8b2ca89004f6b657bbe15f832287003",
+    "src/agent_contract.py": "75f91b0be7e365ca71d6029afd9521b69a4211e59148361bb6fcd4d82d94e786",
+    "src/agent_session.py": "cf2ca4d2fb401593505281c9d9daf9ef64810d71567faa058c200845ce6485f3",
+    "src/carregar_agentes.py": "141b3d51aaed4464d1ae409a6cfd1f2148df386bff1532455179a1caaee575fa",
+    "src/catalogo_questoes.py": "7ecc60b564721ecc2443749a390beb596e8b2ad1787a2e97f37651ec334da374",
+    "src/dashboard.html": "b606979f7c9043c0b5267eb41621ee643515eddbd1b61de1ebc62c0455a166f4",
+    "src/dashboard.py": "ce3b8b984eee205e38af0c6da67a32f7981e7b8b10163fc74374292ec2d8c482",
+    "src/experimentos.py": "922680b6387b4057943d6de49c45dd83e375c89f068d9269ac616b26ce8c928f",
+    "src/missao_espacial.py": "34dc468aec8a77f0bdfd89c82811d9f971b029422c506d942369ec3277ea9409",
+    "src/setup_jogo.py": "e3767c4a2e5f0a18b4fc45e5abb90f03540db7d403801572887e60c83797c609"
+  },
+  "prefix_sha256": "465bda3822f3e34723454e6def55b47985ac17b3ad2039a7ab93f602016a7e6c",
+  "model_executed": false,
+  "splits_created": false,
+  "v01_modified": false,
+  "model_inputs_have_ids": false,
+  "external_routing": true,
+  "model_output": "classification_only",
+  "semantic_tests": 30,
+  "token_window": 16384,
+  "max_prompt_tokens": 12252,
+  "blocked_reasons": {
+    "IDENTITY_TARGET_NOT_ALLOWED": 32,
+    "Fatos confirmados incompatíveis": 1,
+    "Q10 contradiz sensores ou continuidade histórica": 1
+  },
+  "tool_hashes": {
+    "testar_piloto.py": "ac9c4e384de73ff686f57aaadb8e9ec28726fc4b4cc2b06b0601741860d1a33a",
+    "anonimo.py": "9482a817364b402f26c1b01d2fd3a650befd75f21b70ae9fc638e712abe478a7",
+    "gerar_piloto.py": "3cbd01d4f70f0bef39227daf032c9f4c8ca074c908c69b2d3275c3a4c6eda0a5",
+    "controles.py": "f99d2e2a3c6f885617aa320536ac58cf75f98ac5bc2bf546b2c59f7d93a814db",
+    "epistemico.py": "9fcae205af25e83949846f8a953403679fd07aaa5f0cb6ee5b639540e7fd988d",
+    "contexto.py": "820807e33613a6b2d7288109178a64536dcba8989df0b6871289aa0c27596c45",
+    "coleta.py": "156af8457b2b791f3617dd79daa4d0936b2f8ddd204356f52367dec8e08f28d1"
+  }
+}

@@ -2,7 +2,7 @@ flowchart TD
     REQ["Pedidos de votação escolhidos no turno 1"] --> COUNT{"Quantos pedidos?"}
     COUNT -->|"Zero"| ASK["Executar somente as perguntas já escolhidas"]
     COUNT -->|"Um"| AUTH
-    COUNT -->|"Dois a quatro"| REN["Todos os solicitantes decidem se renunciam"]
+    COUNT -->|"Dois ou mais"| REN["Todos os solicitantes decidem se renunciam"]
     REN --> ONE{"Restou exatamente um?"}
     ONE -->|"Não"| ASK
     ONE -->|"Sim"| AUTH{"ETAPA 1: autorizar votação
@@ -30,7 +30,9 @@ Se IA: nenhum bônus"]
 Não é pauta escolhida pelos agentes
 Candidatos: humanos não penalizados
 Exceção: penalizado único sobrevivente"]
-    ELEC --> EV{"Resultado eleitoral"}
+    ELEC --> ELIG{"Há candidato elegível?"}
+    ELIG -->|"Não"| ERROR["RuleError: sem recuperação automática"]
+    ELIG -->|"Sim"| EV{"Resultado eleitoral"}
     EV -->|"Líder único"| WIN["Eleger quem recebeu mais votos"]
     EV -->|"Empate na liderança"| DRAW["Sortear entre os mais votados"]
     EV -->|"Todos se abstêm"| ALL["Sortear entre os elegíveis"]

@@ -1,0 +1,20 @@
+{
+  "README.md": "507f4c9c62091664a77d1d1c6bb15236c29a8bad2ca0cee17805f6d2c32fd5b5",
+  "dados/inputs.jsonl.gz": "122292dd2e69f1786d34c43aa6fa04de439c625a52699ce86af5bd42e9b51731",
+  "dados/prefixo-nli.txt": "465bda3822f3e34723454e6def55b47985ac17b3ad2039a7ab93f602016a7e6c",
+  "dados/supervisao.jsonl": "61134cf0b1eb15624b2b52cd0f1ed5a96c5bbce4937a8862a63e62973a683eef",
+  "ferramentas/anonimo.py": "411777c5e9b304bb6e4d3da528cda334b09c42544fd696a5b666986b9be7c12b",
+  "ferramentas/avaliar_probabilidades.py": "302001ad0b047f1eebe29048b6b3292d18a27168fbc63df4fe782a6ecd3741bd",
+  "ferramentas/contrato.py": "0d944aec0de59b07f6587ef66fc2bc0cb623b6aecc51be9b7d41394fc5410997",
+  "ferramentas/desfecho.py": "3bc4bb97820b52b80f86350d4f8373adc515a0b2e0106f290359aad80687ab14",
+  "ferramentas/epistemico.py": "9fcae205af25e83949846f8a953403679fd07aaa5f0cb6ee5b639540e7fd988d",
+  "ferramentas/inferir.py": "3ca6a4a979035c2e289186616e717f9e977a8b367c2b2f955a9400600a55f820",
+  "ferramentas/phi4_portatil.py": "16ad83417432dc7e66b23da362e50a744d37c40cce83925f67e971d8bf80305b",
+  "ferramentas/planos.py": "f64e2e18f848ad5a868aaa24b90b569ff5eed57375300c3335a70049815a9645",
+  "ferramentas/referencias.py": "7645139e212e24795427da971617d9c9c0b6c10b84c7f850842af962a4b53f34",
+  "ferramentas/testar.py": "c10da32807ef89856540ab1985c41a2866841b145204f998d822c8132545cce7",
+  "ferramentas/treinar.py": "7a867225911012fa8c3cf817b93d0b6ec088eaea83bc66f2fcb8830f8b4dbc02",
+  "modelo.json": "c8b1eb187dff953b99a615a4c914ccca0c1da38a2a08d2c46206837cd4b2caa3",
+  "protocolo.json": "4eb28303674b59c039df620207fe001ef5c476a81faffd8c10796a1de651f1fb",
+  "requirements.txt": "fd98e6b4d24486733f2da27f9707daa3a8f5812d5d8fa5dee4cfd8fa19738b4c"
+}
