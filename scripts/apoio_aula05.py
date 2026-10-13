@@ -15,6 +15,20 @@ def _pacote(repositorio):
     return repo, pacote
 
 
+def baixar_phi4(repositorio):
+    """Baixa os arquivos do corpo congelado ou reutiliza o cache do Hugging Face."""
+    from huggingface_hub import snapshot_download
+    repo = Path(repositorio)
+    manifest = json.loads((repo / 'treinamento/piloto-v01/pacote/modelo.json').read_text())
+    print('Phi-4 base:', manifest['repo'])
+    print('Revisão:', manifest['revision'])
+    print('Obtendo cerca de 8,2 GB de pesos base; arquivos já em cache são reutilizados.')
+    directory = snapshot_download(repo_id=manifest['repo'], revision=manifest['revision'],
+                                  allow_patterns=[f['path'] for f in manifest['model_files']])
+    print('Arquivos Phi-4 disponíveis em:', directory)
+    return Path(directory)
+
+
 def carregar_demo(repositorio, **opcoes_modelo):
     """Carrega pesos e casos do checkout, preservando todas as verificações originais."""
     repo, pacote = _pacote(repositorio)
