@@ -1,0 +1,27 @@
+{
+  "transformers": "5.0.0",
+  "huggingface_hub": "1.23.0",
+  "device": "mps",
+  "case_index": 15,
+  "output": {
+    "classification": "suporte"
+  },
+  "feature_max_abs_difference": 0.0,
+  "probability_max_abs_difference": 0.0,
+  "feature_equal": true,
+  "portable_tests_passed": 20,
+  "temporary_local_environment": true,
+  "colab_session_changed": false,
+  "heads_changed": false,
+  "loader_source_changed": false,
+  "compatible_with_reported_hub_constraints": {
+    "gradio": ">=1.16.0,<3.0",
+    "diffusers": ">=1.23.0,<2.0",
+    "transformers": ">=1.3.0,<2.0"
+  },
+  "limitations": [
+    "One actual Phi-4 forward compared; not an all-example equivalence proof",
+    "Full training and full notebook not executed on Colab with these versions",
+    "Existing Colab execution was left untouched"
+  ]
+}

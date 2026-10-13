@@ -1,7 +1,7 @@
 {
   "passed": true,
   "notebook": "notebooks/05-Treinamento_Piloto_Missao_Espacial.ipynb",
-  "notebook_sha256": "54a62880c0bb43a16c22c91b3e217e39fd464e22ac4504dfe059200da543c35b",
+  "notebook_sha256": "15136c0285361320b201583f1a5e2bed0caa987aeb1d3e6fe7c8e0d2a4018156",
   "support_module_sha256": "7eaffcbdb4015e16bcd8f885113b510bb4ce59c03ec5e6fd32abcbbdcfdb10d1",
   "code_cells": 14,
   "checks": [
@@ -28,5 +28,6 @@
     "Phi-4 extraction and new OOD forwards not repeated",
     "Full notebook not executed in live Colab",
     "Explicit snapshot download calls validated with local public Phi-4 assets returned by a test double; 8.2 GB not downloaded again"
-  ]
+  ],
+  "dependency_validation": "validacao-dependencias-colab.json"
 }
