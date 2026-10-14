@@ -1,0 +1,6028 @@
+{
+  "summary": {
+    "rows": 600,
+    "engine_origin": 573,
+    "exact_reproduced": 573,
+    "controlled_only": 27,
+    "by_split": {
+      "train": {
+        "total": 420,
+        "engine": 396,
+        "reproduced": 396
+      },
+      "calibration": {
+        "total": 90,
+        "engine": 87,
+        "reproduced": 87
+      },
+      "test": {
+        "total": 90,
+        "engine": 90,
+        "reproduced": 90
+      }
+    },
+    "failures": []
+  },
+  "cases": [
+    {
+      "id": "me-p03-001417ae2d3f53cd53d0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-00418af41fcaa0ea27c4",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-02b7532080a559475460",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-02d355e4bfa4a1abec2b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-031556d645be3b283a30",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0440b24304dacfa2d563",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-04ba65ad4c88a1d50920",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-053f1b37d4078aa97db2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-05790410128419d5db17",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-05877dd13758a037e590",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-059e9f8e653c5e60a7fe",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-05a73abde97635e927e8",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-06821778670f6e72768d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-06a0c2c52303182dd2c8",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-06ed189629c592d87b09",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-07034aa476357b699b50",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-08242d9a80d70933a536",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-084b142c87b92a4a6dc9",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-087f4d8129fc0166c197",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-08e59ed52467122ced7d",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-092b6eded61ee23ff57d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0965e43fda36b8256ae2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-09a8d8c75ca75f37987e",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0a21b6cac26d0a29ed75",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0a7d23511fdf898de254",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0a8c95bbfcabda710bc0",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0c02fd152d23770fb62b",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0c0c4740db19791bbc0a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0c2d8cf8b65e1eb2660f",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0d08d57f086acbbf28a0",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0e47e51fdfc619cd9164",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0ec730b1c05fbca94898",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-0ee96d705b72693a560a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-101b00d1cef2e3dab190",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-10d6a004626291a6669d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-11feebb6885fba9c3b2e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-12006433b9f7a351867e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-127a2ff37cc7506c9af5",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1384aec3582944a9e348",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-15a17471c3389cd2b7ca",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-15a2c646ef7b9e19735a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-15d0da7b0e92501e242c",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1607844a1ded84f35807",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-161307395252bdd3d6bb",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-169a71e240d5ae24b767",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-16b71baa98763105b00f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-17778c155167063bb40b",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-182cb23099f0f36a7edb",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1853cb830e3d99489da7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-186603876aa0b3b1119e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-188706a776d06a8525b2",
+      "split": "calibration",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-18b9e945f7704fc82402",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1905e4a2307cde5ed8a0",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-192f575edaa8903b6011",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-193648d47f432a3c1378",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-193f1cfceca896abd6ea",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1a2c5de135f6f29ded8e",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1b5a7c55f40c5a7d9a9f",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1b6bddf0940ff3460c18",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1bec64dc444fa4d77c0b",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1c42b278eeb8b3bbab3b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1c919a99f61df8a591ac",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1d20452196aa3f5c2bde",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1d3d0fc4392e3d1205e6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1df7120303b17b7a48ce",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1f0660d842a167fe7677",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1f27eafab366637f6e8c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1f86702808bd48c30794",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-1f8b5fd247be86374ef0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-200ebcb408670d7f2184",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-213b832d25a4e79ca014",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2186eb9f3bc4f968a1c1",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-219101bd3fb9d17a48f0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-21df4b102cee05428748",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-229872b0c6c4d4511b08",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2301ddb0a33996823626",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-233b87107238c9c0c548",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-23aaf960adc4f7648dbb",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-23b4b91193938923f26c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-23db9b22242e8e107052",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-251219f4c2161d052e87",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-267775bbe4e27040fc12",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-269b8db5bb25b25f1431",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-26a9fa9a344adb0353cb",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-26b35222893541eadc16",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-26bd365a85ef2e734fc0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-26ce445161c69fb999de",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-26f4706aec12afa4ebd5",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2725c55e2ce32552cbe1",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-280856a3ce7b1a396215",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2883681c37ec815b051d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-28b527224644448af8a1",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-28d7888dc86f3e2a60e7",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2a6f89caacab5eec77f1",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2ac04a1c627c6d1f5bbc",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2b04ce31659961f1f214",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2cc57929736bedaf64ee",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2d068fb3b8ac9cef95c6",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2d5bf4fe0c0a7194d084",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2db70eae0ac763dcb4a9",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2e0b8cb433f05ed12d73",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2e2b01d6fe7e90b02e84",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2e619640bea199fb45da",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2ea9599d5a118d73f35b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2ea971f2f8c354de4aaa",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2ebfbfea95fa733d770d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2fdd75cd0666914b19b3",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-2fdfae997c98d312bce2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-300d53bd285bf3822440",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-31c6f53377cbc9fee120",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-31fa856d5cb46f15e4b7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-324b28482cbba8307371",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-327f63f281bc47eb1b1c",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-333e59cca09918854023",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3355552fe8f5738aa6c5",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-338f3093ee5fa96446d6",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-34c9202c03115f96c6de",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-34cf84ceb41372cc888d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-34d774043c9b48e0daba",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-350cf00730a4c642e3b0",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-350f7661106d631e1171",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-35addffbc716bdec0a2a",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-368aefbe5877544f65d4",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-37bc0874695275d52eae",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-37cc44752a91daf8b987",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-38bd43b17871db8b5d4a",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-390a30af66121d523401",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-39cdb1d66c38dc2580d4",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3a2d65ac937e17e30590",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3ad25a622d4eabfc2700",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3b39ba2aaa5be514f143",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3bfaa5d404a116c7f4cb",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3c88babf56345343ad16",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3c9e799503c186bb53c9",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3d0d6b3dee79d66d466f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3d9248a6f67af408178e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3e3085b53dadf729340a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3e883061c5462bf83e75",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-3f4bd7211a354c12e267",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-40f899b69f9debbdf246",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-417b84f9bf38f26f3b77",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-41a7b63c6159ecf8df3c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-41c83f8c0df1c6c117be",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-41fbfa270bc15f3ce21c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4228571be5eb78f5a66e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-427ee902f62cfeb44d7b",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-43d240ab59568d2ec6a0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-43f0fecae61a7db4951e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-447d4812aa0d8d9cb916",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-44a3e6dc02c887626cd8",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-457265fc6b78dc5a6e3b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-46bb517466d2a9ab768e",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-47dc3668e3d2e157c94f",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4815eb7536486a28ccd0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4834b81347dc609853c9",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4954e5f87e4d26be98bb",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-497c2442797384351743",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-49948c5c18e057d5f658",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-49cc67fcfc0973f340ac",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4a57e66bea6bbce073f9",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4aa0c7c7d6e703bd4621",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4aa67656a894769ff49f",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4ab832d28d5db9c74ca6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4add1e4fe869fed8c7c2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4b27f34d963c6a470bab",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4be82a45ad6d8e9ad1b4",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4beb31b55ec106e83e85",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4c660afa8f6c8e3d0af1",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4d26c3c5fb0d68282235",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4d276b49a8674302f6d6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4d705746c84f50f6bb52",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4dd45edb84c55e9a16cf",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4e3e6a9823e05e7f8105",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-4f9257494ccf30b89617",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-504925aa20990fb1280f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-50e831322405d81f34bf",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-50fe223cd0cdfd5f4d03",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5110f58a850e967d2de3",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5123522733b3c9325995",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-51ada1d171f9f3099815",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-522b0a60907773b40762",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-52bc6bf200716e9dc3eb",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-53393864481ef099c647",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5374464799226c560037",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-53949c0283b922ff10f8",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-54724155196937b010ec",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-548fcd845ae0a05af155",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-54957551d218a1d928ab",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-553d2292cc44e4063ace",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-558a59d8e30c3dc12e61",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-55b9c8063aaad1403e01",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-55ba6d1186e3a306590c",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-562198cb3127190308a2",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-565bfd1419c965ebcd27",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-56af3918d33e72514087",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-58a6435c10ed6bef07bc",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-58e3610e54f3ddc84fd0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-596ad3ba749a0dffeb07",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-598fe212b16fe23a4383",
+      "split": "calibration",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-59970cc440cbcdba63b5",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5a4b602c580e8cd5fdba",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5aacfe505a1b4e4782de",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5ac975a07822bd4dee0f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5b33ea93c2cb810f833e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5b9cffb07029125e9d1b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5c40354eacbf708e8768",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5c5c11e07bebfa66ff04",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5ce300d0be3a314e8129",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5d2f853cb8a8600e0f8e",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5d90dcf4de539b95dfe2",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5dc42809209f6c91ffc8",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5e8ed69980b945fac43a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5ec48042af67dca15908",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5ed59c0faaa33437e78e",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5eea062d898db9691c63",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5efba4f259b075327a91",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5f13c091a67696db2c23",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5f3fdfda3b61aa2b7dd4",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-5f4d51ea783481239292",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6051eb83eaf94298be4f",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-60b876e4b268cfc8ecd2",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-60dd27ed1f74ba833369",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-617c7cf628dbe7c2a48a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6249dbb11008ad5344d4",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6260cfac4b9087640fea",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-62df3bc516ee1b1ceef6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-630486bb61351979a1e7",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-632a4dd4766d5afe8ec2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-63a2fa67d5c9112397aa",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-649b973b937c96391e78",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6539fd9fac2e77a745df",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-65d5791279a23f42a1a7",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-66eafcb601024aaeadc5",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-67fc006a833afe7dcae9",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6821b48c910405e64342",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6999dcc57d84961b5922",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-699c448b854f2a2ff3f6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6af63cab993e632c614e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6b1f516da5ddcf19677a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6b21f43c37c0fb070dc4",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6b5a9fbcc471d1cc1133",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6bb34e773640815ce822",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6bca68a75043b3feb4ba",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6bea87d5912f8d599db1",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6c3699194b38e97ad3e1",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6c68cad0533ea0c0e827",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6c782302d838b3cef57f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6cbfa3065962f10c0a66",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6cca66e83ba761311e9a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6d583d132e307ddc23e7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6db25221b01441628270",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6dd5e575ae8072f4905a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6e34c0b4a1ec7ba094af",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6ec6bc926ea17f962489",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6ecfe21a58a6baee9b4a",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6f05c73c0567aadb084d",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-6f9d899d05b58892a258",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-704b4fa2919069e2d8ef",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-720d8541376a8c83ac79",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7288b39678633d83416e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-728d6e25d4dabde197dc",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7395979523f7b90bc26f",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-742430565ceb84b7c11d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-744ee1d2baedb098c192",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-74818d04663a4bcc79d3",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-755a19e0da907b1fe929",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-756326ca989b36e33d88",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-75d93a1590585fe13435",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-776645f95dd62bed86c2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7770765e0f89b68fd2ce",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7790032a51ac1d268a31",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7793650f84d59b27a95f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-77ed780c87129c4e6229",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-79291c266d8be89957d2",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-793da9d0eacb5457f517",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7a13e78be5a16721558a",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7b35cd740e20b9546cd0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7b387a3828580d4562a0",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7b426d4eb3663965a47a",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7b721e16772373b5618e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7becde81db18cdbdb25e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7d7ad8cefc56a4c61d83",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7d8dc5d266a1e7854b7c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7e3eb562938870244449",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7ece4a001620d2cbb12c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7f37bac1fee7dba6d41d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7f3f259fab3b398ce628",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7f66a77b0aad796003a3",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7f6e38beff83d72e1ce8",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7f72fb5f386f7566077a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7fef7e09eee1124a672c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-7ff76825d7cf917a17bd",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-803fecbffedcb0d8acbd",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8082e32f3fbc4040e4cf",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-80e8182070371bc08f35",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8173b4b74fe2d3e03074",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-81fea2c4328bce1e69ad",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8224d9724d14854ba56e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-827a9328d138bd5dbd1e",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-830254119388f2196b06",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-83b149c377e8eb8a13ee",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-854f8f86d9c3c1916907",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-858a62367d997f1d89af",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-85abb481bd9276211767",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-85f5f3636eda54f309f5",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-86143162203e8c32f262",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-86388d9aa322b3482490",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-86677e3aa76be3c46701",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-87419545e1fb03644738",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-874e855cbc013a178363",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8764bde342a960f9fc83",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-885bb6a98ead3cc28167",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-88ed2042c29242efb02b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8933c8a1b6d96e99c5b1",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-89cdf0f10d47e7bd2eec",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8b4d61f9a3de56a0ffea",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8b734c39da541ab07593",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8bcf68825e4296b70060",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8c1abc93a447db8777c4",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8d3b8eeb55205ffe19f6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8d9b5c47690bb17248a3",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8da0dba3a4439329c969",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8e647b64f0578dd79ba8",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8ef758200b0febf8ef23",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8f65dcde77b49c14515f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-8fbc91bc980056fb7c4e",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-90e0a8be1e668c31faf3",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9117349065192ba25d12",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9176e2e3d6115834f200",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-91ce1228125423f12d58",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-91e20918dd0961437669",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-929e2d8bc7381b884bc4",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-92a340ccc91562ed4faf",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-92b7c005e2429e9a6f19",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-935404770d3b7b3e9c05",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-944996c7845d283d5a65",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-95a05147ae5cf9bba21a",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-962a92667a8d3800e997",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-969bf8fd901008d16291",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-96bfc97f141895a435f7",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-97ea02c7f77357d15b04",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-98292f8664926b8f61b3",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-983e983bf9dc0b5dd8d7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-98a26e3f03c97ec38ce4",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-99061028fb04a1b865fc",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-990e26b302a73b9607e0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-993c83597a79b12775f9",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-99486c14eba7c88580f7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-994b3dab7574da658a51",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9a03770ec0a35ca78283",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9a522b5ff4f1662ee1ba",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9aa030b1c83fb0a4fe99",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9b6ea02cb71af8155e94",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9c58e6ec2b95c173c0b4",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9cc903d705194179b519",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9cde5b3db81117e7f808",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9d1c08838fd371575377",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9d1e174494bbddefd172",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9d2c2d3744b5c7e34a85",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9d85b5508bfcb43d23c7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9e08c39e3e5f071f5069",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9e0c6d02c4bdf1e67fb8",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9e3d1d8563b277615a7b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9e82cfa670c291fdf35c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9f99a87c06a64c5eb252",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9fb4fcb30d8bb85af0a5",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9fbd0f3fa1036c93fd8b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-9fc4ce605982f74359c3",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a01f66f4448a24f11b79",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a030d7799165465bc3c5",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a08d498632b03a3f0f51",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a0e4231999d562c8c243",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a0f2da0c9a642b5ada14",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a13314d85730458668aa",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a16710f462356c404f1d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a1eb998e2530a51e476e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a2fc2cc3bde612b31180",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a3a06fa3b264efd756b1",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a4304ccbea5f3a0830dd",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a4be947a2170bd955896",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a604bce3863170505a0e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a645a00c9b930c453331",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a65e51e2e1c46a0dbb20",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a6da8a8fad3231358963",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a775d650256939436709",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a8e975bb10dd15031f32",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a8f212f96212d7beed57",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a8f8ebbca51b701fa65c",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-a918a71bec625da12be2",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-aa18c28b26e02f5d17db",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-aa18cc007ce5ca7ff5e0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-aa81b28f974cb38e1117",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-aa9098196352b950c9b7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-aaad08c0979fc4cd9406",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-aacec75fd2363a6099e8",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ac948803190d194467e9",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-aca4ee1ae89cc500749f",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ad420a65194b9a30be7f",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ae4145caf88cc662ffa2",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ae56a95924b830c8f513",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ae94b84496cfe182a94f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-aef38947216838d98044",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-af066eea0e87c21aa269",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-af757106ae7f72230892",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b04267558392301cefaa",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b06edabacf79576c55a7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b0c274f6626caa86a9ff",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b12c555010b15c143c6b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b176cb15468dbb6e6ac9",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b1e3020208e089468aa1",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b1fc24202c57c8864dbe",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b21d8eda5d508e898777",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b27aedee6b9d90950549",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b39aedc60dd7d590a5b0",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b3a4d450eb130cf68541",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b65034fbb479fd0a74fe",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b715ad4c2380d4a7369e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b788a0ba70aac03a74da",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b78b13a5eb4dc7678db0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b7b66964dbdf98a3d372",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b91ed686d8ef29ccf86d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b94466d3b064287d9f44",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b95f5586c8529c14fa8e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b9986b40c79b7f574a6d",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b99bfa52fa61f78d0d38",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b9db886030609b80ea75",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-b9e7e8ac0225c8e45d59",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ba0d892f577c48b04a9d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ba2572af4604d772eac8",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ba5ca760f96462e5efaf",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-baddbd310d54053ce2d4",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bb278e20c1bbc9767dac",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bbc5a96a6a609e9f05c9",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bc0f7b37f7a1ed70cb31",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bc7ad044578f3470a2a8",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bc8f655f27f75d603a26",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bd296ecd3760232d7875",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bd47fd65ec493f8b7acb",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bd4fa7eed8bbdf5a646e",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bd5e4d038fd47d744df9",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bd9cc28851343b17fe1c",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-be2206b703495e1f61c7",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-be3573823b27a589baf9",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-be996fa8b5fcb6d5ac3a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bee465062134fcaf9597",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-beff6652c085e64f55f2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bf451e38d891a9d88c77",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bf5fd7fe47969b59f3a6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bfba77d7af227457ab1f",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-bfd36675ca337ee854e2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c026eb2cdd3c685bf84c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c163dcc0b1010e66b5ed",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c16dd55877e052882751",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c1e0b7211960b54084d0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c25529070a105a939033",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c28a0083161eb480c3ce",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c2a2e2354898601edc1f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c2a39a2f7d781c064a25",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c326fe7c20584fd43bd0",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c336eac029afe1dd5382",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c3636cc835e28de06f95",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c3961dd7f20a421b900b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c3c28cd4278677167a6b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c49a2ba0598013afc2e3",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c49a69b54d7e2659fb9b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c4d038e78c7a7b8010d7",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c4e7e48ef96d4fcf4fb6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c6b06e72217b56dc2df6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c710dab7116b9db19642",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c72600573d6f6bada483",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c7b32f6767678ab1b3ca",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c7d3cd818098068a8b36",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c80845b8a2d9b130d373",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c866fd7eed3a7128503f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c8c90fb5a4f0d6b7b43a",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c900fdb0dbfeff0a0b43",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-c951e6b6be53fca84989",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ca17be773d28e5633ce9",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ca46126f7687f31bb7dd",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ca5145c7e0839a060652",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-caca0cd96d8941384e4d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-caf527bc1e3ba1b899f7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-caf9a0130c6372e63b95",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-cb3177c53e26fdb4ae36",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-cbad53abc3f691947d68",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-cbe263b453f582d7f6ac",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-cca186bdfd7393e24b07",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ccd3acf39a5175048cc2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ccd7de7d98623d2f1525",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-cd0389ebe6474028034e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ce433d348958f00972a4",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ceb4d5124e29683bb544",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-cfa30b1fbd0cad5f242e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d08416ff26e73c755fee",
+      "split": "calibration",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d084c9f16a984b2d825d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d1a6736eda3ce43f9d98",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d30dc153d60225438764",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d30f99f4616c8bdc2f8b",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d37cc23d048ae1f45cfa",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d38091dda8dfa627fe36",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d3eaad516eedf2e8096f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d464fba5a1f60016edb1",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d4ae3b14407bb268578d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d4e81e59c93f907dec46",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d5805ccd29fe4d869de5",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d5833cda508065aa4374",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d5d44205a1944afc8b68",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d6008a93078c30892e31",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d6470ac520cc0f422c2c",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d729e91aa8ed76336e1c",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d7feadacbfaaceebb967",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d824a0f0adac05179323",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d903b3b18d363c73f196",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d90a6b086b1a6a5c63f6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-d9a6a06862ecd94a620b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-da0a0f9d6adfcb8ab543",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-daf92e608801b4e1baf5",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-dafd0483ccabcb79838d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-db0565f4e2d450afbf15",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-db4b1ffba30b90f9ed1a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-db8a6d1f3d82cea3b4bb",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-dbb0422089499ff72e51",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-dbfb193665b03745eb62",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-dd4117feba71b3d946a6",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-dd5cfb9d162c580f9e64",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-de07bde6dfbf30180d1b",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e09339e015718eb1001a",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e0dd4ddfd0f1f6344ecf",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e17a9cf02f69df3d6db1",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e286abf90f0c0972ae02",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e28d05266110edd53f19",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e324cb17c18363d4e7f2",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e34e502db30f72553a16",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e35067417f396268b27a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e3b69c415bed0c0ce518",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e3bea20d523d2de40d33",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e3ecdbb4d5074f71b896",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e408bbd8c65b54d1c6cd",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e461c68f3e11431cec8b",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e4e6da5281ab886eeb60",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e5dbc6d17217002355f1",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e65ea148d2e7e53b9f94",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e7277d4ec2f06765816f",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e7a535619d9fe3726719",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e7ac369cd8bc6685e981",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e80a10db3f1a7610fd95",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e8523e9ccdd617c76110",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e89d1291eb3eb2d6498a",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e930b07fab72ea0f3ec6",
+      "split": "train",
+      "engine_source": false,
+      "exact_reproduced": false,
+      "origin_types": [
+        "hypothetical_logic"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-e97015e5e3c738faea06",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-eb57148c0ce4e59b8147",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-eb9e312a2274af28258d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ebf5bdb569ec2864508f",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ec03250294425a56d9f3",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ec18243b8364bc17f2db",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-eca1146cd55418d1b301",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-eca1b092d064224d2e65",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ecab867a4a1410a6675d",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ecc76b11876b0b33d8fc",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ed214b4784e1bbc6ac56",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ed676f1c6c05f2070207",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ee1a8200d90d335fcaa2",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ee6340dfdb2b7df9de81",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f0f042e0a4bb35615b33",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f1242f9a2896c4dcc25e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f16dcb5da12156560efa",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f2d2e0a8c35b6c724e0f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f3a670ba5099efb8e344",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f531a473f434a9defc39",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f578336ebdb475fb6b3a",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f58c0508e583cf892943",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f5f7c003ada9b0e1066f",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f619203be2e1b23157b7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f62e5ffbbf7c68b1bec3",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f67e034f1b257471b318",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f6bc973b0a593ec60c26",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f70e89ee06ed58f44958",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f729f3ce025b7d99a0d5",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f855faeafa5970935442",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f97bd460194ccae22f5e",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f994864f8056f53310ee",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-f9fc9f3a84d047f06d75",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fa1c938e8a3890b03b66",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-faaeeeac3cccc86234c7",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fadd9f44ac2c63a04dce",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fb3b30fda1245fce0574",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fbcd156a35a7311fb442",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fc1513caebb6848aa9fb",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fc160135c2e976e7b76c",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fc278d24344b65bd060a",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fca747e0b79dea10a788",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fcefb63bfb0bde5a4151",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fd536198b2b227e096f3",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fdbf62b45ab9c5dcffe9",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fde646e3ee10aeb96699",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fe5eac6532013ef010bc",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fe9368fd6cbce317ea31",
+      "split": "calibration",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-fecee6dca3f7a32daf50",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ff67a1c75094f11dc064",
+      "split": "test",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    },
+    {
+      "id": "me-p03-ff89ecf20a12c6d7003e",
+      "split": "train",
+      "engine_source": true,
+      "exact_reproduced": true,
+      "origin_types": [
+        "engine"
+      ],
+      "failures": []
+    }
+  ]
+}

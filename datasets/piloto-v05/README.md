@@ -61,7 +61,7 @@ O catálogo categórico inclui 21 perguntas e todas as alternativas na grade fin
 
 `inputs.jsonl.gz` contém somente features. `supervisao.jsonl` contém alvos e metadados. Prefixos constantes ficam em `prefixo-nli.txt` e `system-forecast.txt`. `auditoria/` contém estados, IDs e seeds exclusivamente para auditar os alvos. Nunca concatenar supervisão ou auditoria à entrada.
 
-`experimentos/` mantém 220 partidas diversificadas; `benchmark-contra-aleatorios/` mantém 260 partidas pareadas fora do treino. `comparacao-v01/` mantém referências antigas. Dois dos 90 exemplos NLI antigos não são reproduzíveis pela visão registrada: tinham sensores extras. `nli-benchmark-agente.jsonl` permite comparar os 88 casos coerentes em cada representação, com exclusões explicitadas. Os casos fora do domínio antigos continuam arquivados, mas requerem adaptação de protocolo para a nova representação.
+`experimentos/` mantém 220 partidas diversificadas; `benchmark-contra-aleatorios/` mantém 260 partidas pareadas fora do treino. `comparacao-v01/` mantém referências antigas. Os 90 casos NLI antigos são reproduzíveis da visão autorizada, incluindo os sensores armazenados separadamente. `nli-benchmark-agente.jsonl` compara esses 90 casos nas duas representações. A exclusão anterior de dois casos foi um erro de auditoria. Dos 600 exemplos NLI da v01, 573 foram reproduzidos exatamente de partidas e 27 são contextos controlados; a evidência está em `comparacao-v01/auditoria-reproducao-v1.json`. Os casos fora do domínio antigos continuam arquivados, mas requerem adaptação de protocolo para a nova representação.
 
 ## Reprodução
 
